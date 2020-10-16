@@ -1,0 +1,126 @@
+\documentclass[defaultstyle,11pt]{$documentclass$}
+
+\usepackage{amssymb}		% to get all AMS symbols
+\usepackage{graphicx}		% to insert figures
+\usepackage{hyperref}		% PDF hyperreferences??
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+$if(natbib)$
+\usepackage{natbib}
+\bibliographystyle{plain}
+$endif$
+$if(biblatex)$
+\usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
+$if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
+$for(bibliography)$
+\addbibresource{$bibliography$}
+$endfor$
+$endif$
+
+%%%%%%%%%%%%   All the preamble material:   %%%%%%%%%%%%
+
+\title{$title$}
+
+$for(author)$
+\author{$author.first$}{$author.last$}
+$endfor$
+
+\otherdegrees{$otherDegrees$}
+
+%%\otherdegrees{B.A., North Dakota State University, 2005 \\
+%%	      M.S., University of Reno, 2007}
+
+$for(mainDegree)$
+\degree{$mainDegree.long$}		%  #1 {long descr.}
+	{$mainDegree.short$}		%  #2 {short descr.}
+$endfor$
+
+$for(dept)$
+\dept{$dept.designation$}			%  #1 {designation}
+	{$dept.name$}		%  #2 {name}
+$endfor$
+
+$for(advisor)$
+\advisor{$advisor.title$}				%  #1 {title}
+	{$advisor.name$}			%  #2 {name}
+$endfor$
+
+\reader{$reader$}		%  2nd person to sign thesis
+
+\readerThree{$readerThree$}		%  2nd person to sign thesis
+
+\readerFour{$readerFour$}		%  2nd person to sign thesis
+
+\readerFive{$readerFive$}		%  2nd person to sign thesis
+
+%%\readerThree{Thora Nea}		%  3rd person to sign thesis
+
+\abstract{  \OnePageChapter	% because it is very short
+	$abstract$
+	
+	}
+
+%%\dedication[Dedication]{	% NEVER use \OnePageChapter here.
+	
+%%	}
+
+%%\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+	
+%%	}
+
+% \IRBprotocol{E927F29.001X}	% optional!
+
+\ToCisShort	% use this only for 1-page Table of Contents
+
+\LoFisShort	% use this only for 1-page Table of Figures
+% \emptyLoF	% use this if there is no List of Figures
+
+\LoTisShort	% use this only for 1-page Table of Tables
+% \emptyLoT	% use this if there is no List of Tables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+$body$
+
+%%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
+%\bibliographystyle{plain}	% or "siam", or "alpha", etc.
+%\nocite{*}		% list all refs in database, cited or not
+%\bibliography{refs}		% Bib database in "refs.bib"
+
+%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
+%%\appendix
+\newpage
+$if(acknowledgements)$
+\subsubsection*{Acknowledgements}
+{\small $acknowledgements$}
+$endif$
+
+
+$if(natbib)$
+\usepackage{natbib}
+$if(bibliography)$
+$if(biblio-title)$
+\renewcommand\refname{$biblio-title$}
+$endif$
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
+$endif$
+$if(biblatex)$
+\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+$endif$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}
+

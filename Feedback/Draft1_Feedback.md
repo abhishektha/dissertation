@@ -12,19 +12,19 @@ Chapter 1: Motivation
 
 ·     In the paragraphs in the 1.0 section, I feel you often finish with the topic sentence instead of end with it. I’d suggest focusing on aligning the point of the paragraph with a strong intro as well as a strong summary.
 
-·     Instead of “thermal environment” maybe “extreme environmental temperatures”
+·     Instead of “thermal environment” maybe “extreme environmental temperatures” --done
 
-·     “In addition, the planetary atmosphere…” – Rewrite to say there is no planetary atmosphere. Also you say “prove life support” instead of provide
+·     “In addition, the planetary atmosphere…” – Rewrite to say there is no planetary atmosphere. Also you say “prove life support” instead of provide --done
 
 ·     That Apollo 17 fact is crazy!!
 
-·     “Ambulation is one of…” is a bit of a non-sequitur. It’s not clear if the objective of this paragraph is to say how little experience we have or that ambulation is important. 
+·     “Ambulation is one of…” is a bit of a non-sequitur. It’s not clear if the objective of this paragraph is to say how little experience we have or that ambulation is important. --removed the sentence and added to the previous sentence to highlight how the requirement is doubling 
 
 ·     There is no transition to section 1.1, it just goes right into injury without priming the reader for this section. This is also needed to give context as to why you’re discussing injuries. As written right now, it’s a good lit review, but it has not yet motivated where the thesis is going
 
 ·     “Poor indexing can require increased exertion to move the joint” This sentence feels like it’s appended on without adding to the argument or furthering the commentary
 
-·     This section has no final paragraph. This chapter should really use this content to motivate what you’re trying to solve and state that. You don’t want to wait until the end of the background section to make it clear to the reader what problem you are trying to solve. 
+·     This section has no final paragraph. This chapter should really use this content to motivate what you’re trying to solve and state that. You don’t want to wait until the end of the background section to make it clear to the reader what problem you are trying to solve. --added, talked about how EMU injuries are focused on upper torso but planetary exploration may add more lower torso injuries due to ambulation. Therefore its important to design better fitted and more comfortable spacesuits to reduce EVA injury risk
 
  
 

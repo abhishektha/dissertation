@@ -6,29 +6,34 @@ Planetary missions' goals include but are not limited to performing scientific e
 While many of these duties may be completed by robotic missions, human exploration still plays a key role in the success of planetary missions [@Drake2010].
 
 An important component of planetary mission design is extravehicular activity (EVA), where astronauts conduct their duties outside their habitat.
-During EVA, astronauts are subject to many physiological and environment factors, including reduced gravity loading, dust, radiation, and thermal environment.
-In addition, the planetary atmosphere is not sufficient to prove life support.
+During EVA, astronauts are subject to many physiological and environment factors, including reduced gravity loading, dust, radiation, and extreme environment temperatures.
+In addition, the lack of atmosphere does not provide life support.
 Spacesuits are designed to both provide life support and help protect the astronaut against these extremes during an EVA.
 
-Humankind's current planetary EVA experience is limited to a total of 78 hours over 15 Apollo missions [@Portree1997].
+Humankind's current planetary EVA experience is limited to a total of 78 hours over 6 Apollo missions [@Portree1997].
 During the Apollo missions, astronauts performed almost 10 hours of EVA in a 24 hour period without the assistance of a rover during Apollo 14, and 22 hours of EVA in a 36-hour period with the assistance of a rover during Apollo 17 [@Portree1997].
-Ambulation is one of the top priorities for planetary mission designs. 
 The longest traverse performed on the lunar surface occurred during Apollo 12, where astronauts Charles Conrad and Alan Bean walked 1.8 km [@Portree1997].
-Apollo 15-17 missions involving a rover assumed astronauts would be able to walk 5 km in case of rover failure [@Portree1997].
-Future planetary mission design assumes astronauts can walk up to 10 kilometers to return to their habitat, and that astronauts can perform 8-hour EVAs, with a limit of 12 hours of EVA per 24 hours and 24 hours of EVA per 7 days [@Drake2010].
-In addition, NASA's current planetary exploration plans focus on extended stays and colonization, increasing the mission time on the surface, and therefore increasing the total amount of EVA performed by an astronaut during their stay. 
+Apollo 15-17 missions involving a rover assumed astronauts would be able to walk 5 km in case of rover failure [@Portree1997], but this requirement is doubled for future missions. 
+Future planetary mission design assumes astronauts can walk up to 10 kilometers to return
+to their habitat, and that astronauts can perform 8-hour EVAs, with a limit of 12 hours of EVA per 24 hours and 24 hours of EVA per 7 days [@Drake2010].
+In addition, NASA's current planetary exploration plans focus on extended stays and colonization, increasing surface mission time and therefore increasing total EVA time. 
 Future planetary EVA missions will therefore need a spacesuit able to adequately and comfortably protect astronauts on these long duration missions. 
 
 ## EMU Spacesuit Injury Incidence
+
+Following the Apollo era, space missions have all occured in low Earth orbit in a microgravity environment. 
+New spacesuits, such as the Extra-Vehicular Mobility Unit (EMU) were designed for microgravity operations.
+This included greater upper-torso mobility while reducing lower-torso mobility, as astronauts would be floating in space and not be required to ambulate. 
+However, the increase in EVA activities that accompanied the construction of the International Space Station have resulted in a number of crew injuries, prompting studies into the human-spacesuit interactions and deficienies in suit design that lead to these injuries. 
 
 Crewmember difficulties with the spacesuit have existed since the first EVA, where Alexi Leonov had difficulties moving the suit to re-enter the spacecraft. 
 Apollo astronauts have commented on the fatiguing reduced mobility of their spacesuits [@Scheuring2008].
 Gas pressurized spacesuits are known to be inherently stiff and rigid [@Parry1966;@Abramov1994;@Schmidt2001a;@Holschuh2009], difficult to move [@Norcross2009;@Amick2015], and have the potential to cause injuries both during operations and ground-based training [@Williams2003;@Strauss2004;@Scheuring2008;@Scheuring2009;@Chappell2017].
 
-The prevelance of injury has been well studied in the era of on-orbit microgravity EVAs performed wth the Extra-Vehicular Mobility Unit (EMU). 
-Strauss [@Strauss2004] found that 24.6% of training sessions at the Neutral Bouancy Laboratory (NBL) between 2004 to 2006 study had reported injury symptoms. 
+The prevalence of injury has been well studied in the era of on-orbit microgravity EVAs performed with the EMU. 
+Strauss [@Strauss2004] found that 24.6% of training sessions at the Neutral Buoyancy Laboratory (NBL) between 2004 to 2006 study had reported injury symptoms. 
 Viegas [@Viegas2004] found a 67.5% reporting rate of injury symptoms from astronauts training in the NBL between 2002 to 2003. 
-An in-flight injury incidence of 0.24 was reported by Scheuring [@Scheuring2012] for EVAs occuring on Space Shuttle flights 90 to 113. 
+An in-flight injury incidence of 0.24 was reported by Scheuring [@Scheuring2012] for EVAs occurring on Space Shuttle flights 90 to 113. 
 These injuries can be broken down into contact and musculoskeletal injuries. 
 
 
@@ -102,6 +107,13 @@ No perfect countermeasure has been presented for poor fit, it still remains impo
 Back padding on the EMU was found to potentially assist wearers in controlling the upper torso of the suit, reduce over-rotation of the torso to keep upper extremity joints aligned, and improve indexing at the gloves [@Chappell2017]. 
 For wearers with a smaller anthropometry however, indexing at the hip bearings was unable to be fixed by padding, due to the limitations in torso length. 
 
+## Summary
+The push towards planetary exploration requires advancements in spacesuit design to create a safe and comfortable environment for astronauts to perform EVAs.
+Current planetary exploration experience is limited to just 6 Apollo missions to the Moon, but future plans call for an extended human presence on the Moon and Mars. 
+Microgravity EVAs and training have resulted in many upper torso injuries due to poor fit, poor indexing, and the increased exertion needed to bend the joints as astronauts are performing EVA tasks.
+The transition to planetary EVAs, with a focus on ambulation, may result in a higher incidence of injuries in the lower torso without significant changes in the way spacesuits are designed and fitted. 
+Therefore, it is important to understand operator-spacesuit interactions and spacesuit performance in the context of planetary tasks such as ambulating.
+This will allow for the construction of safer, more comfortable, and better fitted spacesuits that may reduce the risk of injuries during EVA. 
 
 
 

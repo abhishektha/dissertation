@@ -90,15 +90,15 @@ section Specific Aim 2
        Human subject testing :done, des2, 2019-03-18, 2019-05-03
        Scan Processing :done, des5, 2019-05-01, 2020-03-15
        Model Development  :done, des6, 2020-03-15,2020-07-20
+       Instep sizing analysis : des3, 2020-10-10, 2021-02-28
 section Specific Aim 3
        Framework Development :done, 2019-12-01,2020-03-06
        Basic Pressurized Boot Construction: des3, 2020-09-01, 2020-12-01
-       Instep sizing analysis : des3, 2020-10-10, 2021-02-28
-			 Boot Design : des4, 2020-10-01,2021-03-31
+       Boot Design : des4, 2020-10-01,2021-03-31
        Prototype Construction and Iteration : des5, 2021-01-15, 2021-05-30
 section Specific Aim 4
-       Adapt boots to glovebox : des1, 2021-01-30, 2021-06-30
-       Test plan development : des2, 2020-11-15, 2021-04-15
+       Adapt boots to glovebox : des1, 2020-11-15, 2021-04-15
+       Test plan development : des2, 2021-01-15, 2021-06-15
        Pressurized testing : des4, 2021-06-15, 2021-10-01
 
 ```

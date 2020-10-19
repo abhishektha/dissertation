@@ -7,4 +7,3 @@ pdflatex --interaction=nonstopmode --output-directory=pdf Boppana_ComprehensiveE
 cd ..
 Move-Item -Path ./tex/pdf/*.pdf -Destination ./Versions
 Remove-Item ./tex/pdf -Recurse
-Remove-Item ./tex/pdf -Recurse

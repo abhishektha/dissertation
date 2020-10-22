@@ -6,7 +6,10 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{float}
+\floatplacement{figure}{H}
 
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -122,7 +125,7 @@ $endif$
 
 
 $if(natbib)$
-\usepackage{natbib}
+%\usepackage{natbib}
 $if(bibliography)$
 $if(biblio-title)$
 \renewcommand\refname{$biblio-title$}

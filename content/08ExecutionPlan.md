@@ -12,9 +12,9 @@ Results from this testing will validate the use of dynamic body shape models in 
 
 ## Timeline 
 
-The Gantt chart below shows the timeline for each specific aim of the thesis and for PhD graduation milestones.
+[Gantt chart @fig:Gantt] shows the timeline for each specific aim of the thesis and for PhD graduation milestones.
 
-![Gantt chart showing PhD timeline](../fig/Gantt.png) 
+![Gantt chart showing PhD timeline](../fig/Gantt.png){#fig:Gantt width="100%"} 
 
 
 ## Publication Plan

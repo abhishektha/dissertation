@@ -80,7 +80,7 @@ Limitations in suit joint design and the poor fit between the suit and its opera
 While other environmental factors, such as increased humidity, were also found to have a role in EMU fingernail de-lamination [@Chappell2017], this section will focus on the design and fit factors for spacesuits. 
 High exertion needed to actuate joints and poor indexing can lead to excessive musculoskeletal injuries, while poor sizing and poor indexing can lead to contact injuries, increasing the risk of injury [@fig:B-fitflow]. 
 
-![Overview of how deficiences in spacesuit design and fit can lead to increased injury risk](../fig/Background/fitflow.PNG){#fig:B-fitflow}
+![Overview of how deficiencies in spacesuit design and fit can lead to increased injury risk](../fig/Background/fitflow.PNG){#fig:B-fitflow width="60%"}
 
 Pressurized spacesuit joints require more energy to move than compared to unsuited motions [@Newman1997; @Amick2015].
 While design features aim to reduce the effort needed to bend joints [@Harris2001], these joints are difficult to engineer in areas such as the hand. 

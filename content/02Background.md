@@ -14,7 +14,6 @@ In fact, loping is the energetically preferred gait on the Lunar surface, while 
 As speeds increase in lunar gravity, a transition occurs from walking to skipping rather than from walking to running as on Earth [@Minetti2012].
 However, the energetically preferred speed is not always achievable or possible, and slower walking speeds may be necesseary when performing EVA tasks.
 
-
 Studying the walk-run or walk-skip transition gives further insight into ambulation on a planetary surface. 
 Walking is modeled as an inverted pendulum which conserves some energy between each step; but energy is not conserved at faster walking speeds and needs muscular power input [@Cavagna1976;@Cavagna1977].
 Griffin et al [@Griffin1999] found as gravity is reduced, the amount of mechanical energy conserved between each step is reduced, and the maximum energy recovery occurs at slower speeds. 
@@ -23,7 +22,7 @@ The Froude number is the ratio between the centripetal and gravitational forces 
 $$
 Fr=\frac{v^{2}}{gL}
 $$
-Where $Fr$ is the Froude number, $v$ is the velocity of ambulation, $g$ is the gravitational force, and $L$ is the leg-length [@Alexander1989].
+Where $Fr$ is the Froude number, $v$ is the velocity of ambulation, $g$ is the gravitational force, and $L$ is the leg-length [@AlexanderMcN.1989].
 At some critical value,  walking is theoretically impossible as the gravitational force cannot match the required centripetal force, which is where the walk-run transition occurs ($Fr*$). 
 Humans typically switch to running at $Fr=0.5$.
 Kram et al [@Kram1997] offloaded subjects by their waist as they walked and ran on a treadmill, and found that  $Fr*$ increases at lower gravity levels.
@@ -143,15 +142,15 @@ These findings suggest that the MK III inhibits operator mobility and agility wh
 Subjective feedback allows operators of the MK III to provide their perception of ambulating in the suit. 
 Rating of Percieved Exertion (RPE) and Gravity Compensation and Performance Scale (GCPS) were consistent with metabolic cost findings in both the IST and EWT; both increased with gravity and speed [@Norcross2009; @Norcross2010].
 Subjects performing the 10 km suited lunar ambulation in the EWT reported "fair" to "moderate" operator compensation required to walk in the MK III on the Cooper-Harper Scale[@Norcross2009].
-While mean rating of discomfort was "very low" to "low" on the Corlett-Bishop Scale, discomfort and trauma were noted on the knees and feet of some subjects [@Norcross2009] [@fig:B-Trauma]. 
+While mean rating of discomfort was "very low" to "low" on the Corlett-Bishop Scale, discomfort and trauma were noted on the knees and feet of some subjects [@Norcross2009] ([@fig:B-Trauma]). 
 In addition, muscular fatigue and tightness was also reported in the quadriceps, thighs, glutes, and lower back [@Norcross2009].
 
 Subjective feedback for ambulating in the MK III at 1/6-g suggests that it is mostly acceptable for lunar ambulation. 
 However, the reported trauma and musculoskeletal discomfort are areas of concern. 
-The EWT and IST, along with findings from Cullinane et al. [@Cullinane2017], show that the MK III's design inhibits natural human motion and requires more effort to walk in. 
+The EWT and IST, along with findings from Cullinane et al. [@Cullinane2017a], show that the MK III's design inhibits natural human motion and requires more effort to walk in. 
 It is not enough, however, to design a suit that more closely matches natural human motion; it also needs to work closely with its operator to reduce injury risk from poor fit. 
 
-![Knee (left) and foot (right) trauma identified in the MK III following 10 km walkback evaluation. From Norcross et al. 2009](../fig/Background/Trauma.png){#fig:B-Trauma}
+![Knee (left) and foot (right) trauma identified in the MK III following 10 km walkback evaluation. From Norcross et al. 2009](../fig/Background/Trauma.png){#fig:B-Trauma width="80%"}
 
 ## Spacesuit Fit
 
@@ -197,13 +196,13 @@ One subject had no significant differences in metrics between padding levels but
 Another subject had the lowest knee ROM with no padding, aligning with their feedback that higher levels of padding are harder to control.
 Results from this study show how some performance metrics can measure the effects of varying fit, but also how fit is very subjective. 
 
-Suit fit engineers have commonly reported a dynamic fit problem where the heel lifts out of the boot during heel-off, which was also reported by one subject in Fineman et al. [@Fineman2018].
-[@fig:B-HeelLift] shows how heel-lift can occur through poor fit and indexing. 
+Suit fit engineers have commonly reported a dynamic fit problem where the heel lifts out of the boot during heel-off, as shown in [Figure @fig:B-HeelLift].
+This was also reported by one subject in Fineman et al. [@Fineman2018].
 Data collected from Fineman's study shows that during heel-off, the suit appears to be driven by the operator at the calf. 
 While this may suggest heel-lift, it does not corroborate the subjective reports of a gap between the operator's heel and the spacesuit's heel as it cannot directly measure this gap. 
 Fineman et al [@Fineman2018] suggests that boot fit may be very important to ambulating in the MK III spacesuit.
 
-![Heel-lift occurring during heel-off, as subjectively reported in the MK III. The poor fit and indexing in the boot and lower torso allows the heel to lift inside the boot during heel-off](../fig/Background/HeelLift.png){#fig:B-HeelLift}
+![Heel-lift occurring during heel-off, as subjectively reported in the MK III. The poor fit and indexing in the boot and lower torso allows the heel to lift inside the boot during heel-off](../fig/Background/HeelLift.png){#fig:B-HeelLift width="60%"}
 
 
 ### Body Shape Characterization to Improve Fit

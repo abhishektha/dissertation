@@ -18,7 +18,7 @@ dept:
   
 advisor:
 - title: Dr.
-  name: Allison P. Anderson
+  name: Dr. Allison P. Anderson
 
 reader: Dr. Torin Clark
 readerThree: Dr. David Klaus

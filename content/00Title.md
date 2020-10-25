@@ -6,7 +6,7 @@ author:
 - first: Abhishektha
   last: Boppana
 
-otherDegrees: B.S, Case Western Reserve University, 2017  M.S, University of Colorado Boulder, 2019
+otherDegrees: B.S, Case Western Reserve University, 2017 $\\$ M.S, University of Colorado Boulder, 2019
 
 mainDegree:
 - long: Doctor of Philosophy
@@ -23,7 +23,7 @@ advisor:
 reader: Dr. Torin Clark
 readerThree: Dr. David Klaus
 readerFour: Dr. Rodger Kram
-readerFive: Dr. Dan Feeney
+readerFive: Dr. Daniel Feeney
 
 
 runningauthor: Boppana et al.

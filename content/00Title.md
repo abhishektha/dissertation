@@ -33,6 +33,7 @@ runningtitle: spaceboot
   
   
 bibliography: ../references
+biblio-style: plain
 
 link-citations: true
 

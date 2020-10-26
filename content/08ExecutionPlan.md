@@ -1,14 +1,25 @@
 
-# Execution Plan
+# Summary and Execution Plan
 
 Through many advancements of planetary EVA spacesuit design, operator-spacesuit coordination is still not perfectly matched. 
-Poor mobility and poor fit between the operator and spacesuit are some of the most common factors that can lead to injury. 
-The boot subsystem of the MK III has shown to not be properly fit or match the mobility of the ankle, creating a phenomenon known as heel-lift. 
-This research showed the capability of heel-off detection differences between the operator and spacesuit to indicate presence of heel-lift during gait. 
-The dynamic foot shape model developed in this work can predict and provides insight into how the foot moves and changes during stance phase. 
-A design framework was proposed to design a planetary EVA spacesuit boot that incorporates exisiting knowledge on foot mobility with the dynamic foot shape model. 
-A prototype spacesuit boot will be designed around this framework, and be tested for comfort and mobility against a standard Earth hiking boot and a MK III-inspired pressurized boot. 
-Results from this testing will validate the use of dynamic body shape models in spacesuit component design, while the framework and model will provide a path to create the models and design spacesuit components from them. 
+Poor mobility and poor fit between the operator and spacesuit are some of the most common factors that can lead to injury.
+This thesis aims to determine the feasibility of using dynamic body shape models to improve spacesuit component fit and mobility, specifically with planetary spacesuit boots.
+The spacesuit boot has demonstrated specific problems relating to poor fit, such as heel-lift and contact injuries. 
+The work in the thesis has to date provided the following contributions to attempt to solve these issues:
+
+- Showed drawbacks of using spacesuit mounted IMUs to detect instances of heel-lift
+- A novel software library to use multiple commercial depth cameras as a cost-effective 4D scanner, capable of collecting body shape changes at 90 frames-per-second
+- A parametric statistical shape model that predicts dynamic foot shape during stance phase as a function of anthropometry and kinematics
+
+This thesis aims to provide the following contributions during the remainder of its course:
+
+- Quantification of dynamic changes in instep height and instep girth as they relate to their distribution in the global population
+- A novel framework translating dynamic foot shape and foot mobility knowledge into a spacesuit boot design that aims for better fit and a reduction in heel lift
+- Evaluation of the novel spacesuit boot for comfort and mobility against current planetary spacesuit boot technology and a gold-standard hiking boot
+
+Through these contributions, this thesis aims to show the efficacy of dynamic body-shape models in improving spacesuit component design for fit, comfort, and mobility, thereby answering its hypothesis. 
+While the efforts of this thesis were demonstrated on a planetary spacesuit boot, the presented work aims to serve as a foundation for other spacesuit component designs where fit may be an issue, such as the HUT and gloves. 
+The work presented in this thesis also aims to be translational for terrestrial footwear, contributing a new capture tool and modeling technique to improve footwear fit and comfort for a variety of activities. 
 
 ## Timeline 
 
@@ -18,13 +29,17 @@ Results from this testing will validate the use of dynamic body shape models in 
 
 
 ## Publication Plan
-[@tbl:pubs] outlines the peer-reviewed conference and journal papers from this thesis work. 
-[@tbl:conf] outlines conference presentations and posters from this thesis work. 
+[Table @tbl:pubs] outlines the peer-reviewed conference and journal papers from this thesis work. 
+[Table @tbl:conf] outlines conference presentations and posters from this thesis work. 
 Publications and presentations which are proposed and subject to having their title changed. 
+
+
+\pagebreak
+
 
 | Type | Title | Journal | Status |
 |-|-|-|-|
-| Technical Note | Detecting Heel-Lift in Spacesuit Gait | Aerospace Medicine and Human Performance | In Preperation|
+| Technical Note | Detecting Heel-Lift in Spacesuit Gait | Aerospace Medicine and Human Performance | In Preparation |
 | Journal Paper | DynaMo: Dynamic Body Shape and Motion Capture with Intel RealSense Cameras | Journal of Open Source Software | Published |
 | Journal Paper | Dynamic foot morphology explained through 4D scanning and shape modeling | Journal of Biomechanics | Under Review |
 | Conference Paper | A Biomechanical Design Framework to Improve Spacesuit Boot Fit | 50th International Conference on Environmental Systems | Published |

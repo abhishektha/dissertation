@@ -3,7 +3,7 @@
 The following gaps were identified from the previous research, and will motivate the direction of this thesis. 
 
 - **Gap 1: **Limited efforts in quantifying fit discrepancies
-  - Subjective reports are currently used to identify fit discrepencies. While objective fit metrics can indicate decreased performance from poor fit, they cannot identify or confirm specific indexing discrepencies between the operator and spacesuit to support these specific reports.
+  - Subjective reports are currently used to identify fit discrepancies. While objective fit metrics can indicate decreased performance from poor fit, they cannot identify or confirm specific indexing discrepancies between the operator and spacesuit to support these specific reports.
 
 - **Gap 2: ** Limited knowledge on dynamic body shape changes due to motion
   - Current modeling of dynamic body shape relies on 3D capture of subjects pausing through the motion and interpolation of body shape between pauses. Technological challenges make it difficult to optically capture dynamic body shape changes where the subject cannot pause between the motion, such as during walking. Therefore, the lack of data makes it difficult to model these dynamic body shape changes. 

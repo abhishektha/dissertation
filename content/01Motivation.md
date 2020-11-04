@@ -5,7 +5,7 @@ Future human spaceflight missions are retargeting planetary surface exploration 
 While robotic missions can perform many of the scientific aspects of planetary exploration, human exploration still plays a key role in planetary mission success [@Drake2010].
 
 Spacesuits are designed to both provide life support and help protect the astronaut during activities conduced outside a space habitat, known as extravehicular activity (EVA).
-EVA is an important consideration of planetary exploration, allowing astronauts to perform scientific experiments, collect geological samples, perform habitat maintanence, and construct infrastructure.
+EVA is an important consideration of planetary exploration, allowing astronauts to perform scientific experiments, collect geological samples, perform habitat maintenance, and construct infrastructure.
 During EVA, astronauts are subject to many physiological and environment factors, including reduced gravity loading, dust, radiation, and extreme environment temperatures.
 In addition, the lack of atmosphere does not provide life support.
 Therefore, an EVA spacesuit's primary design objectives are to protect its operator from the environment and allow them to perform EVA tasks. 
@@ -24,11 +24,11 @@ Future planetary EVA missions will therefore need a spacesuit that comfortably p
 Following the Apollo era, space missions have all occurred in low Earth orbit in a microgravity environment. 
 New spacesuits, such as the Extra-Vehicular Mobility Unit (EMU) were designed for microgravity operations.
 This included greater upper-torso mobility while reducing lower-torso mobility, as astronauts would be floating in space and not be required to ambulate. 
-However, the increase in EVA activities that accompanied the construction of the International Space Station have resulted in a number of crew injuries, prompting studies into the human-spacesuit interactions and deficiencies in suit design that lead to these injuries. 
+However, the increase in EVA activities that accompanied the construction of the International Space Station have increased the incidence rates and severity of crew injuries, prompting studies into the human-spacesuit interactions and deficiencies in suit design that lead to these injuries. 
 
 Crewmember difficulties with the spacesuit have existed since the first EVA, where Alexi Leonov had difficulties moving the suit to re-enter the spacecraft. 
 Apollo astronauts have commented on the fatiguing reduced mobility of their spacesuits [@Scheuring2008].
-Gas pressurized spacesuits are known to be inherently stiff and rigid [@Parry1966;@Abramov1994;@Schmidt2001a;@Holschuh2009], difficult to move [@Norcross2009;@Amick2015], and have the potential to cause injuries both during operations and ground-based training [@Williams2003;@Strauss2004;@Scheuring2008;@Scheuring2009;@Chappell2017].
+Gas pressurized spacesuits are known to be inherently stiff and rigid [@Parry1966;@Abramov1994;@Schmidt2001a;@Holschuh2009], difficult to move [@Norcross2009;@Amick2015], and have the potential to cause injuries both during operations and ground-based training [@Williams2003;@Strauss2004;@Scheuring2008;@Scheuring2009;@Anderson2015a;@Chappell2017].
 
 The prevalence of injury has been well studied in the era of on-orbit microgravity EVAs performed with the EMU. 
 Strauss [@Strauss2004] found that 24.6% of training sessions at the Neutral Buoyancy Laboratory (NBL) between 2004 to 2006 study had reported injury symptoms. 
@@ -46,9 +46,9 @@ Hand injuries continue to be most frequently reported injury in the EMU [@Straus
 Hand contact injuries include fingernail delamination, abrasions, contusions, and nerve impingement [@Strauss2004; @Viegas2004; @Scheuring2012]. 
 These injuries have widely been attributed to the poor fit and unprotected contacts between the hand and the spacesuit glove [@Strauss2004; @Viegas2004]. 
 
-Shoulder contact injuries occur from the combination of unprotected contact and high weight loading in the EMU [@Strauss2004;@Viegas2004]. 
+Shoulder contact injuries occur from the combination of unprotected contact and high weight loading in the EMU [@Strauss2004;@Viegas2004; @Anderson2015a]. 
 Shoulder injuries are reported as the second most common EMU injury location and frequently occur during ground-based training in the NBL, when the wearer may be inverted in the suit [@Strauss2004;@Viegas2004]. 
-While the wearer is neutrally buoyant, they are still under the effects of gravity. 
+While the suit and operator together are made neutrally buoyant, the operator is able to shift relative to the suit due to gravity. 
 Therefore, they "fall" into the suit, and are now making contact with the hard upper torso (HUT). 
 Therefore, the increased contact and high levels of load leads to shoulder contact injuries.
 
@@ -88,8 +88,7 @@ Therefore, the fatigue and strain injuries reported in the hand could be due to 
 
 Spacesuit joints also need to be properly aligned to the wearer to reduce both contact and musculoskeletal injury risk. 
 Indexing is a specific fit measurement regarding the alignment of the operator's joints to the spacesuit's joints.
-Poor indexing can lead to contact injuries when joint centers drift out of alignment and cause rubbing against the suit during motion, as seen in the elbow and knee of the EMU [@Strauss2004]
-Deficiencies in suit design, including the high exertion to actuate joints and range-of-motion limitations, can also cause poor indexing and lead to injury.
+Poor indexing can lead to contact injuries when suit-operator joint centers become misaligned and cause rubbing against the suit during motion, as seen in the elbow and knee of the EMU [@Strauss2004]. Deficiencies in suit design, including the high exertion to actuate joints and range-of-motion limitations, can also cause poor indexing and lead to injury.
 Viegas reports a specific mechanism in the EMU glove where the high exertion required to actuate the glove results in dorsal displacement of the metacarpophalangeal joints, pushing the tops of fingers against the surface of the glove and causing inflammation [@Viegas2004].
 Poor indexing at the the EMU HUT design forces internal rotation of the shoulder due to the scye opening not allowing for full range-of-motion of the shoulders, leading to potential overuse and injury of the rotator cuff muscle [@Williams2003;@Strauss2004; @Strauss2005; @Scheuring2012].
 Suit joints should therefore be designed and sized to ensure proper indexing.
@@ -99,8 +98,8 @@ Sizing, along with indexing, ensures that the suit is fit to the operator.
 Spacesuits in the Apollo era were custom tailored to each astronaut. 
 However, as the astronaut corp grew, the EMU presented a modular sizing system, where differently-sized suit components had to be selected for each astronaut. 
 Gaps between the wearer and the spacesuit could lead to excessive contact when the wearer moves and shifts inside the spacesuit [@Benson2009]. 
-Suit components which are too small can also cause higher contact pressures, leading to potential contact injuries. 
-Poorly sized bladder inserts were found to be a factor in EMU foot injuries [@Strauss2004]. Opperman et al [@Opperman2010] found that higher hand circumferences have a larger incidence of fingernail delamination in the spacesuit glove, while Charvat et al [@Charvat2015] found smaller hand circumferences to be a risk factor in fingernail delamination, showing how sensitive fit is in leading to injury. 
+Suit components which are too small can also cause higher contact pressures, leading to potential contact injuries [@Anderson2015b]. 
+Poorly sized bladder inserts were found to be a factor in EMU foot injuries [@Strauss2004]. Opperman et al. [@Opperman2010] found that higher hand circumferences have a larger incidence of fingernail delamination in the spacesuit glove, while Charvat et al. [@Charvat2015] found smaller hand circumferences to be a risk factor in fingernail delamination, showing how sensitive fit is in leading to injury. 
 Suit components should therefore be sized accurately to the suit's operator to ensure proper fit. 
 
 ## Spacesuit Injury Countermeasures

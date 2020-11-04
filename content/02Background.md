@@ -12,14 +12,13 @@ Walking is not always the most energetically preferable gait.
 Astronauts during the Apollo missions did not walk while traversing the surface; they famously loped across the surface. 
 In fact, loping is the energetically preferred gait on the Lunar surface, while walking, skipping, and running are energetically preferable on Mars [@Ackermann2012b].
 As speeds increase in lunar gravity, a transition occurs from walking to skipping rather than from walking to running as on Earth [@Minetti2012].
-However, the energetically preferred speed is not always achievable or possible, and slower walking speeds may be necesseary when performing EVA tasks.
+However, the energetically preferred speed is not always achievable or possible, and slower walking speeds may be necessary when performing EVA tasks.
 
 Studying the walk-run or walk-skip transition gives further insight into ambulation on a planetary surface. 
 Walking is modeled as an inverted pendulum which conserves some energy between each step; but energy is not conserved at faster walking speeds and needs muscular power input [@Cavagna1976;@Cavagna1977].
-Griffin et al [@Griffin1999] found as gravity is reduced, the amount of mechanical energy conserved between each step is reduced, and the maximum energy recovery occurs at slower speeds. 
-Ivanenko et al [@Ivanenko2002] found that muscle activation and ground contact forces decreased with lower gravity levels, but kinematic coordination of the lower limbs were not affected by gravity levels. 
+Griffin et al. [@Griffin1999] found as gravity is reduced, the amount of mechanical energy conserved between each step is reduced, and the maximum energy recovery occurs at slower speeds. 
+Ivanenko et al. [@Ivanenko2002] found that muscle activation and ground contact forces decreased with lower gravity levels, but kinematic coordination of the lower limbs were not affected by gravity levels. 
 The Froude number is the ratio between the centripetal and gravitational forces in the inverted pendulum model, as shown in [@eq:froude].
-
 $$
 Fr=\frac{v^{2}}{gL}
 $$ {#eq:froude}
@@ -27,7 +26,7 @@ $$ {#eq:froude}
 Where $Fr$ is the Froude number, $v$ is the velocity of ambulation, $g$ is the gravitational force, and $L$ is the leg-length [@AlexanderMcN.1989].
 At some critical value,  walking is theoretically impossible as the gravitational force cannot match the required centripetal force, which is where the walk-run transition occurs ($Fr*$). 
 Humans typically switch to running at $Fr=0.5$.
-Kram et al [@Kram1997] offloaded subjects by their waist as they walked and ran on a treadmill, and found that  $Fr*$ increases at lower gravity levels.
+Kram et al. [@Kram1997] offloaded subjects by their waist as they walked and ran on a treadmill, and found that  $Fr*$ increases at lower gravity levels.
 The increase in $Fr*$ was hypothesized to be from the arms and legs not being offloaded and still under the influence of gravity [@Kram1997]. 
 Donelan and Kram [@Donelan2000] also found that elastic forces were unable to predict the dynamics of reduced-gravity running. 
 This suggests that other factors may be at play with walking in reduced gravity. 
@@ -47,7 +46,7 @@ $$ {#eq:apollo}
 $M$ encorporates the self-supported weight of the spacesuit. 
 The self-supported weight of the spacesuit is from the spacesuits pressurization. 
 Carr and McGee validated the Apollo number against gait events during Apollo missions, but found that the Apollo number did not fully explain the walk-skip transitions. 
-Therefore, a gas-pressurized spacesuit's mobility restrictions and joint mechanical work, along with its pressure forces, may also be affecting suited ambulation.  
+*Therefore, a gas-pressurized spacesuit's mobility restrictions and joint mechanical work, along with its pressure forces, may also be affecting suited ambulation.*
 
 ## Gas Pressurized Spacesuit Characteristics
 
@@ -58,11 +57,11 @@ However, gas pressurized suits become stiff and rigid when pressurized, requirin
 The first EVA spacesuit, the Gemini suit, did not include any design features to reduce bending effort [@Thomas2012].
 If a gas pressurized suit component is represented as a pressurized cylinder, bending the cylinder along its axis causes a reduction in volume at the bend [@Harris2001]. 
 As a result, pressure at the bend will increase, causing resistance to the bending force. 
-The force required to change the volume at the bend is presented in [@eq:press]
+The force required to change the volume at the bend is presented in [@eq:press] [@Newman1997;@Harris2001],
 $$
 F = \frac{W}{d} = \frac{\frac{p\pi D^{3}\phi}{8}}{\frac{L\phi}{2}} = \frac{p\pi D^{3}}{4L}
 $$ {#eq:press}
-[@Newman1997;@Harris2001], where $F$ is the force required, $W$ is the work required, $d$ is the distance the joint is flexed,  $p$ is the pressure, $D$ is the cylinder's diameter, $\phi$ is the joint deformation angle, and $L$ is the length of the cylinder. 
+where $F$ is the force required, $W$ is the work required, $d$ is the distance the joint is flexed,  $p$ is the pressure, $D$ is the cylinder's diameter, $\phi$ is the joint deformation angle, and $L$ is the length of the cylinder. 
 It can be seen that the force required to bend a pressurized joint is not dependent on the bending angle, but rather the length and diameter of the pressurized section.
 Without dedicated mobility features to maintain a constant volume at joints, the forces required to bend representative spacesuit components can be as high as 200 lbs for the waist joint [@Newman1997].
 
@@ -83,7 +82,7 @@ Such drawbacks of the A7L suit required astronauts to come up with clever workar
 On an Apollo 16 EVA, astronaut John Young found that "by hopping into the air and landing on his feet, the weight of his suit overcame the suit’s internal pressure, so he could get to his knees and pick up rocks without using geological tools" [@Portree1997]. 
 Integrating convolutes into the A7L suits may have improved mobility on the Moon. 
 
-Advancements since the Apollo era have brought us improvements in pressurized joint design to increase mobility, including the toroidal mobility joint, dual-axis joint, hard component joints, hybrid hard-component/fabric joints, and improvements to flat-patterened joints [@Harris2001]. 
+Advancements since the Apollo era have brought us improvements in pressurized joint design to increase mobility, including the toroidal mobility joint, dual-axis joint, hard component joints, hybrid hard-component/fabric joints, and improvements to flat-patterned joints [@Harris2001]. 
 The Mark III Advanced Space Suit Technology Demonstrator EVA Suit (MK III) is a spacesuit designed by NASA as a planetary spacesuit design testbed [@Kosmo1988].
 These advancements have allowed for increased lower-torso mobility as shown in the MK III spacesuit technology demonstrator; operators are easily able to recover from a fall and kneel in the MK III while these tasks were done with much difficulty in the A7L and EMU spacesuits [@Kosmo1998].
 
@@ -100,15 +99,16 @@ Similar analysis needs to occur with ambulation to assess the effect of suit mob
 ## MK III Ambulation Performance
 The MK III spacesuit has been used to experimentally study suited effects on ambulation due to the Z2's relative novelty.
 In the EVA Walkback Test (EWT), six male subjects were tested with the MK III spacesuit on a treadmill to explore the effects of the MK III spacesuit's weight on planetary ambulation in Lunar (1/6g) and Martian (3/8g) gravity levels.
-Subjects were tested in three conditions: unsuited and offloaded to selected gravity level; unsuited and offloaded to selected gravity level with the suit weight matched; and suited while offloaded to selected gravity level[@Norcross2009].
-This allowed for analyis of suit weight separately from other suit design factors on the metabolic cost of suited ambulation.
+Subjects were tested in three conditions: unsuited and offloaded to selected gravity level; unsuited and offloaded to selected gravity level with the suit weight matched; and suited while offloaded to selected gravity level [@Norcross2009].
+This allowed for analysis of suit weight separately from other suit design factors on the metabolic cost of suited ambulation.
 Subjects were tested at three speeds above and three speeds below their walk-run transition speed.
 All subjects also did a 1G baseline unsuited trial and a 10 km suited lunar ambulation.
 A follow-on integrated suit test (IST) examined the effects of  varied suit mass, gravity, and on metabolic cost and kinematics on Lunar suited gait [@Norcross2010] with similar conditions while varying suit pressure and mass. 
+These and similar tests provide insight into how the MK III's design factors affect suited ambulatory performance. 
 
 ### Cost of Transport Factors
 
-Metabolic cost of transport,  a measure of how much energy the body is exerting during ambulation calculated through direct calorimetry [@Kenny2017], was collected in these tests across a variety of conditions.
+Metabolic cost of transport, a measure of how much energy the body is exerting during ambulation calculated through direct calorimetry [@Kenny2017], was collected in these tests across a variety of conditions.
 Metabolic cost is a direct measure of how hard the body is working to move in the spacesuit.
 Previous studies have shown that the metabolic cost of transport decreases with gravity [@Grabowski2005]. 
 Findings from the EWT and IST were consistent with these previous findings [@Norcross2009;@Norcross2010].
@@ -136,7 +136,7 @@ However, it was noted that at 4.3 psi, the knee joint was limited by the design 
 This shows the importance of the kinematic chain in suited mobility; when a certain motion is inhibited, other joints along the kinematic chain will have to compensate. 
 Similar compensation has led rotator cuff injury in the EMU's HUT [@Williams2003]. 
 
-Cullinane et al [@Cullinane2017a] found suited MK III ambulation at 1G to reduce heel and toe clearance above ground compared to unsuited ambulation. 
+Cullinane et al. [@Cullinane2017a] found suited MK III ambulation at 1G to reduce heel and toe clearance above ground compared to unsuited ambulation. 
 In addition, the MK III was found to decrease speed, stride length, and step length compared to unsuited ambulation [@Cullinane2017a].
 Cadence and stance time increased with gravity level in the IST, consistent with how metabolic cost increases with gravity level [@Norcross2010].
 These findings suggest that the MK III inhibits operator mobility and agility when ambulating. 
@@ -145,13 +145,13 @@ These findings suggest that the MK III inhibits operator mobility and agility wh
 
 Subjective feedback allows operators of the MK III to provide their perception of ambulating in the suit. 
 Rating of Percieved Exertion (RPE) and Gravity Compensation and Performance Scale (GCPS) were consistent with metabolic cost findings in both the IST and EWT; both increased with gravity and speed [@Norcross2009; @Norcross2010].
-Subjects performing the 10 km suited lunar ambulation in the EWT reported "fair" to "moderate" operator compensation required to walk in the MK III on the Cooper-Harper Scale[@Norcross2009].
+Subjects performing the 10 km suited lunar ambulation in the EWT reported "fair" to "moderate" operator compensation required to walk in the MK III on the Cooper-Harper Scale [@Norcross2009].
 While mean rating of discomfort was "very low" to "low" on the Corlett-Bishop Scale, discomfort and trauma were noted on the knees and feet of some subjects [@Norcross2009] ([@fig:B-Trauma]). 
 In addition, muscular fatigue and tightness was also reported in the quadriceps, thighs, glutes, and lower back [@Norcross2009].
 
 Subjective feedback for ambulating in the MK III at 1/6-g suggests that it is mostly acceptable for lunar ambulation. 
 However, the reported trauma and musculoskeletal discomfort are areas of concern. 
-The EWT and IST, along with findings from Cullinane et al. [@Cullinane2017a], show that the MK III's design inhibits natural human motion and requires more effort to walk in. 
+The EWT and IST, along with findings from Cullinane et al. [@Cullinane2017a], show that the MK III's design inhibits natural human motion and requires more effort during suited ambulation. 
 It is not enough, however, to design a suit that more closely matches natural human motion; it also needs to work closely with its operator to reduce injury risk from poor fit. 
 
 ![Knee (left) and foot (right) trauma identified in the MK III following 10 km walkback evaluation. From Norcross et al. 2009](../fig/Background/Trauma.png){#fig:B-Trauma width="80%"}
@@ -182,13 +182,13 @@ Sizing rings are used in the EMU design to change the length of components like 
 Sizing inserts such as pads can also help position the operator within the spacesuit [@Chappell2017].
 The length of restraint straps at convolute joints can be adjusted to change the length of soft components, but this affects joint mobility as the length-diameter ratio is modified [@Harris2001]. 
 Current suit fit processes do not use any objective measures to define proper fit; a baseline fit is prescribed from anthropometric measures and then iterated through subjective feedback [@Fineman2017].
-Fit is inherently difficulty to objectively measure due to the challenges of measuring human motion inside the suit. 
+Fit is inherently difficulty to objectively measure due to the challenges of measuring operator motion inside the suit. 
 
 ### Quantifying Fit
 
-Novel measurement technologies have been explored to measure human motion inside the spacesuit as traditional optical motion-capture techniques cannot be used through the spacesuit. 
-Pressure sensors can help quantify contact between the operator and spacesuit and highlight hotspots of contact which can indicate poor fit [@Anderson2014].
-Inertial-measurement unit (IMU) systems aim to provide some insight into how the operator is moving relative to the suit [@Bertrand2016; @Fineman2018; @Shen2019].
+Novel measurement technologies have been explored to measure operator motion inside the spacesuit as traditional optical motion-capture techniques cannot be used through the spacesuit. 
+Pressure sensors can help quantify contact between the operator and spacesuit and highlight hotspots of contact which can indicate poor fit [@Anderson2014; @Anderson2015;@Anderson2015b].
+Inertial-measurement unit (IMU) systems aim to provide some insight into how the operator is moving relative to the suit [@Bertrand2014; @Fineman2018; @Shen2019].
 Fabric strain sensors have also been developed to predict an operator's body-shape inside the spacesuit [@Kim2019]. 
 
 Fineman et al. [@Fineman2018] introduced two objective fit metrics which can help characterize poor static and dynamic fit in the spacesuit: difference in knee angle ROM between the suit and operator, and the relative coordination metric [@Fineman2017a]. 

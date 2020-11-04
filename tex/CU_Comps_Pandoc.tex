@@ -2,13 +2,15 @@
 
 \usepackage{amssymb}		% to get all AMS symbols
 \usepackage{graphicx}		% to insert figures
-\usepackage{hyperref}		% PDF hyperreferences??
+\usepackage[breaklinks]{hyperref}		% PDF hyperreferences??
+\usepackage{breakcites}
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage[all]{nowidow}
 \usepackage[section]{placeins}
 \usepackage{flafter}
+
 
 \usepackage{hyperref}
 \hypersetup{
@@ -57,22 +59,23 @@ $endif$
 
 $if(tables)$
 \usepackage{longtable,booktabs}
-$if(beamer)$
-\usepackage{caption}
-% Make caption package work with longtable
-\makeatletter
-\def\fnum@table{\tablename~\thetable}
-\makeatother
-$else$
-% Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-\makeatother
-% Allow footnotes in longtable head/foot
-\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-\makesavenoteenv{longtable}
-$endif$
+\usepackage{calc} % for calculating minipage widths
+% $if(beamer)$
+% \usepackage{caption}
+% % Make caption package work with longtable
+% \makeatletter
+% \def\fnum@table{\tablename~\thetable}
+% \makeatother
+% $else$
+% % Correct order of tables after \paragraph or \subparagraph
+% \usepackage{etoolbox}
+% \makeatletter
+% \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+% \makeatother
+% % Allow footnotes in longtable head/foot
+% \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+% \makesavenoteenv{longtable}
+% $endif$
 $endif$
 
 \makeatletter
@@ -83,7 +86,8 @@ $endif$
 }
 \makeatother
 
-
+\setlength\parfillskip{0pt plus .75\textwidth}
+\setlength\emergencystretch{1pt}
 
 %%%%%%%%%%%%   All the preamble material:   %%%%%%%%%%%%
 

@@ -11,7 +11,7 @@ The work in the thesis aims to answer the hypothesis:
 
 To date, the following contributions have been completed:
 
-- Showed drawbacks of using spacesuit mounted IMUs to detect instances of heel-lift
+- Showed drawbacks and identified areas of future implementation for how IMUs could be used to detect instances of heel-lift
 - A novel software library to use multiple commercial depth cameras as a cost-effective 4D scanner, capable of collecting body shape changes at 90 frames-per-second
 - A parametric statistical shape model that predicts dynamic foot shape during stance phase as a function of anthropometry and kinematics
 - A design framework integrating dynamic foot shape knowledge with known foot mobility to design a novel spacesuit boot to improve fit and comfort
@@ -19,7 +19,7 @@ To date, the following contributions have been completed:
 This thesis aims to provide the following contributions during the remainder of its course:
 
 - Quantification of dynamic changes in instep height and instep girth as they relate to their distribution in the global population
-- A novel spacesuit boot prototype developed from the framework that aims for better fit and comfort, and specifically a reduction in heel lift
+- A novel spacesuit boot prototype developed from the framework that aims for better fit and comfort, and specifically a reduction in heel-lift
 - Evaluation of the novel spacesuit boot for comfort and mobility against current planetary spacesuit boot technology and a gold-standard hiking boot
 
 Through these contributions, this thesis aims to show the efficacy of dynamic body-shape models in improving spacesuit component design for fit, comfort, and mobility, thereby answering its hypothesis. 
@@ -36,11 +36,17 @@ Publications and presentations which are proposed and subject to having their ti
 | Type | Title | Journal | Status |
 |-|----|---|--|
 | Technical Note | Detecting Heel-Lift in Spacesuit Gait | Aerospace Medicine and Human Performance | In Prep., expected Nov 2020 |
+| | | | |
 | Journal Paper | DynaMo: Dynamic Body Shape and Motion Capture with Intel RealSense Cameras | Journal of Open Source Software | Published |
+| | | | |
 | Journal Paper | Dynamic foot morphology explained through 4D scanning and shape modeling | Journal of Biomechanics | Under Review |
+| | | | |
 | Conference Paper | A Biomechanical Design Framework to Improve Spacesuit Boot Fit | 50th International Conference on Environmental Systems | Published |
+| | | | |
 | Journal Paper | Static and Dynamic Distribution of Instep Height | Footwear Science | Proposed, expected Mar 2021 |
+| | | | |
 | Journal Paper | Design of A Novel Planetary Spacesuit Boot Design | Acta Astronautica | Proposed, expected Aug 2021 |
+| | | | |
 | Journal Paper | Comfort and Mobility Evaluation of a Novel Planetary Spacesuit Boot Design | Aerospace Medicine and Human Performance | Proposed, expected Feb 2022 |
 
 
@@ -52,10 +58,15 @@ Publications and presentations which are proposed and subject to having their ti
 | Type | Title | Conference | Date |
 |-|----|--|-|
 | Talk | Using dynamic foot morphology data to design spacesuit footwear | Footwear Biomechanics Symposium | July 2019 |
+| | | | |
 | Talk | Development of a Dynamic 3D Scanning System with Multiple Intel RealSense Depth Cameras | International Society of Biomechanics Congress | Aug 2019 |
-| Poster | Quantifying the Heel Lift during Spacesuit Gait | NASA HRP IWS | Jan 2020 |
+| | | | |
+| Poster | Quantifying the Heel-Lift during Spacesuit Gait | NASA HRP IWS | Jan 2020 |
+| | | | |
 | TBD | Dynamic Body-Shape Models to Reduce Risk OF EVA Spacesuit Injury | NASA HRP IWS | Feb 2021 |
+| | | | |
 | TBD | Novel Spacesuit Boot Design Developed from Dynamic Foot Shape Modeling | Footwear Biomechanics Symposium | July 2021 |
+| | | | |
 | TBD | Spacesuit Boot with Improved Comfort and Mobility Developed from Dynamic Shape Modeling | NASA HRP IWS | Jan 2022 |
 : Conference Presentations and Posters {#tbl:conf}
 

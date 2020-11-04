@@ -52,7 +52,7 @@ Chapter 2
 Chapter 3
 
 - The following gaps were identified from the previous research, as outlined in the literature review presented in the previous two chapters, and will…
-- added
+  - added
 - Limited efforts – weird phrasing
   - changed to "few efforts to quantify"
 - Maybe bold your hypothesis or italicize it – something to make it stand out even more
@@ -71,7 +71,7 @@ Chapter 3
 Chapter 4
 
 - Why the “;” in the first sentence?
-- changed to comma
+  - changed to comma
 - Missing t in “heel-lift” in last sentence of first paragraph
   - added
 - Instead of saying “left in the analysis” what about ‘retained in the analysis”
@@ -96,9 +96,9 @@ Chapter 5
 - The word gait on its own line is a bit weird. May need to artificially put in a line break
   - added the artificial line break, but then it shows up really weird in the table of contents so I decided to stick with just having the gait on its own line. 
 - Aim bullet points on pages 38 and 39 should probably start with a capital letter?
-- changed
+  - changed
 - Intro to 5.2 – “This section describes our low-cost 4D scanning system used to capture foot shape during ambulation. Human body shape…” Ah ok I see what you mean when you say you shortened this section! I think that’s great… maybe my intro sentence could be more like “We developed a low-cost 4D scanning system, DynaMo, to…”
-- added "A low-cost 4D scanning system, DynaMo, was developed to capture dynamic foot shape during gait. "
+  - added "A low-cost 4D scanning system, DynaMo, was developed to capture dynamic foot shape during gait. "
 - Here the table 5.1 also has smaller font size for the description- I think as long as you’re consistent it should be ok.
 - Space between guidelines and [101]
   - added
@@ -107,7 +107,7 @@ Chapter 5
 - I may have missed it in the methods section, but we do want to call out Matt specifically for the template to acknowledge him
   - I had referenced the publication, but I'll call him out specifically 
 - 5.3 ends with limitations, but I think it should really end with the last paragraph of 5.3.3 as a conclusions statement on what we can summarize and take away from these results for spacesuit boots
-  - I moved the limitations paragraph above the last paragraph of 5.3.3, and made that last paragraph a conclusions paragraph
+  - I moved the limitations paragraph above the last paragraph of 5.3.3, and made that last paragraph a conclusions paragraph
 - “This analysis will be repeated…” For clarity, say “in this thesis, and in collaboration with Volumental AG, I will extend these results to instep girth and relate those findings to implications for spacesuit boot design”. Clarify exactly why this matters for your problem here by reiterating the take away message from the first paragraph
   - added "In this thesis, and in collaboration with Volumental AB, these results will be extended to instep girth. 
     Findings from this study will be related to spacesuit design variables. ""
@@ -117,13 +117,13 @@ Chapter 5
 Chapter 6
 
 - Here your bullet points do all start with a capital letter for the objectives, so I think you should definitely do that in Chapter 5
-- done in chapter 5! 
+  - done in chapter 5! 
 - Space between joints[55]
   - fixed
 - “less flexible, harder, material” Something is funky here. I think it has an extra comma, and less flexible and harder are redundant – not sure what you’re trying to say exactly by including both
   - took out harder since it is redundant
 - At the end of this chapter you introduce heel-slip, but you had not introduced that previously. I do think it’s important so I suggest going back to all chapters and identifying where heel-slip should be introduced as a byproduct of heel-lift and ultimately what leads to skin-surface injuries we want to prevent. Mention both as appropriate throughout the thesis. 
-  - I meant heel-lift here, we were back-and-forth earlier this year on calling it heel-lift vs heel-slip, and we decided on heel-lift which is what I used throughout the whole document except here
+  - I meant heel-lift here, we were back-and-forth earlier this year on calling it heel-lift vs heel-slip, and we decided on heel-lift which is what I used throughout the whole document except here
 - Pg 66 – space suit instead of spacesuit. Do a search throughout for consistency
   - fixed to spacesuit
 - Progress paragraph could also state the progress on the collaborations
@@ -136,7 +136,7 @@ Chapter 7
 - Can we get a figure for 7.2 to clarify the two testing paradigms?
   - added
 - "counts of heel-lift in a standardized trial”
-- added
+  - added
 - Missing a period between mobility and Subjective.
   - added
 - Refer back to aim 1 here as I mentioned previously in my feedback
@@ -157,7 +157,7 @@ Chapter 7
 Chapter 8
 
 - Showed drawbacks and identified areas of future implementation for how IMUs could be used to detect
-- added
+  - added
 - Table 8.1 and 8.2 – Still awkward vertical spacing between the groups, making it difficult to read
   - added some more spacing between each item
 

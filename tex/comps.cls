@@ -1044,7 +1044,7 @@
 	\vfill
 	% List committee members on title page
 	Committee Members:\\
-	\th@advisor, Chair\\  % REQUIRED
+	\th@advisortitle~\th@advisor, Chair\\  % REQUIRED
 	\th@reader\\          % REQUIRED
 	\ifthenelse{\equal{\th@readerThree}{none}}{\relax}
 		{\th@readerThree\\} % optional
@@ -1182,7 +1182,7 @@
 		% \typeout{Making Approval Page}
 		% \th@Approvalpage
 		\typeout{Making Abstract Page}
-		\th@Abstractpage
+		%\th@Abstractpage
 		\typeout{Making Dedication Page}
 		\th@Dedicationpage
 		\typeout{Making Acknowledgement Page}

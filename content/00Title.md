@@ -18,7 +18,7 @@ dept:
   
 advisor:
 - title: Dr.
-  name: Dr. Allison P. Anderson
+  name: Allison P. Anderson
 
 reader: Dr. Torin Clark
 readerThree: Dr. David Klaus
@@ -37,9 +37,7 @@ biblio-style: plain
 
 link-citations: true
 
-abstract: 
- Abstract will be written in the future. 
- 
+
 autoEqnLabels: true
 
 ---

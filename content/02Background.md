@@ -19,9 +19,9 @@ Walking is modeled as an inverted pendulum which conserves some energy between e
 Griffin et al. [@Griffin1999] found as gravity is reduced, the amount of mechanical energy conserved between each step is reduced, and the maximum energy recovery occurs at slower speeds. 
 Ivanenko et al. [@Ivanenko2002] found that muscle activation and ground contact forces decreased with lower gravity levels, but kinematic coordination of the lower limbs were not affected by gravity levels. 
 The Froude number is the ratio between the centripetal and gravitational forces in the inverted pendulum model, as shown in [@eq:froude].
-$
+$$
 Fr=\frac{v^{2}}{gL}
-$ {#eq:froude}
+$$ {#eq:froude}
 
 Where $Fr$ is the Froude number, $v$ is the velocity of ambulation, $g$ is the gravitational force, and $L$ is the leg-length [@AlexanderMcN.1989].
 At some critical value,  walking is theoretically impossible as the gravitational force cannot match the required centripetal force, which is where the walk-run transition occurs ($Fr*$). 
@@ -38,10 +38,10 @@ Therefore, stability is an important factor in walking at lower gravity levels.
 
 Carr and McGee [@Carr2009] developed the Apollo number $Ap$ to explain the effects of the spacesuit's pressure forces on gait ([@eq:apollo]).
 
-$
+$$
 Ap = \frac{Fr}{M}\\
 \textrm{,where $M$ is the mass ratio of the spacesuit.}
-$ {#eq:apollo}
+$$ {#eq:apollo}
 
 $M$ encorporates the self-supported weight of the spacesuit. 
 The self-supported weight of the spacesuit is from the spacesuits pressurization. 
@@ -58,9 +58,9 @@ The first EVA spacesuit, the Gemini suit, did not include any design features to
 If a gas pressurized suit component is represented as a pressurized cylinder, bending the cylinder along its axis causes a reduction in volume at the bend [@Harris2001]. 
 As a result, pressure at the bend will increase, causing resistance to the bending force. 
 The force required to change the volume at the bend is presented in [@eq:press] [@Newman1997;@Harris2001],
-$
+$$
 F = \frac{W}{d} = \frac{\frac{p\pi D^{3}\phi}{8}}{\frac{L\phi}{2}} = \frac{p\pi D^{3}}{4L}
-$ {#eq:press}
+$$ {#eq:press}
 where $F$ is the force required, $W$ is the work required, $d$ is the distance the joint is flexed,  $p$ is the pressure, $D$ is the cylinder's diameter, $\phi$ is the joint deformation angle, and $L$ is the length of the cylinder. 
 It can be seen that the force required to bend a pressurized joint is not dependent on the bending angle, but rather the length and diameter of the pressurized section.
 Without dedicated mobility features to maintain a constant volume at joints, the forces required to bend representative spacesuit components can be as high as 200 lbs for the waist joint [@Newman1997].

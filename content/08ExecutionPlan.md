@@ -9,25 +9,10 @@ The work in the thesis aims to answer the hypothesis:
 
 > Integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit. 
 
-To date, the following contributions have been completed:
 
-- Showed drawbacks and identified areas of future implementation for how IMUs could be used to detect instances of heel-lift
-- A novel software library to use multiple commercial depth cameras as a cost-effective 4D scanner, capable of collecting body shape changes at 90 frames-per-second
-- A parametric statistical shape model that predicts dynamic foot shape during stance phase as a function of anthropometry and kinematics
-- A design framework integrating dynamic foot shape knowledge with known foot mobility to design a novel spacesuit boot to improve fit and comfort
 
-This thesis aims to provide the following contributions during the remainder of its course:
-
-- Quantification of dynamic changes in instep height and instep girth as they relate to their distribution in the global population
-- A novel spacesuit boot prototype developed from the framework that aims for better fit and comfort, and specifically a reduction in heel-lift
-- Evaluation of the novel spacesuit boot for comfort and mobility against current planetary spacesuit boot technology and a gold-standard hiking boot
-
-Through these contributions, this thesis aims to show the efficacy of dynamic body-shape models in improving spacesuit component design for fit, comfort, and mobility, thereby answering its hypothesis. 
-While the efforts of this thesis were demonstrated on a planetary spacesuit boot, the presented work aims to serve as a foundation for other spacesuit component designs where fit may be an issue, such as the HUT and gloves. 
-The work presented in this thesis also aims to be translational for terrestrial footwear, contributing a new capture tool and modeling technique to improve footwear fit and comfort for a variety of activities. 
-
-## Publication Plan
-[Table @tbl:pubs] outlines the peer-reviewed conference and journal papers from this thesis work. 
+## Publications
+[Table @tbl:pubs] outlines the peer-reviewed conference and journal papers resulting from this thesis work. 
 [Table @tbl:conf] outlines conference presentations and posters from this thesis work. 
 Publications and presentations which are proposed and subject to having their title changed. 
 

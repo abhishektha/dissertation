@@ -1,0 +1,86 @@
+\contentsline {part} {\chapternameToC }{\relax }{}
+\contentsline {chapter}{\numberline {\th@ChapterStyle 1}\normalsize \normalfont Motivation}{2}{chapter.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 1.1}\normalsize \normalfont EMU Spacesuit Injury Incidence}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 1.1.1}\normalsize \normalfont Spacesuit Contact Injuries}{4}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 1.1.2}\normalsize \normalfont Spacesuit Musculoskeletal Injuries}{5}{subsection.1.1.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 1.2}\normalsize \normalfont Hypothesized Spacesuit Injury Mechanisms}{5}{section.1.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 1.3}\normalsize \normalfont Spacesuit Injury Countermeasures}{7}{section.1.3}%
+\contentsline {section}{\numberline {\th@SectionStyle 1.4}\normalsize \normalfont Summary}{8}{section.1.4}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 2}\normalsize \normalfont Background}{9}{chapter.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 2.1}\normalsize \normalfont Planetary Ambulation}{9}{section.2.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 2.2}\normalsize \normalfont Gas Pressurized Spacesuit Characteristics}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.2.1}\normalsize \normalfont An Inherently Stiff Structure}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.2.2}\normalsize \normalfont Mobility Design Features}{12}{subsection.2.2.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 2.3}\normalsize \normalfont MK III Ambulation Performance}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.3.1}\normalsize \normalfont Cost of Transport Factors}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.3.2}\normalsize \normalfont Ambulation Biomechanics}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.3.3}\normalsize \normalfont Subjective Feedback}{15}{subsection.2.3.3}%
+\contentsline {section}{\numberline {\th@SectionStyle 2.4}\normalsize \normalfont Spacesuit Fit}{16}{section.2.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.4.1}\normalsize \normalfont Spacesuit Sizing Process}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.4.2}\normalsize \normalfont Quantifying Fit}{18}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 2.4.3}\normalsize \normalfont Body Shape Characterization to Improve Fit}{19}{subsection.2.4.3}%
+\contentsline {section}{\numberline {\th@SectionStyle 2.5}\normalsize \normalfont Summary}{20}{section.2.5}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 3}\normalsize \normalfont Investigative Approach}{22}{chapter.3}%
+\contentsline {section}{\numberline {\th@SectionStyle 3.1}\normalsize \normalfont Expected Outcomes}{26}{section.3.1}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 4}\normalsize \normalfont Specific Aim 1 : Challenges in Quantifying Heel-Lift during Spacesuit Gait}{28}{chapter.4}%
+\contentsline {section}{\numberline {\th@SectionStyle 4.1}\normalsize \normalfont Introduction}{28}{section.4.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 4.2}\normalsize \normalfont Methods}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 4.2.1}\normalsize \normalfont Data Collection}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 4.2.2}\normalsize \normalfont Data Analysis}{31}{subsection.4.2.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 4.3}\normalsize \normalfont Results}{36}{section.4.3}%
+\contentsline {section}{\numberline {\th@SectionStyle 4.4}\normalsize \normalfont Summary}{37}{section.4.4}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 5}\normalsize \normalfont Specific Aim 2: Predictively model dynamic changes in foot morphology during gait}{43}{chapter.5}%
+\contentsline {section}{\numberline {\th@SectionStyle 5.1}\normalsize \normalfont Introduction}{43}{section.5.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 5.2}\normalsize \normalfont DynaMo: Dynamic Body Shape Capture with Intel RealSense Cameras}{45}{section.5.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 5.3}\normalsize \normalfont Development of a Predictive Dynamic Foot Shape Model from Statistical Shape Modeling}{47}{section.5.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.3.1}\normalsize \normalfont Methods}{47}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {\th@OtherSecHeadStyles 5.3.1.1}\normalsize \normalfont Subjects}{47}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {\th@OtherSecHeadStyles 5.3.1.2}\normalsize \normalfont Experimental Procedures}{48}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {\th@OtherSecHeadStyles 5.3.1.3}\normalsize \normalfont Data Processing}{49}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {\th@OtherSecHeadStyles 5.3.1.4}\normalsize \normalfont Model Construction}{50}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {\th@OtherSecHeadStyles 5.3.1.5}\normalsize \normalfont Model Validation}{51}{subsubsection.5.3.1.5}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.3.2}\normalsize \normalfont Results}{52}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.3.3}\normalsize \normalfont Foot Shape Changes}{56}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.3.4}\normalsize \normalfont Study Limitations}{60}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.3.5}\normalsize \normalfont Study Conclusions}{61}{subsection.5.3.5}%
+\contentsline {section}{\numberline {\th@SectionStyle 5.4}\normalsize \normalfont Analysis of Dynamic Instep and Arch Height Changes}{61}{section.5.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.4.1}\normalsize \normalfont Methods}{64}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.4.2}\normalsize \normalfont Results}{66}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 5.4.3}\normalsize \normalfont Translating Instep and Arch Height to Footwear Design}{68}{subsection.5.4.3}%
+\contentsline {section}{\numberline {\th@SectionStyle 5.5}\normalsize \normalfont Summary}{71}{section.5.5}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 6}\normalsize \normalfont Specific Aim 3: Define a design process integrating dynamic foot morphology data for a novel spacesuit boot}{73}{chapter.6}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.1}\normalsize \normalfont Introduction}{73}{section.6.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.2}\normalsize \normalfont Existing Knowledge on Foot Shape Mobility}{74}{section.6.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.1}\normalsize \normalfont Linear Anthropometry}{74}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.2}\normalsize \normalfont Gait Joint Kinematics}{75}{subsection.6.2.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.3}\normalsize \normalfont Biomechanical Boot Design Framework}{77}{section.6.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.1}\normalsize \normalfont Mobility}{78}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.2}\normalsize \normalfont Toe box}{79}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.3}\normalsize \normalfont Upper}{80}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.4}\normalsize \normalfont Sole}{81}{subsection.6.3.4}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.4}\normalsize \normalfont Prototype Planetary Spacesuit Boot Design}{82}{section.6.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.1}\normalsize \normalfont Ankle Convolutes}{84}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.2}\normalsize \normalfont Upper and Toe Box}{88}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.3}\normalsize \normalfont Instep Lacing}{90}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.4}\normalsize \normalfont Heel Counter}{93}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.5}\normalsize \normalfont Sole}{94}{subsection.6.4.5}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.5}\normalsize \normalfont Novel Planetary Spacesuit Boot Construction}{95}{section.6.5}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.1}\normalsize \normalfont Ankle Convolute Construction}{98}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.2}\normalsize \normalfont Upper and Toe-Box Construction}{99}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.3}\normalsize \normalfont Sole Construction}{100}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.4}\normalsize \normalfont BOA Lacing Integration}{102}{subsection.6.5.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.5}\normalsize \normalfont Heel Counter}{102}{subsection.6.5.5}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.6}\normalsize \normalfont Pressure Sealing}{102}{subsection.6.5.6}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.6}\normalsize \normalfont Classic Spacesuit Boot Design and Construction}{102}{section.6.6}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.7}\normalsize \normalfont Summary}{103}{section.6.7}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 7}\normalsize \normalfont Specific Aim 4: Evaluate novel planetary spacesuit boot design for fit, comfort, and mobility}{106}{chapter.7}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.1}\normalsize \normalfont Introduction}{106}{section.7.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.2}\normalsize \normalfont Test Interface Construction}{107}{section.7.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.3}\normalsize \normalfont Experimental Design}{108}{section.7.3}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.4}\normalsize \normalfont Stretch Testing Goals}{109}{section.7.4}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.5}\normalsize \normalfont Summary}{110}{section.7.5}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 8}\normalsize \normalfont Summary and Execution Plan}{111}{chapter.8}%
+\contentsline {section}{\numberline {\th@SectionStyle 8.1}\normalsize \normalfont Publications}{111}{section.8.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 8.2}\normalsize \normalfont Academic Requirements}{116}{section.8.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 8.3}\normalsize \normalfont Timeline}{116}{section.8.3}%
+\contentsline {part}{ \normalsize \normalfont \bfseries Bibliography\normalfont }{118}{chapter*.2}%

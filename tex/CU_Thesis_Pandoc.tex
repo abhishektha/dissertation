@@ -1,0 +1,177 @@
+\documentclass[defaultstyle,11pt]{$documentclass$}
+
+\usepackage{amssymb}		% to get all AMS symbols
+\usepackage{graphicx}		% to insert figures
+\usepackage{hyperref}		% PDF hyperreferences??
+
+\usepackage{breakcites}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[all]{nowidow}
+\usepackage[section]{placeins}
+\usepackage{flafter}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{floatrow}
+\DeclareFloatFont{tiny}{\footnotesize}% "scriptsize" is defined by floatrow, "tiny" not
+\floatsetup[table]{font=tiny}
+
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+$if(natbib)$
+\usepackage{natbib}
+\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+$endif$
+
+$if(graphics)$
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{!htb}
+\makeatother
+
+
+
+\usepackage{float}
+%\floatplacement{figure}{H}
+$endif$
+
+
+$if(tables)$
+\usepackage{longtable,booktabs}
+\usepackage{calc} % for calculating minipage widths
+% $if(beamer)$
+% \usepackage{caption}
+% % Make caption package work with longtable
+% \makeatletter
+% \def\fnum@table{\tablename~\thetable}
+% \makeatother
+% $else$
+% % Correct order of tables after \paragraph or \subparagraph
+% \usepackage{etoolbox}
+% \makeatletter
+% \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+% \makeatother
+% % Allow footnotes in longtable head/foot
+% \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+% \makesavenoteenv{longtable}
+% $endif$
+$endif$
+
+\makeatletter
+\AtBeginDocument{%
+  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+    \expandafter\@fb@secFB\subsection
+  }%
+}
+\makeatother
+
+\setlength\parfillskip{0pt plus .75\textwidth}
+\setlength\emergencystretch{1pt}
+
+%%%%%%%%%%%%   All the preamble material:   %%%%%%%%%%%%
+
+\title{$title$}
+
+$for(author)$
+\author{$author.first$}{$author.last$}
+$endfor$
+
+\otherdegrees{$otherDegrees$}
+
+
+$for(mainDegree)$
+\degree{$mainDegree.long$}		%  #1 {long descr.}
+	{$mainDegree.short$}		%  #2 {short descr.}
+$endfor$
+
+$for(dept)$
+\dept{$dept.designation$}			%  #1 {designation}
+	{$dept.name$}		%  #2 {name}
+$endfor$
+
+$for(advisor)$
+\advisor{$advisor.title$}				%  #1 {title}
+	{$advisor.name$}			%  #2 {name}
+$endfor$
+
+\reader{$reader$}		%  2nd person to sign thesis
+
+
+\abstract{  \OnePageChapter	% because it is very short
+
+	Abstract to be written. 
+	}
+
+\dedication[Dedication]{	% NEVER use \OnePageChapter here.
+	To all of the fluffy kitties.
+	}
+
+\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+	Here's where you acknowledge folks who helped.
+	But keep it short, i.e., no more than one page,
+	as required by the Grad School Specifications.
+	}
+
+% \IRBprotocol{E927F29.001X}	% optional!
+
+\ToCisShort	% use this only for 1-page Table of Contents
+
+\LoFisShort	% use this only for 1-page Table of Figures
+% \emptyLoF	% use this if there is no List of Figures
+
+\LoTisShort	% use this only for 1-page Table of Tables
+% \emptyLoT	% use this if there is no List of Tables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+$body$
+
+
+%%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
+%\bibliographystyle{plain}	% or "siam", or "alpha", etc.
+%\nocite{*}		% list all refs in database, cited or not
+%\bibliography{refs}		% Bib database in "refs.bib"
+
+%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
+\appendix
+
+$if(natbib)$
+%\usepackage{natbib}
+$if(bibliography)$
+$if(biblio-title)$
+\renewcommand\refname{$biblio-title$}
+$endif$
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
+$endif$
+
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}

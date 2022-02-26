@@ -1,6 +1,6 @@
 ---
 title: Implementing Dynamic Foot Shape Models to Improve Spacesuit Boot Fit
-documentclass: comps
+documentclass: thesis
 
 author:
 - first: Abhishektha

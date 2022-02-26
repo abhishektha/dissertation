@@ -1,0 +1,1026 @@
+\begin{thebibliography}{100}
+
+\bibitem{Abramov1994}
+Isaak~P. Abramov, Anatoly~Yu Stoklitsky, Arnold~S. Barer, and Sergei~N.
+  Filipenkov.
+\newblock {Essential aspects of space suit operating pressure trade-off}.
+\newblock In {\em SAE Technical Papers}. Society of Automotive Engineers, 1994.
+
+\bibitem{Ackermann2012b}
+Marko Ackermann and Antonie~J. {Van den Bogert}.
+\newblock {Predictive simulation of gait at low gravity reveals skipping as the
+  preferred locomotion strategy}.
+\newblock {\em Journal of Biomechanics}, 45(7):1293--1298, 2012.
+
+\bibitem{AlexanderMcN.1989}
+R.~{Alexander McN.}
+\newblock {Optimization and gaits in the locomotion of vertebrates}.
+\newblock {\em Physiological Reviews}, 69(4):1199--1227, 1989.
+
+\bibitem{Allen2003}
+Brett Allen, Brian Curless, and Zoran Popovi{\'{c}}.
+\newblock {The space of human body shapes: Reconstruction and parameterization
+  from range scans}.
+\newblock {\em ACM Transactions on Graphics}, 22(3):587--594, 2003.
+
+\bibitem{Amick2015}
+Ryan~Z. Amick, Christopher~R. Reid, Scott~A. England, and Sudhakar~L. Rajulu.
+\newblock {Characterization of joint resistance and performance degradation of
+  the Extravehicular Mobility Unit Spacesuit: A pilot study}.
+\newblock In {\em Proceedings of the Human Factors and Ergonomics Society 59th
+  Annual Meeting}, pages 1259--1263, sep 2015.
+
+\bibitem{Amza2019}
+Cătălin Amza, Aurelian Zapciu, and Diana Popescu.
+\newblock 3d-printed shoe last for bespoke shoe manufacturing.
+\newblock 290:04001.
+
+\bibitem{Anderson2014}
+Allison Anderson.
+\newblock {\em Understanding Human-Space Suit Interaction to Prevent Injury
+  During Extravehicular Activity}.
+\newblock Phd, Massachusetts Institute of Technology, 2014.
+
+\bibitem{Anderson2015}
+Allison Anderson, Yigit Menguc, Robert~J. Wood, and Dava Newman.
+\newblock {Development of the polipo pressure sensing system for dynamic
+  space-suited motion}.
+\newblock {\em IEEE Sensors Journal}, 15(11):6229--6237, 2015.
+
+\bibitem{Anderson2015b}
+Allison~P. Anderson and Dava~J. Newman.
+\newblock {Pressure sensing for in-suit measurement of space suited
+  biomechanics}.
+\newblock {\em Acta Astronautica}, 115:218--225, 2015.
+
+\bibitem{Anderson2015a}
+Allison~P. Anderson, Dava~J. Newman, and Roy~E. Welsch.
+\newblock {Statistical evaluation of causal factors associated with astronaut
+  shoulder injury in space suits}.
+\newblock {\em Aerospace Medicine and Human Performance}, 86(7):606--613, 2015.
+
+\bibitem{Anguelov2005}
+Dragomir Anguelov, Praveen Srinivasan, Daphne Koller, Sebastian Thrun, Jim
+  Rodgers, and James Davis.
+\newblock {SCAPE: Shape Completion and Animation of People}.
+\newblock {\em ACM Transactions on Graphics}, 24(3):408--416, 2005.
+
+\bibitem{Antonsson1985}
+Erik~K. Antonsson and Robert~W. Mann.
+\newblock {The frequency content of gait}.
+\newblock {\em Journal of Biomechanics}, 18(1):39--47, jan 1985.
+
+\bibitem{ASTM2017}
+{ASTM F539-01}.
+\newblock {Standard Practice for Fitting Athletic Footwear}.
+\newblock Technical report, ASTM, West Conshohocken, PA, 2017.
+
+\bibitem{Barisch-Fritz2014}
+Bettina Barisch-Fritz, Timo Schmeltzpfenning, Clemens Plank, and Stefan Grau.
+\newblock {Foot deformation during walking: Differences between static and
+  dynamic 3D foot morphology in developing feet}.
+\newblock {\em Ergonomics}, 57(6):921--933, jun 2014.
+
+\bibitem{Barisch-Fritz2014a}
+Bettina Barisch-Fritz, Timo Schmeltzpfenning, Clemens Plank, Tobias Hein, and
+  Stefan Grau.
+\newblock {The effects of gender, age, and body mass on dynamic foot shape and
+  foot deformation in children and adolescents}.
+\newblock {\em Footwear Science}, 6(1):27--39, jan 2014.
+
+\bibitem{Benson2009}
+Elizabeth Benson and Sudhakar Rajulu.
+\newblock {Complexity of sizing for space suit applications}.
+\newblock {\em Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 5620
+  LNCS(June):599--607, 2009.
+
+\bibitem{Bernardini1999}
+Fausto Bernardini, Joshua Mittleman, Holly Rushmeier, Claudio Silva, and
+  Gabriel Taubin.
+\newblock {The Ball-Pivoting Algorithm for Surface Reconstruction}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  5(4):349--359, 1999.
+
+\bibitem{Bertrand2014}
+Pierre~J Bertrand, Allison Anderson, Alexandra Hilbert, and Dava Newman.
+\newblock {Feasibility of Spacesuit Kinematics and Human-Suit Interactions}.
+\newblock In {\em 44th International Conference on Environmental Systems},
+  Tuscon, AZ, 2014.
+
+\bibitem{Bohm2010}
+Harald B{\"{o}}hm and Matthias H{\"{o}}sl.
+\newblock {Effect of boot shaft stiffness on stability joint energy and
+  muscular co-contraction during walking on uneven surface}.
+\newblock {\em Journal of Biomechanics}, 43(13):2467--2472, sep 2010.
+
+\bibitem{Boppana2019}
+Abhishektha Boppana and Allison~P Anderson.
+\newblock {DynaMo: Dynamic Body Shape and Motion Capture with Intel RealSense
+  Cameras}.
+\newblock {\em The Journal of Open Source Software}, 4(41), 2019.
+
+\bibitem{Boppana2020b}
+Abhishektha Boppana and Allison~P. Anderson.
+\newblock {Dynamic foot morphology explained through 4D scanning and shape
+  modeling}.
+\newblock {\em arXiv:2007.11077}, 2020.
+
+\bibitem{Borg1982}
+G.~A.V. Borg.
+\newblock {Psychophysical bases of perceived exertion}.
+\newblock {\em Medicine and Science in Sports and Exercise}, 14(5):377--381,
+  1982.
+
+\bibitem{Browning2006}
+Raymond~C. Browning, Emily~A. Baker, Jessica~A. Herron, and Rodger Kram.
+\newblock {Effects of obesity and sex on the energetic cost and preferred speed
+  of walking}.
+\newblock {\em Journal of Applied Physiology}, 100(2):390--398, feb 2006.
+
+\bibitem{Byun2019}
+Seonjeong Byun, Hyang~Jun Lee, Ji~Won Han, Jun~Sung Kim, Euna Choi, and
+  Ki~Woong Kim.
+\newblock {Walking-speed estimation using a single inertial measurement unit
+  for the older adults}.
+\newblock {\em PLoS ONE}, 14(12):1--16, 2019.
+
+\bibitem{Caravaggi2010}
+Paolo Caravaggi, Todd Pataky, Michael Günther, Russell Savage, and Robin
+  Crompton.
+\newblock Dynamics of longitudinal arch support in relation to walking speed:
+  contribution of the plantar aponeurosis.
+\newblock 217(3):254--261.
+\newblock \_eprint:
+  https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1469-7580.2010.01261.x.
+
+\bibitem{Carlson2006}
+J.~Martin Carlson.
+\newblock {Functional limitations from pain caused by repetitive loading on the
+  skin: A review and discussion for practitioners, with new data for limiting
+  friction loads}.
+\newblock {\em Journal of Prosthetics and Orthotics}, 18(4):93--103, 2006.
+
+\bibitem{Carr2009}
+Christopher~E. Carr and Jeremy McGee.
+\newblock {The apollo number: Space suits, self-support, and the walk-run
+  transition}.
+\newblock {\em PLoS ONE}, 4(8):1--7, 2009.
+
+\bibitem{Cashmere1999}
+Trisha Cashmere, Richard Smith, and Adrienne Hunt.
+\newblock Medial longitudinal arch of the foot: Stationary versus walking
+  measures.
+\newblock 20(2):112--118.
+\newblock Publisher: {SAGE} Publications Inc.
+
+\bibitem{Cavagna1977}
+G.~A. Cavagna, N.~C. Heglund, and C.~R. Taylor.
+\newblock {Mechanical work in terrestrial locomotion: two basic mechanisms for
+  minimizing energy expenditure}.
+\newblock {\em American Journal of Physiology - Regulatory Integrative and
+  Comparative Physiology}, 2(3), 1977.
+
+\bibitem{Cavagna1976}
+G.~A. Cavagna, H.~Thys, and A.~Zamboni.
+\newblock {The sources of external work in level walking and running.}
+\newblock {\em The Journal of Physiology}, 262(3):639--657, 1976.
+
+\bibitem{Chappell2006}
+Steven~P. Chappell.
+\newblock {\em Analysis of Planetary Exploration Spacesuit Systems and
+  Evaluation of a Modified Partial-Gravity Simulation Technique}.
+\newblock Phd, University of Colorado Boulder, 2006.
+
+\bibitem{Chappell2017}
+Steven~P. Chappell, Jason~R. Norcross, Andrew~F.J. Abercromby, Omar~S. Bekdash,
+  Elizabeth~A. Benson, and Sarah~L. Jarvis.
+\newblock {Evidence Report : Risk of Injury and Compromised Performance Due to
+  EVA Operations}.
+\newblock Technical report, Human Health and Countermeasures Element, NASA
+  Johnson Space Center, Houston, TX, 2017.
+
+\bibitem{Charvat2015}
+Chacqueline~M. Charvat, Jason Norcross, Christopher~R. Reid, and Shane~M.
+  McFarland.
+\newblock {Spacesuit Glove-Induced Hand Trauma and Analysis of Potentially
+  Related Risk Variables}.
+\newblock In {\em 45th International Conference on Environmental Systems},
+  Bellevue, WA, 2015.
+
+\bibitem{Chen1992}
+Yan Chen and Gerard Medioni.
+\newblock {Object modelling by registration of multiple range images}.
+\newblock {\em Image and Vision Computing}, 10(3):2724--2729, 1992.
+
+\bibitem{Conrad2019}
+Bryan~P. Conrad, Michael Amos, Irene Sintini, Brian~Robert Polasek, and Peter
+  Laz.
+\newblock {Statistical shape modelling describes anatomic variation in the
+  foot}.
+\newblock {\em Footwear Science}, 11(sup1):S203--S205, jun 2019.
+
+\bibitem{Corlett1976}
+E.~N. Corlett and R.~P. Bishop.
+\newblock {A technique for assessing postural discomfort}.
+\newblock {\em Ergonomics}, 19(2):175--182, 1976.
+
+\bibitem{Cullinane2017a}
+Conor~R. Cullinane, Richard~A. Rhodes, and Leia~A. Stirling.
+\newblock {Mobility and agility during locomotion in the mark III space suit}.
+\newblock {\em Aerospace Medicine and Human Performance}, 88(6):589--596, jun
+  2017.
+
+\bibitem{Daanen2013}
+H.~A.M. Daanen and F.~B. {Ter Haar}.
+\newblock {3D whole body scanners revisited}.
+\newblock {\em Displays}, 34(4):270--275, oct 2013.
+
+\bibitem{Dobson2018b}
+Jessica~A. Dobson, Diane~L. Riddiford-Harland, Alison~F. Bell, and Julie~R.
+  Steele.
+\newblock {The three-dimensional shapes of underground coal miners' feet do not
+  match the internal dimensions of their work boots}.
+\newblock {\em Ergonomics}, 61(4):588--602, 2018.
+
+\bibitem{Dobson2020}
+Jessica~A. Dobson, Diane~L. Riddiford-Harland, Alison~F. Bell, Caleb Wegener,
+  and Julie~R. Steele.
+\newblock {Effect of shaft stiffness and sole flexibility on perceived comfort
+  and the plantar pressures generated when walking on a simulated underground
+  coal mining surface}.
+\newblock {\em Applied Ergonomics}, 84:103024, apr 2020.
+
+\bibitem{Donelan2000}
+J.~M. Donelan and R.~Kram.
+\newblock {Exploring dynamic similarity in human running using simulated
+  reduced gravity}.
+\newblock {\em Journal of Experimental Biology}, 203(16):2405--2415, 2000.
+
+\bibitem{Drake2010}
+Bret~G. Drake and Kevin~D. Watts.
+\newblock {Human exploration of mars, design reference architecture 5.0}.
+\newblock Technical report, NASA Johnson Space Center, Houston, TX, 2010.
+
+\bibitem{Elkin2021}
+Lisa~A. Elkin, Matthew Kay, James~J. Higgins, and Jacob~O. Wobbrock.
+\newblock An aligned rank transform procedure for multifactor contrast tests.
+
+\bibitem{Farris2019}
+Dominic~James Farris, Luke~A. Kelly, Andrew~G. Cresswell, and Glen~A.
+  Lichtwark.
+\newblock {The functional importance of human foot muscles for bipedal
+  locomotion}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  116(5):1645--1650, jan 2019.
+
+\bibitem{Feeney2019}
+Daniel Feeney, Brett Vladika, Jay Dicharry, and Bradley Davidson.
+\newblock {Upper configurations can affect endurance, agility, and power
+  performance}.
+\newblock {\em Footwear Science}, 11(sup1):S96, jun 2019.
+
+\bibitem{Feliz2009}
+Ra{\'{u}}l Feliz, Eduardo Zalama, and Jaime~G{\'{o}}mez Garc{\'{i}}a-Bermejo.
+\newblock {Pedestrian tracking using inertial sensors}.
+\newblock {\em Journal of Physical Agents}, 3(1):35--42, 2009.
+
+\bibitem{Fineman2017}
+Richard~A. Fineman, Andrew F~J Abercromby, Amy Ross, and Leia~A. Stirling.
+\newblock {Cognitive Task Analysis of Mark III Fit Checks for the Development
+  of Human-Spacesuit Performance Metrics}.
+\newblock In {\em Proceedings of the 47th International Conference on
+  Environmental Systems}, Charleston, SC, 2017.
+
+\bibitem{Fineman2018}
+Richard~A. Fineman, Timothy~M. McGrath, Damian~G. Kelty-Stephen, Andrew~F.
+  Andrew, and Leia~A. Stirling.
+\newblock {Objective metrics quantifying fit and performance in spacesuit
+  assemblies}.
+\newblock {\em Aerospace Medicine and Human Performance}, 89(11):985--995, nov
+  2018.
+
+\bibitem{Fineman2017a}
+Richard~A. Fineman and Leia~A. Stirling.
+\newblock {Quantification and visualization of coordination during non-cyclic
+  upper extremity motion}.
+\newblock {\em Journal of Biomechanics}, 63:82--91, 2017.
+
+\bibitem{Fischer2013}
+Carl Fischer, Poorna~Talkad Sukumar, and Mike Hazas.
+\newblock {Tutorial: Implementing a pedestrian tracker using inertial sensors}.
+\newblock {\em IEEE Pervasive Computing}, 12(2):17--27, apr 2013.
+
+\bibitem{Fischler1981}
+Martin~A. Fischler and Robert~C. Bolles.
+\newblock {Random sample consensus: A Paradigm for Model Fitting with
+  Applications to Image Analysis and Automated Cartography}.
+\newblock {\em Communications of the ACM}, 24(6):381--395, 1981.
+
+\bibitem{Fontanella2013}
+C.~G. Fontanella, A.~Forestiero, E.~L. Carniel, and A.~N. Natali.
+\newblock Analysis of heel pad tissues mechanics at the heel strike in bare and
+  shod conditions.
+\newblock 35(4):441--447.
+
+\bibitem{Fraser2016a}
+John~J Fraser, Mark~A Feger, and Jay Hertel.
+\newblock {Midfoot and Forefoot Involvement in Lateral Ankle Sprains and
+  Chronic Ankle Instability. Part 1: Anatomy and Biomechanics.}
+\newblock {\em The International Journal of Sports Physical Therapy},
+  11(6):992--1005, dec 2016.
+
+\bibitem{Gefen2000}
+A.~Gefen, M.~Megido-Ravid, Y.~Itzchak, and M.~Arcan.
+\newblock {Biomechanical analysis of the three-dimensional foot structure
+  during gait: A basic tool for clinical applications}.
+\newblock {\em Journal of Biomechanical Engineering}, 122(6):630--639, 2000.
+
+\bibitem{Gernhardt2009}
+Michael~L Gernhardt, Jeffrey~A Jones, Richard~A Scheuring, Andrew~F Abercromby,
+  Jennifer~A Tuxhorn, and Jason~R Norcross.
+\newblock {Risk of Compromised EVA Performance and Crew Health Due to
+  Inadequate EVA Suit Systems}.
+\newblock Technical report, NASA Johnson Space Center, 2009.
+
+\bibitem{Giles1991}
+Eugene Giles and Paul~H. Vallandigham.
+\newblock {Height Estimation from Foot and Shoeprint Length}.
+\newblock {\em Journal of Forensic Sciences}, 36(4):13129J, 1991.
+
+\bibitem{Gordon2014}
+Claire~C. Gordon, Cynthia~L. Blackwell, Bruce Bradtmiller, Joseph~L. Parham,
+  Patricia Barrientos, Stephen~P. Paquette, Brian~D. Corner, Jeremy~M. Carson,
+  Joseph~C. Venezia, Belva~M. Rockwell, Michael Mucher, and Shirley Kristensen.
+\newblock {2012 Anthropometric Survey of U.S. Army Personnel: Methods and
+  Summary Statistics}.
+\newblock Technical report, ARMY NATICK SOLDIER RESEARCH DEVELOPMENT AND
+  ENGINEERING CENTER MA, Natick, MA, dec 2014.
+
+\bibitem{Grabowski2005}
+Alena Grabowski, Claire~T. Farley, and Rodger Kram.
+\newblock {Independent metabolic costs of supporting body weight and
+  accelerating body mass during walking}.
+\newblock {\em Journal of Applied Physiology}, 98(2):579--583, 2005.
+
+\bibitem{Grant2020}
+Tamara~M. Grant, Laura~E. Diamond, Claudio Pizzolato, Bryce~A. Killen, Daniel
+  Devaprakash, Luke Kelly, Jayishni~N. Maharaj, and David~J. Saxby.
+\newblock {Development and validation of statistical shape models of the
+  primary functional bone segments of the foot}.
+\newblock {\em PeerJ}, 2020(2):e8397, feb 2020.
+
+\bibitem{Grau2018}
+Stefan Grau and Bettina Barisch-Fritz.
+\newblock {Improvement of safety shoe fit - evaluation of dynamic foot
+  structure}.
+\newblock {\em Footwear Science}, 10(3):179--187, sep 2018.
+
+\bibitem{Graziosi2016}
+Dave Graziosi, Bobby Jones, Jinny Ferl, Steve Scarborough, Linda Hewes, Amy
+  Ross, and Richard Rhodes.
+\newblock {Z-2 Architecture Description and Requirements Verification Results
+  Abstract}.
+\newblock In {\em 46th International Conference on Environmental Systems},
+  Vienna, jul 2016.
+
+\bibitem{Griffin1999}
+Timothy~M. Griffin, Neil~A. Tolani, and Rodger Kram.
+\newblock {Walking in simulated reduced gravity: Mechanical energy fluctuations
+  and exchange}.
+\newblock {\em Journal of Applied Physiology}, 86(1):383--390, 1999.
+
+\bibitem{Hagen2009}
+Marco Hagen and Ewald~M. Hennig.
+\newblock Effects of different shoe-lacing patterns on the biomechanics of
+  running shoes.
+\newblock 27(3):267--275.
+
+\bibitem{Hagen2010}
+Marco Hagen, Ann~Kathrin Homme, Tim Umlauf, and Ewald~M. Hennig.
+\newblock Effects of different shoe-lacing patterns on dorsal pressure
+  distribution during running and perceived comfort.
+\newblock 18(3):176--187.
+
+\bibitem{Harris2001}
+Gary~L. Harris.
+\newblock {\em {The origins and technology of the advanced extravehicular space
+  suit}}.
+\newblock American Astronautical Society, San Diego, CA, 2001.
+
+\bibitem{Hicks1954}
+J.H Hicks.
+\newblock {The mechanics of the foot II. The plantar aponeurosis and the arch}.
+\newblock {\em Journal of Anatomy}, 88(1):25--30, 1954.
+
+\bibitem{Hill2017}
+Matthew Hill, Roozbeh Naemi, Helen Branthwaite, and Nachiappan Chockalingam.
+\newblock The relationship between arch height and foot length: Implications
+  for size grading.
+\newblock 59:243--250.
+
+\bibitem{Holschuh2009}
+B.~Holschuh, J.~Waldie, J.~Hoffman, and D.~Newman.
+\newblock {Characterization of structural, volume and pressure components to
+  space suit joint rigidity}.
+\newblock In {\em SAE Technical Papers}. SAE International, 2009.
+
+\bibitem{Hong2011}
+Youlian Hong, Lin Wang, Jing~Xian Li, and Ji~He Zhou.
+\newblock Changes in running mechanics using conventional shoelace versus
+  elastic shoe cover.
+\newblock 29(4):373--379.
+
+\bibitem{Ivanenko2002}
+Y.~P. Ivanenko, R.~Grasso, V.~Macellari, and F.~Lacquaniti.
+\newblock {Control of foot trajectory in human locomotion: Role of ground
+  contact forces in simulated reduced gravity}.
+\newblock {\em Journal of Neurophysiology}, 87(6):3070--3089, 2002.
+
+\bibitem{Ji2019}
+Ning Ji, Hui Zhou, Kaifeng Guo, Oluwarotimi~Williams Samuel, Zhen Huang,
+  Lisheng Xu, and Guanglin Li.
+\newblock {Appropriate mother wavelets for continuous gait event detection
+  based on time-frequency analysis for hemiplegic and healthy individuals}.
+\newblock {\em Sensors (Switzerland)}, 19(16):1--18, 2019.
+
+\bibitem{Jurca2013}
+Ales Jurca and Saso Dzeroski.
+\newblock {Length dispersion of shoes labelled with the same size in the UK
+  shoe-size system}.
+\newblock {\em Footwear Science}, 5(SUPPL. 1):2--5, 2013.
+
+\bibitem{Jurca2019}
+Ales Jurca, Jure {\v{Z}}abkar, and Sa{\v{s}}o D{\v{z}}eroski.
+\newblock {Analysis of 1.2 million foot scans from North America, Europe and
+  Asia}.
+\newblock {\em Scientific Reports}, 9(1):1--10, 2019.
+
+\bibitem{Kenny2017}
+Glen~P Kenny, Sean~R Notley, and Daniel Gagnon.
+\newblock {Direct calorimetry: a brief historical review of its use in the
+  study of human metabolism and thermoregulation}.
+\newblock {\em European Journal of Applied Physiology}, 117:1765--1785, 2017.
+
+\bibitem{Ker1987}
+R.~F. Ker, M.~B. Bennett, S.~R. Bibby, R.~C. Kester, and R.~{McN}. Alexander.
+\newblock The spring in the arch of the human foot.
+\newblock 325(6100):147--149.
+
+\bibitem{Kessler2020}
+Sarah~E. Kessler, Glen~A. Lichtwark, Lauren~K.M. Welte, Michael~J. Rainbow, and
+  Luke~A. Kelly.
+\newblock {Regulation of foot and ankle quasi-stiffness during human hopping
+  across a range of frequencies}.
+\newblock {\em Journal of Biomechanics}, page 109853, 2020.
+
+\bibitem{Kim2019}
+K.~Han Kim, Karen Young, Elizabeth Benson, Sarah Jarvis, Linh Vu, Yaritza
+  Hernandez, and Sudhakar Rajulu.
+\newblock {Human modeling tools for spacesuit and hardware design and
+  assessment}.
+\newblock In Sofia Scataglini and Paul Gunther, editors, {\em DHM and
+  Posturography}, chapter~46, pages 613--625. Academic Press, jan 2019.
+
+\bibitem{Kim2016}
+K.~Han Kim, Karen~S. Young, Yaritza Bernal, Abhishektha Boppana, Linh~Q. Vu,
+  Elizabeth~A. Benson, Sarah Jarvis, and Sudhakar~L. Rajulu.
+\newblock {A Parametric Model of Shoulder Articulation for Virtual Assessment
+  of Space Suit Fit}.
+\newblock In {\em Proceedings of the 7th International Conference on 3D Body
+  Scanning Technologies}, pages 201--207, Lugano, Switzerland, nov 2016.
+
+\bibitem{Kosmo1998}
+Joseph~J. Kosmo and Amy Ross.
+\newblock {Space suit mobility evaluations in lunar/mars gravity environments}.
+\newblock {\em JOURNAL OF AEROSPACE}, 107:535--542, jul 1998.
+
+\bibitem{Kosmo1988}
+Joseph~J. Kosmo, William~E. Spenny, Rob Gray, and Phil Spampinato.
+\newblock {Development of the NASA ZPS Mark III 57.2-kN/m2 (8.3 psi) space
+  suit}.
+\newblock {\em JOURNAL OF AEROSPACE}, 1988.
+
+\bibitem{Kouchi2009}
+Makiko Kouchi, Makoto Kimura, and Masaaki Mochimaru.
+\newblock {Deformation of foot cross-section shapes during walking}.
+\newblock {\em Gait and Posture}, 30(4):482--486, nov 2009.
+
+\bibitem{Kram1997}
+Rodger Kram, Antoinette Domingo, and Daniel~P. Ferris.
+\newblock {Effect of reduced gravity on the preferred walk-run transition
+  speed}.
+\newblock {\em Journal of Experimental Biology}, 200(4):821--826, 1997.
+
+\bibitem{Krauss2008}
+I.~Krauss, S.~Grau, M.~Mauch, C.~Maiwald, and T.~Horstmann.
+\newblock {Sex-related differences in foot shape}.
+\newblock {\em Ergonomics}, 51(11):1693--1709, nov 2008.
+
+\bibitem{Krauss2010}
+Inga Krauss, Gordon Valiant, Thomas Horstmann, and Stefan Grau.
+\newblock {Comparison of female foot morphology and last design in athletic
+  footwear-are men's lasts appropriate for women?}
+\newblock {\em Research in Sports Medicine}, 18(2):140--156, 2010.
+
+\bibitem{Leardini2007}
+A.~Leardini, M.~G. Benedetti, L.~Berti, D.~Bettinelli, R.~Nativo, and
+  S.~Giannini.
+\newblock {Rear-foot, mid-foot and fore-foot motion during the stance phase of
+  gait}.
+\newblock {\em Gait and Posture}, 25(3):453--462, mar 2007.
+
+\bibitem{Lundgren2008}
+P.~Lundgren, C.~Nester, A.~Liu, A.~Arndt, R.~Jones, A.~Stacoff, P.~Wolf, and
+  A.~Lundberg.
+\newblock {Invasive in vivo measurement of rear-, mid- and forefoot motion
+  during walking}.
+\newblock {\em Gait and Posture}, 28(1):93--100, 2008.
+
+\bibitem{Luximon2009}
+Ameersing Luximon and Yan Luximon.
+\newblock {Shoe-last design innovation for better shoe fitting}.
+\newblock {\em Computers in Industry}, 60(8):621--628, 2009.
+
+\bibitem{Luximon2013}
+Y.~Luximon and A.~Luximon.
+\newblock {Sizing and grading of shoe lasts}.
+\newblock {\em Handbook of Footwear Design and Manufacture}, pages 197--215,
+  2013.
+
+\bibitem{Mailler2004}
+E.~A. Mailler and B.~B. Adams.
+\newblock {The wear and tear of 26.2: Dermatological injuries reported on
+  marathon day}.
+\newblock {\em British Journal of Sports Medicine}, 38(4):498--501, aug 2004.
+
+\bibitem{Mann1979}
+Roger~A Mann and John~L Hagy.
+\newblock {The function of the toes in walking and running}.
+\newblock {\em Clinical Orthopaedics {\&} Related Research}, July(142):24--29,
+  1979.
+
+\bibitem{Margerum2010}
+Sarah Margerum, Mike Ferrer, Karen Young, and Sudhakar Rajulu.
+\newblock {Relating Linear and Volumetric Variables through Body Scanning to
+  Improve Human Interfaces in Space}.
+\newblock In {\em International Conference on 3D Body Scanning Technologies},
+  pages 10--22, Lugano, Switzerland, oct 2010.
+
+\bibitem{Mariani2013}
+Benoit Mariani, Hossein Rouhani, Xavier Crevoisier, and Kamiar Aminian.
+\newblock {Quantitative estimation of foot-flat and stance phase of gait using
+  foot-worn inertial sensors}.
+\newblock {\em Gait and Posture}, 37(2):229--234, 2013.
+
+\bibitem{Martinez-Martinez2017}
+José~M. Martínez-Martínez, José~D. Martín-Guerrero, Emilio Soria-Olivas,
+  José~A. Bernabeu, Pablo Escandell-Montero, Rafael~Hernández Stark,
+  Antonio~J. Serrano-López, and Enrique Montiel.
+\newblock Use of {SOMs} for footwear comfort evaluation.
+\newblock 28(7):1763--1773.
+
+\bibitem{Meginnis2018}
+Ian~M Meginnis, Richard~A Rhodes, and Kristine~N Davis.
+\newblock {Performance of the Z-2 Space Suit in a Simulated Microgravity
+  Environment}.
+\newblock In {\em 48th International Conference on Environmental Systems},
+  Albuquerque, NM, jul 2018.
+
+\bibitem{Mei2020}
+Qichang Mei, Yaodong Gu, Liangliang Xiang, Peimin Yu, Zixiang Gao, Vickie Shim,
+  and Justin Fernandez.
+\newblock Foot shape and plantar pressure relationships in shod and barefoot
+  populations.
+\newblock 19(4):1211--1224.
+
+\bibitem{Minetti2012}
+Alberto~E. Minetti, Gaspare Pavei, and Carlo~M. Biancardi.
+\newblock {The energetics and mechanics of level and gradient skipping:
+  Preliminary results for a potential gait of choice in low gravity
+  environments}.
+\newblock {\em Planetary and Space Science}, 74(1):142--145, dec 2012.
+
+\bibitem{Motawi2020}
+Wade Motawi.
+\newblock {\em Footwear {Pattern} {Making} and {Last} {Design}}.
+\newblock Walid Motawi, June 2020.
+\newblock Google-Books-ID: eo0gEAAAQBAJ.
+
+\bibitem{Myers2019}
+Casey~A. Myers, Weldyn Allen, Peter~J. Laz, Jake Lawler-Schwatz, and Bryan~P.
+  Conrad.
+\newblock Motorized self-lacing technology reduces foot-shoe motion in
+  basketball shoes during dynamic cutting tasks.
+\newblock 11:S189--S191.
+\newblock Publisher: Taylor \& Francis \_eprint:
+  https://doi.org/10.1080/19424280.2019.1606326.
+
+\bibitem{Mundermann2001a}
+A.~Mündermann, D.~J. Stefanyshyn, and B.~M. Nigg.
+\newblock Relationship between footwear comfort of shoe inserts and
+  anthropometric and sensory factors.
+\newblock 33(11):1939--1945.
+
+\bibitem{NASA1995}
+NASA.
+\newblock {Anthropometry and Biomechanics}.
+\newblock In {\em NASA-STD-3000 Man-Systems Integration Standards Volume I},
+  volume~1, chapter~3. NASA, Houston, TX, 1995.
+
+\bibitem{NASA2019}
+NASA.
+\newblock {Small Business Innovation Research (SBIR) {\&} Small Business
+  Technology Transfer (STTR) Fiscal Year 2019 General Solicitation}, 2019.
+
+\bibitem{Newman1997}
+Dava Newman and Michael Barratt.
+\newblock {Life support and performance issues for extravehicular activity
+  (EVA)}.
+\newblock In Susanne Churchill, editor, {\em Fundamentals of Space Life
+  Sciences}, volume~11, chapter~22, pages 1--61. Krieger Publishing Co.,
+  Malabar, FL, 1997.
+
+\bibitem{Newman1993}
+Dava~J. Newman and Harold~L. Alexander.
+\newblock {Human locomotion and workload for simulated lunar and Martian
+  environments}.
+\newblock {\em Acta Astronautica}, 29(8):613--620, 1993.
+
+\bibitem{Norcross2010}
+JR~Norcross, KG~Clowers, Tim Clark, Lauren Harvill, Richard~M. Morency, Leah~C.
+  Stroud, Jessica~R. Vos, and Michael~L. Gernhardt.
+\newblock {Metabolic Costs and Biomechanics of Level Ambulation in a Planetary
+  Suit}.
+\newblock Technical Report February, NASA STI Program Office, Houston, TX,
+  2010.
+
+\bibitem{Norcross2009}
+J.R. Norcross, L.R. Lee, K.G. Clowers, R.M. Morency, L.~Desantis, J.K. DeWitt,
+  J.A. Jones, J.R. Voss, and M.L. Gernhardt.
+\newblock {Feasibility of Performing a Suited 10-km Ambulation on the Moon -
+  Final Report of the EVA Walkback Test (EWT)}.
+\newblock Technical report, NASA STI Program Office, Houston, TX, 2009.
+
+\bibitem{Oladipo2008}
+G~Oladipo, I~Bob-Manuel, and G~Ezenatein.
+\newblock {Different Weight Bearing Conditions Amongst Nigerians}.
+\newblock {\em The Internet Journal of Biological Anthropology}, 3(1):1--7,
+  2008.
+
+\bibitem{OLoughlin2009}
+Padhraig~F. O'Loughlin, Christopher~D. Murawski, Christopher Egan, and John~G.
+  Kennedy.
+\newblock {Ankle instability in sports}.
+\newblock {\em The Physician and Sportsmedicine}, 37(2):93--103, jun 2009.
+
+\bibitem{Opperman2010}
+Roedolph~A. Opperman, James~M.A. Waldie, Alan Natapoff, Dava~J. Newman, and
+  Jeffrey~A. Jones.
+\newblock {Probability of spacesuit-induced fingernail trauma is associated
+  with hand circumference}.
+\newblock {\em Aviation Space and Environmental Medicine}, 81(10):907--913, oct
+  2010.
+
+\bibitem{Park2015a}
+Byoung~Keon Park and Matthew~P. Reed.
+\newblock {Parametric body shape model of standing children aged 3–11 years}.
+\newblock {\em Ergonomics}, 58(10):1714--1725, oct 2015.
+
+\bibitem{Park2017}
+Byoung Keon~D. Park, Sheila Ebert, and Matthew~P. Reed.
+\newblock {A parametric model of child body shape in seated postures}.
+\newblock {\em Traffic Injury Prevention}, 18(5):533--536, 2017.
+
+\bibitem{Parry1966}
+D.~G. Parry, L.~R. Curry, D.~B. Hanson, and G.~B. Towle.
+\newblock {A study of techniques and equipment for the evaluation of
+  extravehicular protective garments}.
+\newblock Technical report, Wright-Patterson AIr Force Base, Dayton, OH, 1966.
+
+\bibitem{JMLR:v12:pedregosa11a}
+Fabian Pedregosa, Ron Weiss, Matthieu Brucher, Ga{\"{e}}l Varoquaux, Alexandre
+  Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel,
+  Peter Prettenhofer, Ron Weiss, Vincent Dubourg, Jake Vanderplas, Alexandre
+  Passos, David Cournapeau, Matthieu Brucher, Matthieu Perrot, {\'{E}}douard
+  Duchesnay, L.~Buitinck, G.~Louppe, Olivier Grisel, Fabian Pedregosa, and
+  A.~Mueller.
+\newblock {Scikit-learn: Machine Learning in Python}.
+\newblock {\em Journal of Machine Learning Research}, 12(85):2825--2830, 2011.
+
+\bibitem{Polster2002}
+Bulkard Polster.
+\newblock Mathematics: What is the best way to lace your shoes?
+\newblock 420(6915):476.
+
+\bibitem{Portree1997}
+David~S Portree and Robert~C Trevino.
+\newblock {\em {Walking to Olympus: An EVA Chronology}}.
+\newblock NASA History Office, Washington, DC, 1997.
+
+\bibitem{Price2016}
+Carina Price and Christopher Nester.
+\newblock {Foot dimensions and morphology in healthy weight, overweight and
+  obese males}.
+\newblock {\em Clinical Biomechanics}, 37:125--130, 2016.
+
+\bibitem{Pryhoda2021}
+Moira~K. Pryhoda, Rachel~J. Wathen, Jay Dicharry, Kevin~B. Shelburne, Daniel
+  Feeney, Kathryn Harrison, and Bradley~S. Davidson.
+\newblock Alternative upper configurations during agility-based movements: part
+  1, biomechanical performance.
+\newblock 13(1):91--103.
+
+\bibitem{Rebula2013}
+John~R. Rebula, Lauro~V. Ojeda, Peter~G. Adamczyk, and Arthur~D. Kuo.
+\newblock {Measurement of foot placement and its variability with inertial
+  sensors}.
+\newblock {\em Gait and Posture}, 38(4):974--980, 2013.
+
+\bibitem{Reed2013}
+Matthew~P Reed, Sheila~M Ebert, and Brian~D Corner.
+\newblock {Statistical Analysis to Develop a Three-Dimensional Surface Model of
+  a Midsize-Male Foot}.
+\newblock Technical Report October, US Army TARDEC, 2013.
+
+\bibitem{Reed2008}
+Matthew~P. Reed and Matthew~B. Parkinson.
+\newblock {Modeling variability in torso shape for chair and seat design}.
+\newblock {\em Proceedings of the ASME Design Engineering Technical
+  Conference}, 1(PARTS A AND B):561--569, 2008.
+
+\bibitem{Reed2014}
+M.P. Reed, Ulrich Raschke, Rishi Tirumali, and M.B. Parkinson.
+\newblock {Developing and Implementing Parametric Human Body Shape Models in
+  Ergonomics Software}.
+\newblock In {\em 3rd Digital Human Modeling Symposium}, pages 1--8, 2014.
+
+\bibitem{Riebe2015}
+Deborah Riebe, Barry~A. Franklin, Paul~D. Thompson, Carol~Ewing Garber,
+  Geoffrey~P. Whitfield, Meir Magal, and Linda~S. Pescatello.
+\newblock {Updating ACSM's recommendations for exercise preparticipation health
+  screening}.
+\newblock {\em Medicine and Science in Sports and Exercise}, 47(11):2473--2479,
+  nov 2015.
+
+\bibitem{Ross2002}
+Amy~J. Ross, Joseph~J. Kosmo, Nikolay Moiseyev, Anatoly Stoklitsky, Daniel
+  Barry, and Edward Hodgson.
+\newblock {Comparative space suit boot test}.
+\newblock In {\em SAE Technical Papers}, San Antonio, TX, 2002. SAE
+  International.
+
+\bibitem{Rusu2011}
+Radu~Bogdan Rusu and Steve Cousins.
+\newblock {3D is here: Point Cloud Library (PCL)}.
+\newblock In {\em Proceedings - IEEE International Conference on Robotics and
+  Automation}, Shanghai, China, 2011.
+
+\bibitem{Sambhav2011}
+Kumar Sambhav, Puneet Tandon, and S.~G. Dhande.
+\newblock Computer aided design and development of customized shoe last.
+\newblock 8(6):819--826.
+
+\bibitem{Scheuring2008}
+Richard~A. Scheuring, Jeffrey~A. Jones, Joseph~D. Novak, James~D. Polk,
+  David~B. Gillis, Josef Schmid, James~M. Duncan, and Jeffrey~R. Davis.
+\newblock {The Apollo Medical Operations Project: Recommendations to improve
+  crew health and performance for future exploration missions and lunar surface
+  operations}.
+\newblock {\em Acta Astronautica}, 63(7-10):980--987, oct 2008.
+
+\bibitem{Scheuring2009}
+Richard~A. Scheuring, Charles~H. Mathers, Jeffrey~A. Jones, and Mary~L. Wear.
+\newblock {Musculoskeletal injuries and minor trauma in space: Incidence and
+  injury mechanisms in U.S. astronauts}.
+\newblock {\em Aviation Space and Environmental Medicine}, 80(2):117--124, feb
+  2009.
+
+\bibitem{Scheuring2012}
+Richard~a. Scheuring, P.~McCulloch, Mary {Van Baalen}, C~Minard, R~Watson,
+  S~Bowen, and Terri Blatt.
+\newblock {Shoulder injuries in US astronauts related to EVA suit design}.
+\newblock In {\em Aerospace Medical Association 83rd Annual Scientific
+  Meeting}, Atlanta, GA, may 2012.
+
+\bibitem{Schmidt2001a}
+Patricia Schmidt.
+\newblock {\em An Investigation of Space Suit Mobility With Applications to EVA
+  Operations}.
+\newblock PhD thesis, Massachusetts Institute of Technology, Cambridge, MA,
+  Sept 2001.
+
+\bibitem{Schuster2021}
+Robert~Wolfgang Schuster, Andrew Cresswell, and Luke Kelly.
+\newblock Reliability and quality of statistical shape and deformation models
+  constructed from optical foot scans.
+\newblock 115:110137.
+
+\bibitem{Scott1993}
+Stephen~H. Scott and David~A. Winter.
+\newblock {Biomechanical model of the human foot: Kinematics and kinetics
+  during the stance phase of walking}.
+\newblock {\em Journal of Biomechanics}, 26(9):1091--1104, 1993.
+
+\bibitem{Shen2019}
+Young~Young Shen and Allison~P. Anderson.
+\newblock {Extended Kalman Filter for Magnetometer-Free Estimation of Spacesuit
+  Wearer Joint Kinematics Using Inertial Measurements}.
+\newblock In {\em FUSION 2019 - 22nd International Conference on Information
+  Fusion}, Ottawa, Canada, 2019.
+
+\bibitem{Shen2020}
+Young-Young Shen, Shaylah Wood, and Allison~P. Anderson.
+\newblock {Evaluation of Wearable Inertial Sensors for Spacesuit Design
+  Applications Using Hardware-in-the-Loop Simulation}.
+\newblock In {\em AIAA Scitech 2020 Forum}, Reston, Virginia, jan 2020.
+  American Institute of Aeronautics and Astronautics.
+
+\bibitem{Stankovic2020}
+Kristina Stankovi{\'{c}}, Toon Huysmans, Femke Danckaers, Jan Sijbers, and
+  Brian~G. Booth.
+\newblock {Subject-specific identification of three dimensional foot shape
+  deviations using statistical shape analysis}.
+\newblock {\em Expert Systems with Applications}, 151:113372, aug 2020.
+
+\bibitem{Stefanyshyn1997}
+Darren~J. Stefanyshyn and Benno~M. Nigg.
+\newblock {Mechanical energy contribution of the metatarsophalangeal joint to
+  running and sprinting}.
+\newblock {\em Journal of Biomechanics}, 30(11-12):1081--1085, nov 1997.
+
+\bibitem{Stirling2020}
+Leia Stirling, Damian Kelty-Stephen, Richard Fineman, Monica~L.H. Jones,
+  Byoung~Keon {Daniel Park}, Matthew~P. Reed, Joseph Parham, and Hyeg~Joo Choi.
+\newblock {Static, Dynamic, and Cognitive Fit of Exosystems for the Human
+  Operator}.
+\newblock {\em Human Factors}, 62(3):424--440, 2020.
+
+\bibitem{Stolwijk2014}
+N.~M. Stolwijk, K.~L.M. Koenraadt, J.~W.K. Louwerens, D.~Grim, J.~Duysens, and
+  N.~L.W. Keijsers.
+\newblock Foot lengthening and shortening during gait: A parameter to
+  investigate foot function?
+\newblock 39(2):773--777.
+
+\bibitem{Strauss2004}
+Samuel Strauss.
+\newblock {Extravehicular Mobility Unit Training Suit Symptom Study Report}.
+\newblock Technical Report March, NASA Johnson Space Center, Houston, TX, 2004.
+
+\bibitem{Strauss2005}
+Samuel Strauss, Ralph~L. Krog, and Alan~H. Feiveson.
+\newblock {Extravehicular mobility unit training and astronaut injuries}.
+\newblock {\em Aviation Space and Environmental Medicine}, 76(5):469--474, may
+  2005.
+
+\bibitem{Thomas2012}
+Kenneth~S. Thomas and Harold~J. McMann.
+\newblock {\em {U. S. Spacesuits: Second Edition}}.
+\newblock Springer, Chichester, UK, 2nd edition, 2012.
+
+\bibitem{Thornton1987}
+W~E Thornton, G~{Wyckliffe Hoffler}, and J~A Rummel.
+\newblock {Anthropometric changes and fluid shifts}.
+\newblock {\em Biomedical results from Skylab}, NASA SP-37:330--338, 1987.
+
+\bibitem{Tomassoni2014}
+Daniele Tomassoni, Enea Traini, and Francesco Amenta.
+\newblock {Gender and age related differences in foot morphology}.
+\newblock {\em Maturitas}, 79(4):421--427, 2014.
+
+\bibitem{VandenHerrewegen2014b}
+Inge {Van den Herrewegen}, Kris Cuppens, Mario Broeckx, Bettina Barisch-Fritz,
+  Jos {Vander Sloten}, Alberto Leardini, and Louis Peeraer.
+\newblock {Dynamic 3D scanning as a markerless method to calculate
+  multi-segment foot kinematics during stance phase: Methodology and first
+  application}.
+\newblock {\em Journal of Biomechanics}, 47(11):2531--2539, aug 2014.
+
+\bibitem{Van1995}
+Bart Van~Gheluwe, Rudi Tielemans, and Philip Roosen.
+\newblock The influence of heel counter rigidity on rearfoot motion during
+  running.
+\newblock {\em Journal of applied biomechanics}, 11(1):47--67, 1995.
+
+\bibitem{Venkadesan2020}
+Madhusudhan Venkadesan, Ali Yawar, Carolyn~M. Eng, Marcelo~A. Dias, Dhiraj~K.
+  Singh, Steven~M. Tommasini, Andrew~H. Haims, Mahesh~M. Bandi, and Shreyas
+  Mandre.
+\newblock Stiffness of the human foot and evolution of the transverse arch.
+\newblock 579(7797):97--100.
+
+\bibitem{Viegas2004}
+Steven~F. Viegas, David Williams, Jeffrey Jones, Samuel Strauss, and Jonathan
+  Clark.
+\newblock {Physical demands and injuries to the upper extremity associated with
+  the space program}.
+\newblock {\em Journal of Hand Surgery}, 29(3):359--366, 2004.
+
+\bibitem{Voloshina2013}
+Alexandra~S. Voloshina, Arthur~D. Kuo, Monica~A. Daley, and Daniel~P. Ferris.
+\newblock {Biomechanics and energetics of walking on uneven terrain}.
+\newblock {\em Journal of Experimental Biology}, 216(21):3963--3970, nov 2013.
+
+\bibitem{Vu2020}
+Linh~Q. Vu, Han Kim, Lawrence J.~H. Schulze, and Sudhakar~L. Rajulu.
+\newblock Evaluating lumbar shape deformation with fabric strain sensors.
+\newblock page 0018720820965302.
+\newblock Publisher: {SAGE} Publications Inc.
+
+\bibitem{Wannop2019}
+John~W. Wannop, Darren~J. Stefanyshyn, Robert~B. Anderson, Michael~J. Coughlin,
+  and Richard Kent.
+\newblock {Development of a Footwear Sizing System in the National Football
+  League}.
+\newblock {\em Sports Health}, 11(1):40--46, 2019.
+
+\bibitem{Wannop2014}
+John~W. Wannop, Jay~T. Worobets, Rodrigo Ruiz, and Darren~J. Stefanyshyn.
+\newblock {Footwear traction and three-dimensional kinematics of level,
+  downhill, uphill and cross-slope walking}.
+\newblock {\em Gait and Posture}, 40(1):118--122, 2014.
+
+\bibitem{Welte2021}
+Lauren Welte, Luke~A. Kelly, Sarah~E. Kessler, Daniel~E. Lieberman, Susan~E.
+  D'Andrea, Glen~A. Lichtwark, and Michael~J. Rainbow.
+\newblock The extensibility of the plantar fascia influences the windlass
+  mechanism during human running.
+\newblock 288(1943):20202095.
+\newblock Publisher: Royal Society.
+
+\bibitem{Welte2018}
+Lauren Welte, Luke~A. Kelly, Glen~A. Lichtwark, and Michael~J. Rainbow.
+\newblock Influence of the windlass mechanism on arch-spring mechanics during
+  dynamic foot arch deformation.
+\newblock 15(145):20180270.
+\newblock Publisher: Royal Society.
+
+\bibitem{Williams2003}
+David~R Williams and Brian~J Johnson.
+\newblock {EMU Shoulder Injury Tiger Team Report}.
+\newblock Technical Report September, NASA STI Program Office, Houston, TX,
+  2003.
+
+\bibitem{Windolf2008}
+Markus Windolf, Nils G{\"{o}}tzen, and Michael Morlock.
+\newblock {Systematic accuracy and precision analysis of video motion capturing
+  systems-exemplified on the Vicon-460 system}.
+\newblock {\em Journal of Biomechanics}, 41(12):2776--2780, 2008.
+
+\bibitem{Wobbrock2011}
+Jacob~O. Wobbrock, Leah Findlater, Darren Gergle, and James~J. Higgins.
+\newblock The aligned rank transform for nonparametric factorial analyses using
+  only anova procedures.
+\newblock In {\em Proceedings of the 2011 annual conference on Human factors in
+  computing systems - {CHI} '11}, page 143. {ACM} Press.
+
+\bibitem{Wolf2008}
+P.~Wolf, A.~Stacoff, A.~Liu, C.~Nester, A.~Arndt, A.~Lundberg, and E.~Stuessi.
+\newblock {Functional units of the human foot}.
+\newblock {\em Gait and Posture}, 28(3):434--441, 2008.
+
+\bibitem{Wunderlich2001}
+R.~E. Wunderlich and P.~R. Cavanagh.
+\newblock {Gender differences in adult foot shape: Implications for shoe
+  design}.
+\newblock {\em Medicine and Science in Sports and Exercise}, 33(4):605--611,
+  apr 2001.
+
+\bibitem{Xiong2009}
+Shuping Xiong, Ravindra~S. Goonetilleke, Jianhui Zhao, Wenyan Li, and Channa~P.
+  Witana.
+\newblock {Foot deformations under different load-bearing conditions and their
+  relationships to stature and body weight}.
+\newblock {\em Anthropological Science}, 117(2):77--88, 2009.
+
+\bibitem{Yeo2000}
+In‐Kwon Yeo and Richard~A Johnson.
+\newblock {A new family of power transformations to improve normality or
+  symmetry}.
+\newblock {\em Biometrika}, 87(4):954--959, dec 2000.
+
+\bibitem{Zelik2018}
+Karl~E. Zelik and Eric~C. Honert.
+\newblock {Ankle and foot power in gait analysis: Implications for science,
+  technology and clinical assessment}.
+\newblock {\em Journal of Biomechanics}, 75:1--12, 2018.
+
+\bibitem{Zhang2016}
+Ju~Zhang, Jacqui Hislop-Jambrich, and Thor~F. Besier.
+\newblock {Predictive statistical models of baseline variations in 3-D femoral
+  cortex morphology}.
+\newblock {\em Medical Engineering and Physics}, 38(5):450--457, 2016.
+
+\bibitem{Zhou2018}
+Qian-Yi Zhou, Jaesik Park, and Vladlen Koltun.
+\newblock {Open3D: A Modern Library for 3D Data Processing}.
+\newblock {\em arXiv:1801.09847}, 2018.
+
+\bibitem{Zou2005}
+Hui Zou and Trevor Hastie.
+\newblock {Regularization and variable selection via the elastic net}.
+\newblock {\em Journal of the Royal Statistical Society. Series B: Statistical
+  Methodology}, 67(2):301--320, 2005.
+
+\end{thebibliography}

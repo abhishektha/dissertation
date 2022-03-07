@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  14 FEB 2022 03:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  28 FEB 2022 07:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -330,7 +330,7 @@ Package: flafter 2018/11/28 v1.4d Standard LaTeX floats after reference (FMi)
 Applying: [2015/01/01] float order in 2-column on input line 49.
 Already applied: [0000/00/00] float order in 2-column on input line 151.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+Package hyperref Info: Option `colorlinks' set `true' on input line 30.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
@@ -413,7 +413,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \RequirePackage
+l.227 \RequirePackage
                      {color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{...
 
 The package ulem has already been loaded with options:
@@ -440,14 +440,14 @@ Package: settobox 2016/05/16 v1.5 Assign box dimensions to length registers (HO
 \DIFdelgraphicsbox=\box57
 \DIFdelgraphicswidth=\skip78
 \DIFdelgraphicsheight=\skip79
-LaTeX Info: Redefining \DIFaddbegin on input line 190.
-LaTeX Info: Redefining \DIFaddend on input line 191.
-LaTeX Info: Redefining \DIFdelbegin on input line 192.
-LaTeX Info: Redefining \DIFdelend on input line 193.
-LaTeX Info: Redefining \DIFaddbeginFL on input line 198.
-LaTeX Info: Redefining \DIFaddendFL on input line 199.
-LaTeX Info: Redefining \DIFdelbeginFL on input line 200.
-LaTeX Info: Redefining \DIFdelendFL on input line 201.
+LaTeX Info: Redefining \DIFaddbegin on input line 276.
+LaTeX Info: Redefining \DIFaddend on input line 277.
+LaTeX Info: Redefining \DIFdelbegin on input line 278.
+LaTeX Info: Redefining \DIFdelend on input line 279.
+LaTeX Info: Redefining \DIFaddbeginFL on input line 284.
+LaTeX Info: Redefining \DIFaddendFL on input line 285.
+LaTeX Info: Redefining \DIFdelbeginFL on input line 286.
+LaTeX Info: Redefining \DIFdelendFL on input line 287.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count288
@@ -482,22 +482,22 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (pdf_diff/Boppana_Thesis_Diff.aux)
 \openout1 = `Boppana_Thesis_Diff.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 306.
+LaTeX Font Info:    ... okay on input line 306.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -522,7 +522,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring ON on input line 220.
+Package hyperref Info: Link coloring ON on input line 306.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -536,9 +536,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count303
 )
-LaTeX Info: Redefining \ref on input line 220.
-LaTeX Info: Redefining \pageref on input line 220.
-LaTeX Info: Redefining \nameref on input line 220.
+LaTeX Info: Redefining \ref on input line 306.
+LaTeX Info: Redefining \pageref on input line 306.
+LaTeX Info: Redefining \nameref on input line 306.
  (pdf_diff/Boppana_Thesis_Diff.out) (pdf_diff/Boppana_Thesis_Diff.out)
 \@outlinefile=\write3
 \openout3 = `Boppana_Thesis_Diff.out'.
@@ -556,12 +556,12 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 \c@lstlisting=\count305
 
 Making Title Page
-LaTeX Font Info:    Trying to load font information for U+msa on input line 220
+LaTeX Font Info:    Trying to load font information for U+msa on input line 306
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 220
+LaTeX Font Info:    Trying to load font information for U+msb on input line 306
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -574,7 +574,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.220 \begin{document}
+l.306 \begin{document}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -583,7 +583,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.220 \begin{document}
+l.306 \begin{document}
                       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -591,7 +591,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.220 \begin{document}
+l.306 \begin{document}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -602,7 +602,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.220 \begin{document}
+l.306 \begin{document}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -617,7 +617,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.220 \begin{document}
+l.306 \begin{document}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -630,7 +630,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.220 \begin{document}
+l.306 \begin{document}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -671,10 +671,10 @@ centered
 [2
 
 ] [3] [4]
-<../fig/Background/fitflow.PNG, id=534, 434.62375pt x 223.83624pt>
+<../fig/Background/fitflow.PNG, id=569, 434.62375pt x 223.83624pt>
 File: ../fig/Background/fitflow.PNG Graphic file (type png)
 <use ../fig/Background/fitflow.PNG>
-Package pdftex.def Info: ../fig/Background/fitflow.PNG  used on input line 316.
+Package pdftex.def Info: ../fig/Background/fitflow.PNG  used on input line 402.
 
 (pdftex.def)             Requested size: 281.87206pt x 145.16736pt.
  [5] [6 <../fig/Background/fitflow.PNG>] [7] [8]
@@ -683,16 +683,16 @@ centered
 [9
 
 ] [10] [11] [12] [13] [14] [15]
-<../fig/Background/Trauma.png, id=727, 716.6775pt x 239.89626pt>
+<../fig/Background/Trauma.png, id=763, 716.6775pt x 239.89626pt>
 File: ../fig/Background/Trauma.png Graphic file (type png)
 <use ../fig/Background/Trauma.png>
-Package pdftex.def Info: ../fig/Background/Trauma.png  used on input line 532.
+Package pdftex.def Info: ../fig/Background/Trauma.png  used on input line 622.
 (pdftex.def)             Requested size: 375.81297pt x 125.79733pt.
  [16 <../fig/Background/Trauma.png>] [17]
-<../fig/Background/HeelLift.png, id=767, 554.07pt x 489.83pt>
+<../fig/Background/HeelLift.png, id=802, 554.07pt x 489.83pt>
 File: ../fig/Background/HeelLift.png Graphic file (type png)
 <use ../fig/Background/HeelLift.png>
-Package pdftex.def Info: ../fig/Background/HeelLift.png  used on input line 593
+Package pdftex.def Info: ../fig/Background/HeelLift.png  used on input line 683
 .
 (pdftex.def)             Requested size: 281.85333pt x 249.17468pt.
 
@@ -702,7 +702,7 @@ centered
 [22
 
 ] [23] [24] [25]
-Overfull \hbox (21.17065pt too wide) in paragraph at lines 794--795
+Overfull \hbox (21.17065pt too wide) in paragraph at lines 881--882
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []   |   []
  []
@@ -713,55 +713,56 @@ centered
 [28
 
 ] [29] [30]
-<../fig/SA1/IMUPlacement.png, id=885, 793.0428pt x 542.025pt>
+<../fig/SA1/IMUPlacement.png, id=920, 793.0428pt x 542.025pt>
 File: ../fig/SA1/IMUPlacement.png Graphic file (type png)
 <use ../fig/SA1/IMUPlacement.png>
-Package pdftex.def Info: ../fig/SA1/IMUPlacement.png  used on input line 915.
+Package pdftex.def Info: ../fig/SA1/IMUPlacement.png  used on input line 998.
 (pdftex.def)             Requested size: 328.82831pt x 224.74596pt.
  [31 <../fig/SA1/IMUPlacement.png>]
 
-LaTeX Warning: Reference `fig:SA1-Steps' on page 32 undefined on input line 949
-.
+LaTeX Warning: Reference `fig:SA1-Steps' on page 32 undefined on input line 103
+0.
 
 
-Overfull \hbox (20.78685pt too wide) in paragraph at lines 971--975
+Overfull \hbox (20.78685pt too wide) in paragraph at lines 1052--1056
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
 ]   |   []   |   []   |   []   |   [][][]|   []
  []
 
 [32]
 
-LaTeX Warning: Reference `fig:SA1-DWT' on page 33 undefined on input line 991.
+LaTeX Warning: Reference `fig:SA1-DWT' on page 33 undefined on input line 1072.
+
 
 [33]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-000.
+080.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1000.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1080.
 
 
-Overfull \hbox (4.90814pt too wide) in paragraph at lines 1018--1034
+Overfull \hbox (4.90814pt too wide) in paragraph at lines 1098--1114
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
 ]   [][]|   []   |   []   |   []
  []
 
 
-LaTeX Warning: Reference `fig:drift' on page 34 undefined on input line 1039.
+LaTeX Warning: Reference `fig:drift' on page 34 undefined on input line 1119.
 
 [34] [35]
-<../fig/SA1/heelOffLag.png, id=929, 8564.99875pt x 3613.5pt>
+<../fig/SA1/heelOffLag.png, id=964, 8564.99875pt x 3613.5pt>
 File: ../fig/SA1/heelOffLag.png Graphic file (type png)
 <use ../fig/SA1/heelOffLag.png>
-Package pdftex.def Info: ../fig/SA1/heelOffLag.png  used on input line 1083.
+Package pdftex.def Info: ../fig/SA1/heelOffLag.png  used on input line 1163.
 (pdftex.def)             Requested size: 328.81903pt x 138.72594pt.
 
 ! Misplaced \noalign.
 \caption ->\noalign 
                     \bgroup \@ifnextchar [{\egroup \LT@c@ption \@firstofone ...
-l.1093 \DIFaddend \caption
+l.1173 \DIFaddend \caption
                           {\label{tbl:SA1-drift}Drift rate estimations \DIFa...
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -769,7 +770,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.1093 ... spacesuit lower leg assembly and shank}
+l.1173 ... spacesuit lower leg assembly and shank}
                                                   \tabularnewline
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -777,7 +778,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.1109 \DIFaddend \midrule
+l.1189 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -785,7 +786,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -796,7 +797,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -807,7 +808,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -818,28 +819,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1092--1110
+Underfull \hbox (badness 10000) in alignment at lines 1172--1190
 [] [] [] []
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -850,7 +851,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -861,7 +862,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -869,7 +870,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -877,7 +878,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -885,7 +886,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -893,7 +894,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -904,7 +905,7 @@ might try typing `S' now just to see what is salvageable.
 ! You can't use `\lastbox' in vertical mode.
 <recently read> \lastbox 
                          
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 Sorry...I usually can't take things from the current page.
 This \lastbox will therefore be void.
@@ -912,7 +913,7 @@ This \lastbox will therefore be void.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.1110 \endfirsthead
+l.1190 \endfirsthead
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -923,7 +924,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.1126 \DIFaddend \midrule
+l.1206 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -931,7 +932,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1127 \endhead
+l.1207 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -942,7 +943,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1127 \endhead
+l.1207 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -953,7 +954,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1127 \endhead
+l.1207 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -964,28 +965,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.1127 \endhead
+l.1207 \endhead
                
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1127 \endhead
+l.1207 \endhead
                
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1110--1127
+Underfull \hbox (badness 10000) in alignment at lines 1190--1207
 [] [] [] []
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.1127 \endhead
+l.1207 \endhead
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -996,7 +997,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.1127 \endhead
+l.1207 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1007,7 +1008,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.1127 \endhead
+l.1207 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1018,7 +1019,7 @@ might try typing `S' now just to see what is salvageable.
 ! You can't use `\lastbox' in vertical mode.
 <recently read> \lastbox 
                          
-l.1127 \endhead
+l.1207 \endhead
                
 Sorry...I usually can't take things from the current page.
 This \lastbox will therefore be void.
@@ -1026,7 +1027,7 @@ This \lastbox will therefore be void.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.1127 \endhead
+l.1207 \endhead
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1037,7 +1038,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1138 ...\DIFdelend \DIFaddbegin \DIFadd{5 \$}\pm
+l.1218 ...\DIFdelend \DIFaddbegin \DIFadd{5 \$}\pm
                                                   \DIFadd{\$6 }\DIFaddend cm...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1045,7 +1046,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \endtemplate 
-l.1145 &
+l.1225 &
          \DIFadd{SLL }\DIFaddend & \DIFdelbegin %DIFDELCMD < \begin{minipage...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1056,7 +1057,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1145 &
+l.1225 &
          \DIFadd{SLL }\DIFaddend & \DIFdelbegin %DIFDELCMD < \begin{minipage...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1064,7 +1065,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1145 &
+l.1225 &
          \DIFadd{SLL }\DIFaddend & \DIFdelbegin %DIFDELCMD < \begin{minipage...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1075,7 +1076,7 @@ my insertion and my current dilemma will both disappear.
 ! Misplaced \noalign.
 \bottomrule ->\noalign 
                        {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.1157 \DIFaddend \bottomrule
+l.1237 \DIFaddend \bottomrule
                              
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1083,7 +1084,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1158 \end
+l.1238 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1094,7 +1095,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1158 \end
+l.1238 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1105,7 +1106,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1158 \end
+l.1238 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1116,28 +1117,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.1158 \end
+l.1238 \end
            {longtable}
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1158 \end
+l.1238 \end
            {longtable}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1127--1158
+Underfull \hbox (badness 10000) in alignment at lines 1207--1238
 [] [] [] []
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.1158 \end
+l.1238 \end
            {longtable}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1148,7 +1149,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.1158 \end{longtable}
+l.1238 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1159,7 +1160,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \FB@ori@endlongtable ->\crcr \noalign 
                                       {\let \LT@entry \LT@entry@chop \xdef \...
-l.1158 \end{longtable}
+l.1238 \end{longtable}
                       
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1167,7 +1168,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \crcr.
 \LT@echunk ->\crcr 
                    \LT@save@row \cr \egroup \global \setbox \@ne \lastbox \u...
-l.1158 \end{longtable}
+l.1238 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1178,7 +1179,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.1158 \end{longtable}
+l.1238 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1189,7 +1190,7 @@ might try typing `S' now just to see what is salvageable.
 ! You can't use `\lastbox' in vertical mode.
 <recently read> \lastbox 
                          
-l.1158 \end{longtable}
+l.1238 \end{longtable}
                       
 Sorry...I usually can't take things from the current page.
 This \lastbox will therefore be void.
@@ -1197,7 +1198,7 @@ This \lastbox will therefore be void.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.1158 \end{longtable}
+l.1238 \end{longtable}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1208,17 +1209,17 @@ deleted material, e.g., by typing `I$}'.
 [36 <../fig/SA1/heelOffLag.png>]
 
 LaTeX Warning: Reference `fig:heeloffdist' on page 37 undefined on input line 1
-167.
+246.
 
 
-LaTeX Warning: Reference `fig:alllag' on page 37 undefined on input line 1178.
+LaTeX Warning: Reference `fig:alllag' on page 37 undefined on input line 1257.
 
 [37]
-<../fig/SA1/pos-neg-heel-off.png, id=950, 8564.99875pt x 11442.75pt>
+<../fig/SA1/pos-neg-heel-off.png, id=985, 8564.99875pt x 11442.75pt>
 File: ../fig/SA1/pos-neg-heel-off.png Graphic file (type png)
 <use ../fig/SA1/pos-neg-heel-off.png>
-Package pdftex.def Info: ../fig/SA1/pos-neg-heel-off.png  used on input line 11
-85.
+Package pdftex.def Info: ../fig/SA1/pos-neg-heel-off.png  used on input line 12
+64.
 (pdftex.def)             Requested size: 328.81903pt x 439.29884pt.
  [38] [39 <../fig/SA1/pos-neg-heel-off.png>] [40] [41] [42]
  \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 5.
@@ -1226,21 +1227,21 @@ centered
 [43
 
 ] [44]
-<../fig/SA2/capturesetup.png, id=1069, 409.53pt x 307.1475pt>
+<../fig/SA2/capturesetup.png, id=1104, 409.53pt x 307.1475pt>
 File: ../fig/SA2/capturesetup.png Graphic file (type png)
 <use ../fig/SA2/capturesetup.png>
-Package pdftex.def Info: ../fig/SA2/capturesetup.png  used on input line 1395.
+Package pdftex.def Info: ../fig/SA2/capturesetup.png  used on input line 1488.
 (pdftex.def)             Requested size: 234.88426pt x 176.1632pt.
-<../fig/SA2/sampleFrames.png, id=1070, 469.755pt x 183.68625pt>
+<../fig/SA2/sampleFrames.png, id=1105, 469.755pt x 183.68625pt>
 File: ../fig/SA2/sampleFrames.png Graphic file (type png)
 <use ../fig/SA2/sampleFrames.png>
-Package pdftex.def Info: ../fig/SA2/sampleFrames.png  used on input line 1403.
+Package pdftex.def Info: ../fig/SA2/sampleFrames.png  used on input line 1496.
 (pdftex.def)             Requested size: 375.80452pt x 146.94917pt.
  [45] [46 <../fig/SA2/capturesetup.png> <../fig/SA2/sampleFrames.png>]
 ! Undefined control sequence.
 <argument> @{} >{\raggedright \arraybackslash 
                                               }p{(\columnwidth - 6\tabcolsep...
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1251,7 +1252,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...14}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1262,7 +1263,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...29}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1273,7 +1274,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...29}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1288,7 +1289,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1300,7 +1301,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1312,7 +1313,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1324,7 +1325,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1438 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
+l.1531 ...nwidth - 6\tabcolsep) * \real{0.29}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1332,7 +1333,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Misplaced \noalign.
 \caption ->\noalign 
                     \bgroup \@ifnextchar [{\egroup \LT@c@ption \@firstofone ...
-l.1439 \DIFaddend \caption
+l.1532 \DIFaddend \caption
                           {\label{tbl:groups}Enrollment groups based on repo...
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1340,7 +1341,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.1439 ... 5 subjects were enrolled in each group}
+l.1532 ... 5 subjects were enrolled in each group}
                                                   \tabularnewline
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1348,7 +1349,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.1459 \DIFaddend \midrule
+l.1552 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1356,7 +1357,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1367,7 +1368,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1378,7 +1379,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1389,28 +1390,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1438--1460
+Underfull \hbox (badness 10000) in alignment at lines 1531--1553
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1421,7 +1422,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1432,7 +1433,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1440,7 +1441,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1448,7 +1449,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1456,7 +1457,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1464,7 +1465,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1472,7 +1473,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1480,7 +1481,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1488,7 +1489,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1496,7 +1497,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1504,7 +1505,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1512,7 +1513,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1520,7 +1521,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1528,7 +1529,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1539,7 +1540,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.1460 \endfirsthead
+l.1553 \endfirsthead
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1550,7 +1551,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.1480 \DIFaddend \midrule
+l.1573 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1558,7 +1559,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1481 \endhead
+l.1574 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1569,7 +1570,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1481 \endhead
+l.1574 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1580,7 +1581,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1481 \endhead
+l.1574 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1591,28 +1592,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.1481 \endhead
+l.1574 \endhead
                
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1481 \endhead
+l.1574 \endhead
                
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1460--1481
+Underfull \hbox (badness 10000) in alignment at lines 1553--1574
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.1481 \endhead
+l.1574 \endhead
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1623,7 +1624,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.1481 \endhead
+l.1574 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1634,7 +1635,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.1481 \endhead
+l.1574 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1645,7 +1646,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.1481 \endhead
+l.1574 \endhead
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1656,7 +1657,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced \noalign.
 \bottomrule ->\noalign 
                        {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.1517 \DIFaddend \bottomrule
+l.1610 \DIFaddend \bottomrule
                              
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1664,7 +1665,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1518 \end
+l.1611 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1675,7 +1676,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1518 \end
+l.1611 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1686,7 +1687,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1518 \end
+l.1611 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1697,28 +1698,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.1518 \end
+l.1611 \end
            {longtable}
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1518 \end
+l.1611 \end
            {longtable}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 1481--1518
+Underfull \hbox (badness 10000) in alignment at lines 1574--1611
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.1518 \end
+l.1611 \end
            {longtable}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1729,7 +1730,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.1518 \end{longtable}
+l.1611 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1740,7 +1741,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \FB@ori@endlongtable ->\crcr \noalign 
                                       {\let \LT@entry \LT@entry@chop \xdef \...
-l.1518 \end{longtable}
+l.1611 \end{longtable}
                       
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1748,7 +1749,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \crcr.
 \LT@echunk ->\crcr 
                    \LT@save@row \cr \egroup \global \setbox \@ne \lastbox \u...
-l.1518 \end{longtable}
+l.1611 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1759,7 +1760,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.1518 \end{longtable}
+l.1611 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1770,7 +1771,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.1518 \end{longtable}
+l.1611 \end{longtable}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1779,35 +1780,35 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 [47]
-<../fig/SA2/footProcessing.png, id=1112, 1085.05376pt x 684.5575pt>
+<../fig/SA2/footProcessing.png, id=1147, 1085.05376pt x 684.5575pt>
 File: ../fig/SA2/footProcessing.png Graphic file (type png)
 <use ../fig/SA2/footProcessing.png>
-Package pdftex.def Info: ../fig/SA2/footProcessing.png  used on input line 1550
+Package pdftex.def Info: ../fig/SA2/footProcessing.png  used on input line 1643
 .
 (pdftex.def)             Requested size: 469.75943pt x 296.36996pt.
 
-Overfull \hbox (6.80443pt too wide) in paragraph at lines 1550--1550
+Overfull \hbox (6.80443pt too wide) in paragraph at lines 1643--1643
  [][][] 
  []
 
 [48] [49 <../fig/SA2/footProcessing.png>] [50] [51]
-<../fig/SA2/scans.png, id=1176, 363.5181pt x 288.1164pt>
+<../fig/SA2/scans.png, id=1211, 363.5181pt x 288.1164pt>
 File: ../fig/SA2/scans.png Graphic file (type png)
 <use ../fig/SA2/scans.png>
-Package pdftex.def Info: ../fig/SA2/scans.png  used on input line 1611.
+Package pdftex.def Info: ../fig/SA2/scans.png  used on input line 1704.
 (pdftex.def)             Requested size: 375.82008pt x 297.86665pt.
  [52 <../fig/SA2/scans.png>]
-<../fig/SA2/modelPerformance.png, id=1190, 1059.7191pt x 410.9754pt>
+<../fig/SA2/modelPerformance.png, id=1225, 1059.7191pt x 410.9754pt>
 File: ../fig/SA2/modelPerformance.png Graphic file (type png)
 <use ../fig/SA2/modelPerformance.png>
-Package pdftex.def Info: ../fig/SA2/modelPerformance.png  used on input line 16
-40.
+Package pdftex.def Info: ../fig/SA2/modelPerformance.png  used on input line 17
+33.
 (pdftex.def)             Requested size: 375.80675pt x 145.74364pt.
 [53 <../fig/SA2/modelPerformance.png>]
-<../fig/SA2/coefs.png, id=1204, 686.0832pt x 572.1375pt>
+<../fig/SA2/coefs.png, id=1239, 686.0832pt x 572.1375pt>
 File: ../fig/SA2/coefs.png Graphic file (type png)
 <use ../fig/SA2/coefs.png>
-Package pdftex.def Info: ../fig/SA2/coefs.png  used on input line 1659.
+Package pdftex.def Info: ../fig/SA2/coefs.png  used on input line 1752.
 (pdftex.def)             Requested size: 469.76526pt x 391.74594pt.
 
 
@@ -1817,14 +1818,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1668 ...beginFL \begin{pandoccrossrefsubfigures}
+l.1763 \DIFdelend \begin{pandoccrossrefsubfigures}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.1671 \subfloat
+l.1768 \subfloat
                 [A]{\includegraphics[width=0.8\textwidth,height=\textheight]...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1833,28 +1834,28 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [54 <../fig/SA2/coefs.png>]
-<../fig/SA2/PCQuad.png, id=1212, 574.5465pt x 422.5386pt>
+<../fig/SA2/PCQuad.png, id=1247, 574.5465pt x 422.5386pt>
 File: ../fig/SA2/PCQuad.png Graphic file (type png)
 <use ../fig/SA2/PCQuad.png>
-Package pdftex.def Info: ../fig/SA2/PCQuad.png  used on input line 1671.
+Package pdftex.def Info: ../fig/SA2/PCQuad.png  used on input line 1768.
 (pdftex.def)             Requested size: 375.80908pt x 276.38118pt.
 
 ! Undefined control sequence.
-l.1674 \DIFaddendFL \subfloat
-                             [B]{\includegraphics[width=0.95\textwidth,heigh...
+l.1771 \DIFaddend \subfloat
+                           [B]{\includegraphics[width=0.95\textwidth,height=...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<../fig/SA2/PCVAR.png, id=1213, 574.5465pt x 348.5823pt>
+<../fig/SA2/PCVAR.png, id=1248, 574.5465pt x 348.5823pt>
 File: ../fig/SA2/PCVAR.png Graphic file (type png)
 <use ../fig/SA2/PCVAR.png>
-Package pdftex.def Info: ../fig/SA2/PCVAR.png  used on input line 1674.
+Package pdftex.def Info: ../fig/SA2/PCVAR.png  used on input line 1771.
 (pdftex.def)             Requested size: 446.26836pt x 270.75485pt.
 
-Overfull \hbox (19.26053pt too wide) in paragraph at lines 1674--1675
+Overfull \hbox (19.26053pt too wide) in paragraph at lines 1771--1772
 []\OT1/cmr/m/n/10.95 [B][][] 
  []
 
@@ -1865,8 +1866,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1677 \DIFdelendFL \DIFaddbeginFL \caption
-                                           [{{[}A{]} Each shape mode's princ...
+l.1776 \DIFdelend \caption
+                          [{{[}A{]} Each shape mode's principal axis represe...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1879,41 +1880,41 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1684 ...Faddbegin \end{pandoccrossrefsubfigures}
-                                                  
+l.1786 \DIFdelend \end{pandoccrossrefsubfigures}
+                                                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [56] [57] [58] [59] [60] [61] [62] [63] [64]
-<../fig/SA2/instep_Meas.png, id=1371, 484.647pt x 457.71pt>
+<../fig/SA2/instep_Meas.png, id=1406, 484.647pt x 457.71pt>
 File: ../fig/SA2/instep_Meas.png Graphic file (type png)
 <use ../fig/SA2/instep_Meas.png>
-Package pdftex.def Info: ../fig/SA2/instep_Meas.png  used on input line 1957.
+Package pdftex.def Info: ../fig/SA2/instep_Meas.png  used on input line 2059.
 (pdftex.def)             Requested size: 375.8194pt x 354.9311pt.
  [65 <../fig/SA2/instep_Meas.png>]
-Overfull \hbox (4.16644pt too wide) in paragraph at lines 1984--1985
+Overfull \hbox (4.16644pt too wide) in paragraph at lines 2086--2087
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []   |   []   |   []   |   []
  []
 
-<../fig/SA2/instep_MTP.png, id=1381, 578.16pt x 578.16pt>
+<../fig/SA2/instep_MTP.png, id=1417, 578.16pt x 578.16pt>
 File: ../fig/SA2/instep_MTP.png Graphic file (type png)
 <use ../fig/SA2/instep_MTP.png>
-Package pdftex.def Info: ../fig/SA2/instep_MTP.png  used on input line 1991.
+Package pdftex.def Info: ../fig/SA2/instep_MTP.png  used on input line 2093.
 (pdftex.def)             Requested size: 375.79955pt x 375.79955pt.
 [66] [67 <../fig/SA2/instep_MTP.png>]
-Underfull \hbox (badness 10000) in alignment at lines 2005--2010
+Underfull \hbox (badness 10000) in alignment at lines 2107--2112
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2010--2014
+Underfull \hbox (badness 10000) in alignment at lines 2112--2116
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2014--2019
+Underfull \hbox (badness 10000) in alignment at lines 2116--2121
 [] []
  []
 
@@ -1923,228 +1924,1264 @@ centered
 [73
 
 ]
-<../fig/SA3/FootOverview.png, id=1458, 197.73875pt x 257.96375pt>
+<../fig/SA3/FootOverview.png, id=1495, 614.295pt x 454.69875pt>
 File: ../fig/SA3/FootOverview.png Graphic file (type png)
 <use ../fig/SA3/FootOverview.png>
-Package pdftex.def Info: ../fig/SA3/FootOverview.png  used on input line 2162.
-(pdftex.def)             Requested size: 187.90204pt x 245.13107pt.
+Package pdftex.def Info: ../fig/SA3/FootOverview.png  used on input line 2293.
+(pdftex.def)             Requested size: 281.85738pt x 208.62971pt.
  [74 <../fig/SA3/FootOverview.png>]
-<../fig/SA3/ANSUR.png, id=1476, 421.575pt x 191.71625pt>
+<../fig/SA3/ANSUR.png, id=1518, 647.41875pt x 778.91pt>
 File: ../fig/SA3/ANSUR.png Graphic file (type png)
 <use ../fig/SA3/ANSUR.png>
-Package pdftex.def Info: ../fig/SA3/ANSUR.png  used on input line 2187.
-(pdftex.def)             Requested size: 375.81166pt x 170.90482pt.
- [75 <../fig/SA3/ANSUR.png>] [76]
-<../fig/SA3/Overview.png, id=1508, 456.70625pt x 185.69376pt>
-File: ../fig/SA3/Overview.png Graphic file (type png)
-<use ../fig/SA3/Overview.png>
-Package pdftex.def Info: ../fig/SA3/Overview.png  used on input line 2238.
-(pdftex.def)             Requested size: 422.78813pt x 171.90286pt.
-
-[77] [78 <../fig/SA3/Overview.png>]
-<../fig/SA3/Mobility.png, id=1526, 410.53375pt x 276.03125pt>
-File: ../fig/SA3/Mobility.png Graphic file (type png)
-<use ../fig/SA3/Mobility.png>
-Package pdftex.def Info: ../fig/SA3/Mobility.png  used on input line 2261.
-(pdftex.def)             Requested size: 281.85287pt x 189.50987pt.
- [79 <../fig/SA3/Mobility.png>] [80]
-
-LaTeX Warning: Reference `fig:SA3-Upper' on page 81 undefined on input line 230
-8.
-
-[81]
-<../fig/SA3/SoleFlex.png, id=1554, 248.93pt x 273.02pt>
-File: ../fig/SA3/SoleFlex.png Graphic file (type png)
-<use ../fig/SA3/SoleFlex.png>
-Package pdftex.def Info: ../fig/SA3/SoleFlex.png  used on input line 2347.
-(pdftex.def)             Requested size: 234.88304pt x 257.61366pt.
- [82 <../fig/SA3/SoleFlex.png>]
-Overfull \hbox (12.78731pt too wide) in paragraph at lines 2369--2379
-[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
-]   |   []   |   []   |   []   |   []
+Package pdftex.def Info: ../fig/SA3/ANSUR.png  used on input line 2339.
+(pdftex.def)             Requested size: 281.85208pt x 339.09648pt.
+ [75] [76 <../fig/SA3/ANSUR.png>]
+[77]
+Overfull \hbox (20.7564pt too wide) in paragraph at lines 2377--2382
+[]|   []   |   []   |   []   [][]|   []   |   []   |   []   |   []   |   []   |
+   []   |   []   |   [][]\OT1/cmr/m/n/10.95 categorized
  []
 
-[83]
-Overfull \hbox (1.5635pt too wide) in paragraph at lines 2404--2405
+<../fig/SA3/Overview.png, id=1556, 456.70625pt x 185.69376pt>
+File: ../fig/SA3/Overview.png Graphic file (type png)
+<use ../fig/SA3/Overview.png>
+Package pdftex.def Info: ../fig/SA3/Overview.png  used on input line 2401.
+(pdftex.def)             Requested size: 422.78813pt x 171.90286pt.
+[78] [79 <../fig/SA3/Overview.png>]
+<../fig/SA3/Mobility.png, id=1574, 768.8725pt x 584.1825pt>
+File: ../fig/SA3/Mobility.png Graphic file (type png)
+<use ../fig/SA3/Mobility.png>
+Package pdftex.def Info: ../fig/SA3/Mobility.png  used on input line 2425.
+(pdftex.def)             Requested size: 281.86212pt x 214.15633pt.
+ [80 <../fig/SA3/Mobility.png>]
+! Too many }'s.
+l.2448 }
+        %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[81]
+<../fig/SA3/SoleFlex.png, id=1597, 248.93pt x 273.02pt>
+File: ../fig/SA3/SoleFlex.png Graphic file (type png)
+<use ../fig/SA3/SoleFlex.png>
+Package pdftex.def Info: ../fig/SA3/SoleFlex.png  used on input line 2551.
+(pdftex.def)             Requested size: 234.88304pt x 257.61366pt.
+ [82]
+! Too many }'s.
+l.2579 }
+        %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[83 <../fig/SA3/SoleFlex.png>]
+Overfull \hbox (1.5635pt too wide) in paragraph at lines 2655--2656
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
 ]   |   []   |   []
  []
 
-<../fig/SA3/Convolute_Actuation.png, id=1572, 578.16pt x 578.16pt>
+[84]
+<../fig/SA3/Convolute_Actuation.png, id=1626, 686.565pt x 284.5029pt>
 File: ../fig/SA3/Convolute_Actuation.png Graphic file (type png)
 <use ../fig/SA3/Convolute_Actuation.png>
 Package pdftex.def Info: ../fig/SA3/Convolute_Actuation.png  used on input line
- 2411.
-(pdftex.def)             Requested size: 422.77669pt x 422.77669pt.
-[84]
-<../fig/SA3/Convolute_Triangle.png, id=1583, 316.7835pt x 121.6545pt>
+ 2662.
+(pdftex.def)             Requested size: 422.77449pt x 175.1918pt.
+ [85 <../fig/SA3/Convolute_Actuation.png>]
+<../fig/SA3/Convolute_Triangle.png, id=1636, 316.7835pt x 121.6545pt>
 File: ../fig/SA3/Convolute_Triangle.png Graphic file (type png)
 <use ../fig/SA3/Convolute_Triangle.png>
 Package pdftex.def Info: ../fig/SA3/Convolute_Triangle.png  used on input line 
-2431.
+2694.
 (pdftex.def)             Requested size: 281.85425pt x 108.24059pt.
- [85 <../fig/SA3/Convolute_Actuation.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-439.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2439.
-
  [86 <../fig/SA3/Convolute_Triangle.png>]
-Overfull \hbox (3.52896pt too wide) in paragraph at lines 2469--2470
+Overfull \hbox (3.52896pt too wide) in paragraph at lines 2771--2772
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []   |   []   |   []   |   []   |   []
  []
 
-<../fig/SA3/Convolute_Angled.png, id=1600, 505.4082pt x 379.8993pt>
+<../fig/SA3/Convolute_Angled.png, id=1651, 505.4082pt x 380.1402pt>
 File: ../fig/SA3/Convolute_Angled.png Graphic file (type png)
 <use ../fig/SA3/Convolute_Angled.png>
-Package pdftex.def Info: ../fig/SA3/Convolute_Angled.png  used on input line 24
-85.
-(pdftex.def)             Requested size: 328.8199pt x 247.16348pt.
+Package pdftex.def Info: ../fig/SA3/Convolute_Angled.png  used on input line 27
+96.
+(pdftex.def)             Requested size: 328.8199pt x 247.3202pt.
 [87]
-<../fig/SA3/LastModification.png, id=1608, 244.7544pt x 173.9298pt>
+<../fig/SA3/LastModification.png, id=1659, 244.7544pt x 173.9298pt>
 File: ../fig/SA3/LastModification.png Graphic file (type png)
 <use ../fig/SA3/LastModification.png>
-Package pdftex.def Info: ../fig/SA3/LastModification.png  used on input line 25
-10.
+Package pdftex.def Info: ../fig/SA3/LastModification.png  used on input line 28
+33.
 (pdftex.def)             Requested size: 375.80998pt x 267.06183pt.
  [88 <../fig/SA3/Convolute_Angled.png>]
-<../fig/SA3/Last_Taping_Seams.png, id=1617, 589.20125pt x 663.47874pt>
+<../fig/SA3/Last_Taping_Seams.png, id=1670, 589.20125pt x 663.47874pt>
 File: ../fig/SA3/Last_Taping_Seams.png Graphic file (type png)
 <use ../fig/SA3/Last_Taping_Seams.png>
 Package pdftex.def Info: ../fig/SA3/Last_Taping_Seams.png  used on input line 2
-529.
+863.
 (pdftex.def)             Requested size: 375.81085pt x 423.18735pt.
  [89 <../fig/SA3/LastModification.png>] [90 <../fig/SA3/Last_Taping_Seams.png>]
-<../fig/SA3/LacingConvolute_evolution.png, id=1638, 579.6054pt x 224.2779pt>
+<../fig/SA3/LacingConvolute_evolution.png, id=1689, 579.6054pt x 224.2779pt>
 File: ../fig/SA3/LacingConvolute_evolution.png Graphic file (type png)
 <use ../fig/SA3/LacingConvolute_evolution.png>
 Package pdftex.def Info: ../fig/SA3/LacingConvolute_evolution.png  used on inpu
-t line 2568.
+t line 2922.
 (pdftex.def)             Requested size: 328.8308pt x 127.24083pt.
- [91 <../fig/SA3/LacingConvolute_evolution.png>]
-Overfull \hbox (2.50641pt too wide) in paragraph at lines 2583--2590
-[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
-]   |   []   |   []   |   [][]\OT1/cmr/m/n/10.95 [[]|   [][]][]|   []
- []
+ [91 <../fig/SA3/LacingConvolute_evolution.png>] [92]
 
-<../fig/SA3/LacingOverview.png, id=1646, 1215.79219pt x 1985.91937pt>
-File: ../fig/SA3/LacingOverview.png Graphic file (type png)
-<use ../fig/SA3/LacingOverview.png>
-Package pdftex.def Info: ../fig/SA3/LacingOverview.png  used on input line 2596
-.
-(pdftex.def)             Requested size: 328.82483pt x 537.11449pt.
-[92] [93 <../fig/SA3/LacingOverview.png>]
-Overfull \hbox (5.35399pt too wide) in paragraph at lines 2615--2620
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
-  |   []   |   []   |   []   |   []   |   []   |   []
- []
+! LaTeX Error: File `' not found.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3008 }
+        
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-Overfull \hbox (4.58208pt too wide) in paragraph at lines 2615--2620
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
-  |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-<../fig/SA3/sole_3d.png, id=1664, 1284.8pt x 722.7pt>
+<../fig/SA3/sole_3d.png, id=1712, 1284.8pt x 722.7pt>
 File: ../fig/SA3/sole_3d.png Graphic file (type png)
 <use ../fig/SA3/sole_3d.png>
-Package pdftex.def Info: ../fig/SA3/sole_3d.png  used on input line 2626.
+Package pdftex.def Info: ../fig/SA3/sole_3d.png  used on input line 3036.
 (pdftex.def)             Requested size: 328.82533pt x 184.96425pt.
-[94 <../fig/SA3/sole_3d.png>]
-<../fig/SA3/BladderSeam.png, id=1678, 803.0pt x 602.25pt>
+<../fig/SA3/LacingOverview.png, id=1714, 1505.625pt x 2258.4375pt>
+File: ../fig/SA3/LacingOverview.png Graphic file (type png)
+<use ../fig/SA3/LacingOverview.png>
+Package pdftex.def Info: ../fig/SA3/LacingOverview.png  used on input line 3051
+.
+(pdftex.def)             Requested size: 328.82626pt x 493.2394pt.
+[93 <../fig/SA3/sole_3d.png>]
+<../fig/SA3/Proto_Spaceboot.png, id=1728, 523.9575pt x 393.47pt>
+File: ../fig/SA3/Proto_Spaceboot.png Graphic file (type png)
+<use ../fig/SA3/Proto_Spaceboot.png>
+Package pdftex.def Info: ../fig/SA3/Proto_Spaceboot.png  used on input line 308
+5.
+(pdftex.def)             Requested size: 328.83177pt x 246.93878pt.
+ [94 <../fig/SA3/LacingOverview.png>] [95 <../fig/SA3/Proto_Spaceboot.png>]
+<../fig/SA3/BladderSeam.png, id=1744, 803.0pt x 602.25pt>
 File: ../fig/SA3/BladderSeam.png Graphic file (type png)
 <use ../fig/SA3/BladderSeam.png>
-Package pdftex.def Info: ../fig/SA3/BladderSeam.png  used on input line 2650.
+Package pdftex.def Info: ../fig/SA3/BladderSeam.png  used on input line 3117.
 (pdftex.def)             Requested size: 469.7715pt x 352.32861pt.
 
-Overfull \hbox (6.8165pt too wide) in paragraph at lines 2650--2650
+Overfull \hbox (6.8165pt too wide) in paragraph at lines 3117--3117
  [][][] 
  []
 
-<../fig/SA3/Proto_Spaceboot.jpg, id=1679, 4047.12pt x 3035.34pt>
-File: ../fig/SA3/Proto_Spaceboot.jpg Graphic file (type jpg)
-<use ../fig/SA3/Proto_Spaceboot.jpg>
-Package pdftex.def Info: ../fig/SA3/Proto_Spaceboot.jpg  used on input line 265
-8.
-(pdftex.def)             Requested size: 328.77829pt x 246.58371pt.
-[95] [96 <../fig/SA3/BladderSeam.png>] [97 <../fig/SA3/Proto_Spaceboot.jpg>]
-Overfull \hbox (6.70392pt too wide) in paragraph at lines 2670--2671
+
+Overfull \hbox (6.70392pt too wide) in paragraph at lines 3136--3137
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
 ]   |   []   |   []   |   []   |   []   |   []
  []
 
-<../fig/SA3/ConvoluteConstruction.png, id=1699, 880.28876pt x 687.56876pt>
+[96 <../fig/SA3/BladderSeam.png>]
+<../fig/SA3/ConvoluteConstruction.png, id=1755, 880.28876pt x 687.56876pt>
 File: ../fig/SA3/ConvoluteConstruction.png Graphic file (type png)
 <use ../fig/SA3/ConvoluteConstruction.png>
 Package pdftex.def Info: ../fig/SA3/ConvoluteConstruction.png  used on input li
-ne 2684.
+ne 3157.
 (pdftex.def)             Requested size: 422.77557pt x 330.2181pt.
-[98
-
-] [99 <../fig/SA3/ConvoluteConstruction.png>]
-<../fig/SA3/cut_patterns.png, id=1715, 723.70375pt x 523.9575pt>
+ [97]
+<../fig/SA3/cut_patterns.png, id=1762, 723.70375pt x 523.9575pt>
 File: ../fig/SA3/cut_patterns.png Graphic file (type png)
 <use ../fig/SA3/cut_patterns.png>
-Package pdftex.def Info: ../fig/SA3/cut_patterns.png  used on input line 2720.
+Package pdftex.def Info: ../fig/SA3/cut_patterns.png  used on input line 3217.
 (pdftex.def)             Requested size: 375.8091pt x 272.08371pt.
- [100 <../fig/SA3/cut_patterns.png>]
-<../fig/SA3/Sole_Mold.jpg, id=1725, 4047.12pt x 3035.34pt>
+ [98 <../fig/SA3/ConvoluteConstruction.png>] [99 <../fig/SA3/cut_patterns.png>]
+<../fig/SA3/Sole_Mold.jpg, id=1780, 4047.12pt x 3035.34pt>
 File: ../fig/SA3/Sole_Mold.jpg Graphic file (type jpg)
 <use ../fig/SA3/Sole_Mold.jpg>
-Package pdftex.def Info: ../fig/SA3/Sole_Mold.jpg  used on input line 2744.
+Package pdftex.def Info: ../fig/SA3/Sole_Mold.jpg  used on input line 3254.
 (pdftex.def)             Requested size: 328.77829pt x 246.58371pt.
- [101 <../fig/SA3/Sole_Mold.jpg>]
-Overfull \hbox (12.63518pt too wide) in paragraph at lines 2782--2783
+ [100 <../fig/SA3/Sole_Mold.jpg>]
+Overfull \hbox (12.63518pt too wide) in paragraph at lines 3320--3321
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
 ]   |   []   |   []   |   []
  []
 
-[102]
-<../fig/SA3/Classic_Spaceboot.jpg, id=1743, 4047.12pt x 3035.34pt>
-File: ../fig/SA3/Classic_Spaceboot.jpg Graphic file (type jpg)
-<use ../fig/SA3/Classic_Spaceboot.jpg>
-Package pdftex.def Info: ../fig/SA3/Classic_Spaceboot.jpg  used on input line 2
-801.
-(pdftex.def)             Requested size: 328.77829pt x 246.58371pt.
- [103 <../fig/SA3/Classic_Spaceboot.jpg>]
-Overfull \hbox (6.03474pt too wide) in paragraph at lines 2822--2829
-[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
-]   |   []   |   []   |   []   |   []   |   []
+[101]
+<../fig/SA3/Classic_Spaceboot.png, id=1799, 522.95375pt x 392.46625pt>
+File: ../fig/SA3/Classic_Spaceboot.png Graphic file (type png)
+<use ../fig/SA3/Classic_Spaceboot.png>
+Package pdftex.def Info: ../fig/SA3/Classic_Spaceboot.png  used on input line 3
+355.
+(pdftex.def)             Requested size: 328.83221pt x 246.78194pt.
+
+! Too many }'s.
+l.3376 }
+        \DIFdelend
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[102 <../fig/SA3/Classic_Spaceboot.png>]
+! Too many }'s.
+l.3389 }
+        \DIFdelend \DIFaddbegin \DIFadd{also features a heel counter, which ...
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  >\z@ \vskip -\ifdim \prevd...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (6428.98485pt too wide) in paragraph at lines 3387--3856
+|   []   |   []   |   []   |   []   |   [] 
+ []
+
+[103]
+ \th@ChapterStyle\th@DoChapCenterChapter 7.
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra }, or forgotten \endgroup.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (245.98035pt too wide) in paragraph at lines 3856--3856
+|   []
  []
 
 
-Overfull \hbox (12.46126pt too wide) in paragraph at lines 2822--2829
+Overfull \hbox (4914.05081pt too wide) in paragraph at lines 3856--3856
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3856--3856
+
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Things are pretty mixed up, but I think the worst is over.
+
+
+LaTeX Warning: Reference `fig:SA4-interface' on page 104 undefined on input lin
+e 3856.
+
+! Too many }'s.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (745.72636pt too wide) in paragraph at lines 3856--3856
+|   []   |   []   |   [][]\OT1/cmr/m/n/10.95 .|   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3856--3856
+
+ []
+
+[104
+
+]
+! Too many }'s.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Too many }'s.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (208.84137pt too wide) in paragraph at lines 3856--3856
+[]\OT1/cmr/m/n/10.95 the|   []
+ []
+
+<../fig/SA4/BaseSeal.png, id=1822, 562.1pt x 534.99875pt>
+File: ../fig/SA4/BaseSeal.png Graphic file (type png)
+<use ../fig/SA4/BaseSeal.png>
+Package pdftex.def Info: ../fig/SA4/BaseSeal.png  used on input line 3856.
+(pdftex.def)             Requested size: 234.87103pt x 223.54689pt.
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<../fig/SA4/Straps.png, id=1824, 652.4375pt x 222.8325pt>
+File: ../fig/SA4/Straps.png Graphic file (type png)
+<use ../fig/SA4/Straps.png>
+Package pdftex.def Info: ../fig/SA4/Straps.png  used on input line 3856.
+(pdftex.def)             Requested size: 422.7951pt x 144.40079pt.
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (3894.89993pt too wide) in paragraph at lines 3856--3856
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+][]|   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3856--3856
+
+ []
+
+[105 <../fig/SA4/BaseSeal.png>]
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UL@leaders ...L@skip \tw@ \UL@pixel \UL@leadtype 
+                                                  \LA@hskip \UL@skip \LA@hsk...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra }, or forgotten \endgroup.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\UL@word ...stop \UL@leaders \fi \fi \fi \UL@word 
+                                                  \@empty 
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\DIFaddtex #1->{\protect \color {blue}\uwave {#1}}
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\UL@stop ...z@ \else \UL@putbox \fi \else \egroup 
+                                                  \egroup \UL@putbox \fi \if...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\UL@stop ... \UL@putbox \fi \else \egroup \egroup 
+                                                  \UL@putbox \fi \ifnum \UL@...
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (3090.25717pt too wide) in paragraph at lines 3856--3856
+[]\OT1/cmr/m/n/10.95 :|   []
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 3856--3856
+[] [] [] [] []
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 3856--3856
+[] [] [] [] []
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 3856--3856
+[] [] [] [] []
+ []
+
+[106 <../fig/SA4/Straps.png>]
+Overfull \hbox (17.57126pt too wide) in paragraph at lines 3856--3856
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
-[104] [105]
- \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 7.
-centered
-[106
+[107]
+<../fig/SA4/Kinovea.png, id=1859, 723.70375pt x 618.31pt>
+File: ../fig/SA4/Kinovea.png Graphic file (type png)
+<use ../fig/SA4/Kinovea.png>
+Package pdftex.def Info: ../fig/SA4/Kinovea.png  used on input line 3856.
+(pdftex.def)             Requested size: 375.8091pt x 321.07962pt.
+ [108 <../fig/SA4/Kinovea.png>]
+<../fig/SA4/FSR_embed.png, id=1869, 432.61626pt x 312.16624pt>
+File: ../fig/SA4/FSR_embed.png Graphic file (type png)
+<use ../fig/SA4/FSR_embed.png>
+Package pdftex.def Info: ../fig/SA4/FSR_embed.png  used on input line 3856.
+(pdftex.def)             Requested size: 234.87672pt x 169.4818pt.
+ [109 <../fig/SA4/FSR_embed.png>]
+<../fig/SA4/FSR_cal.png, id=1878, 1157.32375pt x 281.05pt>
+File: ../fig/SA4/FSR_cal.png Graphic file (type png)
+<use ../fig/SA4/FSR_cal.png>
+Package pdftex.def Info: ../fig/SA4/FSR_cal.png  used on input line 3856.
+(pdftex.def)             Requested size: 422.764pt x 102.66602pt.
+ [110 <../fig/SA4/FSR_cal.png>]
+<../fig/SA4/Corlett-Bishop.png, id=1893, 314.17375pt x 406.01688pt>
+File: ../fig/SA4/Corlett-Bishop.png Graphic file (type png)
+<use ../fig/SA4/Corlett-Bishop.png>
+Package pdftex.def Info: ../fig/SA4/Corlett-Bishop.png  used on input line 3856
+.
+(pdftex.def)             Requested size: 187.89687pt x 242.82518pt.
+ [111]
+Overfull \hbox (46.03201pt too wide) in paragraph at lines 3856--3856
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []   |   []   [][]|   [][]
+ []
 
-]
-<../fig/SA4/InterfaceDesign.png, id=1767, 1085.0136pt x 419.6478pt>
-File: ../fig/SA4/InterfaceDesign.png Graphic file (type png)
-<use ../fig/SA4/InterfaceDesign.png>
-Package pdftex.def Info: ../fig/SA4/InterfaceDesign.png  used on input line 289
-1.
-(pdftex.def)             Requested size: 469.7586pt x 181.68727pt.
- [107 <../fig/SA4/InterfaceDesign.png>] [108] [109] [110]
+[112 <../fig/SA4/Corlett-Bishop.png>] [113] [114]
  \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 8.
 centered
-[111
+! Improper \spacefactor.
+\UL@on ...#1\xdef \UL@spfactor {\the \spacefactor 
+                                                  } \UL@end * 
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
 
-] [112]
+! Too many }'s.
+\DIFaddtex #1->{\protect \color {blue}\uwave {#1}}
+                                                  
+l.3856 }
+        \DIFdelend \DIFaddbegin %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+l.3909 }
+        %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[115
+
+]
+! Too many }'s.
+l.3954 }
+        %%%
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[116]
 ! Undefined control sequence.
 <argument> @{} >{\raggedright \arraybackslash 
                                               }p{(\columnwidth - 6\tabcolsep...
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2155,7 +3192,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...10}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2166,7 +3203,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...40}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2177,7 +3214,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...30}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2192,7 +3229,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2204,7 +3241,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2216,7 +3253,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2228,7 +3265,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3054 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
+l.3981 ...nwidth - 6\tabcolsep) * \real{0.20}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2236,7 +3273,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Misplaced \noalign.
 \caption ->\noalign 
                     \bgroup \@ifnextchar [{\egroup \LT@c@ption \@firstofone ...
-l.3055 \DIFaddend \caption
+l.3982 \DIFaddend \caption
                           {\label{tbl:pubs}Peer-reviewed publications}\tabul...
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2244,20 +3281,20 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.3055 ...bel{tbl:pubs}Peer-reviewed publications}
+l.3982 ...bel{tbl:pubs}Peer-reviewed publications}
                                                   \tabularnewline
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3065--3069
+Underfull \hbox (badness 10000) in paragraph at lines 3992--3996
 []|[]|   []
  []
 
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.3075 \DIFaddend \midrule
+l.4002 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2265,7 +3302,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2276,7 +3313,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2287,7 +3324,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2298,28 +3335,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 3054--3076
+Underfull \hbox (badness 10000) in alignment at lines 3981--4003
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2330,7 +3367,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2341,7 +3378,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2349,7 +3386,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2357,7 +3394,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2365,7 +3402,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2373,7 +3410,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2381,7 +3418,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2389,7 +3426,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2397,7 +3434,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2405,7 +3442,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2413,7 +3450,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2421,7 +3458,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2429,7 +3466,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2437,7 +3474,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2448,7 +3485,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.3076 \endfirsthead
+l.4003 \endfirsthead
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2457,14 +3494,14 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3086--3090
+Underfull \hbox (badness 10000) in paragraph at lines 4013--4017
 []|[]|   []
  []
 
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.3096 \DIFaddend \midrule
+l.4023 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2472,7 +3509,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3097 \endhead
+l.4024 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2483,7 +3520,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3097 \endhead
+l.4024 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2494,7 +3531,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3097 \endhead
+l.4024 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2505,28 +3542,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.3097 \endhead
+l.4024 \endhead
                
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.3097 \endhead
+l.4024 \endhead
                
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 3076--3097
+Underfull \hbox (badness 10000) in alignment at lines 4003--4024
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.3097 \endhead
+l.4024 \endhead
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2537,7 +3574,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.3097 \endhead
+l.4024 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2548,7 +3585,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.3097 \endhead
+l.4024 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2559,7 +3596,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.3097 \endhead
+l.4024 \endhead
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2568,144 +3605,144 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3106--3110
+Underfull \hbox (badness 10000) in paragraph at lines 4033--4037
 []|\OT1/cmr/m/n/9 Aerospace
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3106--3110
+Underfull \hbox (badness 10000) in paragraph at lines 4033--4037
 \OT1/cmr/m/n/9 Medicine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3106--3110
+Underfull \hbox (badness 10000) in paragraph at lines 4033--4037
 \OT1/cmr/m/n/9 and Hu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3106--3110
+Underfull \hbox (badness 10000) in paragraph at lines 4033--4037
 \OT1/cmr/m/n/9 man
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3106--3110
+Underfull \hbox (badness 10000) in paragraph at lines 4033--4037
 \OT1/cmr/m/n/9 Per-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3136--3140
+Underfull \hbox (badness 10000) in paragraph at lines 4063--4067
 []|\OT1/cmr/m/n/9 Journal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3136--3140
+Underfull \hbox (badness 10000) in paragraph at lines 4063--4067
 \OT1/cmr/m/n/9 of Open
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3136--3140
+Underfull \hbox (badness 10000) in paragraph at lines 4063--4067
 \OT1/cmr/m/n/9 Source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3166--3170
+Underfull \hbox (badness 10000) in paragraph at lines 4093--4097
 []|\OT1/cmr/m/n/9 Journal
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 3166--3170
+Underfull \hbox (badness 2005) in paragraph at lines 4093--4097
 \OT1/cmr/m/n/9 of Biome-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3196--3200
+Underfull \hbox (badness 10000) in paragraph at lines 4123--4127
 \OT1/cmr/m/n/9 na-tional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3196--3200
+Underfull \hbox (badness 10000) in paragraph at lines 4123--4127
 \OT1/cmr/m/n/9 Con-fer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3196--3200
+Underfull \hbox (badness 10000) in paragraph at lines 4123--4127
 \OT1/cmr/m/n/9 ence on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3196--3200
+Underfull \hbox (badness 10000) in paragraph at lines 4123--4127
 \OT1/cmr/m/n/9 En-vi-ron-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3196--3200
+Underfull \hbox (badness 10000) in paragraph at lines 4123--4127
 \OT1/cmr/m/n/9 men-tal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3226--3230
+Underfull \hbox (badness 10000) in paragraph at lines 4153--4157
 []|[]|   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3226--3230
+Underfull \hbox (badness 10000) in paragraph at lines 4153--4157
 |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3226--3230
+Underfull \hbox (badness 10000) in paragraph at lines 4153--4157
 [][]|   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3256--3260
+Underfull \hbox (badness 10000) in paragraph at lines 4183--4187
 []|[]|   []
  []
 
 
-Overfull \hbox (8.85205pt too wide) in paragraph at lines 3256--3260
+Overfull \hbox (8.85205pt too wide) in paragraph at lines 4183--4187
 |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3256--3260
+Underfull \hbox (badness 10000) in paragraph at lines 4183--4187
 [][]|   []
  []
 
 
-Overfull \hbox (8.85205pt too wide) in paragraph at lines 3256--3260
+Overfull \hbox (8.85205pt too wide) in paragraph at lines 4183--4187
 |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3286--3290
+Underfull \hbox (badness 10000) in paragraph at lines 4213--4217
 []|\OT1/cmr/m/n/9 Aerospace
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3286--3290
+Underfull \hbox (badness 10000) in paragraph at lines 4213--4217
 \OT1/cmr/m/n/9 Medicine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3286--3290
+Underfull \hbox (badness 10000) in paragraph at lines 4213--4217
 \OT1/cmr/m/n/9 and Hu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3286--3290
+Underfull \hbox (badness 10000) in paragraph at lines 4213--4217
 \OT1/cmr/m/n/9 man
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3286--3290
+Underfull \hbox (badness 10000) in paragraph at lines 4213--4217
 \OT1/cmr/m/n/9 Per-for-
  []
 
 ! Misplaced \noalign.
 \bottomrule ->\noalign 
                        {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.3296 \DIFaddend \bottomrule
+l.4223 \DIFaddend \bottomrule
                              
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2713,7 +3750,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3297 \end
+l.4224 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2724,7 +3761,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3297 \end
+l.4224 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2735,7 +3772,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3297 \end
+l.4224 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2746,28 +3783,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.3297 \end
+l.4224 \end
            {longtable}
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.3297 \end
+l.4224 \end
            {longtable}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (202.96828pt too wide) in alignment at lines 3097--3297
+Overfull \hbox (202.96828pt too wide) in alignment at lines 4024--4224
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.3297 \end
+l.4224 \end
            {longtable}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2778,7 +3815,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.3297 \end{longtable}
+l.4224 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2789,7 +3826,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \FB@ori@endlongtable ->\crcr \noalign 
                                       {\let \LT@entry \LT@entry@chop \xdef \...
-l.3297 \end{longtable}
+l.4224 \end{longtable}
                       
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2797,7 +3834,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \crcr.
 \LT@echunk ->\crcr 
                    \LT@save@row \cr \egroup \global \setbox \@ne \lastbox \u...
-l.3297 \end{longtable}
+l.4224 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2808,7 +3845,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.3297 \end{longtable}
+l.4224 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2819,7 +3856,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.3297 \end{longtable}
+l.4224 \end{longtable}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2827,11 +3864,11 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[113] [114]
+[117] [118]
 ! Undefined control sequence.
 <argument> @{} >{\raggedright \arraybackslash 
                                               }p{(\columnwidth - 6\tabcolsep...
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2842,7 +3879,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...12}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2853,7 +3890,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...50}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2864,7 +3901,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...25}} >{\raggedright \arraybackslash 
                                                   }p{(\columnwidth - 6\tabco...
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2879,7 +3916,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2891,7 +3928,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2903,7 +3940,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2915,7 +3952,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3308 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
+l.4235 ...nwidth - 6\tabcolsep) * \real{0.12}}@{}}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2923,7 +3960,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Misplaced \noalign.
 \caption ->\noalign 
                     \bgroup \@ifnextchar [{\egroup \LT@c@ption \@firstofone ...
-l.3309 \DIFaddend \caption
+l.4236 \DIFaddend \caption
                           {\label{tbl:conf}Conference Presentations and Post...
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2931,20 +3968,20 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.3309 ...nf}Conference Presentations and Posters}
+l.4236 ...nf}Conference Presentations and Posters}
                                                   \tabularnewline
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3319--3323
+Underfull \hbox (badness 10000) in paragraph at lines 4246--4250
 []|[]|   []
  []
 
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.3329 \DIFaddend \midrule
+l.4256 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2952,7 +3989,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2963,7 +4000,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2974,7 +4011,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2985,28 +4022,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 3308--3330
+Underfull \hbox (badness 10000) in alignment at lines 4235--4257
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3017,7 +4054,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3028,7 +4065,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3036,7 +4073,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3044,7 +4081,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3052,7 +4089,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3060,7 +4097,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3068,7 +4105,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3076,7 +4113,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3084,7 +4121,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3092,7 +4129,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3100,7 +4137,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3108,7 +4145,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3116,7 +4153,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \omit.
 \LT@entry ...->\ifhmode \@firstofone {&}\fi \omit 
                                                   \ifnum #1=\c@LT@chunks \el...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3124,7 +4161,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3135,7 +4172,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.3330 \endfirsthead
+l.4257 \endfirsthead
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3144,14 +4181,14 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3340--3344
+Underfull \hbox (badness 10000) in paragraph at lines 4267--4271
 []|[]|   []
  []
 
 ! Misplaced \noalign.
 \midrule ->\noalign 
                     {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.3350 \DIFaddend \midrule
+l.4277 \DIFaddend \midrule
                           
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3159,7 +4196,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3351 \endhead
+l.4278 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3170,7 +4207,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3351 \endhead
+l.4278 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3181,7 +4218,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3351 \endhead
+l.4278 \endhead
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3192,28 +4229,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.3351 \endhead
+l.4278 \endhead
                
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.3351 \endhead
+l.4278 \endhead
                
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 3330--3351
+Underfull \hbox (badness 10000) in alignment at lines 4257--4278
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.3351 \endhead
+l.4278 \endhead
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3224,7 +4261,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.3351 \endhead
+l.4278 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3235,7 +4272,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.3351 \endhead
+l.4278 \endhead
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3246,7 +4283,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.3351 \endhead
+l.4278 \endhead
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3255,49 +4292,49 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3360--3364
+Underfull \hbox (badness 10000) in paragraph at lines 4287--4291
 []|\OT1/cmr/m/n/9 Footwear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3360--3364
+Underfull \hbox (badness 10000) in paragraph at lines 4287--4291
 \OT1/cmr/m/n/9 Biome-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3360--3364
+Underfull \hbox (badness 10000) in paragraph at lines 4287--4291
 \OT1/cmr/m/n/9 chan-ics
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3390--3394
+Underfull \hbox (badness 10000) in paragraph at lines 4317--4321
 \OT1/cmr/m/n/9 So-ci-ety of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3390--3394
+Underfull \hbox (badness 10000) in paragraph at lines 4317--4321
 \OT1/cmr/m/n/9 Biome-chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3480--3484
+Underfull \hbox (badness 10000) in paragraph at lines 4407--4411
 []|\OT1/cmr/m/n/9 Footwear
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3480--3484
+Underfull \hbox (badness 10000) in paragraph at lines 4407--4411
 \OT1/cmr/m/n/9 Biome-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3480--3484
+Underfull \hbox (badness 10000) in paragraph at lines 4407--4411
 \OT1/cmr/m/n/9 chan-ics
  []
 
 ! Misplaced \noalign.
 \bottomrule ->\noalign 
                        {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.3520 \DIFaddend \bottomrule
+l.4447 \DIFaddend \bottomrule
                              
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3305,7 +4342,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3521 \end
+l.4448 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3316,7 +4353,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3521 \end
+l.4448 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3327,7 +4364,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3521 \end
+l.4448 \end
            {longtable}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3338,28 +4375,28 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.3521 \end
+l.4448 \end
            {longtable}
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.3521 \end
+l.4448 \end
            {longtable}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (94.3729pt too wide) in alignment at lines 3351--3521
+Overfull \hbox (94.3729pt too wide) in alignment at lines 4278--4448
 [] [] [] [] [][][][][][][][]
  []
 
 ! Undefined control sequence.
 \@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
                                                   
-l.3521 \end
+l.4448 \end
            {longtable}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3370,7 +4407,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced \crcr.
 <recently read> \crcr 
                       
-l.3521 \end{longtable}
+l.4448 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3381,7 +4418,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \FB@ori@endlongtable ->\crcr \noalign 
                                       {\let \LT@entry \LT@entry@chop \xdef \...
-l.3521 \end{longtable}
+l.4448 \end{longtable}
                       
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -3389,7 +4426,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \crcr.
 \LT@echunk ->\crcr 
                    \LT@save@row \cr \egroup \global \setbox \@ne \lastbox \u...
-l.3521 \end{longtable}
+l.4448 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3400,7 +4437,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \cr.
 \LT@echunk ->\crcr \LT@save@row \cr 
                                     \egroup \global \setbox \@ne \lastbox \u...
-l.3521 \end{longtable}
+l.4448 \end{longtable}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -3411,7 +4448,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten \endgroup.
 \LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
                                                   
-l.3521 \end{longtable}
+l.4448 \end{longtable}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3419,20 +4456,20 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[115]
-<../fig/Gantt.png, id=1832, 633.11531pt x 422.32782pt>
+[119]
+<../fig/Gantt.png, id=1952, 633.11531pt x 422.32782pt>
 File: ../fig/Gantt.png Graphic file (type png)
 <use ../fig/Gantt.png>
-Package pdftex.def Info: ../fig/Gantt.png  used on input line 3538.
+Package pdftex.def Info: ../fig/Gantt.png  used on input line 4465.
 (pdftex.def)             Requested size: 469.76352pt x 313.36188pt.
 
-Overfull \hbox (6.80852pt too wide) in paragraph at lines 3538--3538
+Overfull \hbox (6.80852pt too wide) in paragraph at lines 4465--4465
  [][][] 
  []
 
-[116] (pdf_diff/Boppana_Thesis_Diff.bbl [117 <../fig/Gantt.png>]
+[120] (pdf_diff/Boppana_Thesis_Diff.bbl [121 <../fig/Gantt.png>]
 centered
-[118
+[122
 
 ]
 Underfull \hbox (badness 7012) in paragraph at lines 149--156
@@ -3452,36 +4489,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--156
 ):254--261.  []eprint:
  []
 
-[119] [120] [121] [122] [123] [124]
+[123] [124] [125] [126] [127] [128]
 Underfull \hbox (badness 1072) in paragraph at lines 611--618
 []\OT1/cmr/m/n/10.95 Casey A. My-ers, Wel-dyn Allen, Pe-ter J. Laz, Jake Lawler
 -Schwatz, and Bryan P.
  []
 
-[125] [126] [127] [128])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3556.
- [129]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3556.
+[129] [130] [131] [132])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4483.
+ [133]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4483.
  (pdf_diff/Boppana_Thesis_Diff.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3556.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3556.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4483.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4483.
 
 Package rerunfilecheck Info: File `Boppana_Thesis_Diff.out' has not changed.
-(rerunfilecheck)             Checksum: 0007E62C4134CFE555079F8447F9BCE2;5860.
+(rerunfilecheck)             Checksum: E0D6676CC568456DFFD9B66CA9734B47;6317.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3556.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4483.
  ) 
 Here is how much of TeX's memory you used:
- 11475 strings out of 480608
- 175926 string characters out of 5903631
- 497033 words of memory out of 5000000
- 26565 multiletter control sequences out of 15000+600000
+ 11574 strings out of 480608
+ 177093 string characters out of 5903631
+ 569959 words of memory out of 5000000
+ 26616 multiletter control sequences out of 15000+600000
  543211 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,42p,1098b,1124s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,43p,999b,1124s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -3499,11 +4536,11 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 0/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/local/texlive
 /2020/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on pdf_diff/Boppana_Thesis_Diff.pdf (134 pages, 28036015 bytes).
+Output written on pdf_diff/Boppana_Thesis_Diff.pdf (138 pages, 22895569 bytes).
 
 PDF statistics:
- 2072 PDF objects out of 2073 (max. 8388607)
- 1830 compressed objects within 19 object streams
- 556 named destinations out of 1000 (max. 500000)
- 826 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2199 PDF objects out of 2487 (max. 8388607)
+ 1933 compressed objects within 20 object streams
+ 591 named destinations out of 1000 (max. 500000)
+ 907 words of extra memory for PDF output out of 10000 (max. 10000000)
 

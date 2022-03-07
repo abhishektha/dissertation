@@ -49,38 +49,45 @@
 \contentsline {subsection}{\numberline {\th@SubSectionStyle 5.4.3}\normalsize \normalfont Translating Instep and Arch Height to Footwear Design}{68}{subsection.5.4.3}%
 \contentsline {section}{\numberline {\th@SectionStyle 5.5}\normalsize \normalfont Summary}{71}{section.5.5}%
 \contentsline {chapter}{\numberline {\th@ChapterStyle 6}\normalsize \normalfont Specific Aim 3: Define a design process integrating dynamic foot morphology data for a novel spacesuit boot}{73}{chapter.6}%
-\contentsline {section}{\numberline {\th@SectionStyle 6.1}\normalsize \normalfont Introduction}{73}{section.6.1}%
-\contentsline {section}{\numberline {\th@SectionStyle 6.2}\normalsize \normalfont Existing Knowledge on Foot Shape Mobility}{74}{section.6.2}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.1}\normalsize \normalfont Linear Anthropometry}{74}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.2}\normalsize \normalfont Gait Joint Kinematics}{75}{subsection.6.2.2}%
-\contentsline {section}{\numberline {\th@SectionStyle 6.3}\normalsize \normalfont Biomechanical Boot Design Framework}{77}{section.6.3}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.1}\normalsize \normalfont Mobility}{78}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.2}\normalsize \normalfont Toe box}{79}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.3}\normalsize \normalfont Upper}{80}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.4}\normalsize \normalfont Sole}{81}{subsection.6.3.4}%
-\contentsline {section}{\numberline {\th@SectionStyle 6.4}\normalsize \normalfont Prototype Planetary Spacesuit Boot Design}{82}{section.6.4}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.1}\normalsize \normalfont Ankle Convolutes}{84}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.2}\normalsize \normalfont Upper and Toe Box}{88}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.3}\normalsize \normalfont Instep Lacing}{90}{subsection.6.4.3}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.4}\normalsize \normalfont Heel Counter}{93}{subsection.6.4.4}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.5}\normalsize \normalfont Sole}{94}{subsection.6.4.5}%
-\contentsline {section}{\numberline {\th@SectionStyle 6.5}\normalsize \normalfont Novel Planetary Spacesuit Boot Construction}{95}{section.6.5}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.1}\normalsize \normalfont Ankle Convolute Construction}{98}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.2}\normalsize \normalfont Upper and Toe-Box Construction}{99}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.3}\normalsize \normalfont Sole Construction}{100}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.4}\normalsize \normalfont BOA Lacing Integration}{102}{subsection.6.5.4}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.5}\normalsize \normalfont Heel Counter}{102}{subsection.6.5.5}%
-\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.5.6}\normalsize \normalfont Pressure Sealing}{102}{subsection.6.5.6}%
-\contentsline {section}{\numberline {\th@SectionStyle 6.6}\normalsize \normalfont Classic Spacesuit Boot Design and Construction}{102}{section.6.6}%
-\contentsline {section}{\numberline {\th@SectionStyle 6.7}\normalsize \normalfont Summary}{103}{section.6.7}%
-\contentsline {chapter}{\numberline {\th@ChapterStyle 7}\normalsize \normalfont Specific Aim 4: Evaluate novel planetary spacesuit boot design for fit, comfort, and mobility}{106}{chapter.7}%
-\contentsline {section}{\numberline {\th@SectionStyle 7.1}\normalsize \normalfont Introduction}{106}{section.7.1}%
-\contentsline {section}{\numberline {\th@SectionStyle 7.2}\normalsize \normalfont Test Interface Construction}{107}{section.7.2}%
-\contentsline {section}{\numberline {\th@SectionStyle 7.3}\normalsize \normalfont Experimental Design}{108}{section.7.3}%
-\contentsline {section}{\numberline {\th@SectionStyle 7.4}\normalsize \normalfont Stretch Testing Goals}{109}{section.7.4}%
-\contentsline {section}{\numberline {\th@SectionStyle 7.5}\normalsize \normalfont Summary}{110}{section.7.5}%
-\contentsline {chapter}{\numberline {\th@ChapterStyle 8}\normalsize \normalfont Summary and Execution Plan}{111}{chapter.8}%
-\contentsline {section}{\numberline {\th@SectionStyle 8.1}\normalsize \normalfont Publications}{111}{section.8.1}%
-\contentsline {section}{\numberline {\th@SectionStyle 8.2}\normalsize \normalfont Academic Requirements}{116}{section.8.2}%
-\contentsline {section}{\numberline {\th@SectionStyle 8.3}\normalsize \normalfont Timeline}{116}{section.8.3}%
-\contentsline {part}{ \normalsize \normalfont \bfseries Bibliography\normalfont }{118}{chapter*.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.1}\normalsize \normalfont Existing Knowledge on Foot Shape Mobility}{74}{section.6.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.1.1}\normalsize \normalfont Linear Anthropometry}{74}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.1.2}\normalsize \normalfont Gait Joint Kinematics}{76}{subsection.6.1.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.2}\normalsize \normalfont Biomechanical Boot Design Framework}{77}{section.6.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.1}\normalsize \normalfont Mobility}{79}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.2}\normalsize \normalfont Toe box}{80}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.3}\normalsize \normalfont Upper}{81}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.2.4}\normalsize \normalfont Sole}{82}{subsection.6.2.4}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.3}\normalsize \normalfont Novel Planetary Spacesuit Boot Design}{83}{section.6.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.1}\normalsize \normalfont Ankle Convolutes}{84}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.2}\normalsize \normalfont Upper and Toe Box}{88}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.3}\normalsize \normalfont Instep Lacing}{90}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.4}\normalsize \normalfont Heel Counter}{92}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.5}\normalsize \normalfont Sole}{93}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.3.6}\normalsize \normalfont Summary}{93}{subsection.6.3.6}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.4}\normalsize \normalfont Novel Planetary Spacesuit Boot Construction}{94}{section.6.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.1}\normalsize \normalfont Ankle Convolute Construction}{96}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.2}\normalsize \normalfont Upper and Toe-Box Construction}{98}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.3}\normalsize \normalfont Sole Construction}{99}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.4}\normalsize \normalfont BOA Lacing Integration}{100}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.5}\normalsize \normalfont Heel Counter}{101}{subsection.6.4.5}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 6.4.6}\normalsize \normalfont Pressure Sealing}{101}{subsection.6.4.6}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.5}\normalsize \normalfont Classic Spacesuit Boot Design and Construction}{101}{section.6.5}%
+\contentsline {section}{\numberline {\th@SectionStyle 6.6}\normalsize \normalfont Summary}{102}{section.6.6}%
+\contentsline {chapter}{\numberline {7}\normalsize \normalfont Specific Aim 4: Evaluate novel planetary spacesuit boot design for fit and comfort}{104}{chapter.7}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.1}\normalsize \normalfont Pressurization Test Interface}{104}{section.7.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 7.1.1}\normalsize \normalfont Interface layers}{105}{subsection.7.1.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.3}\normalsize \normalfont Methods}{106}{section.7.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 7.3.1}\normalsize \normalfont Subjects}{106}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 7.3.2}\normalsize \normalfont Procedures}{107}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 7.3.3}\normalsize \normalfont Quantitative Measures}{107}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 7.3.4}\normalsize \normalfont Survey Measures}{111}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 7.3.5}\normalsize \normalfont Quantitative Data Processing}{112}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {\th@SubSectionStyle 7.3.6}\normalsize \normalfont Statistical Analysis}{114}{subsection.7.3.6}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.4}\normalsize \normalfont Results}{114}{section.7.4}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.5}\normalsize \normalfont Discussion}{114}{section.7.5}%
+\contentsline {section}{\numberline {\th@SectionStyle 7.6}\normalsize \normalfont Summary}{114}{section.7.6}%
+\contentsline {chapter}{\numberline {\th@ChapterStyle 8}\normalsize \normalfont Summary and Execution Plan}{115}{chapter.8}%
+\contentsline {section}{\numberline {\th@SectionStyle 8.1}\normalsize \normalfont Publications}{115}{section.8.1}%
+\contentsline {section}{\numberline {\th@SectionStyle 8.2}\normalsize \normalfont Academic Requirements}{120}{section.8.2}%
+\contentsline {section}{\numberline {\th@SectionStyle 8.3}\normalsize \normalfont Timeline}{120}{section.8.3}%
+\contentsline {part}{ \normalsize \normalfont \bfseries Bibliography\normalfont }{122}{chapter*.2}%

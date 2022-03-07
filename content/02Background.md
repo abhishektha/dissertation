@@ -1,4 +1,4 @@
-# Background
+# Background {#sec:BG}
 
 Poor suit design and suit fit are two of the main suit variables leading to injury risk and compromised performance during EVA [@Chappell2017].
 Pressurized spacesuits will continue to be used for EVAs through the transition from microgravity to planetary exploration, and therefore will require improvements to their joint design and fit to ensure safe and comfortable EVA. 

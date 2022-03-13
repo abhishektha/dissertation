@@ -50,45 +50,45 @@ Warning--empty year in Welte2021
 Warning--empty journal in Welte2018
 Warning--empty year in Welte2018
 Warning--empty year in Wobbrock2011
-You've used 162 entries,
+You've used 160 entries,
             2118 wiz_defined-function locations,
-            1550 strings with 38030 characters,
-and the built_in function-call counts, 61012 in all, are:
-= -- 5907
-> -- 3574
-< -- 19
-+ -- 1408
-- -- 1239
-* -- 5069
-:= -- 10372
-add.period$ -- 499
-call.type$ -- 162
-change.case$ -- 1107
+            1539 strings with 37739 characters,
+and the built_in function-call counts, 60328 in all, are:
+= -- 5834
+> -- 3543
+< -- 20
++ -- 1396
+- -- 1229
+* -- 5018
+:= -- 10254
+add.period$ -- 493
+call.type$ -- 160
+change.case$ -- 1095
 chr.to.int$ -- 0
-cite$ -- 209
-duplicate$ -- 1915
-empty$ -- 4179
-format.name$ -- 1239
-if$ -- 12172
+cite$ -- 207
+duplicate$ -- 1888
+empty$ -- 4126
+format.name$ -- 1229
+if$ -- 12032
 int.to.chr$ -- 0
-int.to.str$ -- 162
-missing$ -- 151
-newline$ -- 818
-num.names$ -- 328
-pop$ -- 1020
+int.to.str$ -- 160
+missing$ -- 148
+newline$ -- 809
+num.names$ -- 324
+pop$ -- 1012
 preamble$ -- 1
-purify$ -- 942
+purify$ -- 933
 quote$ -- 0
-skip$ -- 1242
+skip$ -- 1228
 stack$ -- 0
-substring$ -- 3824
-swap$ -- 250
-text.length$ -- 19
+substring$ -- 3773
+swap$ -- 249
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 640
+type$ -- 632
 warning$ -- 47
-while$ -- 568
-width$ -- 165
-write$ -- 1765
+while$ -- 561
+width$ -- 163
+write$ -- 1744
 (There were 47 warnings)

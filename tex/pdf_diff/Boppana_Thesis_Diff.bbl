@@ -1,5 +1,12 @@
 \begin{thebibliography}{100}
 
+\bibitem{Abercromby2012}
+Andrew F~J Abercromby, Michael~L Gernhardt, and Harry Litaker.
+\newblock Desert {Research} and {Technology} {Studies} ({DRATS}) 2009: {A}
+  14-{Day} {Evaluation} of the {Space} {Exploration} {Vehicle} {Prototype} in a
+  {Lunar} {Analog} {Environment}.
+\newblock Technical Report TP-2012-217360, NASA Johnson Space Center, 2012.
+
 \bibitem{Abramov1994}
 Isaak~P. Abramov, Anatoly~Yu Stoklitsky, Arnold~S. Barer, and Sergei~N.
   Filipenkov.
@@ -120,17 +127,20 @@ Abhishektha Boppana and Allison~P Anderson.
   Cameras}.
 \newblock {\em The Journal of Open Source Software}, 4(41), 2019.
 
-\bibitem{Boppana2020b}
-Abhishektha Boppana and Allison~P. Anderson.
-\newblock {Dynamic foot morphology explained through 4D scanning and shape
-  modeling}.
-\newblock {\em arXiv:2007.11077}, 2020.
-
 \bibitem{Borg1982}
 G.~A.V. Borg.
 \newblock {Psychophysical bases of perceived exertion}.
 \newblock {\em Medicine and Science in Sports and Exercise}, 14(5):377--381,
   1982.
+
+\bibitem{Brorsson2017}
+Annelie Brorsson, Richard~W. Willy, Roy Tranberg, and Karin
+  Grävare~Silbernagel.
+\newblock Heel-{Rise} {Height} {Deficit} 1 {Year} {After} {Achilles} {Tendon}
+  {Rupture} {Relates} to {Changes} in {Ankle} {Biomechanics} 6 {Years} {After}
+  {Injury}.
+\newblock {\em The American Journal of Sports Medicine}, 45(13):3060--3068,
+  November 2017.
 
 \bibitem{Browning2006}
 Raymond~C. Browning, Emily~A. Baker, Jessica~A. Herron, and Rodger Kram.
@@ -144,6 +154,13 @@ Seonjeong Byun, Hyang~Jun Lee, Ji~Won Han, Jun~Sung Kim, Euna Choi, and
 \newblock {Walking-speed estimation using a single inertial measurement unit
   for the older adults}.
 \newblock {\em PLoS ONE}, 14(12):1--16, 2019.
+
+\bibitem{Capretto2020}
+Tomás Capretto, Camen Piho, Ravin Kumar, Jacob Westfall, Tal Yarkoni, and
+  Osvaldo~A. Martin.
+\newblock Bambi: {A} simple interface for fitting {Bayesian} linear models in
+  {Python}, 2020.
+\newblock \_eprint: 2012.10754.
 
 \bibitem{Caravaggi2010}
 Paolo Caravaggi, Todd Pataky, Michael Günther, Russell Savage, and Robin
@@ -329,19 +346,6 @@ John~J Fraser, Mark~A Feger, and Jay Hertel.
   Chronic Ankle Instability. Part 1: Anatomy and Biomechanics.}
 \newblock {\em The International Journal of Sports Physical Therapy},
   11(6):992--1005, dec 2016.
-
-\bibitem{Gefen2000}
-A.~Gefen, M.~Megido-Ravid, Y.~Itzchak, and M.~Arcan.
-\newblock {Biomechanical analysis of the three-dimensional foot structure
-  during gait: A basic tool for clinical applications}.
-\newblock {\em Journal of Biomechanical Engineering}, 122(6):630--639, 2000.
-
-\bibitem{Gernhardt2009}
-Michael~L Gernhardt, Jeffrey~A Jones, Richard~A Scheuring, Andrew~F Abercromby,
-  Jennifer~A Tuxhorn, and Jason~R Norcross.
-\newblock {Risk of Compromised EVA Performance and Crew Health Due to
-  Inadequate EVA Suit Systems}.
-\newblock Technical report, NASA Johnson Space Center, 2009.
 
 \bibitem{Giles1991}
 Eugene Giles and Paul~H. Vallandigham.
@@ -567,12 +571,6 @@ Sarah Margerum, Mike Ferrer, Karen Young, and Sudhakar Rajulu.
 \newblock In {\em International Conference on 3D Body Scanning Technologies},
   pages 10--22, Lugano, Switzerland, oct 2010.
 
-\bibitem{Mariani2013}
-Benoit Mariani, Hossein Rouhani, Xavier Crevoisier, and Kamiar Aminian.
-\newblock {Quantitative estimation of foot-flat and stance phase of gait using
-  foot-worn inertial sensors}.
-\newblock {\em Gait and Posture}, 37(2):229--234, 2013.
-
 \bibitem{Martinez-Martinez2017}
 José~M. Martínez-Martínez, José~D. Martín-Guerrero, Emilio Soria-Olivas,
   José~A. Bernabeu, Pablo Escandell-Montero, Rafael~Hernández Stark,
@@ -776,6 +774,12 @@ Radu~Bogdan Rusu and Steve Cousins.
 \newblock In {\em Proceedings - IEEE International Conference on Robotics and
   Automation}, Shanghai, China, 2011.
 
+\bibitem{Salvatier2016}
+John Salvatier, Thomas~V. Wiecki, and Christopher Fonnesbeck.
+\newblock Probabilistic programming in {Python} using {PyMC3}.
+\newblock {\em PeerJ Computer Science}, 2:e55, April 2016.
+\newblock Publisher: PeerJ Inc.
+
 \bibitem{Sambhav2011}
 Kumar Sambhav, Puneet Tandon, and S.~G. Dhande.
 \newblock Computer aided design and development of customized shoe last.
@@ -816,25 +820,12 @@ Robert~Wolfgang Schuster, Andrew Cresswell, and Luke Kelly.
   constructed from optical foot scans.
 \newblock 115:110137.
 
-\bibitem{Scott1993}
-Stephen~H. Scott and David~A. Winter.
-\newblock {Biomechanical model of the human foot: Kinematics and kinetics
-  during the stance phase of walking}.
-\newblock {\em Journal of Biomechanics}, 26(9):1091--1104, 1993.
-
 \bibitem{Shen2019}
 Young~Young Shen and Allison~P. Anderson.
 \newblock {Extended Kalman Filter for Magnetometer-Free Estimation of Spacesuit
   Wearer Joint Kinematics Using Inertial Measurements}.
 \newblock In {\em FUSION 2019 - 22nd International Conference on Information
   Fusion}, Ottawa, Canada, 2019.
-
-\bibitem{Shen2020}
-Young-Young Shen, Shaylah Wood, and Allison~P. Anderson.
-\newblock {Evaluation of Wearable Inertial Sensors for Spacesuit Design
-  Applications Using Hardware-in-the-Loop Simulation}.
-\newblock In {\em AIAA Scitech 2020 Forum}, Reston, Virginia, jan 2020.
-  American Institute of Aeronautics and Astronautics.
 
 \bibitem{Stankovic2020}
 Kristina Stankovi{\'{c}}, Toon Huysmans, Femke Danckaers, Jan Sijbers, and

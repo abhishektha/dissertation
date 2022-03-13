@@ -1,8 +1,9 @@
-\documentclass[defaultstyle,11pt]{comps}
+\documentclass[defaultstyle,11pt]{thesis}
 
 \usepackage{amssymb}		% to get all AMS symbols
 \usepackage{graphicx}		% to insert figures
-\usepackage[breaklinks]{hyperref}		% PDF hyperreferences??
+\usepackage{hyperref}		% PDF hyperreferences??
+
 \usepackage{breakcites}
 \usepackage{longtable}
 \usepackage{booktabs}
@@ -10,7 +11,6 @@
 \usepackage[all]{nowidow}
 \usepackage[section]{placeins}
 \usepackage{flafter}
-
 
 \usepackage{hyperref}
 \hypersetup{
@@ -83,8 +83,6 @@
 
 \otherdegrees{B.S., Case Western Reserve University, 2017 \(\\\) M.S., University of Colorado Boulder, 2019}
 
-%%\otherdegrees{B.A., North Dakota State University, 2005 \\
-%%	      M.S., University of Reno, 2007}
 
 \degree{Doctor of Philosophy}		%  #1 {long descr.}
 	{Ph.D.~Aerospace Engineering Sciences}		%  #2 {short descr.}
@@ -97,36 +95,31 @@
 
 \reader{Dr.~Torin Clark}		%  2nd person to sign thesis
 
-\readerThree{Dr.~David Klaus}		%  2nd person to sign thesis
 
-\readerFour{Dr.~Rodger Kram}		%  2nd person to sign thesis
+\abstract{  \OnePageChapter	% because it is very short
 
-\readerFive{Dr.~Daniel Feeney}		%  2nd person to sign thesis
+	Abstract to be written. 
+	}
 
-%%\readerThree{Thora Nea}		%  3rd person to sign thesis
+\dedication[Dedication]{	% NEVER use \OnePageChapter here.
+	To all of the fluffy kitties.
+	}
 
-%\abstract{  \OnePageChapter	% because it is very short
-%	
-%	
-%	}
+\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+	Here's where you acknowledge folks who helped.
+	But keep it short, i.e., no more than one page,
+	as required by the Grad School Specifications.
+	}
 
-%%\dedication[Dedication]{	% NEVER use \OnePageChapter here.
-	
-%%	}
-
-%%\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
-	
-%%	}
-
-\IRBprotocol{19-0071}	% optional!
+% \IRBprotocol{E927F29.001X}	% optional!
 
 \ToCisShort	% use this only for 1-page Table of Contents
 
-%\LoFisShort	% use this only for 1-page Table of Figures
-\emptyLoF	% use this if there is no List of Figures
+\LoFisShort	% use this only for 1-page Table of Figures
+% \emptyLoF	% use this if there is no List of Figures
 
-%\LoTisShort	% use this only for 1-page Table of Tables
-\emptyLoT	% use this if there is no List of Tables
+\LoTisShort	% use this only for 1-page Table of Tables
+% \emptyLoT	% use this if there is no List of Tables
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%%
@@ -1413,8 +1406,8 @@ A new method of measuring instep height on dynamic foot scans without a plantar 
 Strong correlations were found between the MTP joint angle and the instep height, reinforcing the dynamic nature of the MLA angle dynamics.
 However, correlations were low between instep height change and static foot measurements, highlighting the need for adjustable and potentially dynamic lacing integrated into the upper to maintain fit throughout the gait cycle.
 
-\hypertarget{specific-aim-3-define-a-design-process-integrating-dynamic-foot-morphology-data-for-a-novel-spacesuit-boot}{%
-\chapter{Specific Aim 3: Define a design process integrating dynamic foot morphology data for a novel spacesuit boot}\label{specific-aim-3-define-a-design-process-integrating-dynamic-foot-morphology-data-for-a-novel-spacesuit-boot}}
+\hypertarget{sec:SA3}{%
+\chapter{Specific Aim 3: Define a design process integrating dynamic foot morphology data for a novel spacesuit boot}\label{sec:SA3}}
 
 Previously designed planetary spacesuit boots have modified terrestrial hiking boots by integrated a pressure bladder, to allow for interfacing with a pressurized spacesuit.
 These boots were designed through iteration and subjective feedback from wearers.
@@ -2014,6 +2007,81 @@ This ensure that the two boots are identical except for the three novel features
 }
 \end{figure}
 
+\hypertarget{pressurization-test-interface}{%
+\subsection{Pressurization Test Interface}\label{pressurization-test-interface}}
+
+A pressurization interface was constructed to allow a pressurized boot to be worn by a subject during testing.
+This interface was common between the classic and novel pressurized spacesuit boots.
+This interface is not designed to integrate with a spacesuit, but rather for a user to wear a pressurized spacesuit boot without having to wear an entire spacesuit, much like wearing a terrestrial shoe.
+This allows for the performance of the boots to be isolated to the boots themselves, and not to the presence or absence of a spacesuit.
+
+\hypertarget{interface-layers}{%
+\subsubsection{Interface layers}\label{interface-layers}}
+
+A base layer of neoprene is heat-sealed to the upper-most ankle convolute.
+This neoprene layer is patterned as a staircase (fig.~\ref{fig:SA4-baseseal}), with the dorsal side having a height of 3 cm, and the ventral side having a height of 6 cm.
+This layer has the same circumference as the
+The dorsal side of this layer is then heat sealed with neoprene sealing tape.
+This creates a 6 cm diameter for the wearer to don and doff the boot.
+While this gap is much smaller than the wearer's anthropometry that needs to pass through it, the stretch characteristics of the neoprene allow for the foot, heel, and calf to pass through.
+As a result, a tight fit was maintained around the wearer's calf once the boot was fully donned.
+
+\begin{figure}
+\hypertarget{fig:SA4-baseseal}{%
+\centering
+\includegraphics[width=0.5\textwidth,height=\textheight]{../fig/SA4/BaseSeal.png}
+\caption{Patterning of the base neoprene layer (top) which results in a much smaller opening (bottom, yellow highlight) for the wearer's calf to enter through.}\label{fig:SA4-baseseal}
+}
+\end{figure}
+
+A neoprene and canvas strap was constructed with velcro backings to assist in creating a seal around the neoprene base layer.
+After the boot is donned, the canvas strap was wrapped over the neoprene layer around the wearer's calf.
+The strap was then secured to itself using the velcro backing.
+The canvas material has minimal stretch, ensuring that the lower neoprene layer does not balloon from the internal pressure of the boot.
+The neoprene strap is then similarly wrapped over the canvas strap.
+The stretch of the neoprene strap allows it to compress the lower layers around the subject's calf, creating an even tighter fit.
+Two additional elastic straps with velcro backings were constructed and placed at the top of the lower straps, further sealing the interface between the boot and the wearer.
+An overview of the straps is provided in figure \ref{fig:SA4-straps}.
+
+\begin{figure}
+\hypertarget{fig:SA4-straps}{%
+\centering
+\includegraphics[width=0.9\textwidth,height=\textheight]{../fig/SA4/Straps.png}
+\caption{Overview of straps used to create a seal around the wearer's ankle.}\label{fig:SA4-straps}
+}
+\end{figure}
+
+\hypertarget{air-feed-and-monitoring}{%
+\subsubsection{Air Feed and Monitoring}\label{air-feed-and-monitoring}}
+
+Two air lines were integrated into the boots just below the neoprene layer; a supply air line to provide pressurized air and a monitoring air line log the boot's interal pressure with a pressure gauge.
+Masterkleer Soft PVC Tubing (McMaster-Carr, Elmhurst IL), with a inside diameter of 1/8" and an outside diameter of 1/4", was used for the air lines.
+A vertical slit was cut in the boot 2 cm below the pressurization interface to allow the air lines to enter the boot.
+The slit was then sealed with hot glue.
+The air lines were oriented along the circumference of the boot's calf to minimize interference with the ankle convolutes.
+
+The boot's monitoring line was connected to a differential pressure manometer (Amprobe MAN30, Amprobe, Everett WA).
+This manometer provides a gauge readout of the internal air pressure in the boot.
+The supply line was connected to the lab's air line, which provides air at 100 psi, with a ball valve.
+The ball valve was adjusted by the test conductor while monitoring the boot's internal pressure through the manometer.
+
+\hypertarget{interface-performance}{%
+\subsubsection{Interface Performance}\label{interface-performance}}
+
+The pressurization interface was used on all subjects during boot evaluation.
+Every subject was able to reach a boot internal pressure of 2.5 psi for both boots.
+Leakage was still present in the boots due to high tolerances from manufacturing the boots by hand.
+
+The EMU operates at 4.3 psi, and future planetary exploration suit concepts have called for suits to be operated at a higher 8.3 psi to reduce the pre-breathe time required for astronauts prior to getting into the suit \citep{Kosmo1988}.
+The ACES, which was not designed for EVA operations, operated at 3.5 psi \citep{Thomas2012}.
+Higher operational pressures may require increased effort to move suit components.
+
+It was originally desired to reach a pressure of 4.3 psi to replicate the spacesuit pressure in current EVA activities aboard the EMU.
+While the boots were only able to achieve 2.5 psi, this was still deemed sufficient to proceed with testing as the boot's material was fully expanded to its maximal volume.
+This allows the boots' mechanisms, such as the rolling convolute ankle joint, to function as they would at a higher pressure.
+A higher pressure would require additional effort from the subject to move the boot, but would activate the mechanisms in the same fashion.
+Therefore, it was decided to continue with testing as this would still provide insight into the performance of the boot's mechanisms with regards to subject fit and comfort, but results will need to be taken into context with the lower operating pressure.
+
 \hypertarget{summary-5}{%
 \section{Summary}\label{summary-5}}
 
@@ -2052,81 +2120,6 @@ As the novel spacesuit boot features lacing, the unpressurized work boot was com
 A classic pressurized spacesuit boot, not featuring any lacing, was used in the evaluations to compare the novel spacesuit prototype to current spacesuit boot technology.
 This chapter details the methods for the subject evaluation of all four boots, results, and a discussion on the results as related to each boot's performance.
 
-\hypertarget{pressurization-test-interface}{%
-\section{Pressurization Test Interface}\label{pressurization-test-interface}}
-
-A pressurization interface was constructed to allow a pressurized boot to be worn by a subject during testing.
-This interface was common between the classic and novel pressurized spacesuit boots.
-The interface was designed to allow the user to wear a pressurized spacesuit boot without having to wear an entire spacesuit, much like wearing the control work boot.
-This allows for the performance of the boots to be isolated to the boots themselves, and not to the presence or absence of a spacesuit.
-
-\hypertarget{interface-layers}{%
-\subsection{Interface layers}\label{interface-layers}}
-
-A base layer of neoprene is heat-sealed to the upper-most ankle convolute.
-This neoprene layer is patterned as a staircase (fig.~\ref{fig:SA4-baseseal}), with the dorsal side having a height of 3 cm, and the ventral side having a height of 6 cm.
-This layer has the same circumference as the
-The dorsal side of this layer is then heat sealed with neoprene sealing tape.
-This creates a 6 cm diameter for the wearer to don and doff the boot.
-While this gap is much smaller than the wearer's anthropometry that needs to pass through it, the stretch characteristics of the neoprene allow for the foot, heel, and calf to pass through.
-As a result, a tight fit was maintained around the wearer's calf once the boot was fully donned.
-
-\begin{figure}
-\hypertarget{fig:SA4-baseseal}{%
-\centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{../fig/SA4/BaseSeal.png}
-\caption{Patterning of the base neoprene layer (top) which results in a much smaller opening (bottom, yellow highlight) for the wearer's calf to enter through.}\label{fig:SA4-baseseal}
-}
-\end{figure}
-
-A neoprene and canvas strap was constructed with velcro backings to assist in creating a seal around the neoprene base layer.
-After the boot is donned, the canvas strap was wrapped over the neoprene layer around the wearer's calf.
-The strap was then secured to itself using the velcro backing.
-The canvas material has minimal stretch, ensuring that the lower neoprene layer does not balloon from the internal pressure of the boot.
-The neoprene strap is then similarly wrapped over the canvas strap.
-The stretch of the neoprene strap allows it to compress the lower layers around the subject's calf, creating an even tighter fit.
-Two additional elastic straps with velcro backings were constructed and placed at the top of the lower straps, further sealing the interface between the boot and the wearer.
-An overview of the straps is provided in figure \ref{fig:SA4-straps}.
-
-\begin{figure}
-\hypertarget{fig:SA4-straps}{%
-\centering
-\includegraphics[width=0.9\textwidth,height=\textheight]{../fig/SA4/Straps.png}
-\caption{Overview of straps used to create a seal around the wearer's ankle.}\label{fig:SA4-straps}
-}
-\end{figure}
-
-\hypertarget{air-feed-and-monitoring}{%
-\subsection{Air Feed and Monitoring}\label{air-feed-and-monitoring}}
-
-Two air lines were integrated into the boots just below the neoprene layer; a supply air line to provide pressurized air and a monitoring air line log the boot's interal pressure with a pressure gauge.
-Masterkleer Soft PVC Tubing (McMaster-Carr, Elmhurst IL), with a inside diameter of 1/8" and an outside diameter of 1/4", was used for the air lines.
-A vertical slit was cut in the boot 2 cm below the pressurization interface to allow the air lines to enter the boot.
-The slit was then sealed with hot glue.
-The air lines were oriented along the circumference of the boot's calf to minimize interference with the ankle convolutes.
-
-The boot's monitoring line was connected to a differential pressure manometer (Amprobe MAN30, Amprobe, Everett WA).
-This manometer provides a gauge readout of the internal air pressure in the boot.
-The supply line was connected to the lab's air line, which provides air at 100 psi, with a ball valve.
-The ball valve was adjusted by the test conductor while monitoring the boot's internal pressure through the manometer.
-
-\hypertarget{interface-performance}{%
-\subsection{Interface Performance}\label{interface-performance}}
-
-The pressurization interface was used on all subjects during boot evaluation.
-Every subject was able to reach a boot internal pressure of 2.5 psi for both boots.
-Leakage was still present in the boots due to high tolerances from manufacturing the boots by hand.
-
-The EMU operates at 4.3 psi, and future planetary exploration suit concepts have called for suits to be operated at a higher 8.3 psi to reduce the pre-breathe time required for astronauts prior to getting into the suit \citep{Kosmo1988}.
-The ACES, which was not designed for EVA operations, operated at 3.5 psi \citep{Thomas2012}.
-Higher operational pressures may require increased effort to move suit components.
-
-It was originally desired to reach a pressure of 4.3 psi to replicate the spacesuit pressure in current EVA activities aboard the EMU.
-While the boots were only able to achieve 2.5 psi, this was still deemed sufficient to proceed with testing as the boot's material was fully expanded to its maximal volume.
-This allows the boots' mechanisms, such as the rolling convolute ankle joint, to function as they would at a higher pressure.
-A higher pressure would require additional effort from the subject to move the boot, but would activate the mechanisms in the same fashion.
-Therefore, it was decided to continue with testing as this would still provide insight into the performance of the boot's mechanisms with regards to subject fit and comfort, but results will need to be taken into context with the lower operating pressure.
-
 \hypertarget{experimental-design}{%
 \section{Experimental Design}\label{experimental-design}}
 
@@ -2142,7 +2135,7 @@ Therefore, this experiment aimed to answer the following hypotheses:
 \item
   The novel spacesuit boot design provides equivalent comfort compared to the laced work boot and improved comfort compared to the unlaced work boot and classic pressurized spacesuit boot
 \item
-  The novel spacesuit boot design provides equivalent heel performance compared to the laced work boot and improved comfort compared to the unlaced work boot and classic pressurized spacesuit boot
+  The novel spacesuit boot design provides equivalent heel performance compared to the laced work boot and improved heel performance compared to the unlaced work boot and classic pressurized spacesuit boot
 \end{itemize}
 
 \hypertarget{methods-3}{%
@@ -2179,8 +2172,9 @@ Average & 25.7 \(\pm\) 0.4 & & 26 \(\pm\) 1 & \\
 \subsection{Procedures}\label{procedures}}
 
 For each boot condition, subjects donned the test boot on their right foot.
-The order of the test boots was counterbalanced across all subjects.
-Subjects were instructed to bring their own low-top sneaker to wear on their left shoe; a low-top sneaker does not limit the amount of heel-rise when compared to a high-top shoe, and therefore serves as a control between all test boot conditions.
+The order of the test boots was counterbalanced within the pressurized and unpressurized categories; subjects started their trials with the unpressurized boots and then proceeded to the pressurized boots.
+The lacing was simply removed or added when switching from the laced workboot to the unlaced workboot,and vice versa; this maintained the same boot for both these conditions minus the lacing.
+Subjects were instructed to bring their own low-top sneaker to wear on their left foot; a low-top sneaker does not limit the amount of heel-rise when compared to a high-top shoe, and therefore serves as a control between all test boot conditions.
 
 Subjects started by performing one set of five heel-raises, and were instructed to best synchronize their heel-raises between both feet.
 They were also instructed to lift each foot independently as high as possible.
@@ -2234,13 +2228,15 @@ The voltage response of the FSR and the force gauge's output were synced with a 
 Due to sensor breakage, the sensor in the novel spacesuit boot for subjects FT and TF was not calibrated, as it was replaced prior to being used by the other subjects.
 Calibration results fig.~\ref{fig:SA4-FSRcal} showed a similar voltage response for both spacesuit boots, while the work boot's voltage response appears shifted.
 This may be due to the softer material sole used in the spacesuit boots compared to the work boot.
-However, for all boots, there is a strong inflection point in the response at 0.5V, where voltages below 0.5V covered a wide range of applied force.
-Therefore, it was decided to characterize a voltage of 3.3V as ``no contact'', voltages between 0.5 and 3.3 V as ``mild contact'', and voltages below 0.5V as ``full contact''.
+In addition, there was little confidence that the calibration curve is completely representative of a foot on the sensor, as the foot may shift while maintaining contact and this could not be accurately characterized by a single sensor.
+Therefore, as voltage is the only reliable measurement to obtain from the FSRs, it was decided to continue reporting FSR voltage as a proxy for heel contact.
+For all boots, there is a strong inflection point in the response at 0.5V, where voltages below 0.5V covered a wide range of applied force.
+It was decided to characterize a voltage of 3.3V as ``no contact'', voltages between 0.5 and 3.3 V as ``mild contact'', and voltages below 0.5V as ``full contact''.
 
 \begin{figure}
 \hypertarget{fig:SA4-FSRcal}{%
 \centering
-\includegraphics[width=0.9\textwidth,height=\textheight]{../fig/SA4/FSR_cal.png}
+\includegraphics[width=1\textwidth,height=\textheight]{../fig/SA4/FSR_cal.png}
 \caption{Voltage response curves of the FSR to an applied force from a force gauge, for each of the three boots.}\label{fig:SA4-FSRcal}
 }
 \end{figure}
@@ -2270,7 +2266,7 @@ After performing the exercises in all four boots, subjects were then asked to ra
 \begin{figure}
 \hypertarget{fig:SA4-CB}{%
 \centering
-\includegraphics[width=0.4\textwidth,height=\textheight]{../fig/SA4/Corlett-Bishop.png}
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/Corlett-Bishop.png}
 \caption{Modified Corlett-Bishop Discomfort Scale mapping used for this evaluation, limited to areas below the knee}\label{fig:SA4-CB}
 }
 \end{figure}
@@ -2283,39 +2279,262 @@ For all sets, the first heel-rise was not analyzed.
 Python's \texttt{scipy.signal.find\_peaks} peak detection algorithm was used to identify the peak heel positions for each heel-rise with a width of 5 samples.
 The left shoe was lifted higher in all heel-raise compared to the right shoe, necessitating differing peak prominence parameters for the peak detection algorithm.
 A peak prominence of 4 cm was used for the left shoe compared to a peak prominence of 1.5 cm for the right shoe.
+These prominences were set by observation of the collected data.
 The heel position at each peak was noted as the maximum heel-rise magnitude for each heel-rise in the set.
 
-Heel-off initiation time was identified by first inverting the heel-position signal and then identifying the signal peaks with the identical parameters for each side as for the maximum heel-rise magnitude analysis.
+Heel-off time was identified for both sides by first inverting the heel-position signal and then identifying the signal peaks with the identical parameters for each side as for the maximum heel-rise magnitude analysis.
 These peaks are the foot-flat phases of the heel-rise motion for each heel-rise.
 Then, a moving average filter with a window size of 10 samples was applied to the heel position signal.
 The filtered signal was then integrated to obtain the heel's velocity.
 Within the foot-flat phases, a threshold of 1 cm/s, decided on after trial and error, was used to identify when a heel-rise was beginning.
-The point at which the velocity signal crossed 1 cm/s was identified as the heel-off initiation time for that heel-rise.
+The point at which the velocity signal crossed 1 cm/s was identified as the heel-off time for that heel-rise.
 
-The FSR voltage was recorded at each heel-off initiation time.
+The FSR voltage was recorded at each heel-off time for the right side.
 The maximum FSR voltage obtained during each heel-rise was obtained by first applying a moving average filter with a window size of 20 samples to the FSR voltage signal.
-Then, Python's \texttt{scipy.signal.find\_peaks} algorithm was used to identify peaks with a prominence of 0.5 V and a width of 5 samples.
+Then, Python's \texttt{scipy.signal.find\_peaks} algorithm was used to identify peaks with a prominence of at least 0.5 V and a width of 5 samples.
 As the FSR signal was quite noisy at its peak, a window of 50\% of the peak's width from the peak's highest value was isolated.
 The average FSR voltage in this window was then noted as the FSR peak voltage for that heel-rise.
 
 \hypertarget{statistical-analysis}{%
 \subsection{Statistical Analysis}\label{statistical-analysis}}
 
+Bayesian linear regressions were modeled was used to analyze the following metrics across all four shoe conditions:
+
+\begin{itemize}
+\tightlist
+\item
+  heel performance score
+\item
+  rating of perceived exertion
+\item
+  left/right difference in heel-rise magnitude
+\item
+  left/right difference in heel-off time
+\item
+  FSR voltage at heel-off
+\item
+  FSR voltage at heel-rise
+\end{itemize}
+
+Mixed-effects linear models were used to estimate these metrics as they are affected by the various boots (fixed effects); subject specific intercepts (random effects) allows for estimation of the group-level effect while controlling for subject-specific effects.
+Subject-specific intercepts allow for the capture of subjects' internal calibration of surveys, or their individual performance of the heel-rises irregardless of the footwear they are wearing.
+Each model used in this analysis is of the form:
+\begin{equation}{
+metric = \beta_{\text{shoe}}x_{i}+\alpha_{subject}^{n}+\sigma
+}\end{equation}
+where \(\beta_{\text{shoe}}\) is the effect of each footwear (\(x_{i}\)) on the metric, \(\alpha_{O}\) are the \(n\) subject-specific intercepts, and \(\sigma\) is the unexplained error of the model.
+Since the shoe types are categorical, \(\beta_{\text{shoe}}x_{i}\) can be expanded:
+\begin{equation}{
+metric = \beta_{\text{Novel Spaceboot}}+\beta_{\text{Laced Workboot}}+\beta_{\text{Classic Spaceboot}}+\beta_{\text{Unlaced Workboot}}+\alpha_{subject}^{n}+\sigma
+}\end{equation}
+
+The model for each of the metric therefore consisted of an estimate of the effect of each footwear and subject specific intercepts for each subject.
+Bayesian inference was used to estimate the parameters of the mixed effects models as a interval of its likely values.
+This is done by starting with a prior, defining the model, and sampling from the posterior distribution to obtain each parameter's posterior distribution.
+This distribution was then presented as the estimate of the parameter's value.
+The Bambi Python package \citep{Capretto2020} was used for this analysis.
+
+Bayesian inference starts with the selection of a prior for each of the predictors.
+The priors for the heel performance score and rating of perceived exertion were selected to be a uniform distribution with lower and upper bounds set by the limits of the survey scales.
+This reflects our knowledge that survey scores cannot exceed the bounds of the survey rating.
+Similarly, a uniform prior with a lower bound of 0 and an upper bound of 3.3 was used for the FSR voltage metrics, as the FSR voltage is always positive and has a maximum of 3.3 V.
+
+There exists no previous work which can directly inform the prior for heel-rise difference and the differences in heel-off time, as affected by various footwear.
+Therefore, weakly informative priors with wide standard deviations were used as the priors due to our limited knowledge of the specific metric.
+Previous work has shown that barefoot humans can lift their heels an average of 12 cm \citep{Brorsson2017}.
+Therefore, the prior for heel-rise difference was set to a Normal distribution with a mean of 0, and a standard deviation of 12.
+This reflects an expected maximal heel-rise difference of a normal heel-rise on one side, while the other side stays on the ground.
+A normal distribution with a mean of 0 and a standard deviation of 1 was chosen as the prior for difference in heel-off time, as it was not expected that the time to complete one step would be more than 1 seconds.
+
+Priors for the subject specific intercepts and unexplained error were left for Bambi to automatically select \citep{Capretto2020}.
+Once priors are chosen and the model is specified, the model is fit using a Markov Chain Monte Carlo (MCMC) method to sample from the posterior, as impelemnted in the PyMC3 Python library \citep{Salvatier2016}.
+Ten parallel MCMC chains were run for each metric's regression, with 6,000 burn-in draws and 12,000 sampling draws per chain.
+The acceptance target was set to 0.99 to reduce the step size within each iteration, and thereby eliminating divergences from the chain.
+
+The maximal posterior estimate and 95\% Bayesian credible interval were calculated from the sampled posterior distribution for each parameter in each model.
+The posterior distributions for each of the shoe condition parameters were then compared to the novel spaceboot's posterior distribution to assess their comparative performance, presenting the chance of the compared shoe condition resulting in a higher or lower metric response compared to the novel spacesuit boot.
+
 \hypertarget{results-3}{%
 \section{Results}\label{results-3}}
+
+Four out of the five subjects ranked the shoe conditions from best to worst as Laced Workboot, Novel Spaceboot, Unlaced Workboot, Classic Spaceboot.
+The remaining subject's ranking switched the order of the Novel Spaceboot and Unlaced Workboot.
+The mean and maximum Corlett-Bishop Discomfort ratings across all subjects for each shoe condition are presented in figure \ref{fig:SA4-CBresults}.
+
+\begin{figure}
+\hypertarget{fig:SA4-CBresults}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/CorlettBishop_Results.png}
+\caption{Mean and maximum of reported Corlett-Bishop discomfort ratings on both the left (control) and right (test) shoe. Results are presented across all subjects.}\label{fig:SA4-CBresults}
+}
+\end{figure}
+
+The maximal posterior estimate of the heel performance rating for the novel spaceboot was 6.8, compared to 8.4 for the laced workboot, 2.3 for the classic spaceboot, and 2.4 for the unlaced spaceboot (fig.~\ref{fig:SA4-HPE}).
+The posterior distribution of the laced workboot's heel performance rating was estimated to be higher than the novel spaceboot's 98.6\% of the time, while the posterior distributions of the classic spaceboot's and unlaced workboot's heel performance ratings were estimated to be lower 100\% of the time.
+
+\begin{figure}
+\hypertarget{fig:SA4-HPE}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/HeelPerf.png}
+\caption{Estimate (black) of the heel performance rating across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-HPE}
+}
+\end{figure}
+
+The maximal posterior estimate of RPE for the novel spaceboot was 12.0, compared to 8.8 for the laced workboot, 14.3 for the classic spaceboot, and 8.4 for the unlaced workboot (fig.~\ref{fig:SA4-RPE}).
+The posterior distributions for laced and unlaced workboots' RPE were estimated to be lower than the novel spaceboot's 98\% and 99\% of the time, respectively.
+The posterior distribution for the classic spacesuit boot's RPE was estimated to be higher than the novel spaceboot's 94.3\% of the time.
+
+\begin{figure}
+\hypertarget{fig:SA4-RPE}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/RPE.png}
+\caption{Estimate (black) of the rating of perceived exertion across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-RPE}
+}
+\end{figure}
+
+Figure \ref{fig:SA4-exSet} shows an example FSR response and heel-rise measurement from a subject's heel-rise set.
+
+\begin{figure}
+\hypertarget{fig:SA4-exSet}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/exSet.png}
+\caption{Example FSR and heel-rise data trace from a heel-rise set. Detected peaks and heel-off times are shown with the vertical lines}\label{fig:SA4-exSet}
+}
+\end{figure}
+
+The maximal posterior estimate of the difference in heel-rise magnitude was 3.3 cm for the novel spaceboot, compared to 3.8 cm for the laced workboot, 5.5 cm for the classic spaceboot, and 4.8 cm for the unlaced workboot (fig.~\ref{fig:SA4-HLD}).
+The posterior distribution for laced workboot's heel lift difference was estimated to be higher than the novel spaceboot's 86.3\% of the time.
+The posterior distributions for the classic spacesuit boot's and unlaced spacesuit boot's heel lift difference were estimated to be higher than the novel spaceboot's 100\% of the time.
+
+\begin{figure}
+\hypertarget{fig:SA4-HLD}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/HeelLiftDiff.png}
+\caption{Estimate (black) of the difference in heel-rise magnitude across all boot conditions, as compared to the subjects' data. heel-rise magnitude difference is calculated by subtracting the magnitude of the right foot from the left foot. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-HLD}
+}
+\end{figure}
+
+The maximal posterior estimate of the difference in heel-off time was 0.0s for the novel spaceboot, compared to -0.3 s for the laced workboot, -0.5 s for the classic spaceboot, and -0.3 s for the unlaced workboot (fig.~\ref{fig:SA4-HOT}).
+The posterior distribution for laced workboot's, classic spacesuit boot's, and unlaced workboot's heel-off time difference was estimated to be lower than the novel spaceboot's 100\% of the time.
+
+\begin{figure}
+\hypertarget{fig:SA4-HOT}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/HO_Time_Diff.png}
+\caption{Estimate (black) of the difference in heel-off time across all boot conditions, as compared to the subjects' data. The difference in heel-off time is calculated as the left foot's (control) heel-off time minus the right foot's (test) heel-off time. Therefore, negative numbers indicate that the right foot lifted after the left foot. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-HOT}
+}
+\end{figure}
+
+The maximal posterior estimate of the FSR voltage at maximum heel-rise was 2.2 V for the novel spaceboot, compared to 3.3 V for the laced workboot, the classic spaceboot, and the unlaced workboot (fig.~\ref{fig:SA4-FSRmax}).
+The posterior distribution for laced workboot's, classic spacesuit boot's, and unlaced workboot's heel-off time difference was estimated to be higher than the novel spaceboot's 100\% of the time.
+
+\begin{figure}
+\hypertarget{fig:SA4-FSRmax}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/FSR_Max.png}
+\caption{Estimate (black) of the FSR voltage at maximum heel-rise across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-FSRmax}
+}
+\end{figure}
+
+The maximal posterior estimate of the FSR voltage at heel-off for the novel spaceboot was 1.6 V, compared to 1.0 V for the laced workboot, 3.0 V for the classic spaceboot, and 2.3 V for the unlaced spaceboot (fig.~\ref{fig:SA4-FSRH0}).
+The posterior distribution of the laced workboot's FSR voltage at heel-off was estimated to be lower than the novel spaceboot's 97\% of the time, while the posterior distributions of the classic spaceboot's and unlaced workboot's FSR voltage at heel-off were estimated to be higher 100\% and 98.6\% of the time, respectively.
+
+\begin{figure}
+\hypertarget{fig:SA4-FSRH0}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/FSR_HO.png}
+\caption{Estimate (black) of the FSR voltage at heel-off across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-FSRH0}
+}
+\end{figure}
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
+This study aimed to evaluate the performance of the novel spacesuit boot design against a laced workboot, unlaced workboot, and classic spacesuit boot design.
+Fit and comfort were the primary focus of this evaluation, with specific metrics chosen to evaluate the heel's dynamic fit in the boot, as well as the boot's overall comfort.
+It was hypothesized that the laced workboot would perform the best of all in these metrics, following by the novel spaceboot, unlaced workboot, and classic spaceboot.
+Most subjects subjectively ranked the boots in the same order as the hypothesis, except for one subject.
+
+Select metrics from this study were further analyzed using Bayesian inference for linear mixed models to objectively assess the boots' performance.
+The linear mixed modeling approach allowed for capture of subject specific effects as random intercepts in the model.
+This was especially apparent for the heel-rise magnitude metric.
+Subject TF had much higher heel-rise magnitude across all boot conditions when compared to other subjects, and this subject-specific effect was captured in subject TF's random intercept and the credible intervals for the metric take into account performance within each subject.
+While the credible intervals may look like they overlap even if their chance of being greater or less than is close to 100\%, observing the data points of each subject shows trends substantiated by the posterior distribution overlap for all metrics.
+
+Comfort and exertion are key metrics in assessing the performance of a spacesuit component \citep{Abercromby2012, Chappell2017}.
+The pressurized spacesuit boots had higher levels of reported discomfort compared to the unpressurized work boots ({[}f@fig:SA4-CBresults{]}).
+Similarly, the pressurized spacesuit boots had higher reported levels of exertion compared to the unpressurized workboots.
+However, the classic spacesuit boot still had a high (94.5\%) chance of an increased RPE rating than the novel spacesuit boot.
+Since both boots were pressurized to a similar level, the novel spacesuit boot likely results in less exertion due to its design enabling better fit.
+The highest areas of pressure on both spacesuit boots was the calf, which may be due to the pressurization interface needing to compress the calf to maintain a seal.
+The novel spacesuit boot had reports of high discomfort at the instep, which may suggest contact between the foot and boot.
+This is most likely a result of the design of the boot, which attempts to maintain contact with the instep.
+In addition, one subject complained about discomfort from the BOA dial pressing into their calf.
+Future iteration may improve the discomfort associated with these contacts by strategically adding padding between the pressure bladder and wearer.
+
+The FSR voltage metrics provide insight into heel-contact at heel-off and at maximum heel-rise.
+The FSR voltages suggest that both the novel spaceboot and laced workboot maintain some contact with the heel at heel-off (between 0 and 3.3 V), compared to the unlaced workboot and classic spaceboot which are almost always offloaded (at 3.3 V).
+However, the laced spacesuit boot maintains contact more often, with the majority of data points at 0 V.
+In addition, the novel spaceboot appears to be the only boot which maintains contact at maximum heel-rise, as evidenced by its FSR voltage at heel-rise being lower than all other boots.
+This may be due to the interaction of the lacing and the softer sole of the novel spaceboot.
+The tension of the BOA lacing is kept constant when doffed; since the lower lacing guides are placed on the sole, the sole's motion is matched to the foot's instep where the upper lacing guides run, ensuring that it is brought up during the heel-rise by the tension in the BOA lacing (fig.~\ref{fig:SA4-heelliftcap}).
+This may also work in tandem with the designed dynamic lacing aspect of the novel spaceboot (see sec.~\ref{sec:SA3}), which lengthens the lace path of the BOA by relatively moving the tubing from the dial to the guides and requires the guides to come closer together to compensate.
+This is in contrast to the laced workboot's lacing, which does not interact with the sole and therefore has no mechanism to actively raise the sole.
+Therefore, this and other boots rely on the material properties of the boot itself and not an active tension force to raise the sole.
+Future work can expand upon these hypotheses by quantifying the magnitude of dynamic lacing lengthening and tension in the BOA system.
+
+\begin{figure}
+\hypertarget{fig:SA4-heelliftcap}{%
+\centering
+\includegraphics[width=0.6\textwidth,height=\textheight]{../fig/sa4/HeelLift_ScreenCap.png}
+\caption{Video frame of heel-rise by subject FT in the novel spaceboot. As the BOA lace length cannot change, the sole is kept at a constant distance to the instep throughout the heel-rise motion. This ensures that the heel is continuously making contact with the}\label{fig:SA4-heelliftcap}
+}
+\end{figure}
+
+The heel-off time difference and heel-raise magnitude difference further add to the heel performance characterization by comparing the test boots against the subjects' own control shoes when performing a heel raise.
+The novel spacesuit boot had the lowest heel-off time difference between the left and right shoes, suggesting that most heel raises were initiated in tandem with the novel spacesuit boot.
+The other boots all were estimated to have a delay in their heel-off time, with their right foot taking longer to initiate heel-off.
+This may be an indication of heel-lift; the foot inside may have lifted but it had not yet resulted in the boot leaving the ground.
+When assessed alongside the FSR voltage at heel-off for the unlaced workboot and classic spacesuit boot, this further corroborates the heel-lift hypothesis; if the FSR voltage measured at the boot's heel-off is high, then the foot is not making contact with the boot.
+However, the laced workboot appears to have a delay at heel-off and still maintains contact with the heel, which may suggest that subjects simply have a hard time initiating heel-off.
+The classic spacesuit boot and unlaced workboot were estimated to have a higher heel-raise magnitude difference 100\% of the time compared to the novel spacesuit boot.
+This suggests that these boots may either have large amounts of heel-lift (as evidenced by the FSR voltage at maximum heel raise), and/or are simply limiting the magnitude of a maximum heel raise.
+The unlaced workboot has a loose tongue which may allow the foot to further lift out of the boot while performing a heel-raise, while the classic spaceboot may be limited in its mobility.
+The laced workboot had a 86.3\% chance of a higher difference in heel-raise magnitude, suggesting similar or worse performance than the novel spaceboot.
+
+Subjects rated the novel spacesuit boot's heel performance as below that of the laced workboot, but above the classic spacesuit and unlaced workboot.
+However, the FSR data suggests that only the novel spaceboot maintains some level of contact with the heel during heel-off.
+Similarly, the heel-raise magnitude difference suggests that the novel spaceboot is the closest match to a subject's control tennis shoe in heel raise magnitude.
+Therefore, the quantitative data suggests that the novel spacesuit may be better at heel-raises than the laced workboot, classic spaceboot, and unlaced spaceboot.
+
+However, it is important to note that no quantitative measurements were collected during the short walk exercise, and the laced workboot may have performed better here to align with the subjective ratings of heel performance.
+
 \hypertarget{summary-6}{%
 \section{Summary}\label{summary-6}}
 
-\hypertarget{summary-and-execution-plan}{%
-\chapter{Summary and Execution Plan}\label{summary-and-execution-plan}}
+This evaluation compared the novel spacesuit boot against a laced workboot, classic spaceboot, and unlaced workboot.
+When performing a heel-raise, both the novel spaceboot and laced workboot appear to maintain contact with the heel at heel-off.
+However, the novel spaceboot appears to maintain some contact throughout the heel-raise, and allows subjects to achieve their highest performance heel-raise.
+Survey measurements report the novel spacesuit boot having a lower heel performance than the laced spaceboot, but a higher heel performance compared to the unlaced workboot and classic spacesuit boot.
+Therefore, the hypothesis that the novel spacesuit boot provides equivalent heel performance compared to the laced workboot, and improved heel performance compared to the unlaced workboot and classic spaceboot is partially true.
+It is clear that the novel spacesuit boot is an improvement over the classic spacesuit boot and unlaced workboot, but it is unclear whether it is equivalent, better, or worse than the laced workboot as various metrics have shown all these possibilities.
+
+Pressurization appears to have had a greater impact on comfort than originally anticipated.
+Both the pressurized spacesuit boots had higher discomfort ratings and higher ratings of perceived exertion compared to both unpressurized workboot conditions.
+The novel spacesuit boot did have a lower rating of perceived exertion than the classic spacesuit boot.
+Therefore, the hypothesis that the novel spacesuit boot provides equivalent comfort to the laced workboot, and improved comfort compared to the classic spaceboot and unlaced workboot is partially true.
+The novel spacesuit boot is not as comfortable as the unpressurized workboots, but clearly more comfortable than the classic spaceboot.
+
+Results from this evaluation show that the novel spacesuit boot design is a clear improvement over the classic spacesuit boot design.
+The novel design was able to achieve much improved heel performance and require less exertion.
+This highlights the need for a lacing system and heel counter in spacesuit boots to help maintain heel indexing and reduce instances of heel-lift, leading to a level of performance closer to that of a workboot.
+
+\hypertarget{summary-7}{%
+\chapter{Summary}\label{summary-7}}
 
 Through many advancements of planetary EVA spacesuit design, operator-spacesuit coordination is still not perfectly matched.
 Poor mobility and poor fit between the operator and spacesuit are some of the most common factors that can lead to injury.
-This thesis aims to determine the feasibility of using dynamic body shape models to improve spacesuit component fit and mobility, specifically with planetary spacesuit boots.
+This thesis was designed to determine the feasibility of using dynamic body shape models to improve spacesuit component fit and mobility, specifically with planetary spacesuit boots.
 The spacesuit boot has demonstrated specific problems relating to poor fit, such as heel-lift and contact injuries.
 The work in the thesis aims to answer the hypothesis:
 
@@ -2323,94 +2542,53 @@ The work in the thesis aims to answer the hypothesis:
 Integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit.
 \end{quote}
 
-\hypertarget{publications}{%
-\section{Publications}\label{publications}}
+This thesis investigated the hypothesis through four specific aims, resulting in novel contributions to the field.
 
-Table \ref{tbl:pubs} outlines the peer-reviewed conference and journal papers resulting from this thesis work.
-Table \ref{tbl:conf} outlines conference presentations and posters from this thesis work.
-Publications and presentations which are proposed and subject to having their title changed.
+The thesis first investigated the ability to quantify heel-lift magnitude inside the spacesuit.
+A contribution was made by observing from IMU data that the lower leg of the spacesuit expands during gait; this observation supports the belief that heel-lift in the boot may be due to forces from the spacesuit, and re-emphasizes the importance of keeping the foot indexed in the boot.
+In addition, findings from this study suggest that IMUs are not the best tool to quantify heel lift and that drift correction techniques are not enough to reduce drift for positional estimates in the spacesuit context.
 
-\pagebreak
+Following this study, the dynamic morphology of the foot was investigated with a focus on discovering changes which can improve spacesuit boot design.
+The thesis contributed here a novel, low-cost dynamic foot scanning system was designed and built to enable capture of foot scans at 90 fps while subjects walk on a treadmill.
+The thesis also contributed a novel predictive dynamic foot shape model for walking using shape modeling and linear modeling techniques.
+A further contribution includes an analysis on dynamic instep height, including a new method to measure instep height without a plantar surface, and the finding that dynamic instep height is subject specific and cannot be accurately predicted from static anthropometries.
 
-\hypertarget{tbl:pubs}{}
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.10}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.40}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.30}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.20}}@{}}
-\caption{\label{tbl:pubs}Peer-reviewed publications}\tabularnewline
-\toprule
-Type & Title & Journal & Status \\
-\midrule
-\endfirsthead
-\toprule
-Type & Title & Journal & Status \\
-\midrule
-\endhead
-Technical Note & Detecting Heel-Lift in Spacesuit Gait & Aerospace Medicine and Human Performance & In Prep., expected Nov 2020 \\
-& & & \\
-Journal Paper & DynaMo: Dynamic Body Shape and Motion Capture with Intel RealSense Cameras & Journal of Open Source Software & Published \\
-& & & \\
-Journal Paper & Dynamic foot morphology explained through 4D scanning and shape modeling & Journal of Biomechanics & Under Review \\
-& & & \\
-Conference Paper & A Biomechanical Design Framework to Improve Spacesuit Boot Fit & 50th International Conference on Environmental Systems & Published \\
-& & & \\
-Journal Paper & Static and Dynamic Distribution of Instep Height & Footwear Science & Proposed, expected Mar 2021 \\
-& & & \\
-Journal Paper & Design of A Novel Planetary Spacesuit Boot Design & Acta Astronautica & Proposed, expected Aug 2021 \\
-& & & \\
-Journal Paper & Comfort and Mobility Evaluation of a Novel Planetary Spacesuit Boot Design & Aerospace Medicine and Human Performance & Proposed, expected Feb 2022 \\
-\bottomrule
-\end{longtable}
+The dynamic foot morphology model was translated into footwear design by first creating a new footwear design framework.
+This framework contribution tied both traditional footwear measurements and novel footwear measurements, like the dynamic foot morphology model, into footwear design variables.
+The framework was then used in the context of planetary spacesuit boot design to pick parameters for mobility, fit, and comfort that would meet the requirements.
+The thesis then contributed the design and prototype for a novel planetary spacesuit boot, with a BOA lacing system and heel counter, with the express goal of accommodating the variability in instep height to improve fit and reduce heel-lift.
 
-\pagebreak
+The final contribution of this thesis lies in the evaluation of the novel spacesuit boot against the classic spacesuit boot, a laced workboot, and an unlaced workboot for fit and comfort.
+This is the first published comparison of a spacesuit boot against a terrestrial boot.
+This evaluation showed that the novel spaceboot provided improved heel performance and comfort compared to the classic spaceboot, and improved heel performance compared to the unlaced spaceboot.
+The novel spaceboot provided improved heel performance compared to the laced workboot when investigating heel contact at heel-rise, heel-off delay, and heel-rise performance, and lower heel performance when analyzing heel-contact at heel-off and subjective heel performance ranking.
+Nevertheless, the novel spacesuit boot provides a great improvement over the classic design and appears to come close to the performance of a gold standard workboot.
 
-\hypertarget{tbl:conf}{}
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.12}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.50}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.12}}@{}}
-\caption{\label{tbl:conf}Conference Presentations and Posters}\tabularnewline
-\toprule
-Type & Title & Conference & Date \\
-\midrule
-\endfirsthead
-\toprule
-Type & Title & Conference & Date \\
-\midrule
-\endhead
-Talk & Using dynamic foot morphology data to design spacesuit footwear & Footwear Biomechanics Symposium & July 2019 \\
-& & & \\
-Talk & Development of a Dynamic 3D Scanning System with Multiple Intel RealSense Depth Cameras & International Society of Biomechanics Congress & Aug 2019 \\
-& & & \\
-Poster & Quantifying the Heel-Lift during Spacesuit Gait & NASA HRP IWS & Jan 2020 \\
-& & & \\
-TBD & Dynamic Body-Shape Models to Reduce Risk OF EVA Spacesuit Injury & NASA HRP IWS & Feb 2021 \\
-& & & \\
-TBD & Novel Spacesuit Boot Design Developed from Dynamic Foot Shape Modeling & Footwear Biomechanics Symposium & July 2021 \\
-& & & \\
-TBD & Spacesuit Boot with Improved Comfort and Mobility Developed from Dynamic Shape Modeling & NASA HRP IWS & Jan 2022 \\
-\bottomrule
-\end{longtable}
+The performance of the novel spacesuit boot design shows the utility of using body shape models to inform spacesuit component design.
+In this application, a foot shape model first identified specific shape modes which varied throughout stance phase.
+Of these, it was decided to target the shape mode where the instep height falls during stance phase, and the novel spacesuit boot design features a lacing system to ensure the instep area is captured through stance phase.
+A heel counter was also added to accommodate changes in the heel shape.
+As the evaluation shows, these two additions to the spacesuit boot design resulted in a much greater improvement in heel performance and reduction of exertion.
+Therefore, the work in this thesis supports the hypothesis: integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit.
 
-\hypertarget{academic-requirements}{%
-\section{Academic Requirements}\label{academic-requirements}}
+\hypertarget{future-work}{%
+\section{Future Work}\label{future-work}}
 
-All required coursework was completed as of the Spring 2020 semester. Of the 36 required credits, 30 were taken in ASEN, with 12 at the 6000 level. MCEN 5228 (Modeling Human Movement) and APPM 5590 (Statistical Modeling) were taken outside of ASEN. The 6 required math credits were exceeded with taking ASEN 5519 (Experimental Design and Statistical Analysis), APPM 5590 (Statistical Modeling), and ASEN 5044 (Statistical Estimation for Dynamical Systems). As of the Fall 2020 semester, 15 out of the 30 required Doctoral dissertation credits have been taken. The remaining 15 credits will be evenly taken during the Spring 2021, Fall 2021, and Spring 2022 semesters. The teaching practicum has been fulfilled through the mentoring of UROP students in the Summer 2018, Fall 2019, and Spring 2020 semesters. A TA position is also expected in Fall 2021.
+This work's effort in translating a foot shape model to spacesuit boot design can serve as a template for other spacesuit components as well.
+A similar process can be followed to identify dynamic body shape changes in the shoulder, hands, and hips.
+Then, these changes can be translated into improvements in spacesuit design to accommodate such changes, thus reducing the risk of injury in these areas.
 
-\hypertarget{timeline}{%
-\section{Timeline}\label{timeline}}
+Similarly, this thesis' work is not limited to spacesuit design.
+This process can be applied to apparel or terrestrial footwear for any application where injury might be a risk.
 
-Gantt chart \ref{fig:Gantt} shows the timeline for each specific aim of the thesis and for PhD graduation milestones.
+Future advancements in technology can also work to improve the fidelity of the foot shape model.
+This thesis' goal is to show the utility of dynamic scanning in modeling body shape changes.
+Advancements in cameras and computer vision can improve the resolution, framerate, and reliability of such systems to make 4D scanning accessible to more industries.
 
-\begin{figure}
-\hypertarget{fig:Gantt}{%
-\centering
-\includegraphics[width=1\textwidth,height=\textheight]{../fig/Gantt.png}
-\caption{Gantt chart showing PhD timeline}\label{fig:Gantt}
-}
-\end{figure}
+Finally, this thesis aims to show the importance in understanding all dimensions of human motion when it comes to spacesuit design.
+The boot designed in this thesis was designed first around the motion and shape of the foot, with the hope that other requirements, such as thermal, dust, and radiation, can be met through additional layers.
+Novel solutions might be needed to address these problems prior to returning to the Moon.
+
 
 %%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
 %\bibliographystyle{plain}	% or "siam", or "alpha", etc.
@@ -2418,9 +2596,7 @@ Gantt chart \ref{fig:Gantt} shows the timeline for each specific aim of the thes
 %\bibliography{refs}		% Bib database in "refs.bib"
 
 %%%%%%%%%   then the Appendices, if any   %%%%%%%%%
-%%\appendix
-\newpage
-
+\appendix
 
 %\usepackage{natbib}
 \bibliography{../references}

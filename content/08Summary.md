@@ -1,60 +1,75 @@
 
 # Summary
 
-Through many advancements of planetary EVA spacesuit design, operator-spacesuit coordination is still not perfectly matched. 
+Despite many advancements of planetary EVA spacesuit design, operator-spacesuit coordination is still not perfectly matched. 
 Poor mobility and poor fit between the operator and spacesuit are some of the most common factors that can lead to injury.
-This thesis was designed to determine the feasibility of using dynamic body shape models to improve spacesuit component fit and mobility, specifically with planetary spacesuit boots.
-The spacesuit boot has demonstrated specific problems relating to poor fit, such as heel-lift and contact injuries. 
+This thesis was designed to determine the feasibility of using dynamic body shape models to improve spacesuit component fit and mobility.
 The work in the thesis aims to answer the hypothesis:
 
 > Integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit. 
 
+The spacesuit boot was chosen as the test article for this research because these boots demonstrate the key problems relating poor fit and spacesuit components, specifically  heel-lift and contact injuries.
 This thesis investigated the hypothesis through four specific aims, resulting in novel contributions to the field. 
 
-The thesis first investigated the ability to quantify heel-lift magnitude inside the spacesuit.
-A contribution was made by observing from IMU data that the lower leg of the spacesuit expands during gait; this observation supports the belief that heel-lift in the boot may be due to forces from the spacesuit, and re-emphasizes the importance of keeping the foot indexed in the boot. 
-In addition, findings from this study suggest that IMUs are not the best tool to quantify heel lift and that drift correction techniques are not enough to reduce drift for positional estimates in the spacesuit context. 
+The thesis first investigated if IMUs and drift correction techniques can quantify heel-lift magnitude inside the spacesuit.
+While these methods were not found to be successful, it was observed that the lower leg of the spacesuit may expand during gait. 
+Thus, a contribution was made in further understanding the dynamics of the spacesuit lower leg that can help assist in characterizing its motion in future work. 
+This observation supports the belief that heel-lift in the boot may be due to forces from the spacesuit, and re-emphasizes the importance of keeping the foot indexed in the boot. 
+In addition, findings from this study suggest using measurement techniques which can directly measure the heel contact in the boot. 
 
-Following this study, the dynamic morphology of the foot was investigated with a focus on discovering changes which can improve spacesuit boot design.
-The thesis contributed here a novel, low-cost dynamic foot scanning system was designed and built to enable capture of foot scans at 90 fps while subjects walk on a treadmill. 
+Following this study, the foot's dynamic morphology was investigated with a focus on discovering changes which can improve spacesuit boot design by reducing heel-lift.
+The thesis contributed here a novel, low-cost dynamic foot scanning system capable of capturing foot scans at 90 fps while subjects walk on a treadmill. 
 The thesis also contributed a novel predictive dynamic foot shape model for walking using shape modeling and linear modeling techniques. 
 A further contribution includes an analysis on dynamic instep height, including a new method to measure instep height without a plantar surface, and the finding that dynamic instep height is subject specific and cannot be accurately predicted from static anthropometries. 
+This led to the decision on incorporating lacing into the spacesuit boot design to improve fit. 
 
-The dynamic foot morphology model was translated into footwear design by first creating a new footwear design framework.
-This framework contribution tied both traditional footwear measurements and novel footwear measurements, like the dynamic foot morphology model, into footwear design variables. 
-The framework was then used in the context of planetary spacesuit boot design to pick parameters for mobility, fit, and comfort that would meet the requirements. 
+A new footwear design framework was outlined to incorporate both traditional footwear measurements and novel footwear measurements, like the dynamic foot morphology model, into footwear design variables. 
+This framework contribution was then used in the context of planetary spacesuit boot design to pick parameters for mobility, fit, and comfort that would meet the requirements. 
 The thesis then contributed the design and prototype for a novel planetary spacesuit boot, with a BOA lacing system and heel counter, with the express goal of accommodating the variability in instep height to improve fit and reduce heel-lift. 
 
-The final contribution of this thesis lies in the evaluation of the novel spacesuit boot against the classic spacesuit boot, a laced workboot, and an unlaced workboot for fit and comfort. 
-This is the first published comparison of a spacesuit boot against a terrestrial boot. 
-This evaluation showed that the novel spaceboot provided improved heel performance and comfort compared to the classic spaceboot, and improved heel performance compared to the unlaced spaceboot. 
-The novel spaceboot provided improved heel performance compared to the laced workboot when investigating heel contact at heel-rise, heel-off delay, and heel-rise performance, and lower heel performance when analyzing heel-contact at heel-off and subjective heel performance ranking. 
-Nevertheless, the novel spacesuit boot provides a great improvement over the classic design and appears to come close to the performance of a gold standard workboot. 
+The final contribution of this thesis lies in the evaluation of the novel spacesuit boot against the classic spacesuit boot, a laced work boot, and an unlaced work boot for fit and comfort. 
+This evaluation showed that in all cases, the novel spaceboot provided improved heel performance and comfort compared to the classic spaceboot.  
 
 The performance of the novel spacesuit boot design shows the utility of using body shape models to inform spacesuit component design. 
 In this application, a foot shape model first identified specific shape modes which varied throughout stance phase. 
-Of these, it was decided to target the shape mode where the instep height falls during stance phase, and the novel spacesuit boot design features a lacing system to ensure the instep area is captured through stance phase. 
+Of these, it was decided to target and further investigate the shape mode where the instep height falls during stance phase. 
+Lacing was found to be required to ensure the instep area is captured through stance phase. 
 A heel counter was also added to accommodate changes in the heel shape. 
-As the evaluation shows, these two additions to the spacesuit boot design resulted in a much greater improvement in heel performance and reduction of exertion. 
+As the evaluation shows, these two additions to the spacesuit boot design resulted in improved fit through heel performance improvement, and increased comfort through the reduction of exertion. 
 Therefore, the work in this thesis supports the hypothesis: integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit. 
+
+## Limitations
+This work has a number of limitations which must be noted.
+The evaluation of the novel spacesuit boot prototype was conducted in the absence of a full spacesuit. 
+While this provides insight into the boot's design elements specifically, it does not account for how these element's performance might be changed by the weight and additional pressure forces of the suit. 
+
+In addition, this work used heel performance as the primary fit metric. 
+There may be other static and dynamic fit factors in the boot which may lead to injury, but have not yet been identified. 
+However, any future design thrusts may make use of the same foot shape model to identify shape variations which can be targeted to improve fit and comfort. 
 
 
 ## Future Work
-This work's effort in translating a foot shape model to spacesuit boot design can serve as a template for other spacesuit components as well. 
+This work's effort in translating a foot shape model to spacesuit boot design serves as a template for other spacesuit components as well. 
 A similar process can be followed to identify dynamic body shape changes in the shoulder, hands, and hips. 
-Then, these changes can be translated into improvements in spacesuit design to accommodate such changes, thus reducing the risk of injury in these areas. 
+These changes can then be analyzed and spacesuit components can be designed to accommodate such changes, thus reducing the risk of injury in these areas. 
+The NASA Anthropometry and Biomechanics Facility (ABF) has been exploring the use of static scans to inform the fit and comfort of spacesuit components; the presented work can integrate into these existing processes with dynamic scans. 
+As shown in this thesis' first specific aim, the fit and comfort of one spacesuit component may affect other components to which it connects. 
+Therefore, a spacesuit will need to accommodate its wearer across all components to truly reduce the risk of spacesuit injury from EVA. 
 
-Similarly, this thesis' work is not limited to spacesuit design. 
-This process can be applied to apparel or terrestrial footwear for any application where injury might be a risk.
+However, spacesuit design is not limited to accommodating its wearer's movements. 
+Other considerations are needed to ensure that a spacesuit can provide protection in its intended environment. 
+These include thermal, dust, radiation, and micrometeorite protection. 
+Elements which meet these requirements must also be compatible with the spacesuit's life support system. 
+Therefore, designing a spacesuit becomes an exercise in systems engineering; balancing the requirements of mobility, protection, and life support to ensure the astronaut can perform at their peak potential. 
+As mobility is required to allow a spacesuit operator to perform EVA tasks, it is this author's opinion that spacesuit design should start with mobility requirements for the intended environment. 
+From this foundation, the remaining suit requirements can be framed. 
+Future work should explore whether it is feasible to then incorporate requirements for protection and life support into a spacesuit which is designed around mobility. 
 
-Future advancements in technology can also work to improve the fidelity of the foot shape model. 
-This thesis' goal is to show the utility of dynamic scanning in modeling body shape changes. 
-Advancements in cameras and computer vision can improve the resolution, framerate, and reliability of such systems to make 4D scanning accessible to more industries. 
+This thesis' work is not limited to spacesuit design. 
+Any type of apparel or footwear which is designed to be worn by a human can follow this design process. 
+While the design constraints and requirements may be different from a spacesuit, a similar framework can be built for specific applications. 
 
-Finally, this thesis aims to show the importance in understanding all dimensions of human motion when it comes to spacesuit design. 
-The boot designed in this thesis was designed first around the motion and shape of the foot, with the hope that other requirements, such as thermal, dust, and radiation, can be met through additional layers. 
-Novel solutions might be needed to address these problems prior to returning to the Moon. 
-
-motion should be held of at least equal factors as other spacesuit requirmeents
-
-
+Most importantly, this thesis aims to show the importance of understanding all dimensions of human motion when it comes to spacesuit design. 
+Dynamic changes in morphology are just as important to accommodate as linear and angular measurements. 
+It is also important to understand the degree to which adjustability or grading through different sizes is needed to accommodate the target population. 
+Utilizing these techniques will allow for the design of apparel and footwear that is comfortable and of high performance, ensuring that the wearer is safe and satisfied while performing their tasks. 

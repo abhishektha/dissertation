@@ -58,24 +58,27 @@ $endif$
 
 
 $if(tables)$
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+$if(multirow)$
+\usepackage{multirow}
+$endif$
 \usepackage{calc} % for calculating minipage widths
-% $if(beamer)$
-% \usepackage{caption}
-% % Make caption package work with longtable
-% \makeatletter
-% \def\fnum@table{\tablename~\thetable}
-% \makeatother
-% $else$
-% % Correct order of tables after \paragraph or \subparagraph
-% \usepackage{etoolbox}
-% \makeatletter
-% \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-% \makeatother
-% % Allow footnotes in longtable head/foot
-% \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-% \makesavenoteenv{longtable}
-% $endif$
+$if(beamer)$
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+$else$
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+$endif$
 $endif$
 
 \makeatletter
@@ -117,23 +120,28 @@ $endfor$
 
 \reader{$reader$}		%  2nd person to sign thesis
 
+\readerThree{$readerThree$}		%  3rd person to sign thesis
+
+\readerFour{$readerFour$}		%  4th person to sign thesis
+
+\readerFive{$readerFive$}		%  5th person to sign thesis
+
 
 \abstract{  \OnePageChapter	% because it is very short
 
-	Abstract to be written. 
+	$thesisabstract$
 	}
 
 \dedication[Dedication]{	% NEVER use \OnePageChapter here.
-	To all of the fluffy kitties.
+	$dedication$
 	}
 
 \acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
-	Here's where you acknowledge folks who helped.
-	But keep it short, i.e., no more than one page,
-	as required by the Grad School Specifications.
+	$acknowledgements$
 	}
-
-% \IRBprotocol{E927F29.001X}	% optional!
+$if(IRBprotocol)$
+\IRBprotocol{$IRBprotocol$}	% optional!
+$endif$
 
 \ToCisShort	% use this only for 1-page Table of Contents
 
@@ -156,8 +164,7 @@ $body$
 %\nocite{*}		% list all refs in database, cited or not
 %\bibliography{refs}		% Bib database in "refs.bib"
 
-%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
-\appendix
+
 
 $if(natbib)$
 %\usepackage{natbib}
@@ -165,10 +172,12 @@ $if(bibliography)$
 $if(biblio-title)$
 \renewcommand\refname{$biblio-title$}
 $endif$
-\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+%\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
 $endif$
 $endif$
 
+%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
+%\appendix
 
 $for(include-after)$
 $include-after$

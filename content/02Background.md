@@ -154,7 +154,7 @@ However, the reported trauma and musculoskeletal discomfort are areas of concern
 The EWT and IST, along with findings from Cullinane et al. [@Cullinane2017a], show that the MK III's design inhibits natural human motion and requires more effort during suited ambulation. 
 It is not enough, however, to design a suit that more closely matches natural human motion; it also needs to work closely with its operator to reduce injury risk from poor fit. 
 
-![Knee (left) and foot (right) trauma identified in the MK III following 10 km walkback evaluation. From Norcross et al. 2009](../fig/Background/Trauma.png){#fig:B-Trauma width="80%"}
+![Knee (left) and foot (right) trauma identified in the MK III following 10 km walkback evaluation. From Norcross et al. 2009](../fig/Background/Trauma.png){#fig:B-Trauma width="80%" short-caption="Knee and foot trauma identified in the MK III 10 km walkback evaluation"}
 
 ## Spacesuit Fit
 
@@ -206,7 +206,7 @@ Data collected from Fineman's study shows that during heel-off, the suit appears
 While this may suggest heel-lift, it does not corroborate the subjective reports of a gap between the operator's heel and the spacesuit's heel as it cannot directly measure this gap. 
 Fineman et al [@Fineman2018] suggests that boot fit may be very important to ambulating in the MK III spacesuit.
 
-![Heel-lift occurring during heel-off, as subjectively reported in the MK III. The poor fit and indexing in the boot and lower torso allows the heel to lift inside the boot during heel-off](../fig/Background/HeelLift.png){#fig:B-HeelLift width="60%"}
+![Heel-lift occurring during heel-off, as subjectively reported in the MK III. The poor fit and indexing in the boot and lower torso allows the heel to lift inside the boot during heel-off](../fig/Background/HeelLift.png){#fig:B-HeelLift width="60%" short-caption="Heel-lift occurring during heel-off, as subjectively reported in the MK III"}
 
 
 ### Body Shape Characterization to Improve Fit

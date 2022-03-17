@@ -1,7 +1,7 @@
 # Motivation {#chapter:motiv}
 
 The Apollo missions represent the last time humans set foot on another planetary surface, the Moon. 
-Future human spaceflight missions are retargeting planetary surface exploration by sending astronauts back to the Moon and onward to Mars.
+Future human spaceflight missions are re-targeting planetary surface exploration by sending astronauts back to the Moon and onward to Mars.
 While robotic missions can perform many of the scientific aspects of planetary exploration, human exploration still plays a key role in planetary mission success [@Drake2010].
 
 Spacesuits are designed to both provide life support and help protect the astronaut during activities conduced outside a space habitat, known as extravehicular activity (EVA).
@@ -78,9 +78,9 @@ Some of these injuries have required surgical intervention [@Strauss2005].
 
 Limitations in suit joint design and the poor fit between the suit and its operator can both lead to contact or musculoskeletal injuries. 
 While other environmental factors, such as increased humidity, were also found to have a role in EMU fingernail de-lamination [@Chappell2017], this section will focus on the design and fit factors for spacesuits. 
-High exertion needed to actuate joints and poor indexing can lead to excessive musculoskeletal injuries, while poor sizing and poor indexing can lead to contact injuries, increasing the risk of injury [@fig:B-fitflow]. 
+High exertion needed to actuate joints and poor indexing can lead to excessive musculoskeletal injuries, while poor sizing and poor indexing can lead to contact injuries, increasing the risk of injury ([@fig:B-fitflow]). 
 
-![Overview of how deficiencies in spacesuit design and fit can lead to increased injury risk](../fig/Background/fitflow.PNG){#fig:B-fitflow width="60%"}
+![Overview of how deficiencies in spacesuit design and fit can lead to increased injury risk](../fig/Background/fitflow.PNG){#fig:B-fitflow width="60%" short-caption="Spacesuit design and fit factors link to increased injury risk"}
 
 Pressurized spacesuit joints require more energy to move than compared to unsuited motions [@Newman1997; @Amick2015].
 While design features aim to reduce the effort needed to bend joints [@Harris2001], these joints are difficult to engineer in areas such as the hand. 

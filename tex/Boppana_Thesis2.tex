@@ -53,17 +53,17 @@
 %\floatplacement{figure}{H}
 
 
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
-% % % Correct order of tables after \paragraph or \subparagraph
-% \usepackage{etoolbox}
-% \makeatletter
-% \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-% \makeatother
-% % Allow footnotes in longtable head/foot
-% \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-% \makesavenoteenv{longtable}
-% 
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
 \makeatletter
 \AtBeginDocument{%
   \expandafter\renewcommand\expandafter\subsection\expandafter{%
@@ -93,25 +93,53 @@
 \advisor{Dr.}				%  #1 {title}
 	{Allison P. Anderson}			%  #2 {name}
 
-\reader{Dr.~Torin Clark}		%  2nd person to sign thesis
+\reader{Dr.~Daniel Feeney}		%  2nd person to sign thesis
+
+\readerThree{Dr.~Rodger Kram}		%  3rd person to sign thesis
+
+\readerFour{Dr.~Torin Clark}		%  4th person to sign thesis
+
+\readerFive{Dr.~David Klaus}		%  5th person to sign thesis
 
 
 \abstract{  \OnePageChapter	% because it is very short
 
-	Abstract to be written. 
+	Current gas-pressurized spacesuit designs have a history of inducing contact and musculoskeletal injuries during ground-based training exercises and microgravity operations.
+ These injuries are hypothesized to be caused by the suits' stiff pressurized design, poor indexing between the suit and the operator, and poor sizing of the suit to the operator.
+ This is especially prevalent in the spacesuit boot; spacesuit operators have reported heel-lift in current planetary spacesuit boot prototypes, where there the foot inside the boot lifts before the boot responds.
+ This work in this thesis therefore focused on investigating whether dynamic foot shape models can be used to improve spacesuit boot design with increased comfort and heel performance.
+
+ Heel-lift in the spacesuit boot has not been previously quantified.
+ The first aim of this thesis evaluated the use of inertial measurement units (IMUs) and drift-correction techniques in quantifying the magnitude and frequency of heel-lift.
+ These techniques were able to estimate occurrences of heel-lift, but did not quantify magnitude at the desired precision.
+ Results also suggested spacesuit lower leg expansion prior to heel-off in one subject, which may be an indication of tighter boot fit.
+ These results suggest that IMUs alone may not be sufficient for heel-lift characterization.
+
+ The foot's dynamic morphology during walking was characterized in this work's second aim in order to explore its utility in spacesuit boot design.
+ A custom 4D capture system was developed to capture foot scan data from 30 subjects as they walked on a treadmill.
+ This data was represented in a parametric statistical shape model, able to predict dynamic foot shape with an accuracy of 5.2 \(\pm\) 2 mm.
+ The analysis identified shape changes at the instep and heel as targets for reducing heel-lift through boot design.
+ A further analysis found no correlation between dynamic instep height and static foot anthropometries, suggesting that footwear should have adjustment for individual differences.
+
+ A framework was constructed to integrate the dynamic foot shape model into the footwear design process in this work's third aim.
+ A novel spacesuit boot was designed with a focus on lacing to accommodate instep height variability, and a heel counter to secure the heel during shape changes.
+ A prototype spacesuit boot was then constructed to allow for evaluation of this design against current planetary spacesuit boot technology.
+
+ This work's final aim evaluated the novel spacesuit boot for its heel performance and comfort against a work boot and a current spacesuit boot.
+ Five subjects performed heel raises and a short walk in the boots.
+ Results from quantitative measurements and surveys found the novel spacesuit boot was found to maintain contact during the heel-off like the laced work boot, but continue to maintain some contact at the maximum heel-rise.
+ Bayesian linear regression modeling showed that in all heel performance measurements, the novel spacesuit boot was estimated to perform better 100\% of the time compared to classic spacesuit boot technology.
+ These results show that designing a spacesuit boot using dynamic body shape models allows for a better fitting and more compatible boot, which reduces the risk of factors which lead to spacesuit injury
 	}
 
 \dedication[Dedication]{	% NEVER use \OnePageChapter here.
-	To all of the fluffy kitties.
+	
 	}
 
 \acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
-	Here's where you acknowledge folks who helped.
-	But keep it short, i.e., no more than one page,
-	as required by the Grad School Specifications.
+	
 	}
-
-% \IRBprotocol{E927F29.001X}	% optional!
+\IRBprotocol{19-0071}	% optional!
 
 \ToCisShort	% use this only for 1-page Table of Contents
 
@@ -132,7 +160,7 @@
 \chapter{Motivation}\label{chapter:motiv}}
 
 The Apollo missions represent the last time humans set foot on another planetary surface, the Moon.
-Future human spaceflight missions are retargeting planetary surface exploration by sending astronauts back to the Moon and onward to Mars.
+Future human spaceflight missions are re-targeting planetary surface exploration by sending astronauts back to the Moon and onward to Mars.
 While robotic missions can perform many of the scientific aspects of planetary exploration, human exploration still plays a key role in planetary mission success \citep{Drake2010}.
 
 Spacesuits are designed to both provide life support and help protect the astronaut during activities conduced outside a space habitat, known as extravehicular activity (EVA).
@@ -214,15 +242,16 @@ Some of these injuries have required surgical intervention \citep{Strauss2005}.
 
 Limitations in suit joint design and the poor fit between the suit and its operator can both lead to contact or musculoskeletal injuries.
 While other environmental factors, such as increased humidity, were also found to have a role in EMU fingernail de-lamination \citep{Chappell2017}, this section will focus on the design and fit factors for spacesuits.
-High exertion needed to actuate joints and poor indexing can lead to excessive musculoskeletal injuries, while poor sizing and poor indexing can lead to contact injuries, increasing the risk of injury fig.~\ref{fig:B-fitflow}.
+High exertion needed to actuate joints and poor indexing can lead to excessive musculoskeletal injuries, while poor sizing and poor indexing can lead to contact injuries, increasing the risk of injury (fig.~\ref{fig:B-fitflow}).
 
-\begin{figure}
 \hypertarget{fig:B-fitflow}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth,height=\textheight]{../fig/Background/fitflow.PNG}
-\caption{Overview of how deficiencies in spacesuit design and fit can lead to increased injury risk}\label{fig:B-fitflow}
-}
+\caption[{Spacesuit design and fit factors link to increased injury risk}]{Overview of how deficiencies in spacesuit design and fit can lead to increased injury risk}
+\label{fig:B-fitflow}
 \end{figure}
+}
 
 Pressurized spacesuit joints require more energy to move than compared to unsuited motions \citep{Newman1997, Amick2015}.
 While design features aim to reduce the effort needed to bend joints \citep{Harris2001}, these joints are difficult to engineer in areas such as the hand.
@@ -432,13 +461,14 @@ However, the reported trauma and musculoskeletal discomfort are areas of concern
 The EWT and IST, along with findings from Cullinane et al. \citep{Cullinane2017a}, show that the MK III's design inhibits natural human motion and requires more effort during suited ambulation.
 It is not enough, however, to design a suit that more closely matches natural human motion; it also needs to work closely with its operator to reduce injury risk from poor fit.
 
-\begin{figure}
 \hypertarget{fig:B-Trauma}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/Background/Trauma.png}
-\caption{Knee (left) and foot (right) trauma identified in the MK III following 10 km walkback evaluation. From Norcross et al.~2009}\label{fig:B-Trauma}
-}
+\caption[{Knee and foot trauma identified in the MK III 10 km walkback evaluation}]{Knee (left) and foot (right) trauma identified in the MK III following 10 km walkback evaluation. From Norcross et al.~2009}
+\label{fig:B-Trauma}
 \end{figure}
+}
 
 \hypertarget{spacesuit-fit}{%
 \section{Spacesuit Fit}\label{spacesuit-fit}}
@@ -493,13 +523,14 @@ Data collected from Fineman's study shows that during heel-off, the suit appears
 While this may suggest heel-lift, it does not corroborate the subjective reports of a gap between the operator's heel and the spacesuit's heel as it cannot directly measure this gap.
 Fineman et al \citep{Fineman2018} suggests that boot fit may be very important to ambulating in the MK III spacesuit.
 
-\begin{figure}
 \hypertarget{fig:B-HeelLift}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth,height=\textheight]{../fig/Background/HeelLift.png}
-\caption{Heel-lift occurring during heel-off, as subjectively reported in the MK III. The poor fit and indexing in the boot and lower torso allows the heel to lift inside the boot during heel-off}\label{fig:B-HeelLift}
-}
+\caption[{Heel-lift occurring during heel-off, as subjectively reported in the MK III}]{Heel-lift occurring during heel-off, as subjectively reported in the MK III. The poor fit and indexing in the boot and lower torso allows the heel to lift inside the boot during heel-off}
+\label{fig:B-HeelLift}
 \end{figure}
+}
 
 \hypertarget{body-shape-characterization-to-improve-fit}{%
 \subsection{Body Shape Characterization to Improve Fit}\label{body-shape-characterization-to-improve-fit}}
@@ -582,27 +613,28 @@ The following gaps were identified from the previous research, as outlined in th
     Current efforts have proposed ways to modify currently designed spacesuit components, but not ways in which spacesuit components can be designed from scratch around dynamic body shape models.
   \end{itemize}
 \item
-  \textbf{Gap 4:} No studies to quantify the effect of using dynamic body-shape models over linear measurements on fit and mobility
+  \textbf{Gap 4:} No studies to quantify the effect of using dynamic body-shape models over linear measurements on fit and comfort
 
   \begin{itemize}
   \tightlist
   \item
-    Spacesuit components designed around body shape models have not been tested against traditionally design spacesuit components to show that they result in better fit and mobility.
+    Spacesuit components designed around body shape models have not been tested against traditionally design spacesuit components to show that they result in better fit and comfort.
   \end{itemize}
 \end{itemize}
 
-This proposed thesis will investigate the applicability of dynamic body shape models to improve fit and mobility for planetary EVA suit design.
-To limit the scope of the work, the proposed work will focus on fit and mobility of the spacesuit boot.
+This thesis investigates the applicability of dynamic body shape models to improve fit and mobility for planetary EVA suit design.
+To limit the scope of the work, the work focused on fit and mobility of the spacesuit boot.
 The MK III spacesuit currently uses a pressurized modified hiking boot with a convoluted ankle joint and boot sizing inserts.
 The boot is an important component for MK III ambulation and MK III boot fit has been identified as a key issue in suit fit, especially with the subjectively reported instances of heel-lift \citep{Fineman2018}.
-While the thesis will focus on the foot-boot interface design, the novel contribution lies in the development of a experimental and design framework to translate body-shape changes into spacesuit design variables.
-The proposed hypothesis of this work is therefore:
+While the work focused on the foot-boot interface design, the novel contribution lies in the development of a experimental and design framework to translate body-shape changes into spacesuit design variables.
+
+The hypothesis of this work is therefore:
 
 \begin{quote}
 \textbf{Integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit.}
 \end{quote}
 
-The proposed thesis will encompass the following specific aims:
+This hypothesis is evaluated through the following specific aims:
 
 \begin{itemize}
 \tightlist
@@ -614,10 +646,6 @@ The proposed thesis will encompass the following specific aims:
   \item
     \emph{Motivation:} Heel-lift was subjectively reported as a potential symptom of poor fit during gait in the MK III, but was never quantified.
     Quantifying the frequency and magnitude of heel-lift can help understand the interactions between the human's foot and the spacesuit boot.
-  \item
-    \emph{Summary of Work:} Vertical accelerations of the spacesuit's lower leg and operator's tibia were analyzed from IMY data collected on in the MK III suit by Fineman et al. \citep{Fineman2018}.
-    Differences in heel-off times between the human and spacesuit were used to characterize heel-lift instances.
-    Drift correction techniques were implemented and evaluated to reduce error in integrating acceleration data to positional estimates. Results from both these analyses, however, suggest that IMUs may not be appropriate for quantifying heel-lift magnitude and frequency.
   \end{itemize}
 \item
   \textbf{Specific Aim 2:} Predictively model dynamic changes in foot morphology during gait
@@ -627,12 +655,6 @@ The proposed thesis will encompass the following specific aims:
   \item
     \emph{Motivation:} The foot changes shape during the loading process of stance phase.
     Modeling these changes as they relate to subject anthropometry and kinematics will allow for prediction of dynamic foot shape during stance phase.
-  \item
-    \emph{Summary of Work:} A novel dynamic foot scanning system was developed to capture 4D foot scans from subjects walking on a treadmill.
-    Dynamic foot scans were captured from thirty subjects as they walked on the treadmill.
-    A predictive statistical shape model was developed to predict dynamic foot shape with an accuracy of 5.2 mm.
-    From the model, the arch was found to drop in height through stance phase, and rise just prior to toe-off.
-    An additional analysis to assess the relationship between arch height measures and subject anthropometries found little correlation, and therefore suggested that dynamic arch height measurements are highly subject specific.
   \end{itemize}
 \item
   \textbf{Specific Aim 3:} Define and validate a design process integrating dynamic foot morphology data for a novel spacesuit boot
@@ -642,36 +664,23 @@ The proposed thesis will encompass the following specific aims:
   \item
     \emph{Motivation:} Existing knowledge on foot mobility can provide mobility requirements for a planetary spacesuit boot.
     Insight from the dynamic foot shape model can be integrated with these mobility requirements to develop a boot design that accommodates the mobility and dynamic shape of the boot.
-  \item
-    \emph{Summary of Work:} Mobility of the foot was characterized from the existing literature.
-    A biomechanical design framework was developed to integrate these mobility requirements with the dynamic foot shape model developed in Specific Aim 2.
-    This framework was then used to inform the design of a novel spacesuit boot by implementing a novel lacing feature which accommodates variability in arch height.
-    The pressure bladder for a novel spacesuit boot accommodating this design feature was constructed, and tested to achieve a pressurization of 3.0 psi.
   \end{itemize}
 \item
-  \textbf{Specific Aim 4:} Evaluate the prototype planetary spacesuit boot design for fit, comfort, and mobility
+  \textbf{Specific Aim 4:} Evaluate the novel planetary spacesuit boot design for fit, comfort, and mobility
 
   \begin{itemize}
   \tightlist
   \item
     \emph{Motivation:} The planetary spacesuit boot design developed in Specific Aim 3 will be tested for improved fit and comfort as compared to a current MK III spacesuit boot design and a non-pressurized standard work boot.
     This will directly test the hypothesis of this thesis.
-  \item
-    \emph{Summary of Work:} A pressurization interface around the subject's calf was constructed for both spacesuit boots to be tested.
-    The test subjects performed heel-lift and walking motions in the all tested boots.
-    A force sensor was integrated into the boots to measure heel contact through the motions.
-    Subject discomfort and exertion was evaluated for each of the boots through surveys.
   \end{itemize}
 \end{itemize}
 
-\hypertarget{expected-outcomes}{%
-\section{Expected Outcomes}\label{expected-outcomes}}
-
-This thesis presents a process to design spacesuit components with improved fit and comfort.
-This process starts with understanding human-spacesuit interaction, then modeling dynamic body-shape changes at the area of interest, applying the body-shape changes to spacesuit design, and testing the resultant spacesuit component.
-This thesis outlines how this process has been applied to the spacesuit boot in the context of planetary walking.
-It is expected that the findings from the specific aims can be translatable to other spacesuit components of interest, which can follow a similar process to improve fit and comfort.
-Future work will be required to assess how the findings from this thesis may need to be modified for applications to other spacesuit components.
+The following chapters describe the work done to meet each specific aim's objectives.
+Chapter \ref{sec:SA1} explores the use of IMUs and drift-correction techniques to quantify the magnitude and frequency of heel-lift in the spacesuit.
+Chapter \ref{sec:SA2} presents a predictive, dynamic, foot shape model using statistical shape modeling techniques, and further investigates the magnitude of instep height changes.
+Chapter \ref{sec:SA3} incorporates the foot shape model into the footwear design process, and produces a novel spacesuit boot design with improved fit and comfort.
+Chapter \ref{sec:SA4} evaluates this boot design against terrestrial work boots and current spacesuit boot designs for improved fit and comfort.
 
 \hypertarget{sec:SA1}{%
 \chapter{Specific Aim 1 : Challenges in Quantifying Heel-Lift during Spacesuit Gait}\label{sec:SA1}}
@@ -708,18 +717,20 @@ Experimental data collected by Fineman et al.\citep{Fineman2018} was reanalyzed 
 Subject naming was kept consistent with Fineman et al.\citep{Fineman2018} for cross-reference of results, with subjects numbered 2-4 as Subject 1 did not complete all trials.
 IMUs were placed on corresponding locations on the lower body of the spacesuit and operator, and different levels of internal padding were placed at the knee and hip (fig.~\ref{fig:SA1-Loc}).
 It is assumed that the IMUs' x-axis was aligned with the long-axis of the shank and SLL; this axis was considered the vertical task axis.
-Three subjects walked in the MK III spacesuit along a 10m walkway in each of four conditions: unsuited, MK III with no padding (configuration 0), MK III with one padding layer (configuration 1), and MK III with two padding layers (configuration 2.
-All subjects wore the same size MK III lower body assembly, but Subject 3 wore a BOA-laced boot with fit adjustment at the tongue and heel, while other subjects wore a standard strap-laced boot with only tongue fit adjustment.
+Three subjects walked in the MK III spacesuit along a 10m walkway in each of four conditions: unsuited, MK III with no padding (configuration 0), MK III with one padding layer (configuration 1), and MK III with two padding layers (configuration 2).
+All subjects wore the same size MK III lower body assembly, but Subject 3 wore a BOA-laced boot (of size 11-13) with fit adjustment at the tongue and heel, while other subjects wore a standard strap-laced boot (of size 8-10) with only tongue fit adjustment.
+Subject anthropometries were varied, with Subject 4 having the largest crotch height and hip breadth.
 This work only analyzed a total of 216 suited trials, each with data from the left and right sides of the operator and spacesuit, yielding 432 datasets to analyze.
 Data from Subject 2's left leg during configuration 2 was not included due to data loss from the IMU.
 
-\begin{figure}
 \hypertarget{fig:SA1-Loc}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA1/IMUPlacement.png}
-\caption{Location of IMUs (red squares, placed both the spacesuit and operator) and padding (gray). The sacrum IMU is placed on the back of the operator and spacesuit, where the upper-most black band is located, and is therefore out of view in this diagram. The table on the right outlines the IMUs corresponding locations between the operator and spacesuit.}\label{fig:SA1-Loc}
-}
+\caption[{Location of IMUs and padding}]{Location of IMUs (red squares, placed both the spacesuit and operator) and padding (gray). The sacrum IMU is placed on the back of the operator and spacesuit, where the upper-most black band is located, and is therefore out of view in this diagram. The table on the right outlines the IMUs corresponding locations between the operator and spacesuit.}
+\label{fig:SA1-Loc}
 \end{figure}
+}
 
 \hypertarget{data-analysis}{%
 \subsection{Data Analysis}\label{data-analysis}}
@@ -736,9 +747,9 @@ Each step was defined as the time between each step's max extension to the follo
 The first and last peaks of the trial were removed from further analysis to ensure only complete steps were analyzed.
 
 Foot-flat phase, where the foot is flat between toe-strike and heel-off, was identified to discriminate heel-off events.
-This phase is characterized by near-zero anterior-posterior acceleration; since the foot is flat on the ground, there is very little vertical movement of the shank\citep{Rebula2013}.
+This phase is characterized by near-zero anterior-posterior acceleration; since the foot is flat on the ground, there is very little vertical movement of the shank \citep{Rebula2013}.
 Raw shank and SLL IMUs' vertical acceleration data was preprocessed for foot-flat detection by de-trending to remove bias by removing the best straight-fit line from the data vector.
-A 30-sample window moving average filter, equivalent to 0.23 seconds, was then used to remove noise, within the range used for walking-speed estimation\citep{Byun2019}.
+A 30-sample window moving average filter, equivalent to 0.23 seconds, was then used to remove noise, within the range used for walking-speed estimation \citep{Byun2019}.
 
 Discrete wavelet transforms (DWT) were used to detect gait events from acceleration signals\citep{Ji2019}.
 A 3-level DWT was applied to the preprocessed shank and SLL anterior-posterior acceleration signals.
@@ -746,11 +757,11 @@ A Symlets 2 wavelet was then used as the mother wavelet for the transform, due t
 After transforming to wavelet space, a threshold was applied where values below 2\% of the maximum wavelet coefficient were set to zero.
 The wavelet coefficients were then reconstructed back into a signal and used to detect foot-flat phase.
 
-Foot-flat phase was detected by looking for the zero regions in the shank and SLL's acceleration's derivative10.
+Foot-flat phase was detected by looking for the zero regions in the shank and SLL's acceleration's derivative.
 A threshold of \(0.01 m/s^3\) was set to account for small amounts of noise in the DWT signal.
 Acceleration points within this threshold were identified as zero-acceleration points.
 Zero-acceleration points less than 3-samples long were removed, since foot-flat phase is expected to be much longer.
-Fig. 3 shows an example of isolating foot-flat phase from DWT transformed signals.
+Figure \ref{fig:SA1-posneg} shows an example of isolating foot-flat phase from DWT transformed signals.
 The difference in shank and SLL heel-off times was used to detect instances of heel-lift; a positive value corresponds to operator heel-off prior to spacesuit heel-off, suggesting heel-lift.
 Heel-off lag times \textless-0.2s and \textgreater0.2s were manually inspected, and if detection times were visually noted to be misaligned with the zero-acceleration period, these steps were removed from analysis.
 A total of 32 of the 1381 steps met the criteria for removal.
@@ -790,13 +801,14 @@ Subject 2 experienced spacesuit-delayed heel-off in 97 (20 left, 77 right) out o
 Subject 3 experienced spacesuit-delayed heel-off in 305 (155 left, 150 right) out of 410 (204 left, 206 right) total steps.
 Subject 4 experienced spacesuit-delayed heel-off in 45 (21 left, 24 right) steps, and operator-delayed heel-off in 226 (87 left, 139 right) steps out of 481 (237 left, 244 right) total steps.
 
-\begin{figure}
 \hypertarget{fig:SA1-Lag}{%
+\begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA1/heelOffLag.png}
-\caption{Heel-off lag distributions between all subjects and configurations, with discrete heel-off lag measurements being represented as black dots. Positive lag values are indicative of spacesuit-delayed heel-off, while negative lag values are indicative of operator-delayed heel-off}\label{fig:SA1-Lag}
-}
+\includegraphics[width=0.9\textwidth,height=\textheight]{../fig/SA1/heelOffLag.png}
+\caption[{Heel-off lag distributions between all subjects and configurations}]{Heel-off lag distributions between all subjects and configurations, with discrete heel-off lag measurements being represented as black dots. Positive lag values are indicative of spacesuit-delayed heel-off, while negative lag values are indicative of operator-delayed heel-off}
+\label{fig:SA1-Lag}
 \end{figure}
+}
 
 Mean drift rates after correction for both the SLL and shank IMUs are presented in table \ref{tbl:SA1-drift}. An upper confidence bound of 0.03 s (1/32 cm/s) was found to take a heel-lift measurement with an accuracy of 1cm, based on the mean shank IMU swing phase. Average step duration across all trials was 1.6 ± 0.2 s; therefore drift accumulated over 1 cm on average within 2\% of the step duration.
 
@@ -804,40 +816,43 @@ Mean drift rates after correction for both the SLL and shank IMUs are presented 
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tbl:SA1-drift}Drift rate estimations (mean +/- std dev) of raw, filtered, and post-ZVU/ZPU positional estimates for IMUs mounted on the spacesuit lower leg assembly and shank}\tabularnewline
 \toprule
-Phase & IMU & Raw & ZVU/ZPU \\
+Phase & IMU & Raw & ZVU/ZPU \\ \addlinespace
 \midrule
 \endfirsthead
 \toprule
-Phase & IMU & Raw & ZVU/ZPU \\
+Phase & IMU & Raw & ZVU/ZPU \\ \addlinespace
 \midrule
 \endhead
-Stance & Shank & 43 \(\pm\) 63 cm/s & 5 \$\pm\$6 cm/s \\
-& SLL & 241 \(\pm\) 130 cm/s & 16 \(\pm\) 11 cm/s \\
-Swing & Shank & 67 \(\pm\) 59 cm/s & 32 \(\pm\) 16 cm/s \\
-& SLL & 265 \(\pm\) 103 cm/s & 66 \(\pm\) 40 cm/s \\
+Stance & Shank & 43 \(\pm\) 63 cm/s & 5 \(\pm\) 6 cm/s \\ \addlinespace
+& SLL & 241 \(\pm\) 130 cm/s & 16 \(\pm\) 11 cm/s \\ \addlinespace
+Swing & Shank & 67 \(\pm\) 59 cm/s & 32 \(\pm\) 16 cm/s \\ \addlinespace
+& SLL & 265 \(\pm\) 103 cm/s & 66 \(\pm\) 40 cm/ \\ \addlinespace
 \bottomrule
 \end{longtable}
 
 Heel-lift magnitude was not calculated due to the operator-delayed heel-off lag noted in Subject 4, and high drift rates following correction resulting in a low upper time-bound for calculating heel-lift magnitude after heel-off.
 
-\hypertarget{summary-2}{%
-\section{Summary}\label{summary-2}}
+\pagebreak
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
 
 This study aimed to evaluate the use of IMUs with ZVUs and ZPUs to quantify heel-lift in spacesuit gait.
 Methods were demonstrated to determine heel-off points on the shank and SLL IMU; where a lag in the spacesuit's heel-off point compared to the operator's heel-off point would suggest heel-lift.
 All subjects experienced varying amounts of spacesuit-delayed heel-off across conditions, with no noticeable effect from padding.
 Subjects 2 and 4 had more counts of spacesuit-delayed heel-off on their right compared to their left side (Subject 2: 33\% vs.~13\% , Subject 4: 57\% vs.~37\%), suggesting a looser boot fit on their right side.
-Heel-lift was subjectively reported only by subject 26.
+Heel-lift was subjectively reported only by subject 2.
 Only subject 4 experienced operator-delayed heel-off.
-Examples of both operator-delayed and spacesuit-delayed heel-off are shown in fig.~\ref{fig:SA1-posneg}.
+Examples of both operator-delayed and spacesuit-delayed heel-off are shown in figure \ref{fig:SA1-posneg}.
 
-\begin{figure}
 \hypertarget{fig:SA1-posneg}{%
+\begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA1/pos-neg-heel-off.png}
-\caption{(Top): DWT IMU vertical acceleration data for shank and SLL. Shaded regions represent the detected foot-flat phases of zero-acceleration regions for each step. (Middle) Zoomed-in view of the foot-flat phase for two steps, with annotated spacesuit and operator heel-off points. When the shank IMU registers a vertical acceleration in foot-flat phase prior to the SLL IMU (middle-left), this could suggest heel-lift (bottom-left). When the SLL IMU registers a vertical acceleration in foot-flat phase prior to the shank IMU, this would ordinarily suggest that the SLL experiences heel-off prior to the operator (middle-right). However, there may be pressure forces which allow the SLL to extend, registering a vertical acceleration for the SLL-mounted IMU and falsely suggesting that the spacesuit is experiencing heel-off (bottom-right).}\label{fig:SA1-posneg}
-}
+\includegraphics[width=0.85\textwidth,height=\textheight]{../fig/SA1/pos-neg-heel-off.png}
+\caption[{IMU data processing flow and examples of operator-delayed heel-off and spacesuit-delayed heel-off}]{(Top): DWT IMU vertical acceleration data for shank and SLL. Shaded regions represent the detected foot-flat phases of zero-acceleration regions for each step. (Middle) Zoomed-in view of the foot-flat phase for two steps, with annotated spacesuit and operator heel-off points. When the shank IMU registers a vertical acceleration in foot-flat phase prior to the SLL IMU (middle-left), this could suggest heel-lift (bottom-left). When the SLL IMU registers a vertical acceleration in foot-flat phase prior to the shank IMU, this would ordinarily suggest that the SLL experiences heel-off prior to the operator (middle-right). However, there may be pressure forces which allow the SLL to extend, registering a vertical acceleration for the SLL-mounted IMU and falsely suggesting that the spacesuit is experiencing heel-off (bottom-right).}
+\label{fig:SA1-posneg}
 \end{figure}
+}
 
 Operator-delayed heel-off is theoretically impossible; when the spacesuit's boot rises during the spacesuit's heel-off timepoint, it will push on the operator's heel, registering a simultaneous operator heel-off timepoint.
 The SLL's soft goods can expand and contract in length due to internal pressure forces or interactions from the knee or femur \citep{Harris2001}.
@@ -854,6 +869,7 @@ In contrast, loose boot fit will not allow the operator to overcome these forces
 Fineman et al \citep{Fineman2018} summarized that Subject 4 had synchronous motion of the shank and SLL between heel-off and toe-off; Subjects 2 and 3 had motion driven by the suit, suggesting heel-lift.
 Data from this study similarly suggests that Subjects 2 and 3 experienced more instances of spacesuit-delayed heel-off than Subject 4.
 Therefore, Subject 4 may have had a tighter boot fit as indicated by operator-delayed heel-off, and operator-delayed heel-off may serve as an indicator for tighter boot fit.
+It should be noted, however, that spacesuit lower leg expansion during operator-delayed heel-lift is merely a hypothesis, and cannot be fully observable with the data used in this study.
 
 Findings from this study suggest that current IMU technology and drift correction techniques alone may not be appropriate for quantifying the presence and magnitude of heel-lift in the spacesuit environment.
 Drift evaluation showed that the SLL-mounted IMUs had higher drift rates than the shank-mounted IMU.
@@ -861,7 +877,8 @@ Potential sources of increased drift could be effects from the SLL segment's sof
 While ZVUs and ZPUs did substantially reduce drift in stance and swing phase, drift was still present in this study.
 Heel-lift magnitude measurements could not be taken with confidence that magnitude differences would be due to heel-lift.
 Future work may explore the extent of soft-goods expansion on spacesuit kinematics analysis, which may affect positional estimates from optical motion capture.
-IMUs have been shown to measure spacesuit angular kinematics with a root-mean-squared error of 4.8-5.8 degrees\citep{Bertrand2014} and were used to characterize relative angular coordination within the suit\citep{Fineman2018}, but have not been evaluated for accuracy in spacesuit positional estimates as conducted in this study.
+IMUs have been shown to measure spacesuit angular kinematics with a root-mean-squared error of 4.8-5.8 degrees\citep{Bertrand2014} and were used to characterize relative angular coordination within the suit\citep{Fineman2018}.
+IMUs have not, however, been evaluated for accuracy in spacesuit positional estimates as conducted in this study.
 Suit components should only expand longitudinally, and should therefore not affect angular estimates\citep{Harris2001}.
 Other sensing modalities or improvements to IMU mounting may be more appropriate in quantifying the vertical displacement that defines heel-lift.
 
@@ -871,10 +888,22 @@ The primary assumption that the SLL was rigidly connected to the ankle joint was
 Fineman et al \citep{Fineman2018} hypothesized that lower-body relative coordination may be affected by boot fit issues.
 Future work can characterize SLL extension throughout the gait cycle, further understanding the forces acting on the SLL due to fit.
 Sensor technologies can also be evaluated to study heel-lift, such as resistive or capacitive force sensors mounted under the heel to directly measure heel contact, or strain sensors mounted between the human and suit to measure displacement.
-Such methods can be used to evaluate spacesuit components susceptible to injury, such as the gloves or upper torso\citep{Chappell2017}.
+Such methods can be used to evaluate spacesuit components susceptible to injury, such as the gloves or upper torso \citep{Chappell2017}.
 IMUs can be mounted directly to the boot to isolate ankle kinematics from SLL lengthening and accurately detect heel-off points using the presented methods and assumptions.
 Force plates can directly identify spacesuit heel-off points, therefore not requiring suit-mounted IMUs.
 Developing and evaluating various in-suit motion measurement techniques will help improve spacesuit design and fit, reducing the risk of injury and ensuring mission success for future planetary EVAs.
+
+\hypertarget{summary-2}{%
+\section{Summary}\label{summary-2}}
+
+The use of IMUs to quantify the frequency and magnitude of heel lift was evaluated.
+While the IMUs were able to identify potential instances of spacesuit delayed heel-off, which could be indicative of heel-lift, in two subjects.
+However, the detection of operator-delayed heel-off breaks the assumption that the spacesuit lower leg was of a constant length.
+This led to the hypothesis that the spacesuit lower leg may be expanding during gait; however this cannot be validated with the available data.
+In addition, the operator-delayed heel-off was only detected in one subject with larger hip breadth and crotch height, suggesting subject specific fit effects.
+Correlation with previous studies suggests that operator-delayed heel-off may also be an indication of tight boot fit.
+The methods were unable to quantify the magnitude of heel-lift at the desired precision.
+Therefore, this evaluation highlights the limitations of using IMUs for quantifying heel-lift, and suggests the use of sensors which can directly measure heel contact in the boot.
 
 \hypertarget{sec:SA2}{%
 \chapter{Specific Aim 2: Predictively model dynamic changes in foot morphology during gait}\label{sec:SA2}}
@@ -909,19 +938,9 @@ Previously developed systems were based on a catwalk, requiring subjects to corr
 However, the systems used to capture 4D foot shape are very expensive and cannot be used around a treadmill, which allows for subjects to fall into natural gait.
 Therefore, no SSMs have been developed from previous capture of 4D foot scans to predict dynamic foot shape.
 
-Therefore, the objectives of this specific aim are:
-
-\begin{itemize}
-\tightlist
-\item
-  Develop a low-cost 4D scanning system capable of capturing foot shape around a treadmill
-\item
-  Create a predictive model of foot shape changes across the dorsal surface during stance phase
-\item
-  Identify specific areas of the foot that change shape during stance phase
-\item
-  Correlate changes in foot shape across large-scale population foot measurements
-\end{itemize}
+Therefore, this specific aim first developed a low-cost 4D scanning system to capture foot shape while subjects walked on a treadmill.
+A predictive statistical shape model of foot shape changes was then developed from this data, which identified foot shape changes during gait.
+A further investigation into the correlation of instep shape changes against static foot anthropometries was carried out in order to further inform footwear design.
 
 \hypertarget{dynamo-dynamic-body-shape-capture-with-intel-realsense-cameras}{%
 \section{DynaMo: Dynamic Body Shape Capture with Intel RealSense Cameras}\label{dynamo-dynamic-body-shape-capture-with-intel-realsense-cameras}}
@@ -939,21 +958,23 @@ DynaMo calculates a common point cloud from the depth maps of all the connected 
 Functions were also developed to track the position of reflective markers in the scene.
 The development of DynaMo was published in a journal paper \citep{Boppana2019}.
 
-\begin{figure}
 \hypertarget{fig:testSetup}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth,height=\textheight]{../fig/SA2/capturesetup.png}
-\caption{Capture setup of 6 Intel RealSense D415 Depth Cameras (circled in red) placed around a treadmill. The checkerboard shown was used to calibrate the cameras using the DynaMo package.}\label{fig:testSetup}
-}
+\caption[{Capture setup of 6 Intel RealSense D415 Depth Cameras placed around a treadmill.}]{Capture setup of 6 Intel RealSense D415 Depth Cameras (circled in red) placed around a treadmill. The checkerboard shown was used to calibrate the cameras using the DynaMo package.}
+\label{fig:testSetup}
 \end{figure}
+}
 
-\begin{figure}
 \hypertarget{fig:SA2-sampleFrames}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA2/sampleFrames.png}
-\caption{Sample frames, shown in 10 frame intervals (bottom), collected by DynaMo showing dynamic shape capture of the foot (top) at 90 frames-per-second, and the capture of reflective markers on the foot shown as white dots}\label{fig:SA2-sampleFrames}
-}
+\caption[{Sample frames collected by DynaMo showing dynamic shape capture of the foot at 90 frames-per-second.}]{Sample frames, shown in 10 frame intervals (bottom), collected by DynaMo showing dynamic shape capture of the foot (top) at 90 frames-per-second, and the capture of reflective markers on the foot shown as white dots}
+\label{fig:SA2-sampleFrames}
 \end{figure}
+}
 
 A post-hoc accuracy analysis was conducted on the DynaMo software and Intel RealSense D415 cameras.
 A shoe last with a corresponding 3D digital model was placed in the capture volume between all cameras, and scanned 10 times.
@@ -981,21 +1002,21 @@ Population recruitment groups are summarized in tbl.~\ref{tbl:groups}.
 
 \hypertarget{tbl:groups}{}
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.14}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.29}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.29}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.29}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.08}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.30}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.31}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.31}}@{}}
 \caption{\label{tbl:groups}Enrollment groups based on reported height. 5 subjects were enrolled in each group}\tabularnewline
 \toprule
-Sex & 5th-35th percentile Height & 35th-65th percentile Height & 65th-95th percentile Height \\
+Sex & 5th-35th percentile Height & 35th-65th percentile Height & 65th-95th percentile Height \\ \addlinespace
 \midrule
 \endfirsthead
 \toprule
-Sex & 5th-35th percentile Height & 35th-65th percentile Height & 65th-95th percentile Height \\
+Sex & 5th-35th percentile Height & 35th-65th percentile Height & 65th-95th percentile Height \\ \addlinespace
 \midrule
 \endhead
-Female & 4'11``-5'3'' & 5'3``-5'5'' & 5'5``-5'8'' \\
-Male & 5'4``-5'8'' & 5'8``-5'11'' & 5'11``-6'2'' \\
+Female & 4'11``-5'3'' & 5'3``-5'5'' & 5'5``-5'8'' \\ \addlinespace
+Male & 5'4``-5'8'' & 5'8``-5'11'' & 5'11``-6'2'' \\ \addlinespace
 \bottomrule
 \end{longtable}
 
@@ -1012,7 +1033,7 @@ Subjects' foot length, foot width, and arch length were measured with a Brannock
 Both foot length and arch length were measured in centimeters.
 Foot width was measured as an ordinal size (e.g.~A, B, C, D, E), and then converted to a linear measurement in centimeters (The Brannock Device Company, Liverpool, NY).
 
-Six Intel RealSense D415 Depth Cameras (Intel, Santa Clara, CA) were placed and calibrated around a custom-built level treadmill in the University of Colorado Boulder Locomotion Laboratory, as shown in fig.~\ref{fig:testSetup}.
+Six Intel RealSense D415 Depth Cameras (Intel, Santa Clara, CA) were placed and calibrated around a custom-built level treadmill in the University of Colorado Boulder Locomotion Laboratory, as shown in figure \ref{fig:testSetup}.
 The treadmill was set to an average walking pace of 1.4 m/s \citep{Browning2006}.
 Reflective markers were placed on the subject's right foot and a black sock over their left foot to aid in right foot identification.
 Subjects first walked for one minute to warm-up and fall into a natural cadence.
@@ -1035,19 +1056,79 @@ Figure \ref{fig:dataflow} provides an overview of the data processing workflow; 
 For each subject, a single candidate heel-strike to toe-off event was manually identified across all captures by taking into account point cloud quality due to the high computational power required to process all heel-strike to toe-off events.
 Events with holes greater than 1cm that appeared across more than one frame were rejected.
 The depth images captured by each depth camera were processed into point clouds using the DynaMo package \citep{Boppana2019}.
-From each point cloud, the right foot was isolated and transformed into a triangle mesh \citep{Rusu2011, Fischler1981, Bernardini1999, Zhou2018}.
+
+From each point cloud, the right foot was isolated and transformed into a triangle mesh.
+The C++ implementation of the PointCloud Library \citep{Rusu2011} was used to identify and isolate the right foot from the point set.
+First, the point clouds were downsampled with a voxel size of 3 mm to reduce required computing power.
+A random sample consensus (RANSAC) algorithm \citep{Fischler1981} was used to identify the flat treadmill floor with a plane model, and remove it from the point cloud.
+Euclidean cluster extraction was then used to detect the point clusters that make up each foot.
+The total color value of each point cluster was used to identify the right foot from the left foot, as the left foot had a lower total color value due to the black sock.
+The left foot was then removed from the point cloud, leaving only the right foot for processing.
+
+Poisson surface reconstruction was done using Open3D \citep{Zhou2018}; this adds a topological layer interpreted from the pointcloud.
+Point normals were calculated for the point cloud using the 10 nearest neighbors.
+A ball-pivoting algorithm \citep{Bernardini1999} is then used with the point normals to estimate the surface from the point cloud and construct the foot scan mesh.
+
 Since every depth image was captured independently by the cameras, the amount and location of points which represented the foot were not consistent.
 Registration of all scans to a common template represents every scan by an equal number of points, and ensures any missing points not meeting the rejection criteria are properly interpolated.
 The right foot meshes were then iteratively registered using a three-step fitting process to an averaged high-quality static template scan, provided by Dr.~Matthew Reed from the University of Michigan Transportation Research Institute \citep{Reed2013}.
-First scans were roughly aligned using a point-to-plane iterative-closest-point algorithm \citep{Chen1992}, implemented in Open3D \citep{Zhou2018}.
-Next, the radial-basis function fitting algorithm from the GIAS2 software package \citep{Zhang2016} was run twice using a thin-plate spline to approximate the foot surface \citep{Park2015a, Kim2016}.
-The mid-stance scan from each subject was registered first to the template, and then the registration process was run both forwards towards toe-off and backwards towards heel-strike, on a scan-by-scan basis, using the previously registered scan as a template for the next scan.
-Accuracy was checked by comparing registered scans with the processed scans by finding corresponding points between both, and calculating the root-mean-squared error (RMSE) between the corresponding points.
+From the provided template, the toes were smoothed into a single structure and parts of the upper shank removed to be better fit to the captured data, with a finalized structure of 29873 points.
+The overall registration process follows a three-step process: a rough alignment followed by two radial-basis function (RBF) fine alignment steps
+
+The registration process was first completed for each subject's data with a foot scan mesh manually identified near mid-stance.
+A point-to-plane iterative-closest-point (ICP) algorithm \citep{Chen1992} was used to roughly align the template foot to the scan mesh with the Open3D library \citep{Zhou2018}.
+
+Corresponding points between both the scan mesh and the ICP-aligned template were found using a radial-search KD-Tree implemented in the Open3D library \citep{Zhou2018}.
+Any points on the scan mesh which were not within 1 cm of a corresponding point on the aligned template were deleted; these points represented parts of the treadmill floor which were missed in the RANSAC identification and parts of the upper shank.
+Similarly, any points on the template not within 1cm of a corresponding point on the scan mesh were temporarily set aside from the template; these points correspond to those near holes in the scan mesh which would be refilled in later processing
+
+Thin-plate spline RBFs have been used to surface fit templates to scanned body shapes \citep{Park2015a}, and so were used in two stages in this research.
+A first-pass RBF registration, using a thin-plate spline for interpolation, was done between the template and the scan using the GIAS2 package \citep{Zhang2016}
+To prevent overfitting of the RBF to the noise on the edges of the captured pointcloud, a maximum of five iterations were done on the first-pass RBF registration process.
+The first-pass registered RBF template was then appended with the points previously removed from the template.
+This intermediate template represents the template fitted to the known scan data, with any unknown sections (e.g.~holes in the scan data), taking the value of the template.
+However, the disparity between the known and unknown sections created major discrepancies in the morphed template not representative of the scan data.
+
+A second-pass RBF registration was done from the ICP-aligned template to the intermediate template with the same parameters as the first-pass registration.
+This smooths out the unknown sections representing holes in the scan data with the surrounding known sections.
+The second-pass registered template was saved as the final registered template.
+
+Following the registration of the mid-stance scan, the process was repeated both forwards towards toe-off and backwards toward heel-strike on a scan-by-scan basis.
+In this iterative fashion, the previous scan's registered template was used as the template for the following scan.
+During the iterative registration process, the RBF alignment was only conducted for one iteration for both the first-pass and second-pass to prevent over-fitting.
 
 Anatomical landmarks were approximated from the registered scans using the foot features of the registration template \citep{VandenHerrewegen2014b}.
-The first metatarsal head, fifth metatarsal head, and second toe landmarks were used to align all scans to be centered at the second metatarsal head, with the forward axis pointing towards the second toe.
-Landmarks around the metatarsal-phalangeal (MTP) joint and ankle joint were used to calculate ankle, MTP, and foot kinematics for each subject's scans with respect to the joint angles at the subject's mid-stance scan.
-Relevant joint angles include dorsi/plantarflexion, ankle inversion/eversion, ankle internal/external rotation, MTP dorsi/plantarflexion, foot inversion/eversion, and foot internal/external rotation angles.
+The original template identified the lateral malleolus, medial malleolus, 1st metatarsal head, 5th metatarsal head, and 2nd toe landmarks as certain vertices.
+New landmark vertices for the lateral shank and medial shank were manually picked on the template.
+
+Post-registration scans were aligned to a common coordinate frame based at the toes.
+The origin was defined as the point along the vector from the 1st metatarsal head landmark to the 5th metatarsal head landmark which is orthogonal to the second phalange.
+From the origin, the x-axis, was defined as pointing towards the 2nd toe.
+The y-axis, was pointed towards the 5th metatarsal. The z-axis was the cross-product of both x- and y-axes, pointed upward.
+This coordinate system also served as the static coordinate system for the MTP joint.
+
+The ankle joint center was defined as the midpoint between the medial and lateral malleolus.
+The ankle's local z-axis is aligned vertically with the shank center, defined as the center between the lateral shank and medial shank landmarks.
+The ankle's local y-axis is aligned from the shank center to the lateral malleolus.
+The ankle's x-axis is the cross-product of the y- and z-axis, pointed in the forward direction towards the toes.
+
+Static reference angles were taken from these coordinate systems at mid-stance.
+For the ankle joint, the z-axis served as the internal/external rotation axis, the y-axis as the dorsi/plantarflexion axis, and the x-axis as the inversion/eversion axis.
+Since the model's origin was at the toes, the calculation for MTP dorsi/plantarflexion was modified.
+The new local MTP joint coordinate system had the x-axis defined as pointing from the ankle joint center to the MTP joint center, as such the y-axis represented MTP dorsi/plantarflexion.
+Since there is little flexibility in the transverse and frontal planes of the MTP joint, the x-axis therefore represented whole foot inversion/eversion, and the z-axis represented whole foot internal/external rotation around the origin.
+MTP and ankle joint angles were calculated for every other scan as the Euler angle difference from the static joint coordinate system around each axis.
+Each subject's joint angles are low-pass filtered with a 2nd order low-pass Butterworth filter with a cutoff frequency of 15 Hz.
+The global and local coordinate systems are summarized in fig.~\ref{fig:SA2-angles}.
+
+\hypertarget{fig:SA2-angles}{%
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth,height=\textheight]{../fig/SA2/foot_cord.png}
+\caption[{Coordinate system defined from registered scans.}]{Coordinate system defined from registered scans. Anatomical landmarks are shown as black dots. The ankle joint's local coordinate system is shown in blue, the MTP joint's local coordinate system is shown in yellow, and the model's origin coordinate system is shown in red. Directions for each coordinate system are shown in bold text}
+\label{fig:SA2-angles}
+\end{figure}
+}
 
 \hypertarget{model-construction}{%
 \subsubsection{Model Construction}\label{model-construction}}
@@ -1093,50 +1174,46 @@ All processed scans were registered to the template with a mean registration RMS
 \end{figure}
 
 The PCA analysis of all registered scans found the first 8 PCs to represent approximately 95\% of the variance, the first 27 PCs to represent approximately 98\% of the variance, and the first 105 PCs to represent approximately 99.7\% of the variance.
-(Fig. \ref{fig:modelperf}) shows the distribution of cross-validation RMSEs and Hausdorff distances for each of the six models tested.
+(Figure \ref{fig:modelperf}) shows the distribution of cross-validation RMSEs and Hausdorff distances for each of the six models tested.
 Aligned-Rank Transform \citep{Wobbrock2011} was used to compare models as error distributions did not meet assumptions for normality.
 Significant differences were found in RMSE and Hausdorff distances between predicting different numbers of PCs (RMSE: F=7037, p\textless0.001; Hausdorff distances: F=4577, p\textless0.001), predicting between the two variable sets (RMSE: F=6.4, p=0.012; Hausdorff distances: F=4.4, p=0.036), and for the interaction (RMSE: F=3.0, p=0.05; Hausdorff distance: F=5.3, p=0.005).
 An ART-C post-hoc test \citep{Elkin2021} with Bonferroni correction found significant differences between all but one pair of models; detailed results are presented in supplementary information.
 Therefore, the model predicting 8 PCs with the selected variable set was chosen for its simplicity and performance.
 
-\begin{figure}
 \hypertarget{fig:modelperf}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA2/modelPerformance.png}
-\caption{Distribution of mean root-mean-square (RMSE) error and mean Hausdorff distance (HD) across the various prediction models leave-subject-out cross-validation results. Model error values and standard deviation are shown below each distribution}\label{fig:modelperf}
-}
+\caption[{Distribution of mean root-mean-square (RMSE) error and mean Hausdorff distance (HD) across the various prediction models}]{Distribution of mean root-mean-square (RMSE) error and mean Hausdorff distance (HD) across the various prediction models leave-subject-out cross-validation results. Model error values and standard deviation are shown below each distribution}
+\label{fig:modelperf}
 \end{figure}
+}
 
 Each retained PC is a shape mode.
 (Fig. \ref{fig:SA2-coefs}) shows the chosen model's normalized regression coefficient values for each shape mode.
 The coefficients for the sex predictor are not shown as they were predicted to be zero for every shape mode.
 
-(Fig. \ref{fig:pca_quad}) shows each shape mode's axis represented on the mean foot, highlighting which areas of the foot are affected by deformations in each shape mode.
-(Fig. \ref{fig:pca_overlay}) shows the \(\pm\) 2 standard deviations of deformation along each shape mode overlaid on the mean foot.
+\hypertarget{fig:SA2-coefs}{%
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{../fig/SA2/coefs.png}
+\caption[{Foot shape model's normalized coefficients}]{Each graph represents the predictor's effects on the shape mode by visualizing the model's normalized coefficients. Larger absolute values indicate a larger effect from the predictor on the shape mode.}
+\label{fig:SA2-coefs}
+\end{figure}
+}
+
+Figure \ref{fig:pca_overlay} shows each shape mode's axis represented on the mean foot, highlighting which areas of the foot are affected by deformations in each shape mode, and the \(\pm\) 2 standard deviations of deformation along each shape mode overlaid on the mean foot.
 Supplementary information includes correlation between predictors, ratio of total variance each retained PC accounts for, and a link to an interactive web tool to visualize the model.
 All data from this project is available online.
 
+\hypertarget{fig:pca_overlay}{%
 \begin{figure}
-\hypertarget{fig:SA2-coefs}{%
 \centering
-\includegraphics[width=1\textwidth,height=\textheight]{../fig/SA2/coefs.png}
-\caption{Each graph represents the predictor's effects on the shape mode by visualizing the model's normalized coefficients. Larger absolute values indicate a larger effect from the predictor on the shape mode.}\label{fig:SA2-coefs}
-}
+\includegraphics[width=0.95\textwidth,height=\textheight]{../fig/SA2/PC_Var_Quad.png}
+\caption[{Shape mode variance locations and magnitude}]{A: Each shape mode's principal axis represented as a heatmap overlaid on the mean foot and shown from 4 different point-of-views. The darker regions represent vertices which are most correlated with the shape mode's principal axis, and therefore see deformations in the shape mode. B: Foot shape deformation at +2 and -2 standard deviations along each shape mode's principal axis, overlaid on the mean foot. The point-of-view is set to highlight the major variance along each shape mode's axis.}
+\label{fig:pca_overlay}
 \end{figure}
-
-Figures \ref{fig:pca_all} shows each shape mode's axis represented on the mean foot, highlighting which areas of the foot are affected by deformations in each shape mode, and the \(\pm\) 2 standard deviations of deformation along each shape mode overlaid on the mean foot.
-
-\begin{pandoccrossrefsubfigures}
-
-\subfloat[A]{\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA2/PCQuad.png}\label{fig:pca_quad}}
-
-\subfloat[B]{\includegraphics[width=0.95\textwidth,height=\textheight]{../fig/SA2/PCVAR.png}\label{fig:pca_overlay}}
-
-\caption[{{[}A{]} Each shape mode's principal axis represented as a heatmap overlaid on the mean foot and shown from 4 different point-of-views. The darker regions represent vertices which are most correlated with the shape mode's principal axis, and therefore see deformations in the shape mode. {[}B{]} Foot shape deformation at +2 and -2 standard deviations along each shape mode's principal axis, overlaid on the mean foot. The point-of-view is set to highlight the major variance along each shape mode's axis.}]{{[}A{]} Each shape mode's principal axis represented as a heatmap overlaid on the mean foot and shown from 4 different point-of-views. The darker regions represent vertices which are most correlated with the shape mode's principal axis, and therefore see deformations in the shape mode. {[}B{]} Foot shape deformation at +2 and -2 standard deviations along each shape mode's principal axis, overlaid on the mean foot. The point-of-view is set to highlight the major variance along each shape mode's axis.}
-
-\label{fig:pca_all}
-
-\end{pandoccrossrefsubfigures}
+}
 
 \hypertarget{foot-shape-changes}{%
 \subsection{Foot Shape Changes}\label{foot-shape-changes}}
@@ -1157,7 +1234,7 @@ The second and fourth shape modes are slightly affected by foot length, which ma
 There is a slight correlation between these angles and foot length (see supplementary figures), which may be due to differences in cadence when walking at the treadmill's set speed.
 Individuals were given time to acclimate to the treadmill's set speed, but the speed may not have been their preferred walking speed.
 
-Foot length scaling is captured in the third shape mode (fig.~\ref{fig:pca_quad}).
+Foot length scaling is captured in the third shape mode (fig.~\ref{fig:pca_overlay}).
 Foot length shrinks when moving positively along the third shape mode (fig.~\ref{fig:pca_overlay}), and thus has a negative effect from foot length.
 Negative effects from foot width and weight may be due to their correlation to foot length (see supplementary figures).
 
@@ -1174,7 +1251,7 @@ The heel was found to vary in the third and fifth shape mode's axis, varying fro
 As the heel lifts off the ground at heel-off, the soft-tissue unloaded during gait and changes morphology \citep{Fontanella2013}.
 At heel-off, there is foot eversion and MTP dorsiflexion \citep{Leardini2007}, explaining the negative effects on the third and fifth shape modes, respectively (fig.~\ref{fig:SA2-coefs}).
 
-Girth changes at the ankle, midfoot, and medial MTP joints are captured in the second and sixth shape modes (fig.~\ref{fig:pca_quad}).
+Girth changes at the ankle, midfoot, and medial MTP joints are captured in the second and sixth shape modes (fig.~\ref{fig:pca_overlay}).
 Girths increase just prior toe-off with ankle internal rotation in the sixth shape mode, and eversion in the second and sixth shape modes (fig.~\ref{fig:SA2-coefs}).
 Girths are also increased with increased subject weight.
 The foot is stiffened through tension in the MTP joints in order to prepare for toe-off \citep{Hicks1954}, and the MTP joints are known to move relatively within the foot during gait \citep{Wolf2008, Lundgren2008} which may be resulting in the increased girth at the MTP joint.
@@ -1226,7 +1303,7 @@ However, the nature of a SSM is that it only outputs foot shapes and not linear 
 Therefore, the magnitude of arch height change was not characterized in this model.
 Characterizing arch height changes will assist in the spacesuit boot design, as this measurement will provide a baseline for engineering a conformable upper which reduces empty space above the midfoot and thereby may reduce heel-lift.
 
-Arch height, however, is not a primary measurement in terrestrial footwear fit.\\
+Arch height, however, is not a primary measurement in terrestrial footwear fit.
 Lasts are traditionally made in a single reference size, and then either geometrically, arithmetically, or proportionally scaled larger and smaller to match other user sizes based on foot length \citep{Luximon2013}.
 This process results in other foot dimensions being scaled with the same proportion as foot length.
 However, arch height has little correlation with foot length \citep{Hill2017}.
@@ -1235,7 +1312,7 @@ Instep height, which is taken near the foot's arch, may be targeted in last desi
 Furthermore, foot measurements defining shoe sizes are taken statically, and do not account for the dynamic changes in foot shape due to the foot's loading during gait.
 
 The arch changes shape dynamically during gait, thus exacerbating difficulty in accommodating its shape during movement.
-Medial longitudinal arch (MLA) shape changes are thought to be caused by several mechanisms.\\
+Medial longitudinal arch (MLA) shape changes are thought to be caused by several mechanisms.
 Hicks used radiographs to show that the foot's arch drops and decreases in angle while it is loaded during early and mid-stance, and rises and increases in angle during late stance \citep{Hicks1954}.
 They hypothesized that a stiff plantar fascia results in a windlass mechanism, where the plantar fascia is pulled towards the toes as the toes dorsiflex during late stance phase.
 This shortens the arch and raises its height.
@@ -1250,6 +1327,7 @@ Arch and instep height variation can be accommodated for in footwear through lac
 Customers therefore may need to try on various shoes while searching for an upper design that matches their arch and instep height.
 Customers may also adjust the fit of the arch and instep in each shoe they try on with lacing until they are satisfied with their fit.
 Lacing modifies how the shoe's upper sits on the wearer's foot, frequently implemented above the wearer's arch and instep.
+Lacing may be a key tool in reducing heel-lift in the spacesuit boot, as it can help secure the foot inside the shoe.
 Lacing can provide a level of customization to arch and instep fit, especially when compared to an elastic shoe upper \citep{Hong2011}.
 Proper lacing can also ensure comfort and performance during activities \citep{Hagen2009, Hagen2010, Pryhoda2021}.
 Furthermore, tensioned lacing could be used to ensure that dynamic fit is maintained as the arch moves through gait \citep{Pryhoda2021}.
@@ -1281,13 +1359,14 @@ The triangle's height was defined as the orthogonal distance from this vector to
 While the instep height landmark may not be perfectly aligned with the pternion-middle metatarsal head vector, this method ensures that the instep height measurement is always taken perpendicular to the base of the defined triangle in the foot's sagittal plane.
 Despite the data set limiting the measurement technique from following the traditional methods of measuring instep height from the literature \citep{Jurca2019}, this method does represent the height of the foot at the instep area when the plantar surface of the foot is not available as a reference.
 
-\begin{figure}
 \hypertarget{fig:instepMeas}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA2/instep_Meas.png}
-\caption{Landmarks and vectors used for instep height measurement, shown in top and side views. The principal foot axis is defined from the pternion to the middle metatarsal head landmark (top). A triangle is defined with a base between the middle metatarsal head and the pternion, and an upper vertex at the instep landmark (bottom). The height of this triangle (red) is taken as the instep height. The MLA location is also shown for comparison.}\label{fig:instepMeas}
-}
+\caption[{Landmarks and vectors used for instep height measurement, shown in top and side views.}]{Landmarks and vectors used for instep height measurement, shown in top and side views. The principal foot axis is defined from the pternion to the middle metatarsal head landmark (top). A triangle is defined with a base between the middle metatarsal head and the pternion, and an upper vertex at the instep landmark (bottom). The height of this triangle (red) is taken as the instep height. The MLA location is also shown for comparison.}
+\label{fig:instepMeas}
 \end{figure}
+}
 
 For each subject, the instep height measurement over stance phase was filtered with a 2nd order Butterworth low-pass filter, with a cutoff of 15 Hz, to reduce measurement noise.
 Mid-stance instep height was defined as the instep height taken halfway between heel-strike and toe-off for all subjects, representative of the static instep height.
@@ -1311,31 +1390,32 @@ These subjects had a mean instep height difference of 15mm±4mm.
 The remaining five subjects (Subjects 2, 16, 21, 22, and 29) had low to no correlation (\(r^{2}\)=0.11±0.36) between their instep height and the MTP joint angle across the gait cycle.
 These subjects' data was manually examined for anomalies, but none were found.
 
-\begin{figure}
 \hypertarget{fig:instepCorr}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA2/instep_MTP.png}
-\caption{Correlation between selected subjects instep height and MTP joint angle over stance phase. Subjects with high correlation between their MTP joint angle and instep height are shown on the top row. Subjects with lower correlations between their MTP joint angle and instep height are shown on the bottom row. Locations of where mid-stance and late-stance instep height values are taken for each subject are highlighted as vertical lines. The Pearson correlation coefficient for each subject is shown on their graph.}\label{fig:instepCorr}
-}
+\caption[{Correlation between selected subjects instep height and MTP joint angle over stance phase.}]{Correlation between selected subjects instep height and MTP joint angle over stance phase. Subjects with high correlation between their MTP joint angle and instep height are shown on the top row. Subjects with lower correlations between their MTP joint angle and instep height are shown on the bottom row. Locations of where mid-stance and late-stance instep height values are taken for each subject are highlighted as vertical lines. The Pearson correlation coefficient for each subject is shown on their graph.}
+\label{fig:instepCorr}
 \end{figure}
+}
 
-Maximum instep height change was found to be 53.7 ± 4.44 mm for the 25 subjects with high correlations between instep height change and MTP joint angle.
+Maximum instep height change was found to be 53.7 ± 4.4 mm for the 25 subjects with high correlations between instep height change and MTP joint angle.
 tbl.~\ref{tbl:corrs} shows the correlation coefficients between the maximum instep height changes and foot length, foot width, and static instep height for these subjects.
 
 \hypertarget{tbl:corrs}{}
 \begin{longtable}[]{@{}ll@{}}
 \caption{\label{tbl:corrs}Pearson correlation coefficients between maximum instep height change and subjects' anthropometric measurements}\tabularnewline
 \toprule
-Anthropometric measurement & Correlation to maximum instep height change \\
+Anthropometric measurement & Correlation to maximum instep height change \\ \addlinespace
 \midrule
 \endfirsthead
 \toprule
-Anthropometric measurement & Correlation to maximum instep height change \\
+Anthropometric measurement & Correlation to maximum instep height change \\ \addlinespace
 \midrule
 \endhead
-Foot Length & 0.18 \\
-Foot Width & 0.18 \\
-Static Instep Height & -0.16 \\
+Foot Length & 0.18 \\ \addlinespace
+Foot Width & 0.18 \\ \addlinespace
+Static Instep Height & -0.16 \\ \addlinespace
 \bottomrule
 \end{longtable}
 
@@ -1343,12 +1423,12 @@ Static Instep Height & -0.16 \\
 \subsection{Translating Instep and Arch Height to Footwear Design}\label{translating-instep-and-arch-height-to-footwear-design}}
 
 A new measurement technique was proposed to analyze 4D foot scans for changes in instep height due to the dynamic nature of the MLA during gait.
-This technique provides a normalized way to This method does not require the foot's plantar surface to be captured, enabling collection of scans on a treadmill or across a walkway.
+This method does not require the foot's plantar surface to be captured, enabling collection of scans on a treadmill or across a walkway.
 The medial longitudinal arch is expected to drop in height during early to mid-stance, and then rise during late stance \citep{Hicks1954, Ker1987, Caravaggi2010, Cashmere1999, Leardini2007, Stolwijk2014, Welte2018, Welte2021}.
 A similar pattern was seen in the instep height measurement.
 Across most subjects, the instep height measurement drops during early and mid-stance, and then rises during late-stance. Therefore, it can be hypothesized that the rise and fall of the MLA changes the instep height of the foot.
 
-Since the collected 4D scans do not include the plantar surface, the method used to measure instep height is slightly different than traditional methods.
+Since the collected 4D scans do not include the plantar surface, the method used to measure instep height is slightly different than traditional static methods.
 The traditional method of measuring instep height is taken with respect to the ground when the foot is flat, which cannot be done with dynamic 4D scans captured on a non-transparent surface.
 This is due to the foot lifting off the ground after heel-off and therefore not having a reference for the measurement.
 The proposed method provides the instep height with respect to a virtual vector drawn from the middle of the metatarsal heads to the pternion.
@@ -1364,6 +1444,7 @@ However, some of these subjects (Subjects 2, 21, and 29) still have a rise in in
 The low correlation suggests that for these subjects, instep height changes may be occurring primarily due to the arch spring hypothesis rather than the windlass hypothesis \citep{Ker1987}.
 On the other hand, subjects 16 and 22 had little to no change in instep height.
 The five subjects in the group without a strong correlation between instep height and MTP joint angle may have a foot structure that responds differently compared to the other subjects', or their arch may not be aligned with the location at which the instep height measurement was taken.
+While the data collected in this study was unable to isolate differences in these subjects, future work can explore if other factors may be contributing to the low correleation.
 
 Static arch height has been previously shown to have low correlation to foot length \citep{Hill2017}.
 In this study, no strong correlations were found between instep height changes and other foot anthropometric measurements, suggesting that the instep height change is another mode of variation in foot shape.
@@ -1372,13 +1453,14 @@ Both findings suggest that arch and instep height varies inter-individually.
 
 This finding has many implications for footwear design. Geometric, proportional, and arithmetic last grading techniques vary the dimensions of the master last by a percentage of the last, by fixed proportions in various dimensions, or by a fixed increment in various dimensions, respectively.
 However, these grading techniques cannot consider the variability of static arch height and dynamic instep height, as this variability seems to be different for everyone.
-Therefore, adjustable mechanisms at the instep area to personalize fit may be necessary to allow footwear to fit a large population properly.
+Therefore, adjustable mechanisms at the instep area to personalize fit may be necessary to allow footwear to fit a large population more effectively.
 In addition, these mechanisms should be adaptable to the dynamic changes in instep height during gait.
-A fixed instep area might result in the foot lifting within the shoe, also known as heel-lift, just before heel-off when the instep height has dropped and there is empty space in the shoe.
+A fixed instep area might result in heel-lift just before heel-off when the instep height has dropped and there is empty space in the shoe.
 
 The tongue and shoelaces can provide adjustment at the instep area independent of shoe size.
 Shoe lacing provides tension over the tongue of the shoe \citep{Hagen2009, Polster2002}, which ensures that the tongue stays snug on your instep area.
-Findings from this study show that the tongue should accommodate at least 20 mm of movement to fit most subject's instep height changes.
+Findings from this study show that the tongue should accommodate at least 20 mm of movement to fit most subject's instep height changes.\\
+This will capture the foot in the shoe and therefore prevent heel-lift.
 Individuals can adjust the lacing to best accommodate their static instep height.
 Shoe lace tension can also be adjusted by varying the number of eyelets and lacing pattern used by the individual \citep{Hagen2009, Hagen2010}.
 Therefore, shoelace tension can be adjusted by an individual to match their dynamic instep height and arch function.
@@ -1430,7 +1512,7 @@ The construction of a prototype based on the novel spacesuit boot design and a s
 
 The foot's static shape distribution and mobility have been well characterized through previous analyses \citep{Farris2019, Mann1979, Voloshina2013, Wannop2014}.
 The following sections describe each of these specific foot measures and provide their population-derived nominal values.
-Figure \ref{fig:SA3-Foot} highlights these foot-specific measures.
+Figure \ref{fig:SA3-Foot} highlights these foot-specific measures which are described in detail in the subsequent sections.
 
 \begin{figure}
 \hypertarget{fig:SA3-Foot}{%
@@ -1461,13 +1543,14 @@ Therefore, the arch length measurement is correlated to standard shoe sizes and 
 Figure \ref{fig:SA3-ANSUR} shows that while arch length is correlated to foot length for both males and females, there is still high variability in this relationship.
 Therefore, arch length is an important measure to consider to ensure proper indexing and dynamic fit between the wearer and spacesuit boot.
 
-\begin{figure}
 \hypertarget{fig:SA3-ANSUR}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth,height=\textheight]{../fig/SA3/ANSUR.png}
-\caption{(Top-right) Inequality in distribution of equivalent shoe size between male and female. (Top-left) Distribution of male and female foot widths. (Left) relationship between foot length and arch length; visualizations developed from the ANSUR II Dataset}\label{fig:SA3-ANSUR}
-}
+\caption[{ANSUR II shoe size and foot width by sex distribution. Relationship between foot length and arch length}]{(Top-right) Inequality in distribution of equivalent shoe size between male and female. (Top-left) Distribution of male and female foot widths. (Left) relationship between foot length and arch length; visualizations developed from the ANSUR II Dataset}
+\label{fig:SA3-ANSUR}
 \end{figure}
+}
 
 \hypertarget{gait-joint-kinematics}{%
 \subsection{Gait Joint Kinematics}\label{gait-joint-kinematics}}
@@ -1499,7 +1582,7 @@ Wannop et al. \citep{Wannop2014} found the ankle internally/externally rotates +
 \hypertarget{biomechanical-boot-design-framework}{%
 \section{Biomechanical Boot Design Framework}\label{biomechanical-boot-design-framework}}
 
-The proposed design framework will link traditional linear foot measurements described in the previous section and the dynamic foot shape model (sec.~\ref{sec:SA2}) to specific footwear design variables, allowing for the design of a spacesuit boot with an emphasis on improving fit, comfort, and mobility.
+The proposed design framework will link traditional linear foot measurements described in the previous section and the dynamic foot shape model (Chapter \ref{sec:SA2}) to specific footwear design variables, allowing for the design of a spacesuit boot with an emphasis on improving fit, comfort, and mobility.
 Note, the framework assumes a gas-pressurized spacesuit boot to maintain compatibility with the current xEMU architecture.
 Since gas pressurized spacesuits are stiff when pressurized, they require specially designed joints which allow for flexibility of the stiff structure.
 The gas pressurized layer does not have the ability to stretch once pressurized, and therefore must be sized specifically to fit the population range.
@@ -1527,7 +1610,8 @@ In the following sections, the design requirements specific to a planetary space
 \hypertarget{mobility}{%
 \subsection{Mobility}\label{mobility}}
 
-Footwear is flexible at the MTP and ankle joints to allow for effective push-off during gait. Terrestrial footwear normally derives flexibility from the materials used for that portion of the shoe; the shoe is typically made of softer materials or less reinforcement at the joints. Since altering materials property stiffness is not an option for spacesuit design, rolling convolute or toroidal joints could be used in the spacesuit footwear to allow for flexibility at the MTP and ankle joints \citep{Harris2001}. fig.~\ref{fig:SA3-Mobility} shows the desired flexibility based on foot-specific measures. These population measures will ensure that the boot provides enough flexion to not constrict natural motion.
+Footwear is flexible at the MTP and ankle joints to allow for effective push-off during gait. Terrestrial footwear normally derives flexibility from the materials used for that portion of the shoe; the shoe is typically made of softer materials or less reinforcement at the joints. Since altering materials property stiffness is not an option for spacesuit design, rolling convolute or toroidal joints could be used in the spacesuit footwear to allow for flexibility at the MTP and ankle joints \citep{Harris2001}.
+Figure \ref{fig:SA3-Mobility} shows the desired flexibility based on foot-specific measures. These population measures will ensure that the boot provides enough flexion to not constrict natural motion.
 
 The MTP joint should target flexion of +90 degrees and the ankle joint should target dorsiflexion/plantarflexion of +40/-20 degrees.
 Due to the potential for unstable terrain, a high top style footwear is suggested to stabilize the ankle, similar to a hiking or military style boot.
@@ -1570,7 +1654,7 @@ The instep height measurement is of particular importance, as it represents the 
 The instep height measurement was found to have both static and dynamic variability from the dynamic foot shape model in Chapter \ref{sec:SA2}.
 Therefore, the upper should accommodate this variability to ensure fit can be maintained through the gait cycle for a wide range of static instep heights.
 
-Lacing or other closure mechanisms can assist the upper in conforming to and capturing the foot (sec.~\ref{sec:SA2}).
+Lacing or other closure mechanisms can assist the upper in conforming to and capturing the foot (Chapter \ref{sec:SA2}).
 Closure mechanisms allow for customization by the individual wearing the boot, so each wearer can adjust the boot to their preferred fit.
 Conforming the upper to the foot will also eliminate any empty space between the foot and above the dorsum, reducing the chance of heel-lift since the foot will no longer be allowed to move within the boot.
 In addition, this reduces the chance of contact injuries from rubbing between the foot and boot.
@@ -1599,13 +1683,14 @@ However, it was not verified if the boot's flexibility at the MTP joint aligned 
 Therefore, it will be imperative to ensure that any flexibility at the MTP joint is either perfectly aligned with the foot, or the flexibility does not inhibit the natural roll off of the foot.
 The arch length measurement can be used to ensure the MTP joint of a wearer is properly indexed to the sole's flexibility, allowing the MTP joint to act as intended (fig.~\ref{fig:SA3-SoleFlex}).
 
-\begin{figure}
 \hypertarget{fig:SA3-SoleFlex}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth,height=\textheight]{../fig/SA3/SoleFlex.png}
-\caption{Desired sole flexibility (red) needs to be properly indexed to the MTP joint, which can be located by the arch length measurement}\label{fig:SA3-SoleFlex}
-}
+\caption[{Desired sole flexibility which can be located by the arch length measurement}]{Desired sole flexibility (red) needs to be properly indexed to the MTP joint, which can be located by the arch length measurement}
+\label{fig:SA3-SoleFlex}
 \end{figure}
+}
 
 \hypertarget{novel-planetary-spacesuit-boot-design}{%
 \section{Novel Planetary Spacesuit Boot Design}\label{novel-planetary-spacesuit-boot-design}}
@@ -1639,13 +1724,14 @@ A longitudinal restraint strap is attached to the convolute segments to ensure t
 The rolling convolute joint also does not require a restraint layer to function, allowing it to be integrated within the scope of this design.
 It was decided to retain the number of convolutes from the planetary spacesuit prototypes, but recalculate the sizing and placement of the convolute segments to meet the requirements from the biomechanical boot design framework.
 
-\begin{figure}
 \hypertarget{fig:SA3-convolute_actuation}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth,height=\textheight]{../fig/SA3/Convolute_Actuation.png}
-\caption{Actuation of a convolute joint. The upper convolute segment overlaps the lower convolute segment by a fixed amount, held static at the center by the restraint strap. When the joint is bent, the upper convolute segment rotates around the lower convolute segment. One side of the upper segment rolls over the lower segment, increasing its overlap. The opposite side unrolls from the lower segment, reducing its overlap.}\label{fig:SA3-convolute_actuation}
-}
+\caption[{Actuation of a convolute joint}]{Actuation of a convolute joint. The upper convolute segment overlaps the lower convolute segment by a fixed amount, held static at the center by the restraint strap. When the joint is bent, the upper convolute segment rotates around the lower convolute segment. One side of the upper segment rolls over the lower segment, increasing its overlap. The opposite side unrolls from the lower segment, reducing its overlap.}
+\label{fig:SA3-convolute_actuation}
 \end{figure}
+}
 
 Range-of-mobility for a convolute assembly is limited by the number of convolute segments, height of each convolute segment, and the overlap between each segment.
 When a convolute assembly is fully actuated, its segments are fully collapsed on one side, and fully extended on the other side.
@@ -1658,13 +1744,14 @@ Similarly, the collapsing side of the assembly can only roll until each segment 
 The vertex connecting the base and hypotenuse of the simplified triangle represents the collapsing side of the assembly.
 The simplified triangle's height represents the expansion of the assembly; as the convolute assembly has a resting height when it is not actuated, the triangle's height only represents the total overlap between all segments.
 
-\begin{figure}
 \hypertarget{fig:SA3-convolute_tri}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth,height=\textheight]{../fig/SA3/Convolute_Triangle.png}
-\caption{Simplified triangle representing a convolute assembly. The left side of the triangle represents the collapsing side of the convolute assembly, while the right side represents the expanding side of the convolute assembly.}\label{fig:SA3-convolute_tri}
-}
+\caption[{Simplified triangle representing a convolute assembly.}]{Simplified triangle representing a convolute assembly. The left side of the triangle represents the collapsing side of the convolute assembly, while the right side represents the expanding side of the convolute assembly.}
+\label{fig:SA3-convolute_tri}
 \end{figure}
+}
 
 The total overlap of the convolute segments can therefore be determined by the diameter of the convolute assembly and the desired range-of-motion (ROM) from this triangle:
 
@@ -1704,13 +1791,14 @@ Therefore, the operator's ankle joint is not indexed properly within the spacesu
 Placing the convolute segments at an angle with respect to the plantar-plane of the foot allows the joint segment to be shifted downward (fig.~\ref{fig:SA3-convolute_ang}).
 A 25-degree tilt was applied to the convolute segments to lower the joint center such that it is closer to the malleolus, improving the indexing of the operator's ankle joint inside the boot.
 
-\begin{figure}
 \hypertarget{fig:SA3-convolute_ang}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA3/Convolute_Angled.png}
-\caption{Angling the convolutes with respect to the plantar surface allows the joint center of the convolutes to sit much closer to the malleolus, which is the joint center of the ankle.}\label{fig:SA3-convolute_ang}
-}
+\caption[{Result of angling convolutes with respect to plantar surface.}]{Angling the convolutes with respect to the plantar surface allows the joint center of the convolutes to sit much closer to the malleolus, which is the joint center of the ankle.}
+\label{fig:SA3-convolute_ang}
 \end{figure}
+}
 
 \hypertarget{upper-and-toe-box}{%
 \subsection{Upper and Toe Box}\label{upper-and-toe-box}}
@@ -1738,16 +1826,17 @@ The standard method to generate flat patterns from a last is to place masking ta
 The last for this design was 3D printed with ABS.
 Seam lines for this last's patterns are shown in figure \ref{fig:SA3-lasttape} .
 These seams were chosen to ensure the patterns are as flat as possible to minimize folds and creases in the pressure bladder design.
-As a result, separate patterns were generated for the sole and toe box, and the upper was split into multiple patterns.\\
+As a result, separate patterns were generated for the sole and toe box, and the upper was split into multiple patterns.
 The seam which runs along the foot's length across the upper was used to incorporate lacing into the boot.
 
-\begin{figure}
 \hypertarget{fig:SA3-lasttape}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA3/Last_Taping_Seams.png}
-\caption{Seam lines on taped last. The lateral (A), medial (B), lateral profile (C), medial profile (D), and top-down (E) views are presented}\label{fig:SA3-lasttape}
-}
+\caption[{Seam lines on taped last}]{Seam lines on taped last. The lateral (A), medial (B), lateral profile (C), medial profile (D), and top-down (E) views are presented}
+\label{fig:SA3-lasttape}
 \end{figure}
+}
 
 \hypertarget{instep-lacing}{%
 \subsection{Instep Lacing}\label{instep-lacing}}
@@ -1765,13 +1854,14 @@ The lacing convolute is designed into the seam between the inferior and superior
 The overlap for the lacing convolute was designed with a varying height across the length of the upper patterns, as opposed to the constant height of the overlap used for the ankle convolutes.
 The overlap is 1 cm at the toe-box, and 5 cm near the heel, allowing for the pivot at the MTP joint.
 
-\begin{figure}
 \hypertarget{fig:SA3-lacingevo}{%
+\begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA3/LacingConvolute_evolution.png}
-\caption{Evolution of lacing convolute design. Originally, the lacing convolute ran the length of the boot (left). The lacing convolute was then iterated to pivot at the MTP joint, and provide greater capture closer to the heel}\label{fig:SA3-lacingevo}
-}
+\includegraphics[width=0.9\textwidth,height=\textheight]{../fig/SA3/LacingConvolute_evolution.png}
+\caption[{Evolution of lacing convolute design}]{Evolution of lacing convolute design. Originally, the lacing convolute ran the length of the boot (left). The lacing convolute was then iterated to pivot at the MTP joint, and provide greater capture closer to the heel}
+\label{fig:SA3-lacingevo}
 \end{figure}
+}
 
 The convolute is paired with a lacing system to allow the wearer to adjust the fit of the upper to their desired tightness (fig.~\ref{fig:SA3-lacingoverview}).
 In a spacesuit boot, the lacing will need to withstand the pressure forces; the pressure forces will want to expand the boot and loosen the lacing.
@@ -1784,10 +1874,11 @@ The lace length is kept constant through the tubing, which fixes the length betw
 This is necessary to ensure that no tightening is occurring near the ankle convolute assembly, which would prevent the ankle convolutes from working.
 Once the lace is tightened to the desired level, the dial can be locked; this prevents the lace from lengthening or shortening.
 
-All lacing adjustment is done when the boot is unpressurized.
+All lacing adjustment is designed to occur when the boot is unpressurized.
 Adjusting the lacing when the boot is pressurized will require additional effort to compress the air inside the boot.
-Therefore, adjustment of the boot in an operational setting will require the user to de-pressurize the spacesuit, which precludes adjustment from occurring during an EVA.
+Therefore, adjustment of the boot in an operational setting may require the user to de-pressurize the spacesuit, which would preclude adjustment from occurring during an EVA.
 Therefore, it will be important for users of this system to spend time during training to find their ideal fit prior to performing an EVA.
+Future work may explore the torque required in the BOA dial to allow for adjustment of the lacing while the boot is pressurized.
 
 The placement of the dial was chosen to provide dynamic tightening (fig.~\ref{fig:SA3-lacingoverview}).
 The dial is placed on the front of the convolute assembly.
@@ -1838,13 +1929,14 @@ A 3D model of the sole is shown in fig.~\ref{fig:SA3-solemold}.
 The novel spacesuit boot's design summarized in figure \ref{fig:SA3-lacingoverview}.
 The various design elements work together to provide adjustability for the wearer through lacing, and secure the heel in place through the lacing and heel counter.
 
-\begin{figure}
 \hypertarget{fig:SA3-lacingoverview}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA3/LacingOverview.png}
-\caption{Overview of the novel spacesuit boot. Only the medial side is shown, but the lacing is mirrored on the lateral side. The heel counter's location is shown as a dotted line as it is internal to the pressure bladder. When plantarflexed, the distance the lace has to travel is increased and is shown by the arrow. Therefore, the lacing near the guides further tightens.}\label{fig:SA3-lacingoverview}
-}
+\caption[{Novel spacesuit boot design overview}]{Overview of the novel spacesuit boot. Only the medial side is shown, but the lacing is mirrored on the lateral side. The heel counter's location is shown as a dotted line as it is internal to the pressure bladder. When plantarflexed, the distance the lace has to travel is increased and is shown by the arrow. Therefore, the lacing near the guides further tightens.}
+\label{fig:SA3-lacingoverview}
 \end{figure}
+}
 
 \hypertarget{novel-planetary-spacesuit-boot-construction}{%
 \section{Novel Planetary Spacesuit Boot Construction}\label{novel-planetary-spacesuit-boot-construction}}
@@ -1852,49 +1944,51 @@ The various design elements work together to provide adjustability for the weare
 Much effort was required to translate the novel planetary spacesuit boot design into a functional prototype, as shown in figure \ref{fig:SA3-proto_boot}.
 The following sections outline the manufacturing process for constructing the boot prototype.
 
-\begin{figure}
 \hypertarget{fig:SA3-proto_boot}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA3/Proto_Spaceboot.png}
-\caption{Prototype planetary spacesuit boot constructed with BOA lacing, ankle rolling convolutes, and a heel counter. The heel counter is not visible as it is inside the pressure bladder}\label{fig:SA3-proto_boot}
-}
+\caption[{Prototype planetary spacesuit boot constructed with BOA lacing, ankle rolling convolutes, and a heel counter}]{Prototype planetary spacesuit boot constructed with BOA lacing, ankle rolling convolutes, and a heel counter. The heel counter is not visible as it is inside the pressure bladder}
+\label{fig:SA3-proto_boot}
 \end{figure}
+}
 
 A heat-sealable urethane coated nylon (Seattle Fabrics, Seattle WA) was used as the material for the pressure bladder \citep{Harris2001}.
-Discussions with spacesuit engineers suggested 400 Denier nylon for its strength. The material can be made air-tight by heat-sealing with a mini-iron (Clover Needlecraft, Los Angeles CA) which can reach a maximum of 580 degrees Fahrenheit.
+Discussions with spacesuit engineers suggested 400 Denier nylon for its strength.
+The material was made air-tight by heat-sealing with a mini-iron (Clover Needlecraft, Los Angeles CA), which can reach a maximum of 580 degrees Fahrenheit.
 
 Numerous coupons were made to test how long heat was required to achieve a strong seal between the nylon fabric.
 These coupons had heat applied at 390 degrees Fahrenheit in intervals of 5 sec up to 30 seconds.
-The coupons were the tested on an Instron machine using an ASTM D5034-19 fabric tensile test method.
-It was found that the coupons with 20 seconds of heat application and up failed at the nylon interface, and not just at the urethane, suggesting a strong bond had been achieved between the fabric.
+The coupons were then tested on an Instron machine using an ASTM D5034-19 fabric tensile test method; more details on this method can be found in Appendix \ref{sec:AA}.
+It was found that the coupons with 20+ seconds of heat application failed at the nylon interface, and not at the urethane, suggesting a strong bond had been achieved between the fabric.
 
-As only one side of the material is coated in urethane, and the urethane can only be bonded to another layer of urethane, care must be taken in the patterning to ensure that each panel is sealable.
+As only one side of the material is coated in urethane, and the urethane can only be bonded to another layer of urethane, care was taken in the patterning to ensure that each panel is sealable.
 It was decided that the urethane-coated side of the patterns will be facing towards the foot, as it is done in current spacesuit construction.
 Panels were sealed together with another strip of pressure bladder material (fig.~\ref{fig:SA3-seam}).
 This technique was applied to each section of the pressure bladder, with specific details regarding construction below.
 
-\begin{figure}
 \hypertarget{fig:SA3-seam}{%
+\begin{figure}
 \centering
-\includegraphics{../fig/SA3/BladderSeam.png}
-\caption{Two pressure bladder patterns (left, right) are connected by a single strip of material (middle) at the team. This strip is heat-sealed to both patterns, creating an air-tight seam.}\label{fig:SA3-seam}
-}
+\includegraphics[width=0.4\textwidth,height=\textheight]{../fig/SA3/BladderSeam.png}
+\caption[{Pressure bladder construction technique}]{Two pressure bladder patterns (left, right) are connected by a single strip of material (middle) at the team. This strip is heat-sealed to both patterns, creating an air-tight seam.}
+\label{fig:SA3-seam}
 \end{figure}
+}
 
 \hypertarget{ankle-convolute-construction}{%
 \subsection{Ankle Convolute Construction}\label{ankle-convolute-construction}}
 
-Ankle convolute construction starts with a flat panel for each convolute segment, as summarized in figure \ref{fig:SA3-convoluteflat}.
+Ankle convolute construction started with a flat panel for each convolute segment, as summarized in figure \ref{fig:SA3-convoluteflat}.
 The convolute assembly was constructed by folding over the top of the convolute segments for the two convolute segments by one-half of the convolute segment's height to achieve the desired segment height.
-Then, the bottom of the preceding convolute segment is sewn to the folded-over top of the succeeding convolute segment using a straight stitch at 1.0 mm pitch, at both the overlap itself and 1 cm above the overlap.
-The stitches are then heat-sealed.
-This process is repeated for the next convolute segment.
+Then, the bottom of the preceding convolute segment was sewn to the folded-over top of the succeeding convolute segment using a straight stitch at 1.0 mm pitch, at both the overlap itself and 1 cm above the overlap.
+The stitches were then heat-sealed.
+This process was repeated for the next convolute segment.
 
-A restraint strap is constructed from a 3/4" in canvas fabric which is folded in half and stitched on one side.
-Two restraint straps are used for each convolute assembly, and are placed at 25\% and 75\% of the flat panel convolute assembly's width.
-This results in the restraint straps lying on the medial and lateral neutral axes of the convolute assembly once it is folded into a cylinder.
-As a result, these restraint straps will be on the medial and lateral side when the convolutes are fully assembled.
-The restraint straps are stitched to the junctions in two locations between convolute segments by using a straight stitch at the overlap and 1cm above the overlap.
+A restraint strap was constructed from a 3/4" in canvas fabric which was folded in half and stitched on one side.
+Two restraint straps were used for each convolute assembly, and were placed at 25\% and 75\% of the flat panel convolute assembly's width.
+This resulted in the restraint straps lying on the medial and lateral neutral axes of the convolute assembly once it was folded into a cylinder.
+The restraint straps were stitched to the assembly in two locations between convolute segments by using a straight stitch at the overlap and 1cm above the overlap.
 
 \begin{figure}
 \hypertarget{fig:SA3-convoluteflat}{%
@@ -1904,36 +1998,37 @@ The restraint straps are stitched to the junctions in two locations between conv
 }
 \end{figure}
 
-Once all three convolute segments and the restraint straps are attached, the two ends of the segments are brought together to make the flat panel into a circular convolute assembly.
-A strip of urethane-coated nylon is then used to seal the seam on the inside.
-3D printer filament is used for the bands of the rolling convolute.
-The filament is inserted into the gap between the stitching at the convolute segment junctions.
-The filament is trimmed to length at the seam.
-A 1.5cm strip of canvas material is glued to the bottom of each convolute segment to ensure that the convolute's overlap actuates properly.
+Once all three convolute segments and the restraint straps were attached, the two ends of the segments were brought together to make the flat panel into a circular convolute assembly.
+A strip of urethane-coated nylon was then used to seal the seam on the inside.
+3D printer filament was used for the bands of the rolling convolute.
+The filament was inserted into the gap between the stitching at the convolute segment junctions.
+The filament was then trimmed to length at the seam.
+A 1.5cm strip of canvas material was glued to the bottom of each convolute segment to ensure that the convolute's overlap actuated properly.
 Without this canvas strip, the succeeding convolute segment was found to expand under pressurization and prevent the preceding convolute segment from rolling over it.
-The ankle convolute assembly is now ready to be attached to the upper.
+The ankle convolute assembly was then ready to be attached to the upper.
 
 \hypertarget{upper-and-toe-box-construction}{%
 \subsection{Upper and Toe-Box Construction}\label{upper-and-toe-box-construction}}
 
-Patterns for the upper and toe box expected to interface with the pattern for the sole are extended by 1 cm to provide a seam to attach to the sole (fig.~\ref{fig:SA3-cutpatterns}).
-This avoids having to use a strip of urethane coated nylon on the interior of these seams, which is at a sharp angle and proved difficult to manufacture.
+Patterns for the upper and toe box expected to interface with the pattern for the sole were extended by 1 cm; this provided a seam to attach to the sole (fig.~\ref{fig:SA3-cutpatterns}).
+This also avoided having to use a strip of urethane coated nylon on the interior of these seams, which is at a sharp angle and proved difficult to manufacture.
 
-The patterns for the toe box are simply assembled and sealed together by using strips of urethane-coated nylon at the seams.
-Construction of the upper needs to account for the instep lacing feature.
-The inferior upper pattern is extended by the dimensions of the overlap needed for the instep lacing.
-The top of the overlap is folded over and the superior upper pattern is stitched to the fold.
-This is done for both the lateral and medial upper patterns.
-The lateral and medial upper patterns are attached at the heel with a strip of urethane coated nylon.
-Then, 3D printer filament is inserted into the gap between the stitches to provide structure to the convolute.
+The patterns for the toe box were simply assembled and sealed together with strips of urethane-coated nylon at the seams.
+Construction of the upper needed to account for the instep lacing feature.
+The inferior upper pattern was extended by the dimensions of the overlap needed for the instep lacing.
+The top of the overlap was folded over and the superior upper pattern was stitched to the fold.
+This was done for both the lateral and medial upper patterns.
+The lateral and medial upper patterns were attached at the heel with a strip of urethane coated nylon.
+Then, 3D printer filament was inserted into the gap between the stitches to provide structure to the convolute.
 
-\begin{figure}
 \hypertarget{fig:SA3-cutpatterns}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA3/cut_patterns.png}
-\caption{Patterns for the upper, toe-box, and sole. These patterns are cut from the last taping process, and flattened onto a piece of paper. New patterns are then traced around the flattened tape patterns, and used to make the respective panels. A 1cm seam is added around each pattern to provide flexibility in manufacturing. Patterns were generated for the forward (A) and rear (B) toe-box, inferior (C) and superior (D) medial upper, inferior (F) and superior (E) lateral upper, and the sole (G).}\label{fig:SA3-cutpatterns}
-}
+\caption[{Upper, toe-box, and sole patterns}]{Patterns for the upper, toe-box, and sole. These patterns are cut from the last taping process, and flattened onto a piece of paper. New patterns are then traced around the flattened tape patterns, and used to make the respective panels. A 1cm seam is added around each pattern to provide flexibility in manufacturing. Patterns were generated for the forward (A) and rear (B) toe-box, inferior (C) and superior (D) medial upper, inferior (F) and superior (E) lateral upper, and the sole (G).}
+\label{fig:SA3-cutpatterns}
 \end{figure}
+}
 
 \hypertarget{sole-construction}{%
 \subsection{Sole Construction}\label{sole-construction}}
@@ -1962,23 +2057,23 @@ The expanding foam was mixed, poured into the mold, and allowed to fully cure as
 The mold was then unclamped, and the sole was peeled out of the mold.
 Any flash, excess material from the molding process, was then cut off with a knife.
 
-The pressure bladder is attached to the sole through a welting process.
-The seam from the attachment of the pressure bladder's upper and sole patterns is sewn to the sole.
-This process is reinforced with hot glue.
+The pressure bladder was attached to the sole through a welting process.
+The seam from the attachment of the pressure bladder's upper and sole patterns was sewn to the sole.
+This process was reinforced with hot glue.
 
 \hypertarget{boa-lacing-integration}{%
 \subsection{BOA Lacing Integration}\label{boa-lacing-integration}}
 
-The BOA lacing guides are secured to the pressure bladder and sole through stitching.
-The guides are first perforated with four holes, and then hand stitched to the pressure bladder and sole.
-The BOA lacing dial is glued to the top of the upper most convolute segment.
-The lace tubing is press-fit into the dial and the first set of guides.
-The lace tubing is also glued to the canvas straps at the bottom of upper-most convolute segment to ensure it stays secure.
+The BOA lacing guides were secured to the pressure bladder and sole through stitching.
+The guides were first perforated with four holes, and then hand stitched to the pressure bladder and sole.
+The BOA lacing dial was glued to the top of the upper most convolute segment.
+The lace tubing was press-fit into the dial and the first set of guides.
+The lace tubing was also glued to the canvas straps at the bottom of upper-most convolute segment to ensure it stays secure.
 
 \hypertarget{heel-counter-1}{%
 \subsection{Heel Counter}\label{heel-counter-1}}
 
-The heel counter made by casting a thin (3 mm) layer of Elite Double 16 dental polymer (Zhermack SpA, Badia Polesine (RO), Italy).
+The heel counter was made by casting a thin (3 mm) layer of Elite Double 16 dental polymer (Zhermack SpA, Badia Polesine (RO), Italy).
 This layer was trimmed to size to fit on the interior of the boot beneath the lacing convolute.
 The heel counter was secured to the interior of the boot with hot glue and tape.
 
@@ -1986,7 +2081,7 @@ The heel counter was secured to the interior of the boot with hot glue and tape.
 \subsection{Pressure Sealing}\label{pressure-sealing}}
 
 While the urethane-coated nylon has an air-tight seam when heat-sealed properly, manufacturing tolerances and wear from use of the boot were found to create leak paths in the prototype spacesuit boot's pressure bladder.
-It was found that hot glue was an adequate sealant for the pressures used in testing.
+Hot glue was found to be an adequate sealant for the pressures used in testing.
 Therefore, a thin layer of hot glue was applied to all seams in the pressure bladder.
 
 \hypertarget{classic-spacesuit-boot-design-and-construction}{%
@@ -1999,18 +2094,19 @@ In addition, the restraint strap was secured to the sole in the absence of the l
 The upper for the classic spacesuit boot does not have any lacing; the superior and anterior upper patterns were sealed at the seam separating them.
 This ensure that the two boots are identical except for the three novel features in the prototype boot: angled ankle convolutes, lacing, and a heel counter.
 
-\begin{figure}
 \hypertarget{fig:SA3-classic_boot}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth,height=\textheight]{../fig/SA3/Classic_Spaceboot.png}
-\caption{Classic spacesuit boot which was constructed with similar techniques as the prototype spacesuit boot, but without lacing, or a heel-counter.}\label{fig:SA3-classic_boot}
-}
+\caption[{Classic spacesuit boot which was constructed with similar techniques as the prototype spacesuit boot}]{Classic spacesuit boot which was constructed with similar techniques as the prototype spacesuit boot, but without lacing, or a heel-counter.}
+\label{fig:SA3-classic_boot}
 \end{figure}
+}
 
 \hypertarget{pressurization-test-interface}{%
 \subsection{Pressurization Test Interface}\label{pressurization-test-interface}}
 
-A pressurization interface was constructed to allow a pressurized boot to be worn by a subject during testing.
+To test the boot and evaluate design differences, a pressurization interface was constructed to allow the boot to interface with the calf and be worn by subjects during testing.
 This interface was common between the classic and novel pressurized spacesuit boots.
 This interface is not designed to integrate with a spacesuit, but rather for a user to wear a pressurized spacesuit boot without having to wear an entire spacesuit, much like wearing a terrestrial shoe.
 This allows for the performance of the boots to be isolated to the boots themselves, and not to the presence or absence of a spacesuit.
@@ -2026,15 +2122,16 @@ This creates a 6 cm diameter for the wearer to don and doff the boot.
 While this gap is much smaller than the wearer's anthropometry that needs to pass through it, the stretch characteristics of the neoprene allow for the foot, heel, and calf to pass through.
 As a result, a tight fit was maintained around the wearer's calf once the boot was fully donned.
 
-\begin{figure}
 \hypertarget{fig:SA4-baseseal}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth,height=\textheight]{../fig/SA4/BaseSeal.png}
-\caption{Patterning of the base neoprene layer (top) which results in a much smaller opening (bottom, yellow highlight) for the wearer's calf to enter through.}\label{fig:SA4-baseseal}
-}
+\caption[{Neoprene layer patterning}]{Patterning of the base neoprene layer (top) which results in a much smaller opening (bottom, labeled ``calf opening'') for the wearer's calf to enter through.}
+\label{fig:SA4-baseseal}
 \end{figure}
+}
 
-A neoprene and canvas strap was constructed with velcro backings to assist in creating a seal around the neoprene base layer.
+A neoprene and canvas strap was constructed with velcro backings to further reduce air leaks around the neoprene base layer.
 After the boot is donned, the canvas strap was wrapped over the neoprene layer around the wearer's calf.
 The strap was then secured to itself using the velcro backing.
 The canvas material has minimal stretch, ensuring that the lower neoprene layer does not balloon from the internal pressure of the boot.
@@ -2064,23 +2161,6 @@ The boot's monitoring line was connected to a differential pressure manometer (A
 This manometer provides a gauge readout of the internal air pressure in the boot.
 The supply line was connected to the lab's air line, which provides air at 100 psi, with a ball valve.
 The ball valve was adjusted by the test conductor while monitoring the boot's internal pressure through the manometer.
-
-\hypertarget{interface-performance}{%
-\subsubsection{Interface Performance}\label{interface-performance}}
-
-The pressurization interface was used on all subjects during boot evaluation.
-Every subject was able to reach a boot internal pressure of 2.5 psi for both boots.
-Leakage was still present in the boots due to high tolerances from manufacturing the boots by hand.
-
-The EMU operates at 4.3 psi, and future planetary exploration suit concepts have called for suits to be operated at a higher 8.3 psi to reduce the pre-breathe time required for astronauts prior to getting into the suit \citep{Kosmo1988}.
-The ACES, which was not designed for EVA operations, operated at 3.5 psi \citep{Thomas2012}.
-Higher operational pressures may require increased effort to move suit components.
-
-It was originally desired to reach a pressure of 4.3 psi to replicate the spacesuit pressure in current EVA activities aboard the EMU.
-While the boots were only able to achieve 2.5 psi, this was still deemed sufficient to proceed with testing as the boot's material was fully expanded to its maximal volume.
-This allows the boots' mechanisms, such as the rolling convolute ankle joint, to function as they would at a higher pressure.
-A higher pressure would require additional effort from the subject to move the boot, but would activate the mechanisms in the same fashion.
-Therefore, it was decided to continue with testing as this would still provide insight into the performance of the boot's mechanisms with regards to subject fit and comfort, but results will need to be taken into context with the lower operating pressure.
 
 \hypertarget{summary-5}{%
 \section{Summary}\label{summary-5}}
@@ -2115,10 +2195,20 @@ This ensures that the novel features of the prototype spacesuit boot can be comp
 The novel pressurized spacesuit boot prototype developed in Specific Aim 3 was validated for fit and comfort through subject evaluation.
 Results of the validation can help answer the main hypothesis of this thesis: a spacesuit boot designed with dynamic foot morphology will provide increased compatibility between the spacesuit and operator.
 In a terrestrial environment not requiring pressurized spacesuits, EVA tasks are best performed with a work boot.
-Therefore, an unpressurized laced work boot was used as the gold standard to compare the novel spacesuit boot to.
+Therefore, an unpressurized laced work boot was used as the gold standard to which the the novel spacesuit boot was compared.
 As the novel spacesuit boot features lacing, the unpressurized work boot was compared in both laced and unlaced conditions.
 A classic pressurized spacesuit boot, not featuring any lacing, was used in the evaluations to compare the novel spacesuit prototype to current spacesuit boot technology.
+The boots are shown in figure \ref{fig:SA4-boots}.
 This chapter details the methods for the subject evaluation of all four boots, results, and a discussion on the results as related to each boot's performance.
+
+\hypertarget{fig:SA4-boots}{%
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth,height=\textheight]{../fig/SA4/allBoots.png}
+\caption[{Overview of all boots used in evaluation}]{Overview of all boots used in evaluation. A: Novel Spaceboot. B: Laced Work Boot. C: Classic Spaceboot. D: Unlaced Work Boot}
+\label{fig:SA4-boots}
+\end{figure}
+}
 
 \hypertarget{experimental-design}{%
 \section{Experimental Design}\label{experimental-design}}
@@ -2152,19 +2242,19 @@ A summary of participant foot anthropometries is provided in table \ref{tbl:foot
 \begin{longtable}[]{@{}lllll@{}}
 \caption{\label{tbl:foot_meas}Summary of subjects' foot measurements}\tabularnewline
 \toprule
-Subject & Foot Length (cm) & Foot Width & Arch Length (cm) & Sex \\
+Subject & Foot Length (cm) & Foot Width & Arch Length (cm) & Sex \\ \addlinespace
 \midrule
 \endfirsthead
 \toprule
-Subject & Foot Length (cm) & Foot Width & Arch Length (cm) & Sex \\
+Subject & Foot Length (cm) & Foot Width & Arch Length (cm) & Sex \\ \addlinespace
 \midrule
 \endhead
-FQ & 25.5 & C & 26 & F \\
-FT & 25.5 & D & 25 & F \\
-RM & 25.5 & C-D & 27 & M \\
-TF & 25.5 & D & 25 & M \\
-TQ & 26.5 & D & 27 & M \\
-Average & 25.7 \(\pm\) 0.4 & & 26 \(\pm\) 1 & \\
+FQ & 25.5 & C & 26 & F \\ \addlinespace
+FT & 25.5 & D & 25 & F \\ \addlinespace
+RM & 25.5 & C-D & 27 & M \\ \addlinespace
+TF & 25.5 & D & 25 & M \\ \addlinespace
+TQ & 26.5 & D & 27 & M \\ \addlinespace
+Average & 25.7 \(\pm\) 0.4 & & 26 \(\pm\) 1 & \\ \addlinespace
 \bottomrule
 \end{longtable}
 
@@ -2173,11 +2263,11 @@ Average & 25.7 \(\pm\) 0.4 & & 26 \(\pm\) 1 & \\
 
 For each boot condition, subjects donned the test boot on their right foot.
 The order of the test boots was counterbalanced within the pressurized and unpressurized categories; subjects started their trials with the unpressurized boots and then proceeded to the pressurized boots.
-The lacing was simply removed or added when switching from the laced workboot to the unlaced workboot,and vice versa; this maintained the same boot for both these conditions minus the lacing.
-Subjects were instructed to bring their own low-top sneaker to wear on their left foot; a low-top sneaker does not limit the amount of heel-rise when compared to a high-top shoe, and therefore serves as a control between all test boot conditions.
+The lacing was simply removed or added when switching from the laced workboot to the unlaced workboot,and vice versa; this maintained the same boot for both these conditions in all but the lacing.
+Subjects were instructed to wear their own low-top sneaker on their left foot; a low-top sneaker does not limit the amount of heel-rise when compared to a high-top shoe, and therefore serves as a control between all test boot conditions.
 
 Subjects started by performing one set of five heel-raises, and were instructed to best synchronize their heel-raises between both feet.
-They were also instructed to lift each foot independently as high as possible.
+They were also instructed to lift each foot as high as possible, even if the other foot could not be further lifted.
 Subjects were monitored during their performance of the heel-raises, and asked to repeat the heel-rise set if they were not able to maintain balance during the heel-raises, or were not synchronized when initiating the heel-rise.
 After performing the heel-raises, subjects were then instructed to walk a distance of 4 meters.
 This distance was limited by the length of supply air line available to pressurize the spacesuit boots.
@@ -2199,13 +2289,14 @@ For each heel-rise set, the distance between the two markers is used to calibrat
 The horizontal axis was defined as the plane of the floor.
 The Kinovea software tracked the vertical displacement of the first marker to assess heel-rise magnitude with respect to the floor to measure the heel position over time in the vertical plane.
 
-\begin{figure}
 \hypertarget{fig:SA4-Kinovea}{%
+\begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/Kinovea.png}
-\caption{Marker locations for the novel spacesuit boot (A), work boot (B), and a subject's left shoe (C). The novel spacesuit boot and left shoe use black Duck tape for markers on their sole. The work boot uses a silver reflective tape for its markers. The Kinovea software's annotations are shown on each of the image: Marker 1 is tracked to provide heel rise magnitude, and the orange line is used to calibrate the coordinate system.}\label{fig:SA4-Kinovea}
-}
+\includegraphics[width=0.95\textwidth,height=\textheight]{../fig/SA4/Kinovea.png}
+\caption[{Marker location for heel position tracking.}]{Marker locations for the novel spacesuit boot. The Kinovea software's annotations are shown on each of the image: Marker 1 is tracked to provide heel rise magnitude, and the orange line is used to calibrate the coordinate system.}
+\label{fig:SA4-Kinovea}
 \end{figure}
+}
 
 Findings from Chapter \ref{sec:SA1} showed that IMUs may not be appropriate for detecting instances of heel-lift and characterizing heel performance.
 Therefore, a force sensitive resistor (FSR 402, Interlink Electronics, Camarillo CA) was embedded in the sole of the test boots fig.~\ref{fig:SA4-FSRembed}.
@@ -2214,13 +2305,14 @@ The FSR was supplied with a 3.3V reference voltage.
 As a force is applied to the FSR, the resistance of the FSR decreases.
 To align the sign of the FSR voltage to the sign of the heel rise magnitude, the voltage reading was inverted such that applying force to the FSR decreased the voltage.
 
-\begin{figure}
 \hypertarget{fig:SA4-FSRembed}{%
+\begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{../fig/SA4/FSR_embed.png}
-\caption{Location of the FSR embedded into the sole of the novel spacesuit boot (A) and the work boot (B). The FSR was embedded in the classic spacesuit boot's sole in the same fashion as the novel spacesuit boot}\label{fig:SA4-FSRembed}
-}
+\includegraphics[width=0.95\textwidth,height=\textheight]{../fig/SA4/FSR_embed.png}
+\caption[{FSR embedded into soles of test boots}]{Location of the FSR embedded into the sole of the novel spacesuit boot (A) and the work boot (B). The FSR was embedded in the classic spacesuit boot's sole in the same fashion as the novel spacesuit boot}
+\label{fig:SA4-FSRembed}
 \end{figure}
+}
 
 Post-hoc calibration of the FSRs was conducted to characterize the voltage response to force.
 Calibration was conducted by applying a force from a instrumented force gauge to the sensors, while they were still embedded in the boot.
@@ -2229,7 +2321,7 @@ Due to sensor breakage, the sensor in the novel spacesuit boot for subjects FT a
 Calibration results fig.~\ref{fig:SA4-FSRcal} showed a similar voltage response for both spacesuit boots, while the work boot's voltage response appears shifted.
 This may be due to the softer material sole used in the spacesuit boots compared to the work boot.
 In addition, there was little confidence that the calibration curve is completely representative of a foot on the sensor, as the foot may shift while maintaining contact and this could not be accurately characterized by a single sensor.
-Therefore, as voltage is the only reliable measurement to obtain from the FSRs, it was decided to continue reporting FSR voltage as a proxy for heel contact.
+Therefore, as voltage is the only reliable measurement to obtain from the FSRs, it was decided to continue reporting FSR voltage as a proxy for heel contact, and not force magnitude.
 For all boots, there is a strong inflection point in the response at 0.5V, where voltages below 0.5V covered a wide range of applied force.
 It was decided to characterize a voltage of 3.3V as ``no contact'', voltages between 0.5 and 3.3 V as ``mild contact'', and voltages below 0.5V as ``full contact''.
 
@@ -2245,8 +2337,6 @@ A Python script was written to sync the FSR and video data, collecting frames fr
 The internal pressure of both spacesuit boots was also logged from the manometer and collected with the FSR and video data, but the reading of the manometer was only updated about once a second.
 Computational power limited the sample rate of the FSR and video data to 14 Hz.
 While this is much lower than typical biomechanics sample rates, it is still within the frequency content of gait \citep{Antonsson1985}.
-
-While video and FSR data was collected during the short walk, this data was not analyzed due to the video's limited field-of-view, thus only capturing one step in each walk.
 
 \hypertarget{survey-measures}{%
 \subsection{Survey Measures}\label{survey-measures}}
@@ -2274,26 +2364,51 @@ After performing the exercises in all four boots, subjects were then asked to ra
 \hypertarget{quantitative-data-processing}{%
 \subsection{Quantitative Data Processing}\label{quantitative-data-processing}}
 
-Heel position, as measured by the Kinovea software, was used to identify heel-off initiation time and maximum heel-rise magnitude for both the left (control) and right (test) shoe for each boot condition's heel-rise set.
-For all sets, the first heel-rise was not analyzed.
+Heel position, as measured by the Kinovea software, was used to identify heel-off initiation time and maximum heel-rise magnitude for both the left and right shoes for each boot condition's heel-rise set.
+For all sets, the first heel-rise was not analyzed as this initial step may be the first time the subject is performing the heel-rise and may not represent the subjects' true performance.
 Python's \texttt{scipy.signal.find\_peaks} peak detection algorithm was used to identify the peak heel positions for each heel-rise with a width of 5 samples.
-The left shoe was lifted higher in all heel-raise compared to the right shoe, necessitating differing peak prominence parameters for the peak detection algorithm.
-A peak prominence of 4 cm was used for the left shoe compared to a peak prominence of 1.5 cm for the right shoe.
-These prominences were set by observation of the collected data.
-The heel position at each peak was noted as the maximum heel-rise magnitude for each heel-rise in the set.
+Peak detection looks for peaks with a minimum prominence, how much the peak stands out relative to its neighbors, and minimum width.
+The left shoe (sneaker control shoe) was lifted higher in all heel-raise compared to the right shoe (the four experimental shoes).
+A minimum peak prominence of 4 cm was used for detecting maximum heel-rise for the left shoe, compared to a minimum peak prominence of 1.5 cm for the right shoe.
+Minimum width was set to 5 samples for both sides.
+Each detected peak was noted as the maximum heel-rise magnitude for each heel-rise in the set (fig.~\ref{fig:SA4-heel_peak}).
+
+\begin{figure}
+\hypertarget{fig:SA4-heel_peak}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/heel_peaks.png}
+\caption{Heel-rise peak magnitude detection from the heel-rise signal.}\label{fig:SA4-heel_peak}
+}
+\end{figure}
 
 Heel-off time was identified for both sides by first inverting the heel-position signal and then identifying the signal peaks with the identical parameters for each side as for the maximum heel-rise magnitude analysis.
 These peaks are the foot-flat phases of the heel-rise motion for each heel-rise.
 Then, a moving average filter with a window size of 10 samples was applied to the heel position signal.
 The filtered signal was then integrated to obtain the heel's velocity.
 Within the foot-flat phases, a threshold of 1 cm/s, decided on after trial and error, was used to identify when a heel-rise was beginning.
-The point at which the velocity signal crossed 1 cm/s was identified as the heel-off time for that heel-rise.
+The point at which the velocity signal crossed 1 cm/s was identified as the heel-off time for that heel-rise (fig.~\ref{fig:SA4-heel_ho}).
+
+\begin{figure}
+\hypertarget{fig:SA4-heel_ho}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/heel_ho.png}
+\caption{Heel-off time detection from the heel-rise signal.}\label{fig:SA4-heel_ho}
+}
+\end{figure}
 
 The FSR voltage was recorded at each heel-off time for the right side.
 The maximum FSR voltage obtained during each heel-rise was obtained by first applying a moving average filter with a window size of 20 samples to the FSR voltage signal.
-Then, Python's \texttt{scipy.signal.find\_peaks} algorithm was used to identify peaks with a prominence of at least 0.5 V and a width of 5 samples.
+Then, Python's \texttt{scipy.signal.find\_peaks} algorithm was used to identify peaks with a minimum prominence of 0.5 V and a minimum width of 5 samples.
 As the FSR signal was quite noisy at its peak, a window of 50\% of the peak's width from the peak's highest value was isolated.
-The average FSR voltage in this window was then noted as the FSR peak voltage for that heel-rise.
+The average FSR voltage in this window was then noted as the FSR peak voltage for that heel-rise (fig.~\ref{fig:SA4-FSRpeaks}).
+
+\begin{figure}
+\hypertarget{fig:SA4-FSRpeaks}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/FSRpeaks.png}
+\caption{Peak voltage detection from the FSR signal.}\label{fig:SA4-FSRpeaks}
+}
+\end{figure}
 
 \hypertarget{statistical-analysis}{%
 \subsection{Statistical Analysis}\label{statistical-analysis}}
@@ -2353,102 +2468,119 @@ The acceptance target was set to 0.99 to reduce the step size within each iterat
 
 The maximal posterior estimate and 95\% Bayesian credible interval were calculated from the sampled posterior distribution for each parameter in each model.
 The posterior distributions for each of the shoe condition parameters were then compared to the novel spaceboot's posterior distribution to assess their comparative performance, presenting the chance of the compared shoe condition resulting in a higher or lower metric response compared to the novel spacesuit boot.
+Posterior distributions for each of the analyzed metrics are available in Appendix \ref{sec:AB}.
 
 \hypertarget{results-3}{%
 \section{Results}\label{results-3}}
 
+\hypertarget{interface-performance}{%
+\subsection{Interface Performance}\label{interface-performance}}
+
+Across all trials, the pressurized boots averaged 2.7 \(\pm\) 0.3 psi.
+Leakage was still present in the boots due to high tolerances from manufacturing the boots by hand.
+
+It was originally desired to reach a pressure of 4.3 psi to replicate the spacesuit pressure in current EVA activities aboard the EMU.
+While the boots were only able to average 2.7 psi, this was still deemed sufficient to proceed with testing as the boot's material was fully expanded to its maximal volume.
+This allows the boots' mechanisms, such as the rolling convolute ankle joint, to function as they would at a higher pressure.
+A higher pressure would require additional effort from the subject to move the boot, but would activate the mechanisms in the same fashion.
+Therefore, it was decided to continue with testing as this would still provide insight into the performance of the boot's mechanisms with regards to subject fit and comfort, but results will need to be taken into context with the lower operating pressure.
+
+\hypertarget{survey-measures-1}{%
+\subsection{Survey Measures}\label{survey-measures-1}}
+
 Four out of the five subjects ranked the shoe conditions from best to worst as Laced Workboot, Novel Spaceboot, Unlaced Workboot, Classic Spaceboot.
 The remaining subject's ranking switched the order of the Novel Spaceboot and Unlaced Workboot.
+Thus in all instances, the Novel Spaceboot was ranked higher than the Classic Spaceboot.
 The mean and maximum Corlett-Bishop Discomfort ratings across all subjects for each shoe condition are presented in figure \ref{fig:SA4-CBresults}.
 
-\begin{figure}
 \hypertarget{fig:SA4-CBresults}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/CorlettBishop_Results.png}
-\caption{Mean and maximum of reported Corlett-Bishop discomfort ratings on both the left (control) and right (test) shoe. Results are presented across all subjects.}\label{fig:SA4-CBresults}
-}
+\caption[{Corlett-Bishop results}]{Mean and maximum of reported Corlett-Bishop discomfort ratings on both the left (control) and right (test) shoe. Results are presented across all subjects.}
+\label{fig:SA4-CBresults}
 \end{figure}
+}
 
 The maximal posterior estimate of the heel performance rating for the novel spaceboot was 6.8, compared to 8.4 for the laced workboot, 2.3 for the classic spaceboot, and 2.4 for the unlaced spaceboot (fig.~\ref{fig:SA4-HPE}).
 The posterior distribution of the laced workboot's heel performance rating was estimated to be higher than the novel spaceboot's 98.6\% of the time, while the posterior distributions of the classic spaceboot's and unlaced workboot's heel performance ratings were estimated to be lower 100\% of the time.
 
-\begin{figure}
 \hypertarget{fig:SA4-HPE}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/HeelPerf.png}
-\caption{Estimate (black) of the heel performance rating across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-HPE}
-}
+\caption[{Heel performance posterior estimate}]{Estimate (black) of the heel performance rating across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}
+\label{fig:SA4-HPE}
 \end{figure}
+}
 
 The maximal posterior estimate of RPE for the novel spaceboot was 12.0, compared to 8.8 for the laced workboot, 14.3 for the classic spaceboot, and 8.4 for the unlaced workboot (fig.~\ref{fig:SA4-RPE}).
 The posterior distributions for laced and unlaced workboots' RPE were estimated to be lower than the novel spaceboot's 98\% and 99\% of the time, respectively.
 The posterior distribution for the classic spacesuit boot's RPE was estimated to be higher than the novel spaceboot's 94.3\% of the time.
 
-\begin{figure}
 \hypertarget{fig:SA4-RPE}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/RPE.png}
-\caption{Estimate (black) of the rating of perceived exertion across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-RPE}
-}
+\caption[{Rating of perceived exertion posterior estimate}]{Estimate (black) of the rating of perceived exertion across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}
+\label{fig:SA4-RPE}
 \end{figure}
-
-Figure \ref{fig:SA4-exSet} shows an example FSR response and heel-rise measurement from a subject's heel-rise set.
-
-\begin{figure}
-\hypertarget{fig:SA4-exSet}{%
-\centering
-\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/exSet.png}
-\caption{Example FSR and heel-rise data trace from a heel-rise set. Detected peaks and heel-off times are shown with the vertical lines}\label{fig:SA4-exSet}
 }
-\end{figure}
+
+\hypertarget{quantitative-measures-1}{%
+\subsection{Quantitative Measures}\label{quantitative-measures-1}}
 
 The maximal posterior estimate of the difference in heel-rise magnitude was 3.3 cm for the novel spaceboot, compared to 3.8 cm for the laced workboot, 5.5 cm for the classic spaceboot, and 4.8 cm for the unlaced workboot (fig.~\ref{fig:SA4-HLD}).
 The posterior distribution for laced workboot's heel lift difference was estimated to be higher than the novel spaceboot's 86.3\% of the time.
 The posterior distributions for the classic spacesuit boot's and unlaced spacesuit boot's heel lift difference were estimated to be higher than the novel spaceboot's 100\% of the time.
 
-\begin{figure}
 \hypertarget{fig:SA4-HLD}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/HeelLiftDiff.png}
-\caption{Estimate (black) of the difference in heel-rise magnitude across all boot conditions, as compared to the subjects' data. heel-rise magnitude difference is calculated by subtracting the magnitude of the right foot from the left foot. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-HLD}
-}
+\caption[{Heel-rise magnitude difference posterior estimate}]{Estimate (black) of the difference in heel-rise magnitude across all boot conditions, as compared to the subjects' data. heel-rise magnitude difference is calculated by subtracting the magnitude of the right foot from the left foot. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}
+\label{fig:SA4-HLD}
 \end{figure}
+}
 
 The maximal posterior estimate of the difference in heel-off time was 0.0s for the novel spaceboot, compared to -0.3 s for the laced workboot, -0.5 s for the classic spaceboot, and -0.3 s for the unlaced workboot (fig.~\ref{fig:SA4-HOT}).
 The posterior distribution for laced workboot's, classic spacesuit boot's, and unlaced workboot's heel-off time difference was estimated to be lower than the novel spaceboot's 100\% of the time.
 
-\begin{figure}
 \hypertarget{fig:SA4-HOT}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/HO_Time_Diff.png}
-\caption{Estimate (black) of the difference in heel-off time across all boot conditions, as compared to the subjects' data. The difference in heel-off time is calculated as the left foot's (control) heel-off time minus the right foot's (test) heel-off time. Therefore, negative numbers indicate that the right foot lifted after the left foot. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-HOT}
-}
+\caption[{Heel-off time difference posterior estimates}]{Estimate (black) of the difference in heel-off time across all boot conditions, as compared to the subjects' data. The difference in heel-off time is calculated as the left foot's (control) heel-off time minus the right foot's (test) heel-off time. Therefore, negative numbers indicate that the right foot lifted after the left foot. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}
+\label{fig:SA4-HOT}
 \end{figure}
+}
 
 The maximal posterior estimate of the FSR voltage at maximum heel-rise was 2.2 V for the novel spaceboot, compared to 3.3 V for the laced workboot, the classic spaceboot, and the unlaced workboot (fig.~\ref{fig:SA4-FSRmax}).
 The posterior distribution for laced workboot's, classic spacesuit boot's, and unlaced workboot's heel-off time difference was estimated to be higher than the novel spaceboot's 100\% of the time.
 
-\begin{figure}
 \hypertarget{fig:SA4-FSRmax}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/FSR_Max.png}
-\caption{Estimate (black) of the FSR voltage at maximum heel-rise across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-FSRmax}
-}
+\caption[{FSR voltage at maximum heel-rise posterior estimate}]{Estimate (black) of the FSR voltage at maximum heel-rise across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}
+\label{fig:SA4-FSRmax}
 \end{figure}
+}
 
 The maximal posterior estimate of the FSR voltage at heel-off for the novel spaceboot was 1.6 V, compared to 1.0 V for the laced workboot, 3.0 V for the classic spaceboot, and 2.3 V for the unlaced spaceboot (fig.~\ref{fig:SA4-FSRH0}).
 The posterior distribution of the laced workboot's FSR voltage at heel-off was estimated to be lower than the novel spaceboot's 97\% of the time, while the posterior distributions of the classic spaceboot's and unlaced workboot's FSR voltage at heel-off were estimated to be higher 100\% and 98.6\% of the time, respectively.
 
-\begin{figure}
 \hypertarget{fig:SA4-FSRH0}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth,height=\textheight]{../fig/SA4/FSR_HO.png}
-\caption{Estimate (black) of the FSR voltage at heel-off across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}\label{fig:SA4-FSRH0}
-}
+\caption[{FSR voltage at heel-off posterior estimate}]{Estimate (black) of the FSR voltage at heel-off across all boot conditions, as compared to the subjects' data. The subjects' data is offset along the x-axis to show all data points. Each boot's posterior distributions' overlap as compared to the novel spaceboot are annotated.}
+\label{fig:SA4-FSRH0}
 \end{figure}
+}
 
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
+\hypertarget{discussion-1}{%
+\section{Discussion}\label{discussion-1}}
 
 This study aimed to evaluate the performance of the novel spacesuit boot design against a laced workboot, unlaced workboot, and classic spacesuit boot design.
 Fit and comfort were the primary focus of this evaluation, with specific metrics chosen to evaluate the heel's dynamic fit in the boot, as well as the boot's overall comfort.
@@ -2470,26 +2602,29 @@ The highest areas of pressure on both spacesuit boots was the calf, which may be
 The novel spacesuit boot had reports of high discomfort at the instep, which may suggest contact between the foot and boot.
 This is most likely a result of the design of the boot, which attempts to maintain contact with the instep.
 In addition, one subject complained about discomfort from the BOA dial pressing into their calf.
-Future iteration may improve the discomfort associated with these contacts by strategically adding padding between the pressure bladder and wearer.
+However, this may be an artifact of the pressurization interface, which requires the bladder to be brought much closer to the calf in order to maintain a seal.
+An operational spacesuit boot design may therefore not be subject to this issue.
 
 The FSR voltage metrics provide insight into heel-contact at heel-off and at maximum heel-rise.
 The FSR voltages suggest that both the novel spaceboot and laced workboot maintain some contact with the heel at heel-off (between 0 and 3.3 V), compared to the unlaced workboot and classic spaceboot which are almost always offloaded (at 3.3 V).
 However, the laced spacesuit boot maintains contact more often, with the majority of data points at 0 V.
 In addition, the novel spaceboot appears to be the only boot which maintains contact at maximum heel-rise, as evidenced by its FSR voltage at heel-rise being lower than all other boots.
-This may be due to the interaction of the lacing and the softer sole of the novel spaceboot.
+This may be due to both a reduction in heel lift but also the interaction of the lacing and the softer sole of the novel spaceboot.
 The tension of the BOA lacing is kept constant when doffed; since the lower lacing guides are placed on the sole, the sole's motion is matched to the foot's instep where the upper lacing guides run, ensuring that it is brought up during the heel-rise by the tension in the BOA lacing (fig.~\ref{fig:SA4-heelliftcap}).
-This may also work in tandem with the designed dynamic lacing aspect of the novel spaceboot (see sec.~\ref{sec:SA3}), which lengthens the lace path of the BOA by relatively moving the tubing from the dial to the guides and requires the guides to come closer together to compensate.
+This may also work in tandem with the designed dynamic lacing aspect of the novel spaceboot (see Chapter \ref{sec:SA3}), which lengthens the lace path of the BOA by relatively moving the tubing from the dial to the guides and requires the guides to come closer together to compensate.
 This is in contrast to the laced workboot's lacing, which does not interact with the sole and therefore has no mechanism to actively raise the sole.
 Therefore, this and other boots rely on the material properties of the boot itself and not an active tension force to raise the sole.
+Thus, these data support the reduction in heel lift through the design choices, but the extent to which sole stiffness could mitigate the positive effects of this design is unknown.
 Future work can expand upon these hypotheses by quantifying the magnitude of dynamic lacing lengthening and tension in the BOA system.
 
-\begin{figure}
 \hypertarget{fig:SA4-heelliftcap}{%
+\begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth,height=\textheight]{../fig/sa4/HeelLift_ScreenCap.png}
-\caption{Video frame of heel-rise by subject FT in the novel spaceboot. As the BOA lace length cannot change, the sole is kept at a constant distance to the instep throughout the heel-rise motion. This ensures that the heel is continuously making contact with the}\label{fig:SA4-heelliftcap}
-}
+\caption[{Heel-rise in novel spaceboot}]{Video frame of heel-rise by subject FT in the novel spaceboot. As the BOA lace length cannot change, the sole is kept at a constant distance to the instep throughout the heel-rise motion. This ensures that the heel is continuously making contact with the}
+\label{fig:SA4-heelliftcap}
 \end{figure}
+}
 
 The heel-off time difference and heel-raise magnitude difference further add to the heel performance characterization by comparing the test boots against the subjects' own control shoes when performing a heel raise.
 The novel spacesuit boot had the lowest heel-off time difference between the left and right shoes, suggesting that most heel raises were initiated in tandem with the novel spacesuit boot.
@@ -2502,17 +2637,18 @@ This suggests that these boots may either have large amounts of heel-lift (as ev
 The unlaced workboot has a loose tongue which may allow the foot to further lift out of the boot while performing a heel-raise, while the classic spaceboot may be limited in its mobility.
 The laced workboot had a 86.3\% chance of a higher difference in heel-raise magnitude, suggesting similar or worse performance than the novel spaceboot.
 
-Subjects rated the novel spacesuit boot's heel performance as below that of the laced workboot, but above the classic spacesuit and unlaced workboot.
+Subjects rated the novel spacesuit boot's heel performance as below that of the laced workboot, but above the classic spaceboot and unlaced workboot.
 However, the FSR data suggests that only the novel spaceboot maintains some level of contact with the heel during heel-off.
 Similarly, the heel-raise magnitude difference suggests that the novel spaceboot is the closest match to a subject's control tennis shoe in heel raise magnitude.
 Therefore, the quantitative data suggests that the novel spacesuit may be better at heel-raises than the laced workboot, classic spaceboot, and unlaced spaceboot.
 
-However, it is important to note that no quantitative measurements were collected during the short walk exercise, and the laced workboot may have performed better here to align with the subjective ratings of heel performance.
+While no quantitative measurements were collected during the short walk exercise, and the laced workboot may have performed better here to align with the subjective ratings of heel performance.
 
 \hypertarget{summary-6}{%
 \section{Summary}\label{summary-6}}
 
 This evaluation compared the novel spacesuit boot against a laced workboot, classic spaceboot, and unlaced workboot.
+This is the first published comparison of a spacesuit boot against a terrestrial boot.
 When performing a heel-raise, both the novel spaceboot and laced workboot appear to maintain contact with the heel at heel-off.
 However, the novel spaceboot appears to maintain some contact throughout the heel-raise, and allows subjects to achieve their highest performance heel-raise.
 Survey measurements report the novel spacesuit boot having a lower heel performance than the laced spaceboot, but a higher heel performance compared to the unlaced workboot and classic spacesuit boot.
@@ -2532,62 +2668,184 @@ This highlights the need for a lacing system and heel counter in spacesuit boots
 \hypertarget{summary-7}{%
 \chapter{Summary}\label{summary-7}}
 
-Through many advancements of planetary EVA spacesuit design, operator-spacesuit coordination is still not perfectly matched.
+Despite many advancements of planetary EVA spacesuit design, operator-spacesuit coordination is still not perfectly matched.
 Poor mobility and poor fit between the operator and spacesuit are some of the most common factors that can lead to injury.
-This thesis was designed to determine the feasibility of using dynamic body shape models to improve spacesuit component fit and mobility, specifically with planetary spacesuit boots.
-The spacesuit boot has demonstrated specific problems relating to poor fit, such as heel-lift and contact injuries.
+This thesis was designed to determine the feasibility of using dynamic body shape models to improve spacesuit component fit and mobility.
 The work in the thesis aims to answer the hypothesis:
 
 \begin{quote}
 Integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit.
 \end{quote}
 
+The spacesuit boot was chosen as the test article for this research because these boots demonstrate the key problems relating poor fit and spacesuit components, specifically heel-lift and contact injuries.
 This thesis investigated the hypothesis through four specific aims, resulting in novel contributions to the field.
 
-The thesis first investigated the ability to quantify heel-lift magnitude inside the spacesuit.
-A contribution was made by observing from IMU data that the lower leg of the spacesuit expands during gait; this observation supports the belief that heel-lift in the boot may be due to forces from the spacesuit, and re-emphasizes the importance of keeping the foot indexed in the boot.
-In addition, findings from this study suggest that IMUs are not the best tool to quantify heel lift and that drift correction techniques are not enough to reduce drift for positional estimates in the spacesuit context.
+The thesis first investigated if IMUs and drift correction techniques can quantify heel-lift magnitude inside the spacesuit.
+While these methods were not found to be successful, it was observed that the lower leg of the spacesuit may expand during gait.
+Thus, a contribution was made in further understanding the dynamics of the spacesuit lower leg that can help assist in characterizing its motion in future work.
+This observation supports the belief that heel-lift in the boot may be due to forces from the spacesuit, and re-emphasizes the importance of keeping the foot indexed in the boot.
+In addition, findings from this study suggest using measurement techniques which can directly measure the heel contact in the boot.
 
-Following this study, the dynamic morphology of the foot was investigated with a focus on discovering changes which can improve spacesuit boot design.
-The thesis contributed here a novel, low-cost dynamic foot scanning system was designed and built to enable capture of foot scans at 90 fps while subjects walk on a treadmill.
+Following this study, the foot's dynamic morphology was investigated with a focus on discovering changes which can improve spacesuit boot design by reducing heel-lift.
+The thesis contributed here a novel, low-cost dynamic foot scanning system capable of capturing foot scans at 90 fps while subjects walk on a treadmill.
 The thesis also contributed a novel predictive dynamic foot shape model for walking using shape modeling and linear modeling techniques.
 A further contribution includes an analysis on dynamic instep height, including a new method to measure instep height without a plantar surface, and the finding that dynamic instep height is subject specific and cannot be accurately predicted from static anthropometries.
+This led to the decision on incorporating lacing into the spacesuit boot design to improve fit.
 
-The dynamic foot morphology model was translated into footwear design by first creating a new footwear design framework.
-This framework contribution tied both traditional footwear measurements and novel footwear measurements, like the dynamic foot morphology model, into footwear design variables.
-The framework was then used in the context of planetary spacesuit boot design to pick parameters for mobility, fit, and comfort that would meet the requirements.
+A new footwear design framework was outlined to incorporate both traditional footwear measurements and novel footwear measurements, like the dynamic foot morphology model, into footwear design variables.
+This framework contribution was then used in the context of planetary spacesuit boot design to pick parameters for mobility, fit, and comfort that would meet the requirements.
 The thesis then contributed the design and prototype for a novel planetary spacesuit boot, with a BOA lacing system and heel counter, with the express goal of accommodating the variability in instep height to improve fit and reduce heel-lift.
 
-The final contribution of this thesis lies in the evaluation of the novel spacesuit boot against the classic spacesuit boot, a laced workboot, and an unlaced workboot for fit and comfort.
-This is the first published comparison of a spacesuit boot against a terrestrial boot.
-This evaluation showed that the novel spaceboot provided improved heel performance and comfort compared to the classic spaceboot, and improved heel performance compared to the unlaced spaceboot.
-The novel spaceboot provided improved heel performance compared to the laced workboot when investigating heel contact at heel-rise, heel-off delay, and heel-rise performance, and lower heel performance when analyzing heel-contact at heel-off and subjective heel performance ranking.
-Nevertheless, the novel spacesuit boot provides a great improvement over the classic design and appears to come close to the performance of a gold standard workboot.
+The final contribution of this thesis lies in the evaluation of the novel spacesuit boot against the classic spacesuit boot, a laced work boot, and an unlaced work boot for fit and comfort.
+This evaluation showed that in all cases, the novel spaceboot provided improved heel performance and comfort compared to the classic spaceboot.
 
 The performance of the novel spacesuit boot design shows the utility of using body shape models to inform spacesuit component design.
 In this application, a foot shape model first identified specific shape modes which varied throughout stance phase.
-Of these, it was decided to target the shape mode where the instep height falls during stance phase, and the novel spacesuit boot design features a lacing system to ensure the instep area is captured through stance phase.
+Of these, it was decided to target and further investigate the shape mode where the instep height falls during stance phase.
+Lacing was found to be required to ensure the instep area is captured through stance phase.
 A heel counter was also added to accommodate changes in the heel shape.
-As the evaluation shows, these two additions to the spacesuit boot design resulted in a much greater improvement in heel performance and reduction of exertion.
+As the evaluation shows, these two additions to the spacesuit boot design resulted in improved fit through heel performance improvement, and increased comfort through the reduction of exertion.
 Therefore, the work in this thesis supports the hypothesis: integrating dynamic body shape changes into the spacesuit boot design process will mitigate factors that lead to injury and improve compatibility between the operator and the spacesuit.
+
+\hypertarget{limitations}{%
+\section{Limitations}\label{limitations}}
+
+This work has a number of limitations which must be noted.
+The evaluation of the novel spacesuit boot prototype was conducted in the absence of a full spacesuit.
+While this provides insight into the boot's design elements specifically, it does not account for how these element's performance might be changed by the weight and additional pressure forces of the suit.
+
+In addition, this work used heel performance as the primary fit metric.
+There may be other static and dynamic fit factors in the boot which may lead to injury, but have not yet been identified.
+However, any future design thrusts may make use of the same foot shape model to identify shape variations which can be targeted to improve fit and comfort.
 
 \hypertarget{future-work}{%
 \section{Future Work}\label{future-work}}
 
-This work's effort in translating a foot shape model to spacesuit boot design can serve as a template for other spacesuit components as well.
+This work's effort in translating a foot shape model to spacesuit boot design serves as a template for other spacesuit components as well.
 A similar process can be followed to identify dynamic body shape changes in the shoulder, hands, and hips.
-Then, these changes can be translated into improvements in spacesuit design to accommodate such changes, thus reducing the risk of injury in these areas.
+These changes can then be analyzed and spacesuit components can be designed to accommodate such changes, thus reducing the risk of injury in these areas.
+The NASA Anthropometry and Biomechanics Facility (ABF) has been exploring the use of static scans to inform the fit and comfort of spacesuit components; the presented work can integrate into these existing processes with dynamic scans.
+As shown in this thesis' first specific aim, the fit and comfort of one spacesuit component may affect other components to which it connects.
+Therefore, a spacesuit will need to accommodate its wearer across all components to truly reduce the risk of spacesuit injury from EVA.
 
-Similarly, this thesis' work is not limited to spacesuit design.
-This process can be applied to apparel or terrestrial footwear for any application where injury might be a risk.
+However, spacesuit design is not limited to accommodating its wearer's movements.
+Other considerations are needed to ensure that a spacesuit can provide protection in its intended environment.
+These include thermal, dust, radiation, and micrometeorite protection.
+Elements which meet these requirements must also be compatible with the spacesuit's life support system.
+Therefore, designing a spacesuit becomes an exercise in systems engineering; balancing the requirements of mobility, protection, and life support to ensure the astronaut can perform at their peak potential.
+As mobility is required to allow a spacesuit operator to perform EVA tasks, it is this author's opinion that spacesuit design should start with mobility requirements for the intended environment.
+From this foundation, the remaining suit requirements can be framed.
+Future work should explore whether it is feasible to then incorporate requirements for protection and life support into a spacesuit which is designed around mobility.
 
-Future advancements in technology can also work to improve the fidelity of the foot shape model.
-This thesis' goal is to show the utility of dynamic scanning in modeling body shape changes.
-Advancements in cameras and computer vision can improve the resolution, framerate, and reliability of such systems to make 4D scanning accessible to more industries.
+This thesis' work is not limited to spacesuit design.
+Any type of apparel or footwear which is designed to be worn by a human can follow this design process.
+While the design constraints and requirements may be different from a spacesuit, a similar framework can be built for specific applications.
 
-Finally, this thesis aims to show the importance in understanding all dimensions of human motion when it comes to spacesuit design.
-The boot designed in this thesis was designed first around the motion and shape of the foot, with the hope that other requirements, such as thermal, dust, and radiation, can be met through additional layers.
-Novel solutions might be needed to address these problems prior to returning to the Moon.
+Most importantly, this thesis aims to show the importance of understanding all dimensions of human motion when it comes to spacesuit design.
+Dynamic changes in morphology are just as important to accommodate as linear and angular measurements.
+It is also important to understand the degree to which adjustability or grading through different sizes is needed to accommodate the target population.
+Utilizing these techniques will allow for the design of apparel and footwear that is comfortable and of high performance, ensuring that the wearer is safe and satisfied while performing their tasks.
+
+\bibliography{../references}
+\appendix
+
+\hypertarget{sec:AA}{%
+\chapter{Tensile testing of pressure bladder seam}\label{sec:AA}}
+
+Urethane-coated nylon, the material used for a spacesuit's pressure bladder, is sealed to itself by applying heat.
+The heat melts the urethane layers on both pieces of fabric, fusing it into one layer.
+After discussing with subject matter experts, a good seal was described as one where when stressed, a failure occurs in the nylon and not the urethane.
+However, there does not exist a clear guideline on how much heat needs to be applied to urethane-coated nylon to achieve a good seal.
+Therefore, this evaluation explores the relationship between heat and seam strength for urethane-coated nylon.
+Furthermore, the seam size is also explored to see if there is an effect.
+
+Coupons were manufactured as two strips of 2 in material, with an overlap of either 0.5 in or 1 in seam.
+These coupons were then heat sealed with a Clover MCI-900 Mini-iron, set to a temperature of 140 degrees Celsius (high setting).
+The time of heat application for these coupons was varied between 5 and 30 seconds in intervals of 5 seconds.
+A total of 10 coupons for each heat application time and seam size were manufactured, for a total of 120 coupons.
+
+The coupons were subject to the ASTM Standard Test Method for Breaking Force and Elongation of Textile Fabrics (ASTM D5035).
+This test was conducted on an Instron tensile test machine, recording the elongation and force as the machine extended at a rate of 300 mm/min.
+The coupon test setup is shown in figure \ref{fig:A1-setup}.
+
+\begin{figure}
+\hypertarget{fig:A1-setup}{%
+\centering
+\includegraphics[width=0.4\textwidth,height=\textheight]{../fig/Appendix/Instron_setup.png}
+\caption{Securing of a coupon in the Instron machine using jaw faces.}\label{fig:A1-setup}
+}
+\end{figure}
+
+When the sample failed, the force recorded by the Instron machine immediately decreases.
+The derivative of the force was taken, and the first negative change of force value was used to denote the point at which the sample failed.
+The distribution of the force at which samples failed is shown in figure \ref{fig:A1-results}.
+Lower force values were noted as failures of the urethane layer (fig.~\ref{fig:A1-delam}), while higher force values were noted as nylon failures (fig.~\ref{fig:A1-rip}).
+
+\begin{figure}
+\hypertarget{fig:A1-results}{%
+\centering
+\includegraphics[width=0.8\textwidth,height=\textheight]{../fig/Appendix/tensileTest_force.png}
+\caption{Distribution of force when samples failed for coupons of various seam widths and heat application times.}\label{fig:A1-results}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:A1-delam}{%
+\centering
+\includegraphics[width=0.4\textwidth,height=\textheight]{../fig/Appendix/Instron_Delamination.png}
+\caption{Example of failure of the urethane layer.}\label{fig:A1-delam}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:A1-rip}{%
+\centering
+\includegraphics[width=0.4\textwidth,height=\textheight]{../fig/Appendix/Instron_Rip.png}
+\caption{Example of failure of the nylon layer.}\label{fig:A1-rip}
+}
+\end{figure}
+
+The results show that above 20 seconds of heat application is generally associated with higher forces for breakage.
+Therefore, all fabric for this project was heat-sealed for a minimum of 20 seconds.
+
+\hypertarget{sec:AB}{%
+\chapter{Prior and posterior distributions of heel performance and comfort metrics}\label{sec:AB}}
+
+\begin{figure}
+\centering
+\includegraphics{../fig/Appendix/Heel Performance Score_posterior.png}
+\caption{Posterior distribution of heel performance score}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../fig/Appendix/Rating of Percieved Exertion_posterior.png}
+\caption{Posterior distribution of rating of perceived exertion}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../fig/Appendix/Heel Lift Difference_posterior.png}
+\caption{Posterior distribution of heel-rise magnitude difference}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../fig/Appendix/Heel Off Time Difference_posterior.png}
+\caption{Posterior distribution of heel-off time difference between left and right sides.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../fig/Appendix/FSR at Heel-Off_posterior.png}
+\caption{Posterior distribution of FSR voltage at heel-off}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../fig/Appendix/FSR Maximum Voltage_posterior.png}
+\caption{Posterior distribution of FSR maximum voltage at heel-rise}
+\end{figure}
 
 
 %%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
@@ -2595,12 +2853,13 @@ Novel solutions might be needed to address these problems prior to returning to 
 %\nocite{*}		% list all refs in database, cited or not
 %\bibliography{refs}		% Bib database in "refs.bib"
 
-%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
-\appendix
+
 
 %\usepackage{natbib}
-\bibliography{../references}
+%\bibliography{../references}
 
+%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
+%\appendix
 
 
 \end{document}

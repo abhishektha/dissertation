@@ -3,3 +3,4 @@ ThesisFilePkg
 ~$*.pptx
 tex/pdf
 .DS_Store
+*.pptx
